@@ -94,7 +94,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="flex min-h-full flex-col font-sans antialiased">
+      <body className="flex min-h-full flex-col bg-white font-sans antialiased">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
