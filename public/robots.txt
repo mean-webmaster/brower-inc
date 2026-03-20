@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://browerinc.net
+
+# Sitemaps
+Sitemap: https://browerinc.net/sitemap.xml
