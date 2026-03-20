@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { PHONE } from "@/lib/constants";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "About Us | Portable Restroom & Septic Company in Oklahoma",
@@ -19,6 +21,13 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">About Brower Inc.</h1>
+            <Image
+              src={IMAGES.fleetLineup}
+              alt="Brower Inc. full fleet of septic trucks and portable restroom delivery vehicles in Newkirk, Oklahoma"
+              width={800}
+              height={400}
+              className="mt-8 w-full rounded-xl object-cover"
+            />
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
               Brower Inc. is a locally owned and operated portable sanitation company based in
               Newkirk, Oklahoma. We specialize in providing reliable, clean portable restrooms,

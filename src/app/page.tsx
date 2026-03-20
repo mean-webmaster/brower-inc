@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
 import CTABanner from "@/components/CTABanner";
 import Testimonials from "@/components/Testimonials";
 import { SERVICES, PHONE, PHONE_HREF, SERVICE_AREAS } from "@/lib/constants";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Portable Restroom Rental & Septic Services | Newkirk, OK",
@@ -17,7 +19,14 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative bg-gray-900 py-24 sm:py-32">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-primary/20" />
+        <Image
+          src={IMAGES.fleetLineup}
+          alt="Brower Inc. fleet of portable restroom delivery trucks and septic service vehicles in Newkirk, Oklahoma"
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-800/70 to-primary/20" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">

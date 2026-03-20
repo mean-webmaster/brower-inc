@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { SERVICES } from "@/lib/constants";
 import { getServiceSchema } from "@/lib/structured-data";
+import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[0];
 
@@ -58,10 +60,13 @@ export default function PortableRestroomsPage() {
             </div>
 
             <div>
-              {/* Image placeholder */}
-              <div className="flex h-80 items-center justify-center rounded-xl bg-gray-100 border border-gray-200">
-                <p className="text-gray-500">Portable Restroom Photo</p>
-              </div>
+              <Image
+                src={IMAGES.portableRestroomField}
+                alt="Brower Inc. portable restroom rental in open field near wind farm in Newkirk, Oklahoma"
+                width={600}
+                height={400}
+                className="h-80 w-full rounded-xl object-cover"
+              />
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Common Use Cases</h2>
               <ul className="mt-4 grid gap-2 sm:grid-cols-2">

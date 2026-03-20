@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Construction Site Sanitation: OSHA Requirements | Brower Inc.",
@@ -34,9 +36,13 @@ export default function BlogPost2() {
             Construction Site Sanitation: OSHA Requirements and Best Practices
           </h1>
 
-          <div className="mt-4 flex h-64 items-center justify-center rounded-xl bg-gray-100 border border-gray-200">
-            <p className="text-gray-500">Featured Image: Portable Restroom at Construction Site</p>
-          </div>
+          <Image
+            src={IMAGES.portableRestroomConstruction}
+            alt="Brower Inc. portable restroom at construction site in Oklahoma"
+            width={800}
+            height={400}
+            className="mt-4 h-64 w-full rounded-xl object-cover"
+          />
 
           <div className="prose mt-8 max-w-none">
             <p className="text-lg text-gray-600 leading-relaxed">

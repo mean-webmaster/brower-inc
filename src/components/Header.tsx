@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS, PHONE, PHONE_HREF, SITE_NAME } from "@/lib/constants";
 
@@ -13,7 +14,14 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2" aria-label={`${SITE_NAME} Home`}>
-          <span className="text-2xl font-bold text-primary">{SITE_NAME}</span>
+          <Image
+            src="https://assets.cdn.filesafe.space/Vil2untX5HPYLFH0yUEi/media/6727accb3c7a806cd8d83df0.png"
+            alt="Brower Inc. Logo"
+            width={180}
+            height={60}
+            className="h-12 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

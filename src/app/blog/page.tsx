@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { BLOG_POSTS } from "@/lib/blog";
@@ -30,9 +31,13 @@ export default function BlogPage() {
                 key={post.slug}
                 className="group flex flex-col rounded-xl border border-gray-200 bg-white overflow-hidden hover:shadow-md transition-shadow"
               >
-                <div className="flex h-48 items-center justify-center bg-gray-100">
-                  <p className="text-sm text-gray-500">Blog Post Image</p>
-                </div>
+                <Image
+                  src={post.image}
+                  alt={post.imageAlt}
+                  width={400}
+                  height={200}
+                  className="h-48 w-full object-cover"
+                />
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center gap-3 text-xs text-gray-500">
                     <span className="rounded-full bg-primary/10 px-2.5 py-0.5 font-medium text-primary">

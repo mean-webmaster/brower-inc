@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import { getLocalBusinessSchema } from "@/lib/structured-data";
 import { SITE_NAME, SITE_URL, SITE_TAGLINE } from "@/lib/constants";
+import { IMAGES } from "@/lib/images";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -44,10 +45,10 @@ export const metadata: Metadata = {
       "Oklahoma's trusted provider of portable restrooms, luxury trailers, and septic services. Locally owned in Newkirk, OK.",
     images: [
       {
-        url: "/images/brower-inc-og.jpg",
+        url: IMAGES.ogImage,
         width: 1200,
         height: 630,
-        alt: "Brower Inc. - Portable Restrooms & Septic Services",
+        alt: "Brower Inc. - Portable Restrooms & Septic Services in Newkirk, Oklahoma",
       },
     ],
   },
@@ -56,7 +57,11 @@ export const metadata: Metadata = {
     title: `${SITE_NAME} | ${SITE_TAGLINE}`,
     description:
       "Oklahoma's trusted provider of portable restrooms, luxury trailers, and septic services.",
-    images: ["/images/brower-inc-og.jpg"],
+    images: [IMAGES.ogImage],
+  },
+  icons: {
+    icon: IMAGES.favicon,
+    apple: IMAGES.favicon,
   },
   robots: {
     index: true,
