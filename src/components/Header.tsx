@@ -39,7 +39,7 @@ export default function Header() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                <div className="invisible absolute left-0 top-full z-50 mt-2 w-64 rounded-lg bg-white py-2 shadow-lg ring-1 ring-black/5 group-hover:visible">
+                <div className="invisible absolute left-0 top-full z-50 w-64 rounded-lg bg-white py-2 shadow-lg ring-1 ring-black/5 group-hover:visible before:absolute before:-top-4 before:left-0 before:h-4 before:w-full">
                   {link.children.map((child) => (
                     <Link
                       key={child.href}

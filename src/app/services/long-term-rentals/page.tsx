@@ -61,8 +61,8 @@ export default function LongTermRentalsPage() {
 
             <div>
               <Image
-                src={IMAGES.portableRestroomConstruction}
-                alt="Brower Inc. portable restrooms at construction site for long-term rental in Oklahoma"
+                src={IMAGES.portableRestroomField}
+                alt="Brower Inc. long-term portable restroom rental in open field near Newkirk, Oklahoma"
                 width={600}
                 height={400}
                 className="h-80 w-full rounded-xl object-cover"

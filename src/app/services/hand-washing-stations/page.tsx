@@ -61,8 +61,8 @@ export default function HandWashingStationsPage() {
 
             <div>
               <Image
-                src={IMAGES.vipWithHandwash}
-                alt="Brower Inc. portable hand washing station with VIP restroom trailer in Newkirk, Oklahoma"
+                src={IMAGES.handWashingStation}
+                alt="Brower Inc. portable hand washing station rental in Newkirk, Oklahoma"
                 width={600}
                 height={400}
                 className="h-80 w-full rounded-xl object-cover"

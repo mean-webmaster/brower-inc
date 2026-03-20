@@ -61,7 +61,7 @@ export default function SepticServicesPage() {
 
             <div>
               <Image
-                src={IMAGES.septicPumpingWide}
+                src={IMAGES.septicPumpingClose}
                 alt="Brower Inc. technician performing septic tank pumping service at residential property in Oklahoma"
                 width={600}
                 height={400}
