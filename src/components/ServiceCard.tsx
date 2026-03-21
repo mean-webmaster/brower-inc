@@ -20,8 +20,8 @@ const serviceImages: Record<string, { src: string; alt: string }> = {
     alt: "Brower Inc. septic pumping service at residential property in Newkirk, OK",
   },
   "long-term-rentals": {
-    src: IMAGES.portableRestroomConstruction,
-    alt: "Brower Inc. portable restroom for long-term construction site rental in Newkirk, OK",
+    src: IMAGES.hero,
+    alt: "Brower Inc. fleet and portable restrooms ready for long-term rental in Newkirk, OK",
   },
 };
 
