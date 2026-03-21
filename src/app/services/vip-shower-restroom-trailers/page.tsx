@@ -25,7 +25,7 @@ export default function VIPTrailersPage() {
       />
       <Breadcrumbs
         items={[
-          { name: "Services", href: "/services/portable-restrooms" },
+          { name: "Services", href: "/services" },
           { name: service.title, href: `/services/${service.slug}` },
         ]}
       />
@@ -36,6 +36,10 @@ export default function VIPTrailersPage() {
             <div>
               <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">{service.title}</h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
+
+              <p className="mt-4 text-base text-gray-600 leading-relaxed">
+                Each trailer includes spacious fully enclosed private stalls with running water, soap and paper towel dispensers, large countertops, full-size mirrors, and superior LED lighting. For safety, the trailers feature stairs with sturdy handrails on both sides and porch lights.
+              </p>
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Features & Benefits</h2>
               <ul className="mt-4 space-y-3">
@@ -77,6 +81,22 @@ export default function VIPTrailersPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          {/* VIP Gallery */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">See Our VIP Trailers</h2>
+            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
+              Take a closer look at the premium interiors and exteriors of our 18-station VIP restroom and shower trailers. These units are designed for comfort and style at any event.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <Image src={IMAGES.vipInteriorVanity} alt="VIP restroom trailer interior with vanity and private stalls" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
+              <Image src={IMAGES.vipInteriorShower} alt="VIP shower trailer interior with shower stalls" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
+              <Image src={IMAGES.vipInteriorBathroom} alt="VIP restroom trailer private bathroom interior" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
+              <Image src={IMAGES.vipExteriorAngle} alt="VIP restroom trailer exterior angle view" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
+              <Image src={IMAGES.vipExteriorCloseup} alt="VIP restroom trailer exterior closeup with branding" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
+              <Image src={IMAGES.vipWithHandwash} alt="VIP restroom trailer paired with hand washing station" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
             </div>
           </div>
 

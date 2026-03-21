@@ -4,10 +4,19 @@ const GHL = "https://assets.cdn.filesafe.space/Vil2untX5HPYLFH0yUEi/media";
 export const IMAGES = {
   // Logos (kept on GHL since they're referenced externally)
   logo: `${GHL}/6727accb3c7a806cd8d83df0.png`,
-  favicon: `${GHL}/6b011248-394a-4d04-875e-76622c59aa38.png`,
+  favicon: "/favicon.png",
   ogImage: `${GHL}/6727f81d38b82f89893ab29a.jpeg`,
 
+  // Brand logos (local)
+  logoFullTagline: `${IMG}/brower-inc-logo-full-tagline-phone.png`,
+  logoIconBMark: `${IMG}/brower-inc-logo-icon-b-mark.png`,
+  logoWordmarkFull: `${IMG}/brower-inc-logo-wordmark-full.png`,
+
+  // Team
+  troyBrower: `${IMG}/troy-brower-owner-brower-inc-newkirk-ok.webp`,
+
   // Portable Restrooms
+  portableRestroomHero: `${IMG}/brower-inc-portable-restrooms-lineup-hero-newkirk-ok.webp`,
   portableRestroomField: `${IMG}/brower-inc-portable-restroom-wind-farm-field-newkirk-ok.webp`,
   portableRestroomWarehouse: `${IMG}/brower-inc-portable-restroom-fleet-warehouse-inventory-newkirk-ok.webp`,
   portableRestroomLineup: `${IMG}/brower-inc-portable-restroom-lineup-outdoor-event-ready-newkirk-ok.webp`,

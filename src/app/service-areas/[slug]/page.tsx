@@ -91,6 +91,9 @@ export default async function ServiceAreaPage({
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
               {area.content.intro}
             </p>
+            <p className="mt-3 text-base text-gray-500 leading-relaxed">
+              Whether you call it a porta potty, portable toilet, or portable restroom, Brower Inc. delivers clean, serviced units to {area.name} and the surrounding area. Contact us for a free porta potty rental quote.
+            </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a

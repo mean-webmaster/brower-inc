@@ -25,8 +25,9 @@ export function getLocalBusinessSchema() {
     priceRange: "$$",
     image: `${SITE_URL}/images/brower-inc-og.jpg`,
     sameAs: [
-      "https://www.facebook.com/braborinc",
-      "https://www.linkedin.com/company/brower-inc",
+      "https://www.facebook.com/TroysPortables/",
+      "https://www.youtube.com/@TROYSPORTABLES",
+      "https://www.linkedin.com/in/troy-brower-47824790/",
     ],
   };
 }
@@ -36,10 +37,16 @@ export function getServiceSchema(service: {
   slug: string;
   description: string;
 }) {
+  const alternateName =
+    service.slug === "portable-restrooms"
+      ? ["Porta Potty Rental", "Portable Toilet Rental", "Port-a-John Rental"]
+      : undefined;
+
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     name: service.title,
+    ...(alternateName && { alternateName }),
     description: service.description,
     provider: {
       "@type": "LocalBusiness",

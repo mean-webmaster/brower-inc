@@ -25,7 +25,7 @@ export default function HandWashingStationsPage() {
       />
       <Breadcrumbs
         items={[
-          { name: "Services", href: "/services/portable-restrooms" },
+          { name: "Services", href: "/services" },
           { name: service.title, href: `/services/${service.slug}` },
         ]}
       />
@@ -36,6 +36,10 @@ export default function HandWashingStationsPage() {
             <div>
               <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">{service.title}</h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
+
+              <p className="mt-4 text-base text-gray-600 leading-relaxed">
+                Your guests deserve to be germ-free as they eat and socialize. These stations pair perfectly with portable toilet rentals — place them near your bathroom area or around the venue. They minimize water waste and keep the nearby area as clean as possible.
+              </p>
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Features & Benefits</h2>
               <ul className="mt-4 space-y-3">

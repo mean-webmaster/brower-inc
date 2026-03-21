@@ -4,7 +4,7 @@ export const SITE_TAGLINE =
   "Portable Restrooms, Luxury Trailers & Septic Services";
 export const PHONE = "(580) 747-6206";
 export const PHONE_HREF = "tel:+15807476206";
-export const EMAIL = "info@browerinc.net";
+export const EMAIL = "troy@browerinc.net";
 export const ADDRESS = {
   street: "Newkirk",
   city: "Newkirk",
@@ -13,8 +13,9 @@ export const ADDRESS = {
   full: "Newkirk, OK 74647",
 };
 export const SOCIAL = {
-  facebook: "https://www.facebook.com/braborinc",
-  linkedin: "https://www.linkedin.com/company/brower-inc",
+  facebook: "https://www.facebook.com/TroysPortables/",
+  youtube: "https://www.youtube.com/@TROYSPORTABLES",
+  linkedin: "https://www.linkedin.com/in/troy-brower-47824790/",
 };
 export const BUSINESS_HOURS = "Monday - Friday: 8:00 AM - 5:00 PM";
 
@@ -23,24 +24,24 @@ export const SERVICES = [
     title: "Portable Restrooms",
     slug: "portable-restrooms",
     shortDescription:
-      "Standard portable sanitation for events, construction sites, and temporary needs.",
+      "Portable restroom and porta potty rental for events, construction sites, and temporary needs across Oklahoma.",
     description:
-      "Reliable, clean portable restrooms for any occasion. Whether you are hosting an outdoor event, managing a construction site, or need temporary sanitation solutions, Brower Inc. delivers and maintains high-quality portable restrooms throughout Oklahoma.",
+      "We have many different types of units to fit your needs. Our featured unit is the Maxim 300 — available in blue, tan, and pink (an area favorite!). From construction sites to special events and weddings, our portable restrooms and porta potties are extremely nice and very spacious. Whether you are hosting a backyard BBQ or a public celebration, Brower Inc. delivers and maintains high-quality porta potty units throughout Oklahoma. We serve Kay County, Garfield County, Kingfisher County, Logan County, and beyond.",
     features: [
+      "Maxim 300 units — spacious and well-built",
+      "Available in blue, tan, and pink",
       "Regular cleaning and maintenance included",
       "ADA-compliant units available",
-      "Flexible rental periods",
-      "Fast delivery and pickup",
       "Hand sanitizer dispensers included",
-      "Ideal for events, construction, and festivals",
+      "Flexible rental periods with fast delivery",
     ],
     useCases: [
       "Outdoor weddings and receptions",
       "Construction sites",
       "Community festivals and fairs",
-      "Sporting events",
+      "Backyard BBQs and family gatherings",
       "Farm and ranch operations",
-      "Emergency and disaster relief",
+      "Sporting events and public celebrations",
     ],
     icon: "restroom",
   },
@@ -50,21 +51,21 @@ export const SERVICES = [
     shortDescription:
       "High-end luxury mobile restroom trailers with premium amenities.",
     description:
-      "Elevate your event with our VIP shower and restroom trailers. Featuring climate control, running water, flushing toilets, vanity mirrors, and premium finishes, our luxury trailers provide a comfortable, upscale restroom experience for your guests.",
+      "Elevate your event with our 2 VIP restroom shower and luxury trailers — 18-station units designed to make you feel at home. These amazingly clean and extremely comfortable luxury trailers provide heat and air conditioning, spacious fully enclosed private stalls, running water, and superior LED lighting. Perfect for weddings, golf outings, corporate functions, casino events, and any upscale or large gathering.",
     features: [
-      "Climate-controlled interiors",
-      "Running hot and cold water",
-      "Flushing porcelain toilets",
-      "Vanity mirrors and lighting",
-      "Premium interior finishes",
-      "Separate men's and women's sections available",
+      "18-station capacity per trailer",
+      "Heat and air conditioning",
+      "Running water with soap and paper towel dispensers",
+      "Large countertops and full-size mirrors",
+      "Superior LED lighting throughout",
+      "Stairs with sturdy handrails and porch lights for safety",
     ],
     useCases: [
       "Upscale weddings and galas",
-      "Corporate events and retreats",
-      "VIP areas at festivals",
+      "Golf outings and corporate functions",
+      "Casino events and VIP gatherings",
       "Film and production sets",
-      "Executive construction trailers",
+      "Large festivals and community events",
       "Long-term luxury rental needs",
     ],
     icon: "vip",
@@ -75,22 +76,22 @@ export const SERVICES = [
     shortDescription:
       "Portable hand washing solutions for events and worksites.",
     description:
-      "Keep your guests and workers safe and compliant with our portable hand washing stations. Essential for food service areas, construction sites, and any outdoor event, our stations provide convenient access to soap and clean water.",
+      "Hand washing stations are cost-effective, eco-friendly, and always sincerely appreciated by guests. They are standalone units that do not require additional electricity or water hookups, so you can host your event in any secluded or rustic location. Each station comes fully stocked with water, paper towels, and soap — making cleanliness easy in any environment.",
     features: [
-      "Fresh water supply with foot pump operation",
-      "Soap and paper towel dispensers",
-      "Multiple basin configurations",
-      "Meets health code requirements",
-      "Lightweight and easy to position",
-      "Perfect companion to portable restrooms",
+      "Standalone — no electricity or water hookup needed",
+      "Fully stocked with soap, water, and paper towels",
+      "Cost-effective and eco-friendly",
+      "Minimizes water waste",
+      "Available for long-term and short-term plans",
+      "Perfect companion to portable restroom rentals",
     ],
     useCases: [
+      "Birthday parties and outdoor gatherings",
+      "Company excursions and corporate events",
+      "Construction sites",
       "Food festivals and outdoor dining",
-      "Construction and industrial sites",
-      "Health and safety compliance",
-      "School events and field days",
       "Agricultural operations",
-      "Emergency response situations",
+      "Any event where cleanliness matters",
     ],
     icon: "handwash",
   },
@@ -100,22 +101,22 @@ export const SERVICES = [
     shortDescription:
       "Septic system maintenance, pumping, and sanitation support.",
     description:
-      "Professional septic services to keep your system running smoothly. Brower Inc. offers septic tank pumping, maintenance, and inspection services for residential and commercial properties across Oklahoma. Regular maintenance prevents costly repairs and extends the life of your system.",
+      "When it is time for septic pumping, Brower Inc. is the company you can depend on. Solid waste slowly accumulates in your tank and can lead to backups and other problems once the tank exceeds its holding capacity. A septic pump from our crew empties the tank, giving it a fresh start. We also handle septic repair and full septic and aerobic system installation — including site surveys.",
     features: [
       "Septic tank pumping and cleaning",
-      "Routine maintenance programs",
-      "System inspections and diagnostics",
-      "Grease trap cleaning",
+      "Septic repair for malfunctioning systems",
+      "Septic and aerobic system installation",
+      "Site surveys for new installations",
       "Emergency service available",
       "Residential and commercial service",
     ],
     useCases: [
       "Residential septic maintenance",
+      "Septic system repair and troubleshooting",
+      "New septic or aerobic system installation",
       "Commercial property management",
       "Real estate transaction inspections",
-      "Restaurant grease trap service",
       "Rural property maintenance",
-      "New construction inspections",
     ],
     icon: "septic",
   },
@@ -125,21 +126,21 @@ export const SERVICES = [
     shortDescription:
       "Extended rental options for ongoing construction or commercial projects.",
     description:
-      "Cost-effective long-term portable restroom rentals for extended projects. Brower Inc. provides ongoing sanitation solutions with regular servicing for construction projects, commercial developments, and any situation requiring extended portable restroom access.",
+      "Supplying your family members, employees, or team with modern conveniences can be challenging in remote places. You can rent our portable restrooms for weeks, months, or even years. All long-term rentals come completely sanitized and stocked with toilet paper and hand sanitizer. We stop by weekly to empty the waste tank, restock toilet paper, hand sanitizer, and paper towels, sanitize, scrub, and rinse each unit, and inspect for damage.",
     features: [
-      "Discounted long-term rates",
-      "Scheduled regular servicing",
-      "Flexible contract terms",
-      "Multiple unit configurations",
+      "Weekly servicing included (waste, restock, sanitize, inspect)",
+      "Rentals available for weeks, months, or years",
+      "Delivered fully sanitized and stocked",
+      "His-and-her options available",
+      "Handicap-accessible units available",
       "Add-on hand washing stations",
-      "Dedicated account management",
     ],
     useCases: [
       "Multi-month construction projects",
-      "Commercial building developments",
       "Oil and gas field operations",
+      "Commercial building developments",
+      "Remote work sites without facilities",
       "Agricultural seasonal needs",
-      "Temporary office facilities",
       "Ongoing industrial sites",
     ],
     icon: "longterm",
@@ -175,14 +176,14 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     isPrimary: true,
     distance: "Home base",
     description:
-      "Our home county. Brower Inc. is based in Newkirk and serves all of Kay County with fast, reliable portable sanitation and septic services.",
+      "Our home county. Brower Inc. is based in Newkirk and serves all of Kay County with fast, reliable porta potty rental, portable restrooms, and septic services.",
     metaTitle: "Portable Restroom Rental & Septic Services in Kay County, OK",
     metaDescription:
-      "Brower Inc. provides portable restroom rentals, VIP restroom trailers, hand washing stations, and septic services throughout Kay County, Oklahoma. Based in Newkirk. Call (580) 747-6206.",
+      "Brower Inc. provides porta potty rental, portable restrooms, VIP restroom trailers, hand washing stations, and septic services throughout Kay County, Oklahoma. Based in Newkirk. Call (580) 747-6206.",
     nearbyAreas: ["ponca-city", "newkirk", "blackwell", "tonkawa"],
     content: {
       intro:
-        "As a Kay County-based business, Brower Inc. is proud to serve our home community with the highest quality portable sanitation solutions. From Ponca City to Newkirk, Blackwell to Tonkawa, we provide fast delivery and reliable service throughout the county.",
+        "As a Kay County-based business, Brower Inc. is proud to serve our home community with the highest quality portable sanitation solutions. Whether you need a porta potty rental in Kay County for a construction project or portable restrooms for a community event, we deliver fast from Ponca City to Newkirk, Blackwell to Tonkawa.",
       whyChooseUs:
         "Being headquartered in Kay County means shorter response times, lower delivery costs, and a team that truly knows the area. We have served local construction projects, community events, agricultural operations, and residential septic needs for years.",
       servicesHighlight:
@@ -198,14 +199,14 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     isPrimary: true,
     distance: "15 minutes",
     description:
-      "Brower Inc. provides reliable portable restrooms, VIP trailers, and septic services to Ponca City and the surrounding area.",
+      "Brower Inc. provides reliable porta potty rental, portable restrooms, VIP trailers, and septic services to Ponca City and the surrounding area.",
     metaTitle: "Portable Restroom Rental in Ponca City, OK | Brower Inc.",
     metaDescription:
-      "Rent portable restrooms, luxury VIP trailers, and hand washing stations in Ponca City, Oklahoma. Septic pumping also available. Local service from Brower Inc. Call (580) 747-6206.",
+      "Porta potty rental and portable restrooms in Ponca City, Oklahoma. VIP trailers, hand washing stations, and septic pumping also available. Local service from Brower Inc. Call (580) 747-6206.",
     nearbyAreas: ["kay-county", "newkirk", "blackwell", "tonkawa"],
     content: {
       intro:
-        "Ponca City is one of the communities closest to our Newkirk headquarters, making it one of our fastest service areas. We regularly provide portable sanitation for construction sites, outdoor events, oil field operations, and community gatherings throughout Ponca City.",
+        "Ponca City is one of the communities closest to our Newkirk headquarters, making it one of our fastest service areas. Need a porta potty in Ponca City? We regularly provide porta potties and portable restrooms for construction sites, outdoor events, oil field operations, and community gatherings throughout the area.",
       whyChooseUs:
         "Just minutes from our base, Ponca City clients enjoy priority scheduling, same-day delivery options, and competitive rates. We know the area inside and out, from industrial sites to residential neighborhoods.",
       servicesHighlight:
@@ -297,7 +298,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     nearbyAreas: ["hennessey", "garfield-county", "logan-county", "enid"],
     content: {
       intro:
-        "Brower Inc. extends our portable sanitation services to Kingfisher County, covering Hennessey and surrounding communities. From agricultural operations to construction sites and community events, we bring the same reliable service our Kay County neighbors depend on.",
+        "Brower Inc. extends our porta potty rental and portable sanitation services to Kingfisher County, covering Hennessey and surrounding communities. From agricultural operations to construction sites and community events, we bring the same reliable porta potty delivery and service our Kay County neighbors depend on.",
       whyChooseUs:
         "While we are based in Newkirk, we regularly serve Kingfisher County and have the fleet to handle deliveries efficiently. Our competitive rates and professional service make us a smart choice for Kingfisher County projects.",
       servicesHighlight:
@@ -320,7 +321,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     nearbyAreas: ["kingfisher-county", "enid", "crescent", "garfield-county"],
     content: {
       intro:
-        "Hennessey residents and businesses can count on Brower Inc. for professional portable sanitation services. We regularly deliver portable restrooms, VIP trailers, and hand washing stations to the Hennessey area for events, construction, and agricultural operations.",
+        "Hennessey residents and businesses can count on Brower Inc. for professional porta potty rental and portable sanitation services. We regularly deliver porta potties, portable restrooms, VIP trailers, and hand washing stations to the Hennessey area for events, construction, and agricultural operations.",
       whyChooseUs:
         "We travel to Hennessey because the job makes sense. When you need reliable, clean portable sanitation or septic services, Brower Inc. delivers the same quality our home county clients expect.",
       servicesHighlight:
@@ -343,7 +344,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     nearbyAreas: ["crescent", "guthrie", "kingfisher-county", "garfield-county"],
     content: {
       intro:
-        "Brower Inc. serves Logan County with dependable portable sanitation and septic services. From Crescent to Guthrie, we deliver clean, well-maintained units for construction sites, events, and agricultural operations across the county.",
+        "Brower Inc. serves Logan County with dependable porta potty rental, portable restrooms, and septic services. From Crescent to Guthrie, we deliver clean, well-maintained porta potties for construction sites, events, and agricultural operations across the county.",
       whyChooseUs:
         "Logan County is well within our service range. We have the fleet and logistics to deliver reliably, and our competitive pricing means you are getting great value without sacrificing quality.",
       servicesHighlight:
@@ -366,7 +367,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     nearbyAreas: ["logan-county", "guthrie", "kingfisher-county", "hennessey"],
     content: {
       intro:
-        "Crescent is part of our Logan County service area. Brower Inc. delivers portable restrooms, VIP trailers, and hand washing stations to Crescent for construction, events, and agricultural needs.",
+        "Crescent is part of our Logan County service area. Brower Inc. delivers porta potties, portable restrooms, VIP trailers, and hand washing stations to Crescent for construction, events, and agricultural needs.",
       whyChooseUs:
         "We are willing to travel to Crescent because we believe every community deserves access to quality sanitation services. Our professional team ensures on-time delivery and clean, well-maintained equipment.",
       servicesHighlight:
@@ -389,7 +390,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     nearbyAreas: ["enid", "kingfisher-county", "kay-county", "woods-county"],
     content: {
       intro:
-        "Garfield County is one of our key service areas. Brower Inc. provides comprehensive portable sanitation and septic services throughout the county, with Enid being our primary delivery hub in the region.",
+        "Garfield County is one of our key service areas for porta potty rental and portable restroom delivery. Brower Inc. provides comprehensive portable sanitation and septic services throughout the county, with Enid being our primary delivery hub in the region.",
       whyChooseUs:
         "We serve Garfield County regularly and have established efficient delivery routes to keep costs competitive. Our fleet is equipped to handle large-scale events, multi-unit construction deliveries, and routine septic maintenance.",
       servicesHighlight:
@@ -412,7 +413,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     nearbyAreas: ["garfield-county", "kingfisher-county", "kay-county", "woods-county"],
     content: {
       intro:
-        "Enid is one of the largest cities in our service area, and Brower Inc. is proud to serve its growing community. We deliver portable restrooms, VIP trailers, and hand washing stations for everything from major construction projects to weekend events.",
+        "Enid is one of the largest cities in our service area, and Brower Inc. is proud to serve its growing community. Looking for porta potty rental in Enid? We deliver porta potties, portable restrooms, VIP trailers, and hand washing stations for everything from major construction projects to weekend events.",
       whyChooseUs:
         "As one of our most frequently served cities outside Kay County, Enid clients benefit from regular delivery routes, competitive pricing, and the same responsive service our local customers expect.",
       servicesHighlight:
@@ -435,7 +436,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     nearbyAreas: ["garfield-county", "kay-county", "enid"],
     content: {
       intro:
-        "Brower Inc. offers extended service to Woods County, including Alva and surrounding communities. While farther from our Newkirk base, we are happy to travel when the job makes sense — whether it is a large event, a multi-unit construction delivery, or ongoing project support.",
+        "Brower Inc. offers extended porta potty rental and portable restroom service to Woods County, including Alva and surrounding communities. While farther from our Newkirk base, we are happy to travel when the job makes sense — whether it is a large event, a multi-unit porta potty delivery for construction, or ongoing project support.",
       whyChooseUs:
         "We extend our reach to Woods County for projects that need reliable portable sanitation. Our professional fleet and experienced team make long-distance deliveries efficient, and we ensure units are well-maintained throughout your rental period.",
       servicesHighlight:
@@ -525,6 +526,16 @@ export const TESTIMONIALS = [
 
 export const FAQS = [
   {
+    question: "Is a porta potty the same as a portable restroom?",
+    answer:
+      "Yes — porta potty is simply the common term for a portable restroom. Whether you search for porta potty rental, portable toilet, or portable restroom, you are looking at the same product. Brower Inc. provides clean, well-maintained porta potties and portable restrooms for events, construction sites, and more across Oklahoma.",
+  },
+  {
+    question: "Where can I rent a porta potty in Oklahoma?",
+    answer:
+      "Brower Inc. offers porta potty rental throughout north-central Oklahoma. We are based in Newkirk and serve Kay County (Ponca City, Blackwell, Tonkawa), Garfield County (Enid), Kingfisher County (Hennessey), Logan County (Crescent, Guthrie), Woods County, and surrounding areas. Call (580) 747-6206 for a free quote.",
+  },
+  {
     question: "How far in advance should I book portable restrooms?",
     answer:
       "We recommend booking at least 1-2 weeks in advance for standard rentals and 3-4 weeks for VIP trailers or large events. However, we understand that needs can arise quickly and will do our best to accommodate last-minute requests.",
@@ -547,7 +558,7 @@ export const FAQS = [
   {
     question: "Do you offer ADA-compliant portable restrooms?",
     answer:
-      "Yes, we offer ADA-compliant portable restrooms that meet accessibility requirements. These units feature wider doors, grab bars, and additional interior space to accommodate wheelchairs and mobility aids.",
+      "Yes, we offer large and spacious ADA-compliant portable restrooms specifically designed to meet and exceed the American Disability Association's portable restroom guidelines. These units feature wider doors, grab bars, and additional interior space to accommodate wheelchairs and mobility aids. They are also family friendly — great for parents who need to accompany their children to the restroom.",
   },
   {
     question: "What is included in your septic pumping service?",

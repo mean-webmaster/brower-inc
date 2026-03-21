@@ -25,7 +25,7 @@ export default function LongTermRentalsPage() {
       />
       <Breadcrumbs
         items={[
-          { name: "Services", href: "/services/portable-restrooms" },
+          { name: "Services", href: "/services" },
           { name: service.title, href: `/services/${service.slug}` },
         ]}
       />
@@ -36,6 +36,31 @@ export default function LongTermRentalsPage() {
             <div>
               <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">{service.title}</h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
+
+              <div className="mt-6 rounded-lg bg-gray-50 p-6">
+                <h2 className="text-lg font-bold text-gray-900">What&apos;s Included in Weekly Servicing</h2>
+                <ul className="mt-3 space-y-2">
+                  <li className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    Empty the waste tank
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    Restock toilet paper, hand sanitizer, and paper towels
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    Sanitize, scrub, and rinse the restroom
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    Inspect for damage to ensure the unit is functioning properly
+                  </li>
+                </ul>
+                <p className="mt-3 text-sm text-gray-600">
+                  We also carry his-and-her options and handicap-accessible units depending on your needs. We will help you determine the required number of units based on usage frequency and the number of guests or employees.
+                </p>
+              </div>
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Features & Benefits</h2>
               <ul className="mt-4 space-y-3">

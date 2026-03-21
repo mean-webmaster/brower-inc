@@ -25,7 +25,7 @@ export default function SepticServicesPage() {
       />
       <Breadcrumbs
         items={[
-          { name: "Services", href: "/services/portable-restrooms" },
+          { name: "Services", href: "/services" },
           { name: service.title, href: `/services/${service.slug}` },
         ]}
       />
@@ -36,6 +36,21 @@ export default function SepticServicesPage() {
             <div>
               <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">{service.title}</h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
+
+              <div className="mt-8 space-y-6">
+                <div>
+                  <h2 className="text-xl font-bold text-gray-900">Septic Repair</h2>
+                  <p className="mt-2 text-base text-gray-600 leading-relaxed">
+                    A malfunctioning septic system will affect the plumbing throughout your location. When water cannot drain out properly, it will seek the path of least resistance — leading to smelly puddles on your lawn or unsanitary sewage backup in your home. Putting off a septic repair will not make the situation better. You need an expert to assess the problem and fix it.
+                  </p>
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-gray-900">Septic &amp; Aerobic Installation</h2>
+                  <p className="mt-2 text-base text-gray-600 leading-relaxed">
+                    Make Brower Inc. your go-to company for septic installation services. We can perform a site survey on a convenient day and install your system correctly the first time. We have the necessary skills and equipment to excavate safely, and no matter which system you choose — including aerobic systems — you can rest assured that we can install it in a timely manner.
+                  </p>
+                </div>
+              </div>
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Our Septic Services Include</h2>
               <ul className="mt-4 space-y-3">

@@ -71,11 +71,19 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
+              {/* Google Map */}
               <div className="overflow-hidden rounded-lg border border-gray-200">
-                <div className="flex h-48 items-center justify-center bg-gray-100">
-                  <p className="text-sm text-gray-500">Google Map - Newkirk, OK</p>
-                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51372.97!2d-97.07!3d36.87!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b14f5dbee1cf15%3A0x6f5e5e47a5b7e8a0!2sNewkirk%2C%20OK%2074647!5e0!3m2!1sen!2sus!4v1"
+                  width="100%"
+                  height="250"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Brower Inc. location in Newkirk, Oklahoma"
+                  className="w-full"
+                />
               </div>
             </div>
 
