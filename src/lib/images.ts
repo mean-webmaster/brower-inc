@@ -7,6 +7,9 @@ export const IMAGES = {
   favicon: "/favicon.png",
   ogImage: `${GHL}/6727f81d38b82f89893ab29a.jpeg`,
 
+  // Hero
+  hero: `${GHL}/48c9ae09-56ae-4499-9923-9280297f0404.webp`,
+
   // Brand logos (local)
   logoFullTagline: `${IMG}/brower-inc-logo-full-tagline-phone.png`,
   logoIconBMark: `${IMG}/brower-inc-logo-icon-b-mark.png`,

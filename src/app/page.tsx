@@ -4,7 +4,7 @@ import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
 import CTABanner from "@/components/CTABanner";
 import Testimonials from "@/components/Testimonials";
-import { SERVICES, PHONE, PHONE_HREF, EMAIL, SOCIAL, SERVICE_AREAS } from "@/lib/constants";
+import { SERVICES, PHONE, PHONE_HREF, EMAIL, SOCIAL, SERVICE_AREAS_DATA } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-gray-900 py-24 sm:py-32">
         <Image
-          src={IMAGES.fleetLineup}
+          src={IMAGES.hero}
           alt="Brower Inc. fleet of portable restroom delivery trucks and septic service vehicles in Newkirk, Oklahoma"
           fill
           className="object-cover opacity-50"
@@ -110,13 +110,12 @@ export default function HomePage() {
       <section className="bg-gray-50 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="flex justify-center lg:justify-start">
+            <div className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src={IMAGES.troyBrower}
                 alt="Troy Brower, owner of Brower Inc. portable restroom and septic services in Newkirk, Oklahoma"
-                width={400}
-                height={400}
-                className="h-80 w-80 rounded-2xl object-cover shadow-lg sm:h-96 sm:w-96"
+                fill
+                className="object-cover"
               />
             </div>
             <div>
@@ -194,13 +193,14 @@ export default function HomePage() {
               </p>
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-2">
-              {SERVICE_AREAS.slice(0, 12).map((area) => (
-                <span
-                  key={area}
-                  className="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm border border-gray-200"
+              {SERVICE_AREAS_DATA.slice(0, 12).map((area) => (
+                <Link
+                  key={area.slug}
+                  href={`/service-areas/${area.slug}`}
+                  className="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm border border-gray-200 hover:border-primary/30 hover:bg-primary/5 hover:text-primary transition-colors"
                 >
-                  {area}
-                </span>
+                  {area.name}
+                </Link>
               ))}
               <Link
                 href="/service-areas"

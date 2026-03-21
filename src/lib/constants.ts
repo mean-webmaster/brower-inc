@@ -159,6 +159,7 @@ export type ServiceAreaData = {
   metaTitle: string;
   metaDescription: string;
   nearbyAreas: string[];
+  coordinates: { lat: number; lng: number };
   content: {
     intro: string;
     whyChooseUs: string;
@@ -175,6 +176,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: true,
     distance: "Home base",
+    coordinates: { lat: 36.8172, lng: -97.0253 },
     description:
       "Our home county. Brower Inc. is based in Newkirk and serves all of Kay County with fast, reliable porta potty rental, portable restrooms, and septic services.",
     metaTitle: "Portable Restroom Rental & Septic Services in Kay County, OK",
@@ -198,6 +200,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: true,
     distance: "15 minutes",
+    coordinates: { lat: 36.7070, lng: -97.0856 },
     description:
       "Brower Inc. provides reliable porta potty rental, portable restrooms, VIP trailers, and septic services to Ponca City and the surrounding area.",
     metaTitle: "Portable Restroom Rental in Ponca City, OK | Brower Inc.",
@@ -221,6 +224,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: true,
     distance: "Home base",
+    coordinates: { lat: 36.8672, lng: -97.0508 },
     description:
       "Brower Inc. is headquartered in Newkirk, OK — our home base for portable restroom rentals and septic services across Oklahoma.",
     metaTitle: "Portable Restroom & Septic Services in Newkirk, OK | Brower Inc.",
@@ -244,6 +248,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: true,
     distance: "20 minutes",
+    coordinates: { lat: 36.8045, lng: -97.2828 },
     description:
       "Serving Blackwell with portable restrooms, hand washing stations, VIP trailers, and septic services.",
     metaTitle: "Portable Restroom Rental in Blackwell, OK | Brower Inc.",
@@ -267,6 +272,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: true,
     distance: "10 minutes",
+    coordinates: { lat: 36.6781, lng: -97.3103 },
     description:
       "Quick, reliable portable restroom delivery and septic services for Tonkawa, OK.",
     metaTitle: "Portable Restroom Rental in Tonkawa, OK | Brower Inc.",
@@ -290,6 +296,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "1.5 hours",
+    coordinates: { lat: 35.9453, lng: -97.9311 },
     description:
       "Brower Inc. serves Kingfisher County with portable restrooms, VIP trailers, and septic services — including Hennessey and surrounding communities.",
     metaTitle: "Portable Restroom Rental in Kingfisher County, OK | Brower Inc.",
@@ -313,6 +320,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "1.5 hours",
+    coordinates: { lat: 36.1412, lng: -97.8986 },
     description:
       "Portable restroom rentals and septic services available in Hennessey, OK from Brower Inc.",
     metaTitle: "Portable Restroom Rental in Hennessey, OK | Brower Inc.",
@@ -336,6 +344,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "1 hour",
+    coordinates: { lat: 35.9178, lng: -97.4395 },
     description:
       "Brower Inc. provides portable restroom rentals and septic services throughout Logan County, including Crescent and Guthrie.",
     metaTitle: "Portable Restroom Rental in Logan County, OK | Brower Inc.",
@@ -359,6 +368,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "1 hour",
+    coordinates: { lat: 35.9523, lng: -97.5928 },
     description:
       "Portable restroom and septic services for Crescent, OK from Brower Inc.",
     metaTitle: "Portable Restroom Rental in Crescent, OK | Brower Inc.",
@@ -382,6 +392,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "1 hour",
+    coordinates: { lat: 36.3795, lng: -97.7828 },
     description:
       "Brower Inc. serves Garfield County with portable restrooms, VIP trailers, hand washing stations, and septic services — including Enid.",
     metaTitle: "Portable Restroom Rental in Garfield County, OK | Brower Inc.",
@@ -405,6 +416,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "1 hour",
+    coordinates: { lat: 36.3956, lng: -97.8784 },
     description:
       "Full-service portable restroom rentals and septic services in Enid, OK from Brower Inc.",
     metaTitle: "Portable Restroom Rental in Enid, OK | Brower Inc.",
@@ -428,6 +440,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "2 hours",
+    coordinates: { lat: 36.7608, lng: -98.8622 },
     description:
       "Extended service available to Woods County for portable restrooms and septic services from Brower Inc.",
     metaTitle: "Portable Restroom Rental in Woods County, OK | Brower Inc.",
@@ -452,6 +465,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "45 minutes",
+    coordinates: { lat: 36.1156, lng: -97.0584 },
     description: "Portable restroom rentals and septic services for Stillwater, OK.",
     metaTitle: "Portable Restroom Rental in Stillwater, OK | Brower Inc.",
     metaDescription: "Rent portable restrooms and VIP trailers in Stillwater, Oklahoma. Brower Inc. Call (580) 747-6206.",
@@ -470,6 +484,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "30 minutes",
+    coordinates: { lat: 36.2895, lng: -97.2884 },
     description: "Portable restroom and septic services for Perry, OK.",
     metaTitle: "Portable Restroom Rental in Perry, OK | Brower Inc.",
     metaDescription: "Portable restroom rentals and septic services in Perry, Oklahoma. Fast delivery from Brower Inc. Call (580) 747-6206.",
@@ -488,6 +503,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     state: "OK",
     isPrimary: false,
     distance: "1 hour",
+    coordinates: { lat: 35.8789, lng: -97.4253 },
     description: "Portable restroom rentals and septic services for Guthrie, OK.",
     metaTitle: "Portable Restroom Rental in Guthrie, OK | Brower Inc.",
     metaDescription: "Rent portable restrooms and VIP trailers in Guthrie, Oklahoma. Brower Inc. Call (580) 747-6206.",

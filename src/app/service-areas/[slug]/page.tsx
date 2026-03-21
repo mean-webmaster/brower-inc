@@ -116,6 +116,25 @@ export default async function ServiceAreaPage({
         </div>
       </section>
 
+      {/* Map */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="overflow-hidden rounded-xl border border-gray-200 shadow-sm">
+            <iframe
+              src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50000!2d${area.coordinates.lng}!3d${area.coordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus`}
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={`Map of ${area.name}, ${area.state} — Brower Inc. service area`}
+              className="w-full"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
