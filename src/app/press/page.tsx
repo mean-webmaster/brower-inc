@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function PressPage() {
   const brandColors = [
-    { name: "Brower Red", hex: "#E93D3D", textWhite: true },
+    { name: "Brower Red", hex: "#D63030", textWhite: true },
     { name: "Brower Dark Red", hex: "#C62828", textWhite: true },
     { name: "Accent Green", hex: "#06B448", textWhite: true },
     { name: "Black", hex: "#000000", textWhite: true },
@@ -120,13 +120,14 @@ export default function PressPage() {
         <section>
           <h2 className="text-3xl font-bold text-gray-900">Meet the Founder</h2>
           <div className="mt-8 flex flex-col items-start gap-8 sm:flex-row">
-            <Image
-              src={IMAGES.troyBrower}
-              alt="Troy Brower, founder and owner of Brower Inc. in Newkirk, Oklahoma"
-              width={280}
-              height={280}
-              className="h-70 w-70 shrink-0 rounded-2xl object-cover shadow-lg"
-            />
+            <div className="relative aspect-[3/4] w-full shrink-0 overflow-hidden rounded-2xl shadow-lg sm:w-72 lg:w-80">
+              <Image
+                src={IMAGES.troyBrower}
+                alt="Troy Brower, founder and owner of Brower Inc. in Newkirk, Oklahoma"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div>
               <h3 className="text-2xl font-bold text-gray-900">Troy Brower</h3>
               <p className="mt-1 text-sm font-semibold text-primary">Founder &amp; Owner</p>

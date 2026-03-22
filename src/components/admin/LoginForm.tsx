@@ -13,7 +13,11 @@ export function LoginForm() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const searchParams = useSearchParams();
-  const redirectTo = searchParams.get("redirectTo") || "/admin";
+  const rawRedirect = searchParams.get("redirectTo") || "/admin";
+  // Prevent open-redirect: only allow relative paths starting with /
+  const redirectTo = rawRedirect.startsWith("/") && !rawRedirect.startsWith("//")
+    ? rawRedirect
+    : "/admin";
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();

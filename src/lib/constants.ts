@@ -636,6 +636,7 @@ export const NAV_LINKS = [
       { label: "Woods County", href: "/service-areas/woods-county" },
     ],
   },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
