@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
-import { SERVICES } from "@/lib/constants";
+import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
 import { getServiceSchema } from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
@@ -92,6 +92,43 @@ export default function SepticServicesPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          {/* Areas We Serve */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-2xl font-bold text-gray-900 text-center">Areas We Serve</h2>
+            <p className="mt-2 text-center text-gray-600">
+              We provide septic services throughout Oklahoma and southern Kansas.
+            </p>
+            <div className="mt-8 space-y-6">
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3">Oklahoma</h3>
+                <div className="flex flex-wrap gap-2">
+                  {SERVICE_AREAS_DATA.filter(a => a.state === "OK").map(area => (
+                    <Link key={area.slug} href={`/service-areas/${area.slug}`}
+                      className="rounded-full bg-white border border-gray-200 px-3 py-1 text-sm text-gray-700 hover:border-primary hover:text-primary transition-colors">
+                      {area.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3">Kansas</h3>
+                <div className="flex flex-wrap gap-2">
+                  {SERVICE_AREAS_DATA.filter(a => a.state === "KS").map(area => (
+                    <Link key={area.slug} href={`/service-areas/${area.slug}`}
+                      className="rounded-full bg-white border border-gray-200 px-3 py-1 text-sm text-gray-700 hover:border-primary hover:text-primary transition-colors">
+                      {area.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <Link href="/service-areas" className="text-sm font-medium text-primary hover:text-primary-dark">
+                View All Service Areas →
+              </Link>
             </div>
           </div>
 

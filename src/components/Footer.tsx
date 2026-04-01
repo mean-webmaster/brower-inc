@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { SITE_NAME, PHONE, PHONE_HREF, EMAIL, ADDRESS, SOCIAL, SERVICES } from "@/lib/constants";
+import { SITE_NAME, PHONE, PHONE_HREF, EMAIL, ADDRESS, SOCIAL, SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {/* Company Info */}
           <div>
             <h3 className="text-lg font-bold text-white">{SITE_NAME}</h3>
@@ -83,6 +83,52 @@ export default function Footer() {
               <li><Link href="/affiliates" className="text-sm hover:text-primary transition-colors">Affiliates</Link></li>
               <li><Link href="/press" className="text-sm hover:text-primary transition-colors">Press & Media</Link></li>
             </ul>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <h3 className="text-lg font-bold text-white">Service Areas</h3>
+            <div className="mt-2 space-y-3">
+              <div>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400">Oklahoma</h4>
+                <ul className="mt-1 space-y-1">
+                  {[
+                    { name: "Kay County", slug: "kay-county" },
+                    { name: "Garfield County", slug: "garfield-county" },
+                    { name: "Kingfisher County", slug: "kingfisher-county" },
+                    { name: "Logan County", slug: "logan-county" },
+                    { name: "Woods County", slug: "woods-county" },
+                  ].map((area) => (
+                    <li key={area.slug}>
+                      <Link href={`/service-areas/${area.slug}`} className="text-sm hover:text-primary transition-colors">
+                        {area.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400">Kansas</h4>
+                <ul className="mt-1 space-y-1">
+                  {[
+                    { name: "Sedgwick County", slug: "sedgwick-county-ks" },
+                    { name: "Sumner County", slug: "sumner-county-ks" },
+                    { name: "Cowley County", slug: "cowley-county-ks" },
+                    { name: "Butler County", slug: "butler-county-ks" },
+                    { name: "Harper County", slug: "harper-county-ks" },
+                  ].map((area) => (
+                    <li key={area.slug}>
+                      <Link href={`/service-areas/${area.slug}`} className="text-sm hover:text-primary transition-colors">
+                        {area.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <Link href="/service-areas" className="inline-block text-sm font-medium text-red-400 hover:text-primary transition-colors">
+                View All Areas &rarr;
+              </Link>
+            </div>
           </div>
 
           {/* Newsletter */}

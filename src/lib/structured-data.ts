@@ -17,10 +17,10 @@ export function getLocalBusinessSchema() {
       postalCode: ADDRESS.zip,
       addressCountry: "US",
     },
-    areaServed: {
-      "@type": "State",
-      name: "Oklahoma",
-    },
+    areaServed: [
+      { "@type": "State", name: "Oklahoma" },
+      { "@type": "State", name: "Kansas" },
+    ],
     openingHours: "Mo-Fr 08:00-17:00",
     priceRange: "$$",
     image: `${SITE_URL}/images/brower-inc-og.jpg`,
@@ -59,10 +59,10 @@ export function getServiceSchema(service: {
         addressCountry: "US",
       },
     },
-    areaServed: {
-      "@type": "State",
-      name: "Oklahoma",
-    },
+    areaServed: [
+      { "@type": "State", name: "Oklahoma" },
+      { "@type": "State", name: "Kansas" },
+    ],
     url: `${SITE_URL}/services/${service.slug}`,
   };
 }
@@ -96,5 +96,45 @@ export function getBreadcrumbSchema(
       name: item.name,
       item: `${SITE_URL}${item.href}`,
     })),
+  };
+}
+
+export function getServiceAreaSchema(area: {
+  name: string;
+  slug: string;
+  type: "county" | "city";
+  state: string;
+  description: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `Portable Restroom Rental in ${area.name}, ${area.state}`,
+    description: area.description,
+    provider: {
+      "@type": "LocalBusiness",
+      name: SITE_NAME,
+      telephone: PHONE,
+      url: SITE_URL,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: ADDRESS.city,
+        addressRegion: ADDRESS.state,
+        postalCode: ADDRESS.zip,
+        addressCountry: "US",
+      },
+    },
+    areaServed: {
+      "@type": area.type === "county" ? "AdministrativeArea" : "City",
+      name: `${area.name}, ${area.state}`,
+    },
+    serviceType: [
+      "Portable Restroom Rental",
+      "Porta Potty Rental",
+      "VIP Restroom Trailer Rental",
+      "Hand Washing Station Rental",
+      "Septic Pumping Service",
+    ],
+    url: `${SITE_URL}/service-areas/${area.slug}`,
   };
 }

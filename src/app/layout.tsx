@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Brower Inc. provides portable restroom rentals, VIP luxury restroom trailers, hand washing stations, septic services, and long-term rentals in Newkirk, Oklahoma. Serving all of Oklahoma.",
+    "Brower Inc. provides portable restroom rentals, VIP luxury restroom trailers, hand washing stations, septic services, and long-term rentals in Newkirk, Oklahoma. Serving all of Oklahoma and southern Kansas.",
   keywords: [
     "portable restroom rental",
     "porta potty rental",
@@ -41,6 +41,13 @@ export const metadata: Metadata = {
     "hand washing station rental",
     "long-term portable restroom rental",
     "VIP restroom trailer Oklahoma",
+    "Wichita portable restroom",
+    "Kansas porta potty rental",
+    "Sedgwick County portable restroom",
+    "Sumner County portable restroom",
+    "Cowley County porta potty",
+    "Butler County portable restroom",
+    "portable restroom rental Kansas",
   ],
   openGraph: {
     type: "website",

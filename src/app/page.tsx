@@ -187,27 +187,48 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-2xl bg-gray-50 p-8 sm:p-12">
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-gray-900">Serving Communities Across Oklahoma</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Serving Communities Across Oklahoma &amp; Kansas</h2>
               <p className="mt-4 text-lg text-gray-600">
-                Based in Newkirk, OK, we deliver and service portable restrooms throughout the state.
+                Based in Newkirk, OK, we deliver and service portable restrooms throughout Oklahoma and southern Kansas.
               </p>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-2">
-              {SERVICE_AREAS_DATA.slice(0, 12).map((area) => (
+            <div className="mt-8 space-y-6">
+              <div>
+                <p className="mb-2 text-center text-xs font-semibold uppercase tracking-wide text-gray-500">Oklahoma</p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {SERVICE_AREAS_DATA.filter((a) => a.state === "OK").map((area) => (
+                    <Link
+                      key={area.slug}
+                      href={`/service-areas/${area.slug}`}
+                      className="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm border border-gray-200 hover:border-primary/30 hover:bg-primary/5 hover:text-primary transition-colors"
+                    >
+                      {area.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="mb-2 text-center text-xs font-semibold uppercase tracking-wide text-gray-500">Kansas</p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {SERVICE_AREAS_DATA.filter((a) => a.state === "KS").map((area) => (
+                    <Link
+                      key={area.slug}
+                      href={`/service-areas/${area.slug}`}
+                      className="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm border border-gray-200 hover:border-primary/30 hover:bg-primary/5 hover:text-primary transition-colors"
+                    >
+                      {area.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div className="text-center">
                 <Link
-                  key={area.slug}
-                  href={`/service-areas/${area.slug}`}
-                  className="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-gray-700 shadow-sm border border-gray-200 hover:border-primary/30 hover:bg-primary/5 hover:text-primary transition-colors"
+                  href="/service-areas"
+                  className="rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-white hover:bg-primary-dark transition-colors"
                 >
-                  {area.name}
+                  View All Areas
                 </Link>
-              ))}
-              <Link
-                href="/service-areas"
-                className="rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-white hover:bg-primary-dark transition-colors"
-              >
-                View All Areas
-              </Link>
+              </div>
             </div>
           </div>
         </div>
