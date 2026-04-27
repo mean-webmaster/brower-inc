@@ -1576,6 +1576,7 @@ export const NAV_LINKS: NavLink[] = [
     label: "Industries",
     href: "/industries",
     children: [
+      { label: "All Industries", href: "/industries", description: "Browse every industry we serve" },
       { label: "Construction", href: "/industries/construction", description: "OSHA-compliant jobsite sanitation" },
       { label: "Events & Weddings", href: "/industries/events-weddings", description: "From porta potties to luxury trailers" },
       { label: "Oil & Gas", href: "/industries/oil-gas", description: "Remote drilling & pipeline support" },
