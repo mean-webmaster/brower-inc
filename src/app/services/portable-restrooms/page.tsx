@@ -48,7 +48,11 @@ export default function PortableRestroomsPage() {
               <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">{service.title}</h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
               <p className="mt-4 text-base text-gray-600 leading-relaxed">
-                Many people know them as porta potties, portable toilets, or port-a-johns — no matter what you call them, Brower Inc. has you covered. Our featured unit is the Maxim 300, available in blue, tan, and pink (pink has been an area favorite!). Our porta potty rental service includes delivery, setup, regular servicing, and pickup so you can focus on your project or event.
+                Many people know them as porta potties, portable toilets, or port-a-johns — no matter what you call them, Brower Inc. has you covered. Our featured unit is the Maxim 300, available in blue, tan, and pink (pink has been an area favorite!). Our porta potty rental service includes delivery, setup, regular servicing, and pickup so you can focus on your project or event. Want to budget before you book? See our{" "}
+                <Link href="/blog/porta-potty-rental-cost-oklahoma" className="text-primary hover:underline">
+                  2026 Oklahoma porta potty rental cost guide
+                </Link>
+                .
               </p>
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">ADA-Compliant Restrooms</h2>
@@ -159,6 +163,45 @@ export default function PortableRestroomsPage() {
                 >
                   <h3 className="font-medium text-gray-900">{s.title}</h3>
                   <p className="mt-1 text-xs text-gray-500">{s.shortDescription}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Helpful Resources — internal-link hub for high-intent porta potty content */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-2xl font-bold text-gray-900">Porta Potty Rental Resources</h2>
+            <p className="mt-2 text-gray-600">Pricing, OSHA rules, comparison guides — read before you book.</p>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                {
+                  href: "/blog/porta-potty-rental-cost-oklahoma",
+                  title: "2026 Pricing Guide",
+                  blurb: "Transparent costs for standard, ADA, hand wash, and VIP units in Oklahoma.",
+                },
+                {
+                  href: "/blog/how-many-porta-potties-construction-site-oklahoma",
+                  title: "OSHA Construction Calculator",
+                  blurb: "How many units your jobsite needs under 29 CFR 1926.51 — by crew size.",
+                },
+                {
+                  href: "/blog/porta-potty-rental-near-me-rural-oklahoma",
+                  title: "Rural Oklahoma Delivery",
+                  blurb: "Why 'near me' search misses rural addresses and how to actually get a unit delivered.",
+                },
+                {
+                  href: "/blog/how-clean-are-portable-restrooms",
+                  title: "How We Clean Our Units",
+                  blurb: "Our 7-step weekly servicing protocol — what 'clean' actually means.",
+                },
+              ].map((post) => (
+                <Link
+                  key={post.href}
+                  href={post.href}
+                  className="rounded-lg border border-gray-200 p-4 hover:border-primary/30 hover:shadow-sm transition-all"
+                >
+                  <h3 className="font-medium text-gray-900">{post.title}</h3>
+                  <p className="mt-1 text-xs text-gray-500">{post.blurb}</p>
                 </Link>
               ))}
             </div>

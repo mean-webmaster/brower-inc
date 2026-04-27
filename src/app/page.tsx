@@ -119,6 +119,73 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Helpful Guides — internal-link hub for high-intent blog content */}
+      <section className="bg-gray-50 py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+              Helpful Guides for Renting in Oklahoma
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Pricing, OSHA rules, comparison guides, and rural delivery — answers before you book.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                href: "/blog/porta-potty-rental-cost-oklahoma",
+                eyebrow: "Pricing",
+                title: "Porta Potty Rental Cost in Oklahoma (2026 Guide)",
+                blurb: "Transparent 2026 pricing for standard, ADA, hand wash, and VIP units — plus 6 factors that change your final price.",
+              },
+              {
+                href: "/blog/how-many-porta-potties-construction-site-oklahoma",
+                eyebrow: "OSHA Calculator",
+                title: "How Many Porta Potties for Your Construction Site?",
+                blurb: "OSHA 1926.51 ratio, hand wash rules, ADA guidance, shift-pattern adjustments, and real Oklahoma jobsite examples.",
+              },
+              {
+                href: "/blog/porta-potty-vs-luxury-restroom-trailer-oklahoma",
+                eyebrow: "Comparison",
+                title: "Porta Potty vs. Luxury Restroom Trailer",
+                blurb: "Side-by-side comparison — features, pricing, guest experience, and when each one is the right call for your event.",
+              },
+              {
+                href: "/blog/porta-potty-rental-near-me-rural-oklahoma",
+                eyebrow: "Rural Delivery",
+                title: "Why 'Porta Potty Near Me' Fails Rural Oklahomans",
+                blurb: "Why search results miss rural Kay, Garfield, and Cowley counties — and how to actually get a unit delivered to your address.",
+              },
+            ].map((post) => (
+              <Link
+                key={post.href}
+                href={post.href}
+                className="group flex flex-col rounded-xl bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
+              >
+                <span className="inline-flex w-fit rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                  {post.eyebrow}
+                </span>
+                <h3 className="mt-3 text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors">
+                  {post.title}
+                </h3>
+                <p className="mt-2 flex-1 text-sm text-gray-600">{post.blurb}</p>
+                <span className="mt-4 inline-flex items-center text-sm font-medium text-primary">
+                  Read the guide
+                  <svg className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/blog" className="text-sm font-medium text-primary hover:text-primary-dark">
+              View all guides &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <Testimonials />
 
