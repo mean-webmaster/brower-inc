@@ -15,13 +15,22 @@ import {
   SERVICES,
 } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
+import { getWebPageSchema, jsonLdString } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Press & Media Kit | Brower Inc.",
+  title: "Press & Media Kit",
   description:
     "Official press release and media kit for Brower Inc. — Oklahoma's trusted portable restroom rental and septic services company. Download logos, company info, and brand assets.",
   alternates: { canonical: "/press" },
 };
+
+const pressPageSchema = getWebPageSchema({
+  name: "Brower Inc. — Press & Media Kit",
+  description:
+    "Official press release and media kit for Brower Inc. Includes company overview, founder bio, brand assets, logos, color palette, photo gallery, and media contact.",
+  url: "/press",
+  breadcrumbs: [{ name: "Press & Media", href: "/press" }],
+});
 
 export default function PressPage() {
   const brandColors = [
@@ -34,6 +43,10 @@ export default function PressPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(pressPageSchema) }}
+      />
       <Breadcrumbs items={[{ name: "Press & Media", href: "/press" }]} />
 
       {/* Hero */}

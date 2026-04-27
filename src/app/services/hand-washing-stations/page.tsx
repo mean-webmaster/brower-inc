@@ -4,15 +4,15 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
-import { getServiceSchema } from "@/lib/structured-data";
+import { getServiceSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[2];
 
 export const metadata: Metadata = {
-  title: "Portable Hand Washing Station Rental | Oklahoma | Brower Inc.",
+  title: "Portable Hand Washing Station Rental | Oklahoma",
   description:
-    "Rent portable hand washing stations in Oklahoma for events, construction sites, and food service areas. Health code compliant. Call Brower Inc. at (580) 747-6206.",
+    "Portable hand washing station rental in Oklahoma for events, construction & food service. Health code compliant. Call (580) 747-6206.",
   alternates: { canonical: "/services/hand-washing-stations" },
 };
 
@@ -21,7 +21,18 @@ export default function HandWashingStationsPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema(service)) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getServiceSchema(service)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            getBreadcrumbSchema([
+              { name: "Services", href: "/services" },
+              { name: service.title, href: `/services/${service.slug}` },
+            ]),
+          ),
+        }}
       />
       <Breadcrumbs
         items={[
@@ -82,6 +93,17 @@ export default function HandWashingStationsPage() {
                 ))}
               </ul>
             </div>
+          </div>
+
+          {/* Hand Washing Station SEO Section */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">Portable Hand Washing Station Rental in Oklahoma</h2>
+            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
+              Need a portable hand washing station for your construction site, outdoor event, or food service operation? Brower Inc. delivers clean, fully stocked hand washing stations across north-central Oklahoma — including Ponca City, Enid, Blackwell, Tonkawa, Hennessey, Stillwater, and communities throughout Kay County, Garfield County, Kingfisher County, and Logan County. Our stations meet OSHA construction site requirements (29 CFR 1926.51) and Oklahoma county health department standards for events with food vendors.
+            </p>
+            <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
+              Every hand washing station rental includes potable water, soap, paper towels, and a waste containment tank. Pair them with our <Link href="/services/portable-restrooms" className="text-primary font-medium hover:underline">portable restroom rentals</Link> for complete jobsite or event sanitation. <Link href="/contact" className="text-primary font-medium hover:underline">Request a free quote</Link> or call us at (580) 747-6206.
+            </p>
           </div>
 
           {/* Areas We Serve */}

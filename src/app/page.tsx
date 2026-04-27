@@ -7,27 +7,42 @@ import Testimonials from "@/components/Testimonials";
 import ServiceAreaMapSection from "@/components/ServiceAreaMap";
 import { SERVICES, PHONE, PHONE_HREF, EMAIL, SOCIAL, SERVICE_AREAS_DATA } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
+import { getWebPageSchema, jsonLdString } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Portable Restroom Rental & Septic Services | Newkirk, OK",
   description:
-    "Brower Inc. offers porta potty rental, portable restroom rentals, VIP luxury restroom trailers, hand washing stations, septic pumping, and long-term rentals in Newkirk, Oklahoma. Serving Ponca City, Enid, Kay County & more. Call (580) 747-6206 for a free quote.",
+    "Porta potty rental, VIP restroom trailers, hand washing stations & septic services in Oklahoma. Serving OK & KS. Call (580) 747-6206.",
   alternates: { canonical: "/" },
 };
 
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            getWebPageSchema({
+              name: "Portable Restroom Rental & Septic Services | Newkirk, OK",
+              description:
+                "Porta potty rental, VIP restroom trailers, hand washing stations & septic services in Oklahoma. Serving OK & KS. Call (580) 747-6206.",
+              url: "/",
+            })
+          ),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative bg-gray-900 py-24 sm:py-32">
         <Image
           src={IMAGES.hero}
-          alt="Brower Inc. fleet of portable restroom delivery trucks and septic service vehicles in Newkirk, Oklahoma"
+          alt="Brower Inc. portable restrooms and luxury VIP shower trailers arranged at a garden event venue in Newkirk, Oklahoma"
           fill
-          className="object-cover opacity-50"
+          className="object-cover"
           priority
+          sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 via-gray-800/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/85 via-gray-900/60 to-gray-900/20" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">

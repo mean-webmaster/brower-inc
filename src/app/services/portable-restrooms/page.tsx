@@ -4,15 +4,15 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
-import { getServiceSchema } from "@/lib/structured-data";
+import { getServiceSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[0];
 
 export const metadata: Metadata = {
-  title: "Porta Potty Rental & Portable Restrooms | Newkirk OK | Brower Inc.",
+  title: "Porta Potty Rental & Portable Restrooms | Newkirk OK",
   description:
-    "Rent clean, reliable porta potties and portable restrooms in Oklahoma. Porta potty rental for events, construction sites, and outdoor activities. Fast delivery from Brower Inc. in Newkirk, OK. Serving Ponca City, Enid, Kay County & more. Call (580) 747-6206.",
+    "Clean, reliable porta potty rental in Oklahoma for events & construction. Fast delivery from Newkirk, OK. Call (580) 747-6206.",
   alternates: { canonical: "/services/portable-restrooms" },
 };
 
@@ -21,7 +21,18 @@ export default function PortableRestroomsPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema(service)) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getServiceSchema(service)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            getBreadcrumbSchema([
+              { name: "Services", href: "/services" },
+              { name: service.title, href: `/services/${service.slug}` },
+            ]),
+          ),
+        }}
       />
       <Breadcrumbs
         items={[

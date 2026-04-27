@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import ContactForm from "@/components/ContactForm";
 import { PHONE, PHONE_HREF, EMAIL, ADDRESS, BUSINESS_HOURS } from "@/lib/constants";
+import { getContactPageSchema, jsonLdString } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Get a Free Quote | Brower Inc.",
+  title: "Contact Us | Get a Free Quote",
   description:
     "Contact Brower Inc. for portable restroom rentals, VIP restroom trailers, and septic services in Oklahoma. Call (580) 747-6206 or fill out our form for a free quote.",
   alternates: { canonical: "/contact" },
@@ -13,12 +14,16 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getContactPageSchema()) }}
+      />
       <Breadcrumbs items={[{ name: "Contact Us", href: "/contact" }]} />
 
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">Contact Us</h1>
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">Get a Free Portable Restroom or Septic Service Quote</h1>
             <p className="mt-4 text-lg text-gray-600">
               Get a free, no-obligation quote for your portable restroom or septic service needs.
             </p>
@@ -90,18 +95,31 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
-                <h2 className="text-xl font-semibold text-gray-900">Request a Free Quote</h2>
-                <p className="mt-2 text-sm text-gray-600">
-                  Fill out the form below and we will get back to you within 24 hours.
-                </p>
-                <div className="mt-6">
-                  <ContactForm />
+                <div>
+                  <iframe
+                    src="https://app.browerinc.net/widget/form/YLj9whwW54iyL4sIihQx"
+                    style={{ width: "100%", height: "725px", border: "none", borderRadius: "3px" }}
+                    id="inline-YLj9whwW54iyL4sIihQx"
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Contact"
+                    data-height="725"
+                    data-layout-iframe-id="inline-YLj9whwW54iyL4sIihQx"
+                    data-form-id="YLj9whwW54iyL4sIihQx"
+                    title="Contact"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <Script src="https://app.browerinc.net/js/form_embed.js" strategy="afterInteractive" />
     </>
   );
 }

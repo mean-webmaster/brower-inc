@@ -7,6 +7,7 @@ import CTABanner from "@/components/CTABanner";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { sanitizeHtml } from "@/lib/sanitize";
 import type { PortfolioImage } from "@/lib/supabase/types";
+import { getPortfolioItemSchema, jsonLdString } from "@/lib/structured-data";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!item) return {};
 
   return {
-    title: `${item.title} | Our Work | Brower Inc.`,
+    title: `${item.title} | Our Work`,
     description: item.description,
     alternates: { canonical: `/portfolio/${slug}` },
   };
@@ -53,8 +54,22 @@ export default async function PortfolioDetailPage({ params }: Props) {
 
   if (images) gallery = images;
 
+  const portfolioItemSchema = getPortfolioItemSchema({
+    title: item.title,
+    description: item.description,
+    slug: item.slug,
+    datePublished: item.created_at,
+    image: item.image_url ?? undefined,
+    category: item.category ?? undefined,
+    location: item.location ?? undefined,
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(portfolioItemSchema) }}
+      />
       <Breadcrumbs
         items={[
           { name: "Our Work", href: "/portfolio" },

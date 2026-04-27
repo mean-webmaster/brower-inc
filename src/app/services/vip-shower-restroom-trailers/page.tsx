@@ -4,7 +4,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
-import { getServiceSchema } from "@/lib/structured-data";
+import { getServiceSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[1];
@@ -12,7 +12,7 @@ const service = SERVICES[1];
 export const metadata: Metadata = {
   title: "VIP Shower & Restroom Trailers | Luxury Portable Restrooms Oklahoma",
   description:
-    "Rent luxury VIP shower and restroom trailers in Oklahoma. Climate-controlled, flushing toilets, premium finishes. Perfect for weddings and corporate events. Call (580) 747-6206.",
+    "Luxury VIP shower & restroom trailer rental in Oklahoma. Climate-controlled with flushing toilets. Perfect for weddings & events. Call (580) 747-6206.",
   alternates: { canonical: "/services/vip-shower-restroom-trailers" },
 };
 
@@ -21,7 +21,18 @@ export default function VIPTrailersPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema(service)) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getServiceSchema(service)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            getBreadcrumbSchema([
+              { name: "Services", href: "/services" },
+              { name: service.title, href: `/services/${service.slug}` },
+            ]),
+          ),
+        }}
       />
       <Breadcrumbs
         items={[
@@ -98,6 +109,17 @@ export default function VIPTrailersPage() {
               <Image src={IMAGES.vipExteriorCloseup} alt="VIP restroom trailer exterior closeup with branding" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
               <Image src={IMAGES.vipWithHandwash} alt="VIP restroom trailer paired with hand washing station" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
             </div>
+          </div>
+
+          {/* VIP Trailer SEO Section */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">Luxury Restroom Trailer Rental in Oklahoma</h2>
+            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
+              Looking for a luxury restroom trailer for your Oklahoma wedding, corporate event, or film production? Brower Inc.&apos;s VIP shower and restroom trailers deliver a premium guest experience with climate control, flushing toilets, running water, LED lighting, and private stalls. We serve events across north-central Oklahoma — including Ponca City, Enid, Stillwater, Guthrie, and communities throughout Kay County, Garfield County, Logan County, and southern Kansas. Our 18-station trailers replace 4–6 standard portable restrooms and are the most-requested upgrade for outdoor weddings in Oklahoma.
+            </p>
+            <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
+              VIP trailer rental pricing ranges from $800–$2,500 per event depending on trailer size, event duration, and delivery distance. Each rental includes delivery, setup, post-event cleaning, and pickup. Pair with our <Link href="/services/hand-washing-stations" className="text-primary font-medium hover:underline">hand washing stations</Link> for complete guest comfort. <Link href="/contact" className="text-primary font-medium hover:underline">Request a free VIP trailer quote</Link> or call (580) 747-6206.
+            </p>
           </div>
 
           {/* Areas We Serve */}

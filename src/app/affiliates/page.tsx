@@ -2,22 +2,35 @@ import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { PHONE, EMAIL } from "@/lib/constants";
+import { getWebPageSchema, jsonLdString } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Affiliates Program | Brower Inc.",
+  title: "Affiliates Program",
   description:
     "Join the Brower Inc. affiliates program. Partner with Oklahoma's trusted portable restroom and septic services provider.",
   alternates: { canonical: "/affiliates" },
 };
 
+const affiliatesPageSchema = getWebPageSchema({
+  name: "Brower Inc. Affiliates Program",
+  description:
+    "Partner with Brower Inc., Oklahoma's trusted portable restroom and septic services provider. Affiliates program for event planners, construction companies, property managers, and related businesses.",
+  url: "/affiliates",
+  breadcrumbs: [{ name: "Affiliates", href: "/affiliates" }],
+});
+
 export default function AffiliatesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(affiliatesPageSchema) }}
+      />
       <Breadcrumbs items={[{ name: "Affiliates", href: "/affiliates" }]} />
 
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">Affiliates Program</h1>
+          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">Brower Inc. Affiliates &amp; Referral Partners Program</h1>
           <p className="mt-6 text-lg text-gray-600 leading-relaxed">
             Interested in partnering with Brower Inc.? We are always looking for trusted
             partners who share our commitment to quality service and customer satisfaction.

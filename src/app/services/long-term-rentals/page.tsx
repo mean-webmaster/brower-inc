@@ -4,15 +4,15 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
-import { getServiceSchema } from "@/lib/structured-data";
+import { getServiceSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[4];
 
 export const metadata: Metadata = {
-  title: "Long-Term Portable Restroom Rental | Oklahoma | Brower Inc.",
+  title: "Long-Term Portable Restroom Rental | Oklahoma",
   description:
-    "Affordable long-term portable restroom rentals for construction sites and commercial projects in Oklahoma. Regular servicing included. Call Brower Inc. at (580) 747-6206.",
+    "Affordable long-term portable restroom rentals for construction & commercial projects in Oklahoma. Servicing included. Call (580) 747-6206.",
   alternates: { canonical: "/services/long-term-rentals" },
 };
 
@@ -21,7 +21,18 @@ export default function LongTermRentalsPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema(service)) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getServiceSchema(service)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            getBreadcrumbSchema([
+              { name: "Services", href: "/services" },
+              { name: service.title, href: `/services/${service.slug}` },
+            ]),
+          ),
+        }}
       />
       <Breadcrumbs
         items={[
@@ -86,8 +97,8 @@ export default function LongTermRentalsPage() {
 
             <div>
               <Image
-                src={IMAGES.hero}
-                alt="Brower Inc. fleet and portable restrooms ready for long-term rental in Newkirk, Oklahoma"
+                src={IMAGES.fleetLineup}
+                alt="Brower Inc. full fleet of trucks and equipment lined up for long-term rental deployment in Newkirk, Oklahoma"
                 width={600}
                 height={400}
                 className="h-80 w-full rounded-xl object-cover"

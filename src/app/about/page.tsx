@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { PHONE, PHONE_HREF, EMAIL, SOCIAL } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
+import { getAboutPageSchema, jsonLdString } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "About Us | Portable Restroom & Septic Company in Oklahoma",
@@ -15,12 +16,16 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getAboutPageSchema()) }}
+      />
       <Breadcrumbs items={[{ name: "About Us", href: "/about" }]} />
 
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">About Brower Inc.</h1>
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">About Brower Inc. &mdash; Oklahoma&apos;s Locally Owned Portable Sanitation Company</h1>
             <Image
               src={IMAGES.fleetLineup}
               alt="Brower Inc. full fleet of septic trucks and portable restroom delivery vehicles in Newkirk, Oklahoma"

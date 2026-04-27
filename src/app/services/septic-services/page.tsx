@@ -4,15 +4,15 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
-import { getServiceSchema } from "@/lib/structured-data";
+import { getServiceSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[3];
 
 export const metadata: Metadata = {
-  title: "Septic Services | Septic Tank Pumping Oklahoma | Brower Inc.",
+  title: "Septic Services | Septic Tank Pumping Oklahoma",
   description:
-    "Professional septic tank pumping, maintenance, and inspection services in Oklahoma. Residential and commercial. Call Brower Inc. at (580) 747-6206 for reliable septic service.",
+    "Professional septic tank pumping, maintenance, and inspection in Oklahoma. Residential & commercial. Call (580) 747-6206.",
   alternates: { canonical: "/services/septic-services" },
 };
 
@@ -21,7 +21,18 @@ export default function SepticServicesPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema(service)) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getServiceSchema(service)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            getBreadcrumbSchema([
+              { name: "Services", href: "/services" },
+              { name: service.title, href: `/services/${service.slug}` },
+            ]),
+          ),
+        }}
       />
       <Breadcrumbs
         items={[
@@ -93,6 +104,17 @@ export default function SepticServicesPage() {
                 ))}
               </ul>
             </div>
+          </div>
+
+          {/* Septic Services SEO Section */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">Septic Tank Pumping &amp; Maintenance in Oklahoma</h2>
+            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
+              Searching for septic tank pumping near you? Brower Inc. provides residential and commercial septic services across north-central Oklahoma — including septic pumping, repair, inspection, and aerobic system installation. We serve homeowners and businesses in Ponca City, Enid, Blackwell, Tonkawa, Newkirk, Stillwater, Perry, and rural properties throughout Kay County, Garfield County, Noble County, Logan County, and Woods County. Most septic tanks need pumping every 3–5 years to prevent backups, drain field damage, and costly emergency repairs.
+            </p>
+            <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
+              Not sure when your tank was last pumped? Signs you need service include slow drains, sewage odor near the tank or drain field, standing water in your yard, and gurgling sounds in your plumbing. Brower Inc. offers same-week scheduling for routine pumping and 24/7 emergency response for septic backups. <Link href="/contact" className="text-primary font-medium hover:underline">Schedule your septic service</Link> or call (580) 747-6206.
+            </p>
           </div>
 
           {/* Areas We Serve */}

@@ -5,9 +5,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import type { PortfolioItem } from "@/lib/supabase/types";
+import { getCollectionPageSchema, jsonLdString } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Our Work | Projects & Portfolio | Brower Inc.",
+  title: "Our Work | Projects & Portfolio",
   description:
     "See examples of Brower Inc. portable restroom setups, VIP trailer installations, and septic projects across Oklahoma — from weddings and rodeos to construction sites.",
   alternates: { canonical: "/portfolio" },
@@ -30,14 +31,30 @@ export default async function PortfolioPage() {
 
   const categories = Array.from(new Set(items.map((i) => i.category).filter(Boolean)));
 
+  const portfolioPageSchema = getCollectionPageSchema({
+    name: "Our Work — Brower Inc. Portfolio",
+    description:
+      "Real Brower Inc. projects across Oklahoma and southern Kansas — portable restroom setups, VIP trailer installations, and septic services from weddings, rodeos, festivals, and construction sites.",
+    url: "/portfolio",
+    items: items.map((item) => ({
+      name: item.title,
+      url: `/portfolio/${item.slug}`,
+      description: item.description,
+    })),
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(portfolioPageSchema) }}
+      />
       <Breadcrumbs items={[{ name: "Our Work", href: "/portfolio" }]} />
 
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">Our Work</h1>
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">Portable Restroom Setups &amp; Septic Projects Across Oklahoma</h1>
             <p className="mt-4 text-lg text-gray-600">
               From festival grounds to construction sites — see how Brower Inc. delivers
               clean, reliable sanitation across Oklahoma.

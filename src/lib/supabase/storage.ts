@@ -17,9 +17,31 @@ export function generateSeoFilename(title: string, extension = "webp"): string {
   );
 }
 
+// SVG/GIF stay as-is (SVG is vector; GIF may be animated — canvas loses animation).
+const WEBP_SKIP = /^(image\/svg|image\/gif|image\/webp)/i;
+
+async function toWebP(file: File, quality = 0.85): Promise<Blob> {
+  const bitmap = await createImageBitmap(file);
+  const canvas = document.createElement("canvas");
+  canvas.width = bitmap.width;
+  canvas.height = bitmap.height;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) throw new Error("2D canvas context unavailable");
+  ctx.drawImage(bitmap, 0, 0);
+  bitmap.close?.();
+  return await new Promise<Blob>((resolve, reject) => {
+    canvas.toBlob(
+      (blob) => (blob ? resolve(blob) : reject(new Error("WebP encode failed"))),
+      "image/webp",
+      quality
+    );
+  });
+}
+
 /**
- * Upload an image to Supabase Storage with an SEO-friendly filename
- * Returns the public URL with the readable filename preserved
+ * Upload an image to Supabase Storage with an SEO-friendly filename.
+ * Non-WebP rasters (png/jpg/etc) are re-encoded to WebP in the browser before upload.
+ * SVG, GIF, and already-WebP files pass through unchanged.
  */
 export async function uploadImage(
   file: File,
@@ -29,17 +51,32 @@ export async function uploadImage(
 ): Promise<{ url: string; error: string | null }> {
   const supabase = createClient();
 
-  // Generate SEO-friendly path
-  const extension = file.name.split(".").pop() || "webp";
+  let body: Blob = file;
+  let contentType = file.type;
+  let extension = (file.name.split(".").pop() || "webp").toLowerCase();
+
+  if (!WEBP_SKIP.test(file.type)) {
+    try {
+      body = await toWebP(file);
+      contentType = "image/webp";
+      extension = "webp";
+    } catch (err) {
+      return {
+        url: "",
+        error: `WebP conversion failed: ${err instanceof Error ? err.message : String(err)}`,
+      };
+    }
+  }
+
   const filename = generateSeoFilename(seoName, extension);
   const path = folder ? `${folder}/${filename}` : filename;
 
   const { data, error } = await supabase.storage
     .from(bucket)
-    .upload(path, file, {
+    .upload(path, body, {
       cacheControl: "3600",
       upsert: true, // Overwrite if exists
-      contentType: file.type,
+      contentType,
     });
 
   if (error) {
