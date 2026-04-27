@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
-import { getLocalBusinessSchema } from "@/lib/structured-data";
+import { getBaseGraph, jsonLdString } from "@/lib/structured-data";
 import { SITE_NAME, SITE_URL, SITE_TAGLINE } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 
@@ -101,10 +101,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} h-full`}>
       <head>
+        <link rel="preconnect" href="https://assets.cdn.filesafe.space" />
+        <link rel="dns-prefetch" href="https://assets.cdn.filesafe.space" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(getLocalBusinessSchema()),
+            __html: jsonLdString(getBaseGraph()),
           }}
         />
       </head>

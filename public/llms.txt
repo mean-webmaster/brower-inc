@@ -1,0 +1,89 @@
+# Brower Inc.
+
+> Brower Inc. is a locally owned portable sanitation and septic services company based in Newkirk, Oklahoma, serving 14 counties across Oklahoma and southern Kansas. Licensed, insured, and owner-operated by Troy Brower since 2007. Phone: (580) 747-6206.
+
+## Main Pages
+
+- [Homepage](https://browerinc.net/): Portable restroom rental and septic services overview with interactive D3 service-area map
+- [About](https://browerinc.net/about): Company background, owner Troy Brower's story, mission, and credentials
+- [Contact](https://browerinc.net/contact): Request a free quote — phone, email, and contact form
+- [FAQ](https://browerinc.net/faq): Frequently asked questions about rentals, pricing, delivery, and services
+- [Services Index](https://browerinc.net/services): All five core service lines with pricing context and photos
+- [Service Areas](https://browerinc.net/service-areas): Full list of cities and counties served in OK and KS
+- [Industries Served](https://browerinc.net/industries): All nine vertical-specific service pages
+- [Blog](https://browerinc.net/blog): Industry guides, pricing, OSHA compliance, septic education, and how-to articles
+- [Portfolio](https://browerinc.net/portfolio): Photos and case studies from real Brower Inc. deployments
+- [Press & Media Kit](https://browerinc.net/press): Logos, photos, founder bio, and media contact for journalists
+- [Affiliates](https://browerinc.net/affiliates): Referral and partner program details
+
+## Services
+
+- [Portable Restrooms](https://browerinc.net/services/portable-restrooms): Standard and ADA-accessible porta potty rental (Maxim 300 units) — events, construction, oil field. Pricing $125-$250/month long-term, $100-$200/event short-term
+- [VIP Shower & Restroom Trailers](https://browerinc.net/services/vip-shower-restroom-trailers): Luxury climate-controlled trailers with private stalls, vanities, and running water — weddings, galas, corporate events. $800-$2,500 per event
+- [Hand Washing Stations](https://browerinc.net/services/hand-washing-stations): Standalone hand washing units, foot-pump operated, no plumbing hookups required — required by OSHA at most construction sites
+- [Septic Services](https://browerinc.net/services/septic-services): Septic tank pumping, cleaning, repair, and installation. Standard pumping $200-$500 depending on tank size and access
+- [Long-Term Rentals](https://browerinc.net/services/long-term-rentals): Weekly, monthly, yearly portable restroom rental with weekly servicing included. Standard for construction, oil & gas, agriculture, and disaster relief
+
+## Industries Served
+
+- [Construction](https://browerinc.net/industries/construction): OSHA 1926.51-compliant porta potty rental for Oklahoma construction sites — calculator, ADA, hand wash, fines guide
+- [Events & Weddings](https://browerinc.net/industries/events-weddings): Luxury VIP trailers, standard porta potties, and hand wash stations for weddings, festivals, galas, rodeos
+- [Oil & Gas](https://browerinc.net/industries/oil-gas): Drilling-site sanitation, pipeline construction, wind farm logistics — long-term rentals, 24/7 service
+- [Agriculture](https://browerinc.net/industries/agriculture): Harvest crews, ranch operations, farm sanitation — multi-week and seasonal rentals
+- [Government & Municipal](https://browerinc.net/industries/government-municipal): Public works, parks, road construction, polling places, municipal events
+- [Disaster Relief](https://browerinc.net/industries/disaster-relief): Tornado, ice storm, and flood emergency response — 24/7 deployment and FEMA-compatible billing
+- [Film & TV Production](https://browerinc.net/industries/film-tv): Mobile crew sanitation for Oklahoma film productions, location shoots, and commercial sets
+- [Real Estate](https://browerinc.net/industries/real-estate): Open houses, model home staging, vacant property servicing
+- [Utilities & Telecom](https://browerinc.net/industries/utilities-telecom): Line crew restrooms for utility, fiber, and telecom field work
+
+## Service Areas (Oklahoma)
+
+- Kay County (HQ — Newkirk, Ponca City, Blackwell, Tonkawa)
+- Garfield County (Enid)
+- Kingfisher County
+- Logan County (Crescent, Guthrie)
+- Woods County
+- Stillwater area (Payne County)
+- Perry (Noble County)
+
+## Service Areas (Kansas)
+
+- Sedgwick County (Wichita area)
+- Sumner County (Wellington)
+- Cowley County (Winfield, Arkansas City)
+- Butler County (El Dorado, Augusta)
+- Harper County
+- Kingman County
+- Chautauqua County
+- Elk County
+- Greenwood County
+
+## Blog
+
+- [Porta Potty Rental Cost in Oklahoma (2026 Pricing Guide)](https://browerinc.net/blog/porta-potty-rental-cost-oklahoma): Transparent 2026 pricing — standard, ADA, hand wash, VIP trailers — plus the 6 factors that change your final price
+- [Porta Potty Rental Near Me — Why Rural Oklahoma Gets Wrong Results](https://browerinc.net/blog/porta-potty-rental-near-me-rural-oklahoma): Why "near me" search fails rural Oklahoma addresses and what to do instead
+- [How Many Porta Potties Does Your Oklahoma Construction Site Need? (OSHA Calculator)](https://browerinc.net/blog/how-many-porta-potties-construction-site-oklahoma): OSHA 29 CFR 1926.51 ratio, hand wash rules, ADA guidance, shift adjustments, real Oklahoma jobsite examples
+- [Porta Potty vs. Luxury Restroom Trailer for Oklahoma Events](https://browerinc.net/blog/porta-potty-vs-luxury-restroom-trailer-oklahoma): Side-by-side comparison — features, pricing, guest experience, when each is the right call
+- [How Clean Are Portable Restrooms, Really?](https://browerinc.net/blog/how-clean-are-portable-restrooms): Brower Inc.'s 7-step weekly servicing protocol and how to spot a provider that actually cleans
+- [Oklahoma Oil & Gas Portable Sanitation](https://browerinc.net/blog/oil-gas-portable-sanitation-oklahoma): Drilling sites, pipelines, wind farms — OSHA, remote logistics, long-term rentals
+- [Oklahoma Septic System Maintenance](https://browerinc.net/blog/septic-system-maintenance-oklahoma): Pumping schedules, warning signs, DEQ regulations, 2026 cost ranges for Oklahoma homeowners
+- [Portable Restroom Rental Guide](https://browerinc.net/blog/portable-restroom-rental-guide): Complete guide to renting portable restrooms for Oklahoma events
+- [OSHA Portable Restroom Requirements for Construction Sites](https://browerinc.net/blog/construction-site-sanitation-tips): OSHA 1926.51 construction sanitation — ratios, ADA, placement, and fines
+- [How Many Portable Restrooms for an Outdoor Event?](https://browerinc.net/blog/event-planning-restroom-guide): Quick-reference chart for weddings, festivals, and rodeos in Oklahoma
+
+## Credentials & Trust
+
+- Locally owned and operated since 2007 by Troy Brower
+- Licensed and insured in Oklahoma and Kansas
+- 640+ unit fleet (porta potties, VIP trailers, hand wash stations, septic trucks)
+- 24/7 emergency service for storm, tornado, and flood response
+- Headquartered in Newkirk, Oklahoma — physical address, real local dispatch
+- Member, Portable Sanitation Association International (PSAI)
+
+## Contact
+
+- Phone: (580) 747-6206
+- Email: troy@browerinc.net
+- Address: Newkirk, OK 74647
+- Hours: Monday-Friday 8AM-5PM, 24/7 emergency dispatch
+- Map: https://www.google.com/maps/place/Newkirk,+OK+74647
