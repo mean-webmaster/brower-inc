@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -116,6 +117,7 @@ export default function RootLayout({
         <Footer />
         <FloatingCTA />
       </body>
+      <GoogleAnalytics gaId="G-RD41VKS37T" />
     </html>
   );
 }
