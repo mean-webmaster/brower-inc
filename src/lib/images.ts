@@ -8,9 +8,9 @@ export const IMAGES = {
   ogImage: `${GHL}/6727f81d38b82f89893ab29a.jpeg`,
 
   // Hero
-  hero: `${GHL}/48c9ae09-56ae-4499-9923-9280297f0404.webp`,
+  hero: `${IMG}/brower-inc-portable-restrooms-luxury-trailers-garden-event-newkirk-ok.webp`,
 
-  // Brand logos (local)
+  // Brand logos (local) — PNG preserves transparency on colored backgrounds
   logoFullTagline: `${IMG}/brower-inc-logo-full-tagline-phone.png`,
   logoIconBMark: `${IMG}/brower-inc-logo-icon-b-mark.png`,
   logoWordmarkFull: `${IMG}/brower-inc-logo-wordmark-full.png`,
@@ -62,4 +62,10 @@ export const IMAGES = {
   technician: `${IMG}/brower-inc-technician-industrial-jobsite-portrait-newkirk-ok.webp`,
   dogMascot: `${IMG}/brower-inc-company-dog-mascot-service-truck-newkirk-ok.webp`,
   christmasDisplay: `${IMG}/brower-inc-christmas-holiday-display-fun-newkirk-ok.webp`,
+
+  // Blog Covers (AI-generated via Nano Banana)
+  blogCoverPortaPottyRentalCostOklahoma: `${IMG}/brower-inc-porta-potty-rental-cost-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogCoverPortaPottyRentalNearMeRuralOklahoma: `${IMG}/brower-inc-porta-potty-rental-near-me-rural-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogCoverOshaConstructionCalculator: `${IMG}/brower-inc-porta-potty-construction-site-osha-calculator-newkirk-ok.jpeg`,
+  blogCoverPortaPottyVsLuxuryTrailer: `${IMG}/brower-inc-porta-potty-vs-luxury-restroom-trailer-oklahoma-blog-cover-newkirk-ok.jpeg`,
 };

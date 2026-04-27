@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { sanitizeHtml } from "@/lib/sanitize";
+import { getArticleSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
 
   return {
-    title: post.meta_title || `${post.title} | Brower Inc.`,
+    title: post.meta_title || post.title,
     description: post.meta_description || post.excerpt,
     alternates: { canonical: `/blog/${slug}` },
   };
@@ -44,6 +45,32 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            getArticleSchema({
+              title: post.title,
+              description: post.excerpt || post.meta_description || "",
+              slug: post.slug,
+              datePublished: post.created_at?.split("T")[0] || new Date().toISOString().split("T")[0],
+              image: post.image_url || undefined,
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            getBreadcrumbSchema([
+              { name: "Blog", href: "/blog" },
+              { name: post.title, href: `/blog/${post.slug}` },
+            ]),
+          ),
+        }}
+      />
+
       <Breadcrumbs
         items={[
           { name: "Blog", href: "/blog" },

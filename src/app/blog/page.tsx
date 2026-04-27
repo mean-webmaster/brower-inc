@@ -5,9 +5,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { BLOG_POSTS } from "@/lib/blog";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
+import { getBlogIndexSchema, jsonLdString } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Blog | Portable Restroom & Septic Tips | Brower Inc.",
+  title: "Blog | Portable Restroom & Septic Tips",
   description:
     "Read expert tips on portable restroom rentals, event planning sanitation, construction site compliance, and septic maintenance from Brower Inc. in Oklahoma.",
   alternates: { canonical: "/blog" },
@@ -67,14 +68,27 @@ export default async function BlogPage() {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
+  const blogIndexSchema = getBlogIndexSchema(
+    allPosts.map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      excerpt: p.excerpt,
+      date: p.date,
+    }))
+  );
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(blogIndexSchema) }}
+      />
       <Breadcrumbs items={[{ name: "Blog", href: "/blog" }]} />
 
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">Blog</h1>
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">Portable Restroom &amp; Septic Tips for Oklahoma</h1>
             <p className="mt-4 text-lg text-gray-600">
               Tips, guides, and industry insights for portable sanitation and septic services
             </p>
