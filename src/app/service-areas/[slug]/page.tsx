@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { SERVICE_AREAS_DATA, SERVICES, PHONE, PHONE_HREF } from "@/lib/constants";
-import { getBreadcrumbSchema, getServiceAreaSchema } from "@/lib/structured-data";
+import { getBreadcrumbSchema, getServiceAreaSchema, getFAQSchema, jsonLdString } from "@/lib/structured-data";
 
 export function generateStaticParams() {
   return SERVICE_AREAS_DATA.map((area) => ({ slug: area.slug }));
@@ -57,13 +57,13 @@ export default async function ServiceAreaPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(getBreadcrumbSchema(breadcrumbItems)),
+          __html: jsonLdString(getBreadcrumbSchema(breadcrumbItems)),
         }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdString(
             getServiceAreaSchema({
               name: area.name,
               slug: area.slug,
@@ -196,6 +196,75 @@ export default async function ServiceAreaPage({
           </div>
         </div>
       </section>
+
+      {/* Local Context */}
+      {area.content.localContext && (
+        <section className="py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl">
+              <h2 className="text-3xl font-bold text-gray-900">
+                Portable Sanitation in {area.name}
+              </h2>
+              <div className="mt-4 text-gray-600 leading-relaxed whitespace-pre-line">
+                {area.content.localContext}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Local Events */}
+      {area.content.localEvents && area.content.localEvents.length > 0 && (
+        <section className="bg-gray-50 py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl">
+              <h2 className="text-3xl font-bold text-gray-900">
+                Events &amp; Venues We Serve in {area.name}
+              </h2>
+              <p className="mt-3 text-gray-600">
+                We provide portable restrooms, VIP trailers, and hand washing stations for events throughout {area.name}. Here are some of the local events and venues we commonly serve:
+              </p>
+            </div>
+            <div className="mx-auto mt-8 max-w-3xl space-y-6">
+              {area.content.localEvents.map((event) => (
+                <div key={event.name} className="rounded-lg border border-gray-200 bg-white p-5">
+                  <h3 className="font-semibold text-gray-900">{event.name}</h3>
+                  <p className="mt-1 text-sm text-gray-600">{event.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Local FAQ */}
+      {area.content.localFAQ && area.content.localFAQ.length > 0 && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: jsonLdString(getFAQSchema(area.content.localFAQ)),
+            }}
+          />
+          <section className="py-16">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="mx-auto max-w-3xl">
+                <h2 className="text-3xl font-bold text-gray-900">
+                  Portable Restroom Rental FAQ — {area.name}
+                </h2>
+                <div className="mt-8 space-y-6">
+                  {area.content.localFAQ.map((faq) => (
+                    <div key={faq.question} className="border-b border-gray-200 pb-6">
+                      <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
+                      <p className="mt-2 text-gray-600 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* Nearby Areas */}
       {nearbyAreas.length > 0 && (

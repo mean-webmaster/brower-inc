@@ -3,13 +3,26 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { SERVICE_AREAS_DATA, PHONE, PHONE_HREF } from "@/lib/constants";
+import { getCollectionPageSchema, jsonLdString } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Service Areas | Portable Restroom Rental Across Oklahoma",
   description:
-    "Brower Inc. delivers portable restrooms, VIP trailers, and septic services throughout Oklahoma and southern Kansas. Serving Kay County, Garfield County, Kingfisher County, Logan County, Woods County, Sumner County, Cowley County, and more. Based in Newkirk, OK.",
+    "Portable restrooms, VIP trailers & septic services across Oklahoma and southern Kansas. Based in Newkirk, OK. Call (580) 747-6206.",
   alternates: { canonical: "/service-areas" },
 };
+
+const serviceAreasPageSchema = getCollectionPageSchema({
+  name: "Service Areas — Oklahoma & Kansas",
+  description:
+    "Brower Inc. serves 14 counties across Oklahoma and southern Kansas with portable restroom rentals, VIP trailers, hand washing stations, and septic services.",
+  url: "/service-areas",
+  items: SERVICE_AREAS_DATA.map((a) => ({
+    name: `${a.name}, ${a.state}`,
+    url: `/service-areas/${a.slug}`,
+    description: a.description,
+  })),
+});
 
 export default function ServiceAreasPage() {
   const primaryAreas = SERVICE_AREAS_DATA.filter((a) => a.isPrimary);
@@ -28,13 +41,17 @@ export default function ServiceAreasPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(serviceAreasPageSchema) }}
+      />
       <Breadcrumbs items={[{ name: "Service Areas", href: "/service-areas" }]} />
 
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
-              Our Service Areas
+              Portable Restroom Rental Service Areas in Oklahoma &amp; Kansas
             </h1>
             <p className="mt-4 text-lg text-gray-600">
               Based in Newkirk, Oklahoma, Brower Inc. proudly serves communities across
