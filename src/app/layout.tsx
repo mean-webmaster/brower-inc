@@ -120,6 +120,11 @@ export default function RootLayout({
             src: "",
           } as Record<string, string>)}
         />
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="D8G30m5UjeJPpOjVdFonVQ"
+          async
+        />
       </head>
       <body className="flex min-h-full flex-col bg-white font-sans antialiased">
         <Header />

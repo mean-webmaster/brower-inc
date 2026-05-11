@@ -4,11 +4,11 @@ const isDev = process.env.NODE_ENV === "development";
 
 const contentSecurityPolicy = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://dashboard.searchatlas.com https://*.searchatlas.com`,
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://dashboard.searchatlas.com https://*.searchatlas.com https://analytics.ahrefs.com`,
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob: https://assets.cdn.filesafe.space https://bodhjxamjdyzneuirxdy.supabase.co https://*.google-analytics.com https://www.googletagmanager.com https://*.searchatlas.com",
+  "img-src 'self' data: blob: https://assets.cdn.filesafe.space https://bodhjxamjdyzneuirxdy.supabase.co https://*.google-analytics.com https://www.googletagmanager.com https://*.searchatlas.com https://analytics.ahrefs.com",
   "font-src 'self' data:",
-  "connect-src 'self' https://bodhjxamjdyzneuirxdy.supabase.co https://*.google-analytics.com https://www.googletagmanager.com https://*.searchatlas.com",
+  "connect-src 'self' https://bodhjxamjdyzneuirxdy.supabase.co https://*.google-analytics.com https://www.googletagmanager.com https://*.searchatlas.com https://analytics.ahrefs.com",
   "frame-src 'self' https://www.google.com https://maps.google.com",
   "object-src 'none'",
   "base-uri 'self'",
