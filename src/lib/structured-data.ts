@@ -168,6 +168,46 @@ export function getLocalBusinessNode() {
             url: `${SITE_URL}/services/long-term-rentals`,
           },
         },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Deluxe Flushable Portable Toilets",
+            url: `${SITE_URL}/services/deluxe-flushable-portable-toilets`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "ADA-Compliant Portable Restrooms",
+            url: `${SITE_URL}/services/ada-compliant-portable-restrooms`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Emergency & Same-Day Porta Potty Rental",
+            url: `${SITE_URL}/services/emergency-porta-potty-rental`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Septic Tank Pumping & Cleaning",
+            url: `${SITE_URL}/services/septic-tank-pumping`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Septic System Inspections",
+            url: `${SITE_URL}/services/septic-inspections`,
+          },
+        },
       ],
     },
   };

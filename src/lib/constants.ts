@@ -145,6 +145,131 @@ export const SERVICES = [
     ],
     icon: "longterm",
   },
+  {
+    title: "Deluxe Flushable Portable Toilets",
+    slug: "deluxe-flushable-portable-toilets",
+    shortDescription:
+      "Upgraded flushable porta potties with hands-free flush and built-in sink for weddings, corporate events, and upscale gatherings in Oklahoma and Kansas.",
+    description:
+      "Our deluxe flushable portable toilets are the upgrade your guests will notice. Each unit features a hands-free foot-pump flush, a built-in sink with fresh water and soap, and a roomier interior than a standard porta potty — bringing real-bathroom comfort to outdoor venues. Delivered spotless, fully stocked, and serviced on the schedule that fits your event. Perfect when a standard unit feels too rough and a luxury trailer is more than you need.",
+    features: [
+      "Hands-free foot-pump flush system",
+      "Built-in sink with fresh water and soap",
+      "Roomier interior than standard porta potties",
+      "Delivered sanitized and fully stocked",
+      "Ideal for weddings and upscale events",
+      "Pairs with hand washing stations and VIP trailers",
+    ],
+    useCases: [
+      "Outdoor weddings and receptions",
+      "Corporate retreats and company picnics",
+      "Family reunions and milestone celebrations",
+      "Upscale fundraisers and galas",
+      "Private parties at rural venues",
+      "Film and production sets",
+    ],
+    icon: "restroom",
+  },
+  {
+    title: "ADA-Compliant Portable Restrooms",
+    slug: "ada-compliant-portable-restrooms",
+    shortDescription:
+      "Wheelchair-accessible portable restrooms meeting ADA guidelines — required for OSHA jobsites and inclusive events across Oklahoma and southern Kansas.",
+    description:
+      "Brower Inc.'s ADA-compliant portable restrooms provide safe, spacious access for guests and workers with mobility needs. Each unit features ground-level entry, interior handrails, ample wheelchair turning radius, and a larger interior that doubles as family-friendly when parents need to assist children. Required by OSHA on most construction sites and by ADA guidelines at public events — delivered clean, fully stocked, and ready to use across Oklahoma and southern Kansas.",
+    features: [
+      "Ground-level zero-step entry",
+      "Interior handrails and grab bars",
+      "Wheelchair-accessible turning radius",
+      "Family-friendly extra space",
+      "Meets OSHA jobsite accessibility requirements",
+      "Compatible with ADA-compliant hand wash add-ons",
+    ],
+    useCases: [
+      "OSHA-regulated construction sites",
+      "Public festivals and community events",
+      "Parks and municipal facilities",
+      "School and university events",
+      "Government and government-contract sites",
+      "Any event requiring ADA accommodations",
+    ],
+    icon: "restroom",
+  },
+  {
+    title: "Emergency & Same-Day Porta Potty Rental",
+    slug: "emergency-porta-potty-rental",
+    shortDescription:
+      "24/7 emergency and same-day porta potty rental across Oklahoma and southern Kansas — storm response, plumbing failures, last-minute events.",
+    description:
+      "When something has gone wrong and you need a porta potty fast, Brower Inc. dispatches 24/7 across Oklahoma and southern Kansas. Same-day delivery for plumbing failures, broken septic systems, storm cleanup, last-minute event scaling, and urgent jobsite needs. Every emergency unit arrives clean, fully stocked, and supported by a real local crew — call (580) 747-6206 day or night and we'll be moving toward your site within the hour.",
+    features: [
+      "24/7 dispatch — call any time, including weekends",
+      "Same-day delivery throughout 20-county service area",
+      "Storm response and disaster-relief deployments",
+      "Fully stocked and sanitized on arrival",
+      "Local crews — no national call center handoff",
+      "Volume scaling for large emergency events",
+    ],
+    useCases: [
+      "Residential plumbing or septic failures",
+      "Storm cleanup and tornado recovery",
+      "Power outage business operations",
+      "Last-minute event capacity overflow",
+      "Fast-tracked construction starts",
+      "Utility crew and first-responder staging",
+    ],
+    icon: "restroom",
+  },
+  {
+    title: "Septic Tank Pumping & Cleaning",
+    slug: "septic-tank-pumping",
+    shortDescription:
+      "Residential and commercial septic tank pumping across Oklahoma and southern Kansas — most tanks need a pump every 3 to 5 years.",
+    description:
+      "Solid waste accumulates in your septic tank year after year, and once it exceeds capacity it backs up into your drain field — or into your home. Brower Inc.'s septic tank pumping service empties, scrubs, and inspects your tank in a single visit, giving the system a fresh start. We serve rural homeowners, property managers, and commercial properties across north-central Oklahoma and southern Kansas with same-week scheduling, transparent pricing, and a follow-up report so you know exactly when to schedule the next pump.",
+    features: [
+      "Complete pump-out, rinse, and inspection",
+      "Same-week scheduling for most residential jobs",
+      "Transparent flat-rate pricing — no upsells on site",
+      "Recommended every 3–5 years for most homes",
+      "Commercial and multi-tank property service",
+      "Emergency pump-outs available 24/7",
+    ],
+    useCases: [
+      "Routine residential septic maintenance",
+      "Pre-sale or pre-purchase real-estate prep",
+      "Restaurant grease and waste tank service",
+      "Multi-tenant property management",
+      "Rural homesteads and ranches",
+      "Pumping after a backup or overflow event",
+    ],
+    icon: "septic",
+  },
+  {
+    title: "Septic System Inspections",
+    slug: "septic-inspections",
+    shortDescription:
+      "Septic system inspections for Oklahoma and Kansas real-estate transactions, code compliance, and ongoing property maintenance.",
+    description:
+      "A septic inspection is required for most rural real-estate transactions and gives buyers, sellers, and lenders the confidence that the system is sound. Brower Inc. performs thorough septic inspections across Oklahoma and southern Kansas — assessing tank condition, drain field health, baffles, and code compliance. We deliver detailed written reports the same week, often within 48 hours, so closing timelines stay on track. Trusted by realtors, lenders, property managers, and homeowners throughout our 20-county service area.",
+    features: [
+      "Real-estate transaction inspection reports",
+      "Tank and drain field assessment",
+      "Code compliance verification",
+      "Same-week written reports (often 48 hours)",
+      "Acceptable for lender and title requirements",
+      "Annual maintenance inspections available",
+    ],
+    useCases: [
+      "Home purchases requiring septic clearance",
+      "Pre-listing seller inspections",
+      "Refinance and lender requirements",
+      "Annual maintenance verification",
+      "Code violation resolution",
+      "Estate and probate property closures",
+    ],
+    icon: "septic",
+  },
 ];
 
 export type ServiceAreaData = {

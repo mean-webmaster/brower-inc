@@ -32,6 +32,11 @@ const SERVICE_IMAGES: Record<string, string> = {
   "hand-washing-stations": IMAGES.handWashingStation,
   "septic-services": IMAGES.septicTruckRear,
   "long-term-rentals": IMAGES.fleetLineup,
+  "deluxe-flushable-portable-toilets": IMAGES.portableRestroomEvent,
+  "ada-compliant-portable-restrooms": IMAGES.portableRestroomTrio,
+  "emergency-porta-potty-rental": IMAGES.deliveryNight,
+  "septic-tank-pumping": IMAGES.septicPumpingClose,
+  "septic-inspections": IMAGES.septicMobileHome,
 };
 
 const SERVICE_ALT: Record<string, string> = {
@@ -45,6 +50,16 @@ const SERVICE_ALT: Record<string, string> = {
     "Brower Inc. branded septic pump truck rear view at job site in Newkirk, Oklahoma",
   "long-term-rentals":
     "Brower Inc. full fleet of trucks and equipment lined up for long-term rental deployment across Oklahoma",
+  "deluxe-flushable-portable-toilets":
+    "Brower Inc. deluxe flushable portable toilet delivered to an outdoor event venue in Oklahoma",
+  "ada-compliant-portable-restrooms":
+    "Brower Inc. ADA-compliant portable restroom trio mounted on trailer ready for delivery in Newkirk, Oklahoma",
+  "emergency-porta-potty-rental":
+    "Brower Inc. service truck delivering an emergency porta potty after-hours in Oklahoma",
+  "septic-tank-pumping":
+    "Brower Inc. technician performing septic tank pumping at a residential property in Newkirk, Oklahoma",
+  "septic-inspections":
+    "Brower Inc. septic inspection at a rural Oklahoma property for a real estate transaction",
 };
 
 export default function ServicesPage() {

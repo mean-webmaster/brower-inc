@@ -23,6 +23,26 @@ const serviceImages: Record<string, { src: string; alt: string }> = {
     src: IMAGES.fleetLineup,
     alt: "Brower Inc. full fleet of trucks and equipment lined up for long-term rental deployment in Newkirk, Oklahoma",
   },
+  "deluxe-flushable-portable-toilets": {
+    src: IMAGES.portableRestroomEvent,
+    alt: "Brower Inc. deluxe flushable portable toilet at an outdoor event venue in Oklahoma",
+  },
+  "ada-compliant-portable-restrooms": {
+    src: IMAGES.portableRestroomTrio,
+    alt: "Brower Inc. ADA-compliant portable restroom trio mounted on trailer in Newkirk, Oklahoma",
+  },
+  "emergency-porta-potty-rental": {
+    src: IMAGES.deliveryNight,
+    alt: "Brower Inc. service truck delivering an emergency porta potty at night in Oklahoma",
+  },
+  "septic-tank-pumping": {
+    src: IMAGES.septicPumpingClose,
+    alt: "Brower Inc. technician performing residential septic tank pumping in Newkirk, OK",
+  },
+  "septic-inspections": {
+    src: IMAGES.septicMobileHome,
+    alt: "Brower Inc. septic system inspection at a rural Oklahoma property",
+  },
 };
 
 interface ServiceCardProps {
