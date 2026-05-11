@@ -297,7 +297,7 @@ export function getArticleSchema(article: {
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: article.title,
     description: article.description,
     image: article.image || `${SITE_URL}/images/brower-inc-og.jpg`,
@@ -378,6 +378,71 @@ export function getServiceAreaSchema(area: {
       "Septic Pumping Service",
     ],
     url: `${SITE_URL}/service-areas/${area.slug}`,
+  };
+}
+
+/**
+ * Per-area LocalBusiness variant for /service-areas/[slug] pages.
+ * Distinct @id from the global LocalBusiness so Google treats it as a
+ * geo-scoped instance and can surface the business in the local pack
+ * for that specific city/county query.
+ */
+export function getLocalBusinessForArea(area: {
+  name: string;
+  slug: string;
+  type: "county" | "city";
+  state: string;
+  description: string;
+  geo?: { lat: number; lng: number };
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": `${SITE_URL}/#localbusiness-${area.slug}`,
+    name: `${SITE_NAME} — ${area.name}, ${area.state}`,
+    description: area.description,
+    url: `${SITE_URL}/service-areas/${area.slug}`,
+    telephone: PHONE,
+    email: EMAIL,
+    image: [IMAGES.logo, IMAGES.ogImage],
+    logo: { "@id": SCHEMA_IDS.logo },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: ADDRESS.city,
+      addressRegion: ADDRESS.state,
+      postalCode: ADDRESS.zip,
+      addressCountry: "US",
+    },
+    ...(area.geo && {
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: area.geo.lat,
+        longitude: area.geo.lng,
+      },
+    }),
+    areaServed: {
+      "@type": area.type === "county" ? "AdministrativeArea" : "City",
+      name: `${area.name}, ${area.state}`,
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "17:00",
+      },
+    ],
+    specialOpeningHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      description: "24/7 emergency service available",
+      opens: "00:00",
+      closes: "23:59",
+    },
+    priceRange: "$$",
+    paymentAccepted: ["Cash", "Check", "Credit Card", "Invoice"],
+    currenciesAccepted: "USD",
+    parentOrganization: { "@id": SCHEMA_IDS.organization },
+    sameAs: [SOCIAL.facebook, SOCIAL.youtube, SOCIAL.linkedin],
   };
 }
 

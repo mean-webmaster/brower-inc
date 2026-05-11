@@ -46,8 +46,9 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-04-12",
     readTime: "10 min read",
     category: "Authority",
-    image: IMAGES.portableRestroomWarehouse,
-    imageAlt: "Brower Inc. portable restroom fleet clean and ready in warehouse in Newkirk, Oklahoma",
+    image: IMAGES.blogCoverHowCleanArePortableRestrooms,
+    imageAlt:
+      "Brower Inc. technician in navy uniform wiping down a freshly-detailed blue porta potty with a microfiber cloth inside a clean industrial warehouse in Newkirk, Oklahoma",
   },
   {
     slug: "oil-gas-portable-sanitation-oklahoma",
@@ -57,8 +58,9 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-04-12",
     readTime: "11 min read",
     category: "Industry Solutions",
-    image: IMAGES.portableRestroomField,
-    imageAlt: "Brower Inc. portable restroom deployed at a wind farm field site in rural Oklahoma",
+    image: IMAGES.blogCoverOilGasPortableSanitation,
+    imageAlt:
+      "Blue Brower Inc. porta potty in the foreground of an Oklahoma oil and gas site with a drilling rig, pump jack, and a wind turbine on the horizon",
   },
   {
     slug: "septic-system-maintenance-oklahoma",
@@ -68,8 +70,9 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-04-12",
     readTime: "12 min read",
     category: "Septic & Property Maintenance",
-    image: IMAGES.septicPumpingWide,
-    imageAlt: "Brower Inc. septic pumping service at a residential property in rural Oklahoma",
+    image: IMAGES.blogCoverSepticSystemMaintenance,
+    imageAlt:
+      "Branded white Brower Inc. vacuum septic pump truck on a gravel residential driveway in rural Oklahoma with a technician operating a green pumping hose into a backyard septic cleanout",
   },
   {
     slug: "porta-potty-rental-near-me-rural-oklahoma",
@@ -102,8 +105,9 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2025-03-15",
     readTime: "12 min read",
     category: "Rental Guide",
-    image: IMAGES.portableRestroomEvent,
-    imageAlt: "Brower Inc. portable restrooms delivered and set up at an outdoor event venue in Oklahoma",
+    image: IMAGES.blogCoverPortableRestroomRentalGuide,
+    imageAlt:
+      "Red Brower Inc. flatbed service truck staged beside a freshly-delivered blue porta potty on a concrete pad at an Oklahoma property at sunrise",
   },
   {
     slug: "construction-site-sanitation-tips",
@@ -113,8 +117,9 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2025-02-28",
     readTime: "11 min read",
     category: "Construction",
-    image: IMAGES.portableRestroomConstruction,
-    imageAlt: "Brower Inc. portable restroom positioned at an active Oklahoma construction site with workers and equipment visible",
+    image: IMAGES.blogCoverConstructionSiteSanitation,
+    imageAlt:
+      "Row of seven branded blue Brower Inc. porta potties staged on a tamped-dirt area at an active Oklahoma residential subdivision construction site with wood framing and a yellow excavator behind",
   },
   {
     slug: "event-planning-restroom-guide",
@@ -124,7 +129,8 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2025-02-10",
     readTime: "10 min read",
     category: "Event Planning",
-    image: IMAGES.portableRestroomLineup,
-    imageAlt: "Row of clean Brower Inc. portable restrooms lined up and ready for an outdoor event in Oklahoma",
+    image: IMAGES.blogCoverEventPlanningRestroom,
+    imageAlt:
+      "Long perspective row of branded blue Brower Inc. porta potties on freshly cut grass at an outdoor Oklahoma wedding venue with a white peaked tent and warm string lights at golden hour",
   },
 ];

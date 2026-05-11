@@ -149,10 +149,10 @@ export default function EventPlanningRestroomGuidePage() {
           </p>
 
           <Image
-            src={IMAGES.portableRestroomLineup}
-            alt="Row of clean Brower Inc. portable restrooms lined up and ready for an outdoor event in Oklahoma"
-            width={800}
-            height={400}
+            src={IMAGES.blogCoverEventPlanningRestroom}
+            alt="Long perspective row of branded blue Brower Inc. porta potties on freshly cut grass at an outdoor Oklahoma wedding venue with a white peaked tent and warm string lights at golden hour"
+            width={1600}
+            height={900}
             className="mt-6 h-64 w-full rounded-xl object-cover sm:h-80"
             priority
           />

@@ -10,9 +10,9 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES[3];
 
 export const metadata: Metadata = {
-  title: "Septic Services | Septic Tank Pumping Oklahoma",
+  title: "Septic Pumping Near Me | Oklahoma & Kansas | Brower Inc.",
   description:
-    "Professional septic tank pumping, maintenance, and inspection in Oklahoma. Residential & commercial. Call (580) 747-6206.",
+    "Searching for septic pumping near me? Brower Inc. provides septic tank pumping, repair & aerobic install across Oklahoma & southern Kansas. Call (580) 747-6206.",
   alternates: { canonical: "/services/septic-services" },
 };
 
@@ -45,7 +45,9 @@ export default function SepticServicesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
-              <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">{service.title}</h1>
+              <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+                Septic Pumping Near You — Across Oklahoma &amp; Southern Kansas
+              </h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
 
               <div className="mt-8 space-y-6">
@@ -108,9 +110,9 @@ export default function SepticServicesPage() {
 
           {/* Septic Services SEO Section */}
           <div className="mt-16 border-t pt-12">
-            <h2 className="text-3xl font-bold text-gray-900">Septic Tank Pumping &amp; Maintenance in Oklahoma</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Septic Pumping Near Me — Brower&apos;s Oklahoma &amp; Kansas Coverage</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Searching for septic tank pumping near you? Brower Inc. provides residential and commercial septic services across north-central Oklahoma — including septic pumping, repair, inspection, and aerobic system installation. We serve homeowners and businesses in Ponca City, Enid, Blackwell, Tonkawa, Newkirk, Stillwater, Perry, and rural properties throughout Kay County, Garfield County, Noble County, Logan County, and Woods County. Most septic tanks need pumping every 3–5 years to prevent backups, drain field damage, and costly emergency repairs.
+              Searching for septic pumping near me? Brower Inc. provides residential and commercial septic services across north-central Oklahoma and southern Kansas — including septic tank pumping, repair, inspection, and aerobic system installation. We serve homeowners and businesses in Ponca City, Enid, Blackwell, Tonkawa, Newkirk, Stillwater, Perry, and rural properties throughout Kay County, Garfield County, Noble County, Logan County, Woods County, and southern Kansas. Most septic tanks need pumping every 3–5 years to prevent backups, drain field damage, and costly emergency repairs.
             </p>
             <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
               Not sure when your tank was last pumped? Signs you need service include slow drains, sewage odor near the tank or drain field, standing water in your yard, and gurgling sounds in your plumbing. Brower Inc. offers same-week scheduling for routine pumping and 24/7 emergency response for septic backups. <Link href="/contact" className="text-primary font-medium hover:underline">Schedule your septic service</Link> or call (580) 747-6206.

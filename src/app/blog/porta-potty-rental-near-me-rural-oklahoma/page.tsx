@@ -146,7 +146,7 @@ export default function PortaPottyRentalNearMeRuralOklahomaPage() {
 
           <Image
             src={IMAGES.blogCoverPortaPottyRentalNearMeRuralOklahoma}
-            alt="Blue porta potty rental beside a rural Oklahoma gravel road with a red service pickup at golden hour near Newkirk"
+            alt="Branded blue Brower Inc. porta potty beside a rural Oklahoma county road at sunset with a vintage red service pickup, lone tree, and weathered farmhouse on the horizon near Newkirk"
             width={1600}
             height={900}
             className="mt-6 aspect-video w-full rounded-xl object-cover"

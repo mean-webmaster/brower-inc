@@ -92,7 +92,7 @@ export default function SepticSystemMaintenanceOklahomaPage() {
                 "Everything Oklahoma homeowners need to know about septic system maintenance — pumping schedules, warning signs, DEQ regulations, seasonal tips, and costs. Expert guide from a local septic service provider.",
               slug: "septic-system-maintenance-oklahoma",
               datePublished: "2026-04-12",
-              image: IMAGES.septicPumpingWide,
+              image: IMAGES.blogCoverSepticSystemMaintenance,
             })
           ),
         }}
@@ -144,8 +144,8 @@ export default function SepticSystemMaintenanceOklahomaPage() {
           </h1>
 
           <Image
-            src={IMAGES.septicPumpingWide}
-            alt="Brower Inc. residential septic pumping service in progress at an Oklahoma home"
+            src={IMAGES.blogCoverSepticSystemMaintenance}
+            alt="Branded white Brower Inc. vacuum septic pump truck on a gravel residential driveway in rural Oklahoma with a technician operating a green pumping hose into a backyard septic cleanout"
             width={1600}
             height={900}
             className="mt-6 aspect-video w-full rounded-xl object-cover"

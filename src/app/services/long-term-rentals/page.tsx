@@ -10,9 +10,9 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES[4];
 
 export const metadata: Metadata = {
-  title: "Long-Term Portable Restroom Rental | Oklahoma",
+  title: "Construction Porta Potty Rental Oklahoma | Long-Term Jobsite",
   description:
-    "Affordable long-term portable restroom rentals for construction & commercial projects in Oklahoma. Servicing included. Call (580) 747-6206.",
+    "Construction porta potty rental in Oklahoma — long-term jobsite units with weekly servicing, ADA, and his/her options. Owner-operated. Call (580) 747-6206.",
   alternates: { canonical: "/services/long-term-rentals" },
 };
 
@@ -45,7 +45,9 @@ export default function LongTermRentalsPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
-              <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">{service.title}</h1>
+              <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+                Construction &amp; Long-Term Porta Potty Rental in Oklahoma
+              </h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
 
               <div className="mt-6 rounded-lg bg-gray-50 p-6">

@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { SERVICE_AREAS_DATA, SERVICES, PHONE, PHONE_HREF } from "@/lib/constants";
-import { getBreadcrumbSchema, getServiceAreaSchema, getFAQSchema, jsonLdString } from "@/lib/structured-data";
+import { getBreadcrumbSchema, getServiceAreaSchema, getLocalBusinessForArea, getFAQSchema, jsonLdString } from "@/lib/structured-data";
 
 export function generateStaticParams() {
   return SERVICE_AREAS_DATA.map((area) => ({ slug: area.slug }));
@@ -70,6 +70,23 @@ export default async function ServiceAreaPage({
               type: area.type,
               state: area.state,
               description: area.metaDescription,
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            getLocalBusinessForArea({
+              name: area.name,
+              slug: area.slug,
+              type: area.type,
+              state: area.state,
+              description: area.metaDescription,
+              geo: area.coordinates
+                ? { lat: area.coordinates.lat, lng: area.coordinates.lng }
+                : undefined,
             })
           ),
         }}

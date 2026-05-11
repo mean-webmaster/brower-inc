@@ -153,10 +153,10 @@ export default function ConstructionSiteSanitationTipsPage() {
           </p>
 
           <Image
-            src={IMAGES.portableRestroomConstruction}
-            alt="Brower Inc. portable restroom positioned at an active Oklahoma construction site with workers and equipment visible"
-            width={800}
-            height={400}
+            src={IMAGES.blogCoverConstructionSiteSanitation}
+            alt="Row of seven branded blue Brower Inc. porta potties staged on a tamped-dirt area at an active Oklahoma residential subdivision construction site with wood framing and a yellow excavator behind"
+            width={1600}
+            height={900}
             className="mt-6 h-64 w-full rounded-xl object-cover sm:h-80"
             priority
           />

@@ -162,10 +162,10 @@ export default function OilGasPortableSanitationOklahomaPage() {
           </p>
 
           <Image
-            src={IMAGES.portableRestroomField}
-            alt="Brower Inc. portable restroom stationed at a wind farm and open field site in rural Oklahoma with clear sky and flat terrain"
-            width={800}
-            height={400}
+            src={IMAGES.blogCoverOilGasPortableSanitation}
+            alt="Blue Brower Inc. porta potty in the foreground of an Oklahoma oil and gas site with a drilling rig, pump jack, and a wind turbine on the horizon"
+            width={1600}
+            height={900}
             className="mt-6 h-64 w-full rounded-xl object-cover sm:h-80"
             priority
           />

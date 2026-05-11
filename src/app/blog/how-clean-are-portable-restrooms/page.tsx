@@ -149,8 +149,8 @@ export default function HowCleanArePortableRestroomsPage() {
 
           {/* ── HERO IMAGE ───────────────────────────────────────────── */}
           <Image
-            src={IMAGES.portableRestroomWarehouse}
-            alt="Brower Inc. fleet of freshly cleaned portable restrooms lined up inside the Newkirk, Oklahoma warehouse ready for delivery"
+            src={IMAGES.blogCoverHowCleanArePortableRestrooms}
+            alt="Brower Inc. technician in navy uniform wiping down a freshly-detailed blue porta potty with a microfiber cloth inside a clean industrial warehouse in Newkirk, Oklahoma"
             width={1600}
             height={900}
             className="mt-6 aspect-video w-full rounded-xl object-cover"

@@ -10,9 +10,9 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES[2];
 
 export const metadata: Metadata = {
-  title: "Portable Hand Washing Station Rental | Oklahoma",
+  title: "Portable Hand Washing Station Rental Oklahoma | Brower",
   description:
-    "Portable hand washing station rental in Oklahoma for events, construction & food service. Health code compliant. Call (580) 747-6206.",
+    "Portable hand washing station rental in Oklahoma for events, construction & food vendors. OSHA-compliant, fully stocked, no hookups needed. Call (580) 747-6206.",
   alternates: { canonical: "/services/hand-washing-stations" },
 };
 
@@ -45,7 +45,9 @@ export default function HandWashingStationsPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
-              <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">{service.title}</h1>
+              <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+                Portable Hand Washing Station Rental in Oklahoma
+              </h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
 
               <p className="mt-4 text-base text-gray-600 leading-relaxed">

@@ -136,7 +136,7 @@ export default function PortaPottyRentalCostOklahomaPage() {
 
           <Image
             src={IMAGES.blogCoverPortaPottyRentalCostOklahoma}
-            alt="Brower Inc. porta potty rental lineup in rural Oklahoma — 2026 pricing guide cover"
+            alt="Four blue Brower Inc. porta potties in a tight row on a concrete pad in rural Oklahoma with a wheat field and golden-hour sky behind — 2026 pricing guide cover"
             width={1600}
             height={900}
             className="mt-6 aspect-video w-full rounded-xl object-cover"

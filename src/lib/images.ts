@@ -10,10 +10,10 @@ export const IMAGES = {
   // Hero
   hero: `${IMG}/brower-inc-portable-restrooms-luxury-trailers-garden-event-newkirk-ok.webp`,
 
-  // Brand logos (local) — PNG preserves transparency on colored backgrounds
-  logoFullTagline: `${IMG}/brower-inc-logo-full-tagline-phone.png`,
-  logoIconBMark: `${IMG}/brower-inc-logo-icon-b-mark.png`,
-  logoWordmarkFull: `${IMG}/brower-inc-logo-wordmark-full.png`,
+  // Brand logos (local) — WebP with alpha preserves transparency on colored backgrounds
+  logoFullTagline: `${IMG}/brower-inc-logo-full-tagline-phone.webp`,
+  logoIconBMark: `${IMG}/brower-inc-logo-icon-b-mark.webp`,
+  logoWordmarkFull: `${IMG}/brower-inc-logo-wordmark-full.webp`,
 
   // Team
   troyBrower: `${IMG}/troy-brower-owner-brower-inc-newkirk-ok.webp`,
@@ -63,9 +63,15 @@ export const IMAGES = {
   dogMascot: `${IMG}/brower-inc-company-dog-mascot-service-truck-newkirk-ok.webp`,
   christmasDisplay: `${IMG}/brower-inc-christmas-holiday-display-fun-newkirk-ok.webp`,
 
-  // Blog Covers (AI-generated via Nano Banana)
+  // Blog Covers (AI-generated via Nano Banana, WebP-compressed)
   blogCoverPortaPottyRentalCostOklahoma: `${IMG}/brower-inc-porta-potty-rental-cost-oklahoma-blog-cover-newkirk-ok.webp`,
   blogCoverPortaPottyRentalNearMeRuralOklahoma: `${IMG}/brower-inc-porta-potty-rental-near-me-rural-oklahoma-blog-cover-newkirk-ok.webp`,
-  blogCoverOshaConstructionCalculator: `${IMG}/brower-inc-porta-potty-construction-site-osha-calculator-newkirk-ok.jpeg`,
-  blogCoverPortaPottyVsLuxuryTrailer: `${IMG}/brower-inc-porta-potty-vs-luxury-restroom-trailer-oklahoma-blog-cover-newkirk-ok.jpeg`,
+  blogCoverOshaConstructionCalculator: `${IMG}/brower-inc-porta-potty-construction-site-osha-calculator-newkirk-ok.webp`,
+  blogCoverPortaPottyVsLuxuryTrailer: `${IMG}/brower-inc-porta-potty-vs-luxury-restroom-trailer-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogCoverOilGasPortableSanitation: `${IMG}/brower-inc-oil-gas-portable-sanitation-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogCoverConstructionSiteSanitation: `${IMG}/brower-inc-construction-site-sanitation-tips-blog-cover-newkirk-ok.webp`,
+  blogCoverEventPlanningRestroom: `${IMG}/brower-inc-event-planning-restroom-guide-blog-cover-newkirk-ok.webp`,
+  blogCoverPortableRestroomRentalGuide: `${IMG}/brower-inc-portable-restroom-rental-guide-blog-cover-newkirk-ok.webp`,
+  blogCoverHowCleanArePortableRestrooms: `${IMG}/brower-inc-how-clean-are-portable-restrooms-blog-cover-newkirk-ok.webp`,
+  blogCoverSepticSystemMaintenance: `${IMG}/brower-inc-septic-system-maintenance-oklahoma-blog-cover-newkirk-ok.webp`,
 };

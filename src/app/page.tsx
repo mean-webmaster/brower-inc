@@ -5,14 +5,52 @@ import ServiceCard from "@/components/ServiceCard";
 import CTABanner from "@/components/CTABanner";
 import Testimonials from "@/components/Testimonials";
 import ServiceAreaMapSection from "@/components/ServiceAreaMap";
+import FAQAccordion from "@/components/FAQAccordion";
 import { SERVICES, PHONE, PHONE_HREF, EMAIL, SOCIAL, SERVICE_AREAS_DATA } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
-import { getWebPageSchema, jsonLdString } from "@/lib/structured-data";
+import { getWebPageSchema, getFAQSchema, jsonLdString } from "@/lib/structured-data";
+
+const HOMEPAGE_TITLE =
+  "Porta Potty Rental Near Me — Oklahoma & Kansas | Brower Inc.";
+const HOMEPAGE_DESCRIPTION =
+  "Searching for porta potty rental near me? Brower Inc. delivers porta potties, VIP trailers & septic across 14 OK + 6 KS counties. Call (580) 747-6206.";
+
+const HOMEPAGE_FAQS = [
+  {
+    question: "How fast can you deliver a porta potty to my Oklahoma or Kansas address?",
+    answer:
+      "From our Newkirk, OK headquarters, Brower Inc. typically delivers porta potty rentals within 24–48 hours across 14 Oklahoma and 6 southern Kansas counties. Same-day delivery is often available for weekend events and emergencies — call Troy directly at (580) 747-6206 to confirm availability.",
+  },
+  {
+    question: "What does porta potty rental cost in Oklahoma and Kansas?",
+    answer:
+      "Standard porta potty rentals run $125–$250 per month for long-term jobsites and $100–$200 per event for weekend bookings. VIP luxury restroom trailers range $800–$2,500 depending on duration. Final pricing depends on delivery distance, servicing frequency, and unit type. See our 2026 cost guide for full breakdowns.",
+  },
+  {
+    question: "Do you deliver porta potties to rural addresses?",
+    answer:
+      "Yes. Brower Inc. specializes in rural delivery across Kay, Garfield, Kingfisher, Logan, Cowley, Sumner, and other rural counties where national chains often refuse to go. Our crews routinely navigate farm roads, oil field access, cattle guards, and locked gates. If Google Maps shows your address, we can reach it.",
+  },
+  {
+    question: "What areas of Oklahoma and Kansas does Brower Inc. serve?",
+    answer:
+      "We serve 14 north-central Oklahoma counties (including Kay, Garfield, Kingfisher, Logan, Noble, Pawnee, Osage, and Grant) plus 6 southern Kansas counties (Cowley, Sumner, Sedgwick, Butler, Harper, and Kingman). Cities include Newkirk, Ponca City, Blackwell, Tonkawa, Enid, Stillwater, Wichita, and Winfield.",
+  },
+  {
+    question: "Can I rent a porta potty for just one day or one weekend?",
+    answer:
+      "Absolutely. Short-term rentals for weekend events, weddings, BBQs, and one-day functions are a core part of our business. Single-day pricing typically starts around $100 per unit including delivery, setup, and pickup. Call (580) 747-6206 to lock in a date during peak event season.",
+  },
+  {
+    question: "What's included with a Brower porta potty rental?",
+    answer:
+      "Every rental includes delivery, setup, and pickup. Long-term rentals also include weekly servicing — waste removal, restocked toilet paper, hand sanitizer, paper towels, full sanitization, and damage inspection. ADA-compliant units are available, and add-on hand washing stations pair with any porta potty rental.",
+  },
+];
 
 export const metadata: Metadata = {
-  title: "Portable Restroom Rental & Septic Services | Newkirk, OK",
-  description:
-    "Porta potty rental, VIP restroom trailers, hand washing stations & septic services in Oklahoma. Serving OK & KS. Call (580) 747-6206.",
+  title: HOMEPAGE_TITLE,
+  description: HOMEPAGE_DESCRIPTION,
   alternates: { canonical: "/" },
 };
 
@@ -24,19 +62,24 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{
           __html: jsonLdString(
             getWebPageSchema({
-              name: "Portable Restroom Rental & Septic Services | Newkirk, OK",
-              description:
-                "Porta potty rental, VIP restroom trailers, hand washing stations & septic services in Oklahoma. Serving OK & KS. Call (580) 747-6206.",
+              name: HOMEPAGE_TITLE,
+              description: HOMEPAGE_DESCRIPTION,
               url: "/",
             })
           ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(getFAQSchema(HOMEPAGE_FAQS)),
         }}
       />
       {/* Hero Section */}
       <section className="relative bg-gray-900 py-24 sm:py-32">
         <Image
           src={IMAGES.hero}
-          alt="Brower Inc. portable restrooms and luxury VIP shower trailers arranged at a garden event venue in Newkirk, Oklahoma"
+          alt="Brower Inc. porta potty rental fleet — portable restrooms and luxury VIP shower trailers staged at a garden event venue in Newkirk, Oklahoma"
           fill
           className="object-cover"
           priority
@@ -46,13 +89,13 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Oklahoma&apos;s Trusted{" "}
-              <span className="text-primary">Portable Sanitation</span> Provider
+              <span className="text-primary">Porta Potty Rental</span> Near You — Across Oklahoma &amp; Southern Kansas
             </h1>
             <p className="mt-6 text-lg text-gray-300 sm:text-xl">
-              Portable restrooms, luxury VIP trailers, hand washing stations, and septic
-              services for events, construction sites, and commercial projects throughout
-              Oklahoma.
+              Searching for a porta potty rental near me? Brower Inc. delivers clean
+              Maxim 300 porta potties, VIP restroom trailers, hand washing stations,
+              and septic services across 14 north-central Oklahoma counties and 6
+              southern Kansas counties — including the rural addresses national chains skip.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
@@ -82,7 +125,7 @@ export default function HomePage() {
             { label: "Locally Owned", icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z" },
             { label: "Licensed & Insured", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
             { label: "24/7 Support", icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" },
-            { label: "Serving All of Oklahoma", icon: "M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" },
+            { label: "Oklahoma + Southern Kansas", icon: "M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" },
           ].map((item) => (
             <div key={item.label} className="flex items-center gap-3">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -93,6 +136,31 @@ export default function HomePage() {
               <span className="text-sm font-medium text-gray-900">{item.label}</span>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Quick Answer — AI-citable definition for "porta potty rental near me" queries */}
+      <section className="bg-white py-12 sm:py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border-l-4 border-primary bg-gray-50 p-6 sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-wide text-primary">
+              Quick Answer
+            </p>
+            <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">
+              What is &ldquo;porta potty rental near me&rdquo; in Oklahoma &amp; Kansas?
+            </h2>
+            <p className="mt-4 text-gray-700 leading-relaxed">
+              A porta potty rental near you in Oklahoma or southern Kansas is a portable
+              restroom unit delivered, serviced, and picked up by a local provider for
+              events, construction sites, or rural properties. Brower Inc. is a Newkirk,
+              OK-based, owner-operated company that rents Maxim 300 porta potties, VIP
+              restroom trailers, and hand washing stations across 14 Oklahoma and 6
+              Kansas counties — with same-day and 24/7 emergency delivery available.
+            </p>
+            <p className="mt-4 text-sm text-gray-500">
+              Updated April 2026 · Reviewed by Troy Brower, Owner & Operator
+            </p>
+          </div>
         </div>
       </section>
 
@@ -267,6 +335,32 @@ export default function HomePage() {
 
       {/* Interactive Service Area Map */}
       <ServiceAreaMapSection />
+
+      {/* FAQ — captures "porta potty rental near me" PAA traffic + drives FAQPage rich result */}
+      <section className="bg-white py-16 sm:py-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              The questions Oklahoma and Kansas customers ask most before booking a portable restroom.
+            </p>
+          </div>
+          <div className="mt-10">
+            <FAQAccordion faqs={HOMEPAGE_FAQS} />
+          </div>
+          <div className="mt-8 text-center">
+            <p className="text-gray-600">
+              Have a question we didn&apos;t cover?{" "}
+              <a href={PHONE_HREF} className="font-semibold text-primary hover:text-primary-dark">
+                Call Troy at {PHONE}
+              </a>{" "}
+              — he answers personally.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <CTABanner />
