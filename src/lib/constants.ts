@@ -6,11 +6,11 @@ export const PHONE = "(580) 747-6206";
 export const PHONE_HREF = "tel:+15807476206";
 export const EMAIL = "troy@browerinc.net";
 export const ADDRESS = {
-  street: "Newkirk",
+  street: "6475 N Union St",
   city: "Newkirk",
   state: "OK",
   zip: "74647",
-  full: "Newkirk, OK 74647",
+  full: "6475 N Union St, Newkirk, OK 74647",
 };
 export const SOCIAL = {
   facebook: "https://www.facebook.com/TroysPortables/",

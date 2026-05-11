@@ -36,6 +36,14 @@ yarn-error.log*
 # vercel
 .vercel
 
+# GBP / Google service account keys — NEVER commit
+.gbp-sa-key.json
+*-sa-key.json
+*-service-account.json
+
+# Local metrics snapshots
+/data/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

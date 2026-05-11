@@ -20,10 +20,11 @@ export const SCHEMA_IDS = {
   logo: `${SITE_URL}/#logo`,
 } as const;
 
-/* Newkirk, Oklahoma headquarters coordinates */
+/* Brower Inc. headquarters — 6475 N Union St, Newkirk, OK 74647
+ * Coordinates from US Census Geocoder (street-level, address-matched). */
 const GEO = {
-  latitude: 36.8826,
-  longitude: -97.0531,
+  latitude: 36.889832,
+  longitude: -97.085100,
 } as const;
 
 /* ──────────────────────────────────────────────────────────────────────────
@@ -85,6 +86,7 @@ export function getLocalBusinessNode() {
     logo: { "@id": SCHEMA_IDS.logo },
     address: {
       "@type": "PostalAddress",
+      streetAddress: ADDRESS.street,
       addressLocality: ADDRESS.city,
       addressRegion: ADDRESS.state,
       postalCode: ADDRESS.zip,
@@ -95,7 +97,7 @@ export function getLocalBusinessNode() {
       latitude: GEO.latitude,
       longitude: GEO.longitude,
     },
-    hasMap: `https://www.google.com/maps/place/Newkirk,+OK+${ADDRESS.zip}`,
+    hasMap: `https://www.google.com/maps/place/${encodeURIComponent(ADDRESS.full)}`,
     areaServed: [
       { "@type": "State", name: "Oklahoma" },
       { "@type": "State", name: "Kansas" },
