@@ -68,7 +68,12 @@ export function getOrganizationNode() {
     },
     telephone: PHONE,
     email: EMAIL,
-    sameAs: [SOCIAL.facebook, SOCIAL.youtube, SOCIAL.linkedin],
+    sameAs: [
+      SOCIAL.googleBusiness,
+      SOCIAL.facebook,
+      SOCIAL.youtube,
+      SOCIAL.linkedin,
+    ],
   };
 }
 
@@ -97,7 +102,7 @@ export function getLocalBusinessNode() {
       latitude: GEO.latitude,
       longitude: GEO.longitude,
     },
-    hasMap: `https://www.google.com/maps/place/${encodeURIComponent(ADDRESS.full)}`,
+    hasMap: SOCIAL.googleBusiness,
     areaServed: [
       { "@type": "State", name: "Oklahoma" },
       { "@type": "State", name: "Kansas" },
@@ -123,7 +128,12 @@ export function getLocalBusinessNode() {
     parentOrganization: { "@id": SCHEMA_IDS.organization },
     founder: { "@id": SCHEMA_IDS.troyBrower },
     employee: { "@id": SCHEMA_IDS.troyBrower },
-    sameAs: [SOCIAL.facebook, SOCIAL.youtube, SOCIAL.linkedin],
+    sameAs: [
+      SOCIAL.googleBusiness,
+      SOCIAL.facebook,
+      SOCIAL.youtube,
+      SOCIAL.linkedin,
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Portable Sanitation & Septic Services",
@@ -484,7 +494,12 @@ export function getLocalBusinessForArea(area: {
     paymentAccepted: ["Cash", "Check", "Credit Card", "Invoice"],
     currenciesAccepted: "USD",
     parentOrganization: { "@id": SCHEMA_IDS.organization },
-    sameAs: [SOCIAL.facebook, SOCIAL.youtube, SOCIAL.linkedin],
+    sameAs: [
+      SOCIAL.googleBusiness,
+      SOCIAL.facebook,
+      SOCIAL.youtube,
+      SOCIAL.linkedin,
+    ],
   };
 }
 

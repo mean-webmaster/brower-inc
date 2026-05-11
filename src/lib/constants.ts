@@ -16,6 +16,7 @@ export const SOCIAL = {
   facebook: "https://www.facebook.com/TroysPortables/",
   youtube: "https://www.youtube.com/@TROYSPORTABLES",
   linkedin: "https://www.linkedin.com/in/troy-brower-47824790/",
+  googleBusiness: "https://www.google.com/maps?cid=15025058949246308225",
 };
 export const BUSINESS_HOURS = "Monday - Friday: 8:00 AM - 5:00 PM";
 
