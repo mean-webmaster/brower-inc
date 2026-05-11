@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -118,6 +119,12 @@ export default function RootLayout({
         <FloatingCTA />
       </body>
       <GoogleAnalytics gaId="G-RD41VKS37T" />
+      <Script
+        id="sa-dynamic-optimization-loader"
+        src="https://dashboard.searchatlas.com/scripts/dynamic_optimization.js"
+        data-uuid="902db93b-8dd6-4402-b7c1-054a33e349f4"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }

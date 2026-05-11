@@ -35,23 +35,23 @@ Allow: /
 
 # GPTBot
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 # anthropic-ai
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 # Google-Extended
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 # CCBot
 User-agent: CCBot
-Disallow: /
+Allow: /
 
 # Bytespider
 User-agent: Bytespider
-Disallow: /
+Allow: /
 
 # Host
 Host: https://browerinc.net
