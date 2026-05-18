@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     url: "/blog/osha-portable-restroom-requirements-construction-oklahoma",
     images: [
       {
-        url: "/images/brower-inc-construction-site-sanitation-tips-blog-cover-newkirk-ok.webp",
+        url: "/images/brower-inc-osha-portable-restroom-requirements-construction-oklahoma-blog-cover-newkirk-ok.webp",
         width: 1600,
         height: 900,
-        alt: "Brower Inc. porta potties staged on an active Oklahoma construction site — OSHA 29 CFR 1926.51 compliance checklist",
+        alt: "Brower Inc. standard porta potties, an ADA-accessible unit, and a hand washing station lined up on an Oklahoma commercial construction site at golden hour — OSHA 29 CFR 1926.51 compliance checklist",
       },
     ],
   },
@@ -147,7 +147,7 @@ export default function OshaPortableRestroomRequirementsPage() {
               slug: "osha-portable-restroom-requirements-construction-oklahoma",
               datePublished: "2026-05-18",
               image:
-                "https://browerinc.net/images/brower-inc-construction-site-sanitation-tips-blog-cover-newkirk-ok.webp",
+                "https://browerinc.net/images/brower-inc-osha-portable-restroom-requirements-construction-oklahoma-blog-cover-newkirk-ok.webp",
             }),
           ),
         }}
@@ -183,8 +183,8 @@ export default function OshaPortableRestroomRequirementsPage() {
           </h1>
 
           <Image
-            src={IMAGES.blogCoverConstructionSiteSanitation}
-            alt="Brower Inc. porta potties staged on an active Oklahoma construction site — OSHA 29 CFR 1926.51 compliance checklist"
+            src={IMAGES.blogCoverOshaComplianceChecklist}
+            alt="Brower Inc. standard porta potties, an ADA-accessible unit, and a hand washing station lined up on an Oklahoma commercial construction site at golden hour — OSHA 29 CFR 1926.51 compliance checklist"
             width={1600}
             height={900}
             className="mt-6 aspect-video w-full rounded-xl object-cover"

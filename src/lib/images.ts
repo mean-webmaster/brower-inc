@@ -70,6 +70,8 @@ export const IMAGES = {
   blogCoverPortaPottyVsLuxuryTrailer: `${IMG}/brower-inc-porta-potty-vs-luxury-restroom-trailer-oklahoma-blog-cover-newkirk-ok.webp`,
   blogCoverOilGasPortableSanitation: `${IMG}/brower-inc-oil-gas-portable-sanitation-oklahoma-blog-cover-newkirk-ok.webp`,
   blogCoverConstructionSiteSanitation: `${IMG}/brower-inc-construction-site-sanitation-tips-blog-cover-newkirk-ok.webp`,
+  blogCoverOshaComplianceChecklist: `${IMG}/brower-inc-osha-portable-restroom-requirements-construction-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogCoverCompleteGuideEvents: `${IMG}/brower-inc-complete-guide-portable-restrooms-oklahoma-outdoor-events-blog-cover-newkirk-ok.webp`,
   blogCoverEventPlanningRestroom: `${IMG}/brower-inc-event-planning-restroom-guide-blog-cover-newkirk-ok.webp`,
   blogCoverPortableRestroomRentalGuide: `${IMG}/brower-inc-portable-restroom-rental-guide-blog-cover-newkirk-ok.webp`,
   blogCoverHowCleanArePortableRestrooms: `${IMG}/brower-inc-how-clean-are-portable-restrooms-blog-cover-newkirk-ok.webp`,

@@ -110,6 +110,19 @@ export const BLOG_POSTS: BlogPost[] = [
       "Red Brower Inc. flatbed service truck staged beside a freshly-delivered blue porta potty on a concrete pad at an Oklahoma property at sunrise",
   },
   {
+    slug: "complete-guide-portable-restrooms-oklahoma-outdoor-events",
+    title:
+      "The Complete Guide to Portable Restrooms for Oklahoma Outdoor Events",
+    excerpt:
+      "The complete Oklahoma event-planner's guide to portable restroom rental — unit count, placement, servicing, alcohol & weather adjustments, luxury trailers, ADA, pricing, and a 12-week booking timeline. Real Oklahoma venues.",
+    date: "2026-05-18",
+    readTime: "15 min read",
+    category: "Events, Weddings & Gatherings",
+    image: IMAGES.blogCoverCompleteGuideEvents,
+    imageAlt:
+      "Brower Inc. luxury restroom trailer with two blue porta potties beside a white wedding tent at an Oklahoma outdoor venue at golden hour",
+  },
+  {
     slug: "osha-portable-restroom-requirements-construction-oklahoma",
     title:
       "OSHA Portable Restroom Requirements: The Oklahoma Construction Compliance Checklist",
@@ -118,9 +131,9 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-05-18",
     readTime: "12 min read",
     category: "Construction & Jobsite Compliance",
-    image: IMAGES.blogCoverConstructionSiteSanitation,
+    image: IMAGES.blogCoverOshaComplianceChecklist,
     imageAlt:
-      "Brower Inc. porta potties staged on an active Oklahoma construction site — OSHA 29 CFR 1926.51 compliance checklist",
+      "Brower Inc. standard porta potties, an ADA-accessible unit, and a hand washing station lined up on an Oklahoma commercial construction site at golden hour — OSHA 29 CFR 1926.51 compliance checklist",
   },
   {
     slug: "event-planning-restroom-guide",
