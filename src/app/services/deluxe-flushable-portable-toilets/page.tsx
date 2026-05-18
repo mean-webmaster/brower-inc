@@ -16,7 +16,7 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES.find((s) => s.slug === "deluxe-flushable-portable-toilets")!;
 
 export const metadata: Metadata = {
-  title: "Deluxe Flushable Portable Toilet Rental Oklahoma | Brower Inc.",
+  title: "Deluxe Flushable Portable Toilet Rental Oklahoma",
   description:
     "Flushable portable toilet rental with hands-free flush and built-in sink — perfect for Oklahoma weddings and upscale events. Delivered sanitized. Call (580) 747-6206.",
   alternates: { canonical: "/services/deluxe-flushable-portable-toilets" },

@@ -16,7 +16,7 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES.find((s) => s.slug === "septic-inspections")!;
 
 export const metadata: Metadata = {
-  title: "Septic System Inspection Oklahoma | Real Estate | Brower Inc.",
+  title: "Septic System Inspection Oklahoma — Real Estate Inspections",
   description:
     "Septic system inspections for Oklahoma & Kansas real-estate transactions. Detailed written reports often within 48 hours. Trusted by realtors & lenders. Call (580) 747-6206.",
   alternates: { canonical: "/services/septic-inspections" },

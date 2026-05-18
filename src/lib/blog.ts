@@ -110,16 +110,17 @@ export const BLOG_POSTS: BlogPost[] = [
       "Red Brower Inc. flatbed service truck staged beside a freshly-delivered blue porta potty on a concrete pad at an Oklahoma property at sunrise",
   },
   {
-    slug: "construction-site-sanitation-tips",
-    title: "OSHA Portable Restroom Requirements for Construction Sites (2025 Guide)",
+    slug: "osha-portable-restroom-requirements-construction-oklahoma",
+    title:
+      "OSHA Portable Restroom Requirements: The Oklahoma Construction Compliance Checklist",
     excerpt:
-      "Complete guide to OSHA standard 1926.51(c) portable restroom requirements for Oklahoma construction sites. Unit ratios, ADA compliance, hand washing rules, placement tips, and fines to avoid.",
-    date: "2025-02-28",
-    readTime: "11 min read",
-    category: "Construction",
+      "The complete OSHA 29 CFR 1926.51 compliance checklist for Oklahoma construction sites — unit ratios, hand washing rules, ADA, sex separation, placement, servicing, and the 2026 fine schedule. Print-ready.",
+    date: "2026-05-18",
+    readTime: "12 min read",
+    category: "Construction & Jobsite Compliance",
     image: IMAGES.blogCoverConstructionSiteSanitation,
     imageAlt:
-      "Row of seven branded blue Brower Inc. porta potties staged on a tamped-dirt area at an active Oklahoma residential subdivision construction site with wood framing and a yellow excavator behind",
+      "Brower Inc. porta potties staged on an active Oklahoma construction site — OSHA 29 CFR 1926.51 compliance checklist",
   },
   {
     slug: "event-planning-restroom-guide",

@@ -16,7 +16,7 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES.find((s) => s.slug === "ada-compliant-portable-restrooms")!;
 
 export const metadata: Metadata = {
-  title: "ADA-Compliant Portable Restroom Rental Oklahoma | Brower Inc.",
+  title: "ADA-Compliant Portable Restroom Rental Oklahoma",
   description:
     "Wheelchair-accessible porta potty rental in Oklahoma — meets ADA & OSHA requirements. Ground-level entry, interior handrails, family-friendly. Call (580) 747-6206.",
   alternates: { canonical: "/services/ada-compliant-portable-restrooms" },

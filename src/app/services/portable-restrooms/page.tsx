@@ -16,7 +16,7 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES[0];
 
 export const metadata: Metadata = {
-  title: "Porta Potty Rental Oklahoma | The Complete Guide | Brower Inc.",
+  title: "Porta Potty Rental Oklahoma — The Complete Guide",
   description:
     "Porta potty rental in Oklahoma — Maxim 300 units delivered to events, jobsites, and rural addresses across 14 OK counties + 6 KS counties. Weekly servicing. Call (580) 747-6206.",
   alternates: { canonical: "/services/portable-restrooms" },

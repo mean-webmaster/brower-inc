@@ -16,7 +16,7 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES.find((s) => s.slug === "emergency-porta-potty-rental")!;
 
 export const metadata: Metadata = {
-  title: "Emergency Porta Potty Rental Oklahoma | Same-Day | Brower Inc.",
+  title: "Emergency Porta Potty Rental Oklahoma — Same-Day Delivery",
   description:
     "Emergency porta potty rental across Oklahoma & southern Kansas — 24/7 dispatch, same-day delivery for storms, plumbing failures, last-minute events. Call (580) 747-6206.",
   alternates: { canonical: "/services/emergency-porta-potty-rental" },

@@ -16,7 +16,7 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES.find((s) => s.slug === "septic-tank-pumping")!;
 
 export const metadata: Metadata = {
-  title: "Septic Tank Pumping Oklahoma | Cleaning & Inspection | Brower Inc.",
+  title: "Septic Tank Pumping Oklahoma — Cleaning & Inspection",
   description:
     "Septic tank pumping across Oklahoma & southern Kansas — most homes need a pump every 3–5 years. Transparent pricing, same-week scheduling. Call (580) 747-6206.",
   alternates: { canonical: "/services/septic-tank-pumping" },

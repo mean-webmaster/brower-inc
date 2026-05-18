@@ -58,6 +58,12 @@ const nextConfig: NextConfig = {
         destination: "https://browerinc.net/:path*",
         permanent: true,
       },
+      {
+        source: "/blog/construction-site-sanitation-tips",
+        destination:
+          "/blog/osha-portable-restroom-requirements-construction-oklahoma",
+        permanent: true,
+      },
     ];
   },
 };

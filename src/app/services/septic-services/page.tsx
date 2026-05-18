@@ -10,7 +10,7 @@ import { IMAGES } from "@/lib/images";
 const service = SERVICES[3];
 
 export const metadata: Metadata = {
-  title: "Septic Pumping Near Me | Oklahoma & Kansas | Brower Inc.",
+  title: "Septic Pumping Near Me — Oklahoma & Kansas",
   description:
     "Searching for septic pumping near me? Brower Inc. provides septic tank pumping, repair & aerobic install across Oklahoma & southern Kansas. Call (580) 747-6206.",
   alternates: { canonical: "/services/septic-services" },
