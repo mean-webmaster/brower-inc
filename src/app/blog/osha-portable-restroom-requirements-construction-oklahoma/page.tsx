@@ -34,8 +34,18 @@ export const metadata: Metadata = {
         url: "/images/brower-inc-osha-portable-restroom-requirements-construction-oklahoma-blog-cover-newkirk-ok.webp",
         width: 1600,
         height: 900,
-        alt: "Brower Inc. standard porta potties, an ADA-accessible unit, and a hand washing station lined up on an Oklahoma commercial construction site at golden hour — OSHA 29 CFR 1926.51 compliance checklist",
+        alt: "Brower Inc. portable restrooms and a hand washing station on an active Oklahoma construction site with steel framing in the background at golden hour — OSHA 29 CFR 1926.51 sanitation compliance",
       },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "OSHA Portable Restroom Requirements: Oklahoma Construction Compliance Checklist",
+    description:
+      "Every line of 29 CFR 1926.51 translated into a print-ready checklist for Oklahoma jobsites — ratios, hand wash, ADA, sex separation, placement, servicing, fines.",
+    images: [
+      "/images/brower-inc-osha-portable-restroom-requirements-construction-oklahoma-blog-cover-newkirk-ok.webp",
     ],
   },
 };
@@ -123,6 +133,7 @@ const TOC_ITEMS = [
 ];
 
 const BREADCRUMBS = [
+  { name: "Home", href: "/" },
   { name: "Blog", href: "/blog" },
   {
     name: "OSHA Portable Restroom Requirements — Oklahoma Compliance Checklist",
@@ -146,6 +157,7 @@ export default function OshaPortableRestroomRequirementsPage() {
                 "The complete OSHA 29 CFR 1926.51 compliance checklist for Oklahoma construction sites — unit ratios, hand washing rules, ADA, sex separation, placement, servicing, and 2026 fine schedule.",
               slug: "osha-portable-restroom-requirements-construction-oklahoma",
               datePublished: "2026-05-18",
+              dateModified: "2026-05-19",
               image:
                 "https://browerinc.net/images/brower-inc-osha-portable-restroom-requirements-construction-oklahoma-blog-cover-newkirk-ok.webp",
             }),
@@ -184,11 +196,12 @@ export default function OshaPortableRestroomRequirementsPage() {
 
           <Image
             src={IMAGES.blogCoverOshaComplianceChecklist}
-            alt="Brower Inc. standard porta potties, an ADA-accessible unit, and a hand washing station lined up on an Oklahoma commercial construction site at golden hour — OSHA 29 CFR 1926.51 compliance checklist"
+            alt="Brower Inc. portable restrooms and a hand washing station on an active Oklahoma construction site with steel framing in the background at golden hour — OSHA 29 CFR 1926.51 sanitation compliance"
             width={1600}
             height={900}
+            sizes="(max-width: 768px) 100vw, 768px"
             className="mt-6 aspect-video w-full rounded-xl object-cover"
-            priority
+            preload
           />
 
           <div className="prose mt-8 max-w-none">

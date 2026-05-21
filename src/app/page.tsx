@@ -198,8 +198,20 @@ export default function HomePage() {
               Pricing, OSHA rules, comparison guides, and rural delivery — answers before you book.
             </p>
           </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
+              {
+                href: "/blog/osha-portable-restroom-requirements-construction-oklahoma",
+                eyebrow: "OSHA Checklist",
+                title: "OSHA Portable Restroom Requirements — Oklahoma Compliance Checklist",
+                blurb: "Print-ready 29 CFR 1926.51 checklist: ratios, hand wash, ADA, sex separation, placement, servicing, and the 2026 fine schedule.",
+              },
+              {
+                href: "/blog/complete-guide-portable-restrooms-oklahoma-outdoor-events",
+                eyebrow: "Events Pillar",
+                title: "Portable Restrooms for Oklahoma Outdoor Events — The Complete Guide",
+                blurb: "Unit count formula, alcohol & weather multipliers, ADA, luxury trailers, pricing, and a 12-week booking timeline.",
+              },
               {
                 href: "/blog/porta-potty-rental-cost-oklahoma",
                 eyebrow: "Pricing",

@@ -133,7 +133,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Construction & Jobsite Compliance",
     image: IMAGES.blogCoverOshaComplianceChecklist,
     imageAlt:
-      "Brower Inc. standard porta potties, an ADA-accessible unit, and a hand washing station lined up on an Oklahoma commercial construction site at golden hour — OSHA 29 CFR 1926.51 compliance checklist",
+      "Brower Inc. portable restrooms and a hand washing station on an active Oklahoma construction site with steel framing in the background at golden hour — OSHA 29 CFR 1926.51 sanitation compliance",
   },
   {
     slug: "event-planning-restroom-guide",

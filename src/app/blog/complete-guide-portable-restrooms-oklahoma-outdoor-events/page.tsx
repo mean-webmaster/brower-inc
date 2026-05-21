@@ -32,11 +32,21 @@ export const metadata: Metadata = {
     url: "/blog/complete-guide-portable-restrooms-oklahoma-outdoor-events",
     images: [
       {
-        url: "/images/brower-inc-complete-guide-portable-restrooms-oklahoma-outdoor-events-blog-cover-newkirk-ok.jpeg",
+        url: "/images/brower-inc-complete-guide-portable-restrooms-oklahoma-outdoor-events-blog-cover-newkirk-ok.webp",
         width: 1600,
         height: 900,
         alt: "Brower Inc. luxury restroom trailer with two blue porta potties beside a white wedding tent at an Oklahoma outdoor venue at golden hour",
       },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "The Complete Guide to Portable Restrooms for Oklahoma Outdoor Events",
+    description:
+      "Every formula, every Oklahoma adjustment, every common mistake — the complete planner's playbook for outdoor event sanitation.",
+    images: [
+      "/images/brower-inc-complete-guide-portable-restrooms-oklahoma-outdoor-events-blog-cover-newkirk-ok.webp",
     ],
   },
 };
@@ -126,6 +136,7 @@ const TOC_ITEMS = [
 ];
 
 const BREADCRUMBS = [
+  { name: "Home", href: "/" },
   { name: "Blog", href: "/blog" },
   {
     name: "Complete Guide to Portable Restrooms for Oklahoma Outdoor Events",
@@ -149,8 +160,9 @@ export default function CompleteGuidePortableRestroomsOklahomaEventsPage() {
                 "The complete Oklahoma event-planner's guide to portable restroom rental — unit count, placement, servicing, alcohol & weather adjustments, luxury trailers, ADA, pricing, and a 12-week booking timeline.",
               slug: "complete-guide-portable-restrooms-oklahoma-outdoor-events",
               datePublished: "2026-05-18",
+              dateModified: "2026-05-19",
               image:
-                "https://browerinc.net/images/brower-inc-complete-guide-portable-restrooms-oklahoma-outdoor-events-blog-cover-newkirk-ok.jpeg",
+                "https://browerinc.net/images/brower-inc-complete-guide-portable-restrooms-oklahoma-outdoor-events-blog-cover-newkirk-ok.webp",
             }),
           ),
         }}
@@ -190,8 +202,9 @@ export default function CompleteGuidePortableRestroomsOklahomaEventsPage() {
             alt="Brower Inc. luxury restroom trailer with two blue porta potties beside a white wedding tent at an Oklahoma outdoor venue at golden hour"
             width={1600}
             height={900}
+            sizes="(max-width: 768px) 100vw, 768px"
             className="mt-6 aspect-video w-full rounded-xl object-cover"
-            priority
+            preload
           />
 
           <div className="prose mt-8 max-w-none">

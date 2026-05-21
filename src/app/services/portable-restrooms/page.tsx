@@ -678,14 +678,14 @@ export default function PortableRestroomsPage() {
                   blurb: "When to upgrade for your wedding, gala, or corporate event.",
                 },
                 {
-                  href: "/blog/construction-site-sanitation-tips",
-                  title: "OSHA Construction Sanitation",
-                  blurb: "Compliance, placement, and crew expectations on a jobsite.",
+                  href: "/blog/osha-portable-restroom-requirements-construction-oklahoma",
+                  title: "OSHA Compliance Checklist (2026)",
+                  blurb: "Print-ready 29 CFR 1926.51 checklist — ratios, ADA, sex separation, placement, servicing, and the 2026 fine schedule.",
                 },
                 {
-                  href: "/blog/event-planning-restroom-guide",
-                  title: "Event Planning Restroom Guide",
-                  blurb: "How many units for any guest count and event duration.",
+                  href: "/blog/complete-guide-portable-restrooms-oklahoma-outdoor-events",
+                  title: "Complete Oklahoma Events Guide",
+                  blurb: "Unit count formula, alcohol & weather multipliers, luxury trailers, pricing, and a 12-week booking timeline.",
                 },
                 {
                   href: "/blog/portable-restroom-rental-guide",

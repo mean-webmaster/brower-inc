@@ -345,6 +345,7 @@ export function getArticleSchema(article: {
   description: string;
   slug: string;
   datePublished: string;
+  dateModified?: string;
   image?: string;
 }) {
   return {
@@ -354,6 +355,7 @@ export function getArticleSchema(article: {
     description: article.description,
     image: article.image || `${SITE_URL}/images/brower-inc-og.jpg`,
     datePublished: article.datePublished,
+    dateModified: article.dateModified || article.datePublished,
     author: { "@id": SCHEMA_IDS.troyBrower },
     publisher: { "@id": SCHEMA_IDS.organization },
     mainEntityOfPage: {

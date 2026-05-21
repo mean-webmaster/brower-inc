@@ -643,6 +643,15 @@ export default function EventPlanningRestroomGuidePage() {
             <ul className="mt-3 space-y-2">
               <li>
                 <Link
+                  href="/blog/complete-guide-portable-restrooms-oklahoma-outdoor-events"
+                  className="text-sm text-primary hover:underline"
+                >
+                  The Complete Guide to Portable Restrooms for Oklahoma
+                  Outdoor Events (2026 pillar)
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/blog/portable-restroom-rental-guide"
                   className="text-sm text-primary hover:underline"
                 >
