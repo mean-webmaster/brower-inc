@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
 import CTABanner from "@/components/CTABanner";
-import Testimonials from "@/components/Testimonials";
 import ServiceAreaMapSection from "@/components/ServiceAreaMap";
 import FAQAccordion from "@/components/FAQAccordion";
 import { SERVICES, PHONE, PHONE_HREF, EMAIL, SOCIAL, SERVICE_AREAS_DATA } from "@/lib/constants";
@@ -266,8 +265,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <Testimonials />
 
       {/* Meet the Owner */}
       <section className="bg-gray-50 py-16 sm:py-24">

@@ -1587,27 +1587,6 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
 // Simple list for backward compatibility
 export const SERVICE_AREAS = SERVICE_AREAS_DATA.map((area) => area.name);
 
-export const TESTIMONIALS = [
-  {
-    name: "Mike Johnson",
-    role: "Construction Site Manager",
-    text: "Brower Inc. has been our go-to for portable restrooms on every job site. Reliable delivery, clean units, and great service every time.",
-    rating: 5,
-  },
-  {
-    name: "Sarah Williams",
-    role: "Event Planner",
-    text: "The VIP restroom trailers were a huge hit at our outdoor wedding. Guests kept commenting on how nice they were. Highly recommend!",
-    rating: 5,
-  },
-  {
-    name: "David Carter",
-    role: "Property Manager",
-    text: "We use Brower Inc. for all our septic maintenance. They are always professional, on time, and do thorough work. Would not trust anyone else.",
-    rating: 5,
-  },
-];
-
 export const FAQS = [
   {
     question: "Is a porta potty the same as a portable restroom?",
