@@ -91,10 +91,8 @@ export default function HomePage() {
               <span className="text-primary">Porta Potty Rental &amp; Septic Services</span>{" "}Across Oklahoma &amp; Southern Kansas
             </h1>
             <p className="mt-6 text-lg text-gray-300 sm:text-xl">
-              Searching for a porta potty rental near you? Brower Inc. delivers clean
-              Maxim 300 porta potties, VIP restroom trailers, hand washing stations,
-              and septic services across 14 north-central Oklahoma counties and 6
-              southern Kansas counties — including the rural addresses national chains skip.
+              Clean porta potties, VIP restroom trailers, and septic services —
+              delivered to the rural addresses national chains skip.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
@@ -138,26 +136,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Quick Answer — AI-citable definition for "porta potty rental near me" queries */}
+      {/* Why Brower — quick value prop for visitors + SEO-friendly for porta potty rental queries */}
       <section className="bg-white py-12 sm:py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-2xl border-l-4 border-primary bg-gray-50 p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-wide text-primary">
-              Quick Answer
+              Why Brower Inc.
             </p>
             <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">
-              What is &ldquo;porta potty rental near me&rdquo; in Oklahoma &amp; Kansas?
+              Local Porta Potty Rental &amp; Septic Services You Can Count On
             </h2>
             <p className="mt-4 text-gray-700 leading-relaxed">
-              A porta potty rental near you in Oklahoma or southern Kansas is a portable
-              restroom unit delivered, serviced, and picked up by a local provider for
-              events, construction sites, or rural properties. Brower Inc. is a Newkirk,
-              OK-based, owner-operated company that rents Maxim 300 porta potties, VIP
-              restroom trailers, and hand washing stations across 14 Oklahoma and 6
-              Kansas counties — with same-day and 24/7 emergency delivery available.
+              Brower Inc. is an owner-operated portable sanitation company based in
+              Newkirk, Oklahoma. We deliver clean Maxim 300 porta potties, VIP restroom
+              trailers, hand washing stations, and full septic services across 10
+              Oklahoma and 9 southern Kansas counties. Whether it&apos;s a weekend wedding,
+              a long-term construction site, or an emergency call at 2&nbsp;a.m. — Troy
+              and the crew show up with clean units, on time, every time.
             </p>
             <p className="mt-4 text-sm text-gray-500">
-              Updated April 2026 · Reviewed by Troy Brower, Owner & Operator
+              Locally owned since day one · Newkirk, OK headquarters
             </p>
           </div>
         </div>
