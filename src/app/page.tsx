@@ -88,7 +88,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              <span className="text-primary">Porta Potty Rental</span>{" "}Near You — Across Oklahoma &amp; Southern Kansas
+              <span className="text-primary">Porta Potty Rental &amp; Septic Services</span>{" "}Across Oklahoma &amp; Southern Kansas
             </h1>
             <p className="mt-6 text-lg text-gray-300 sm:text-xl">
               Searching for a porta potty rental near you? Brower Inc. delivers clean

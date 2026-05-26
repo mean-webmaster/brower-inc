@@ -17,15 +17,10 @@ export default function InteractiveMap({ onCountyClick }: MapProps) {
   useEffect(() => {
     const loadMap = async () => {
       try {
-        const geoResponse = await fetch(
-          "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json"
-        );
+        const geoResponse = await fetch("/data/service-counties.json");
         const geoData = await geoResponse.json();
 
-        const serviceFips = SERVICE_COUNTIES.map((c) => c.fips);
-        const filteredFeatures = geoData.features.filter((f: any) =>
-          serviceFips.includes(f.id)
-        );
+        const filteredFeatures = geoData.features;
 
         if (!svgRef.current) return;
 
