@@ -12,7 +12,7 @@ import { getWebPageSchema, getFAQSchema, jsonLdString } from "@/lib/structured-d
 const HOMEPAGE_TITLE =
   "Porta Potty Rental Near Me — Oklahoma & Kansas | Brower Inc.";
 const HOMEPAGE_DESCRIPTION =
-  "Searching for porta potty rental near me? Brower Inc. delivers porta potties, VIP trailers & septic across 14 OK + 6 KS counties. Call (580) 747-6206.";
+  "Searching for porta potty rental near you? Brower Inc. delivers porta potties, VIP trailers & septic across 14 OK + 6 KS counties. Call (580) 747-6206.";
 
 const HOMEPAGE_FAQS = [
   {
@@ -78,7 +78,7 @@ export default function HomePage() {
       <section className="relative bg-gray-900 py-24 sm:py-32">
         <Image
           src={IMAGES.hero}
-          alt="Brower Inc. porta potty rental fleet — portable restrooms and luxury VIP shower trailers staged at a garden event venue in Newkirk, Oklahoma"
+          alt="Brower Inc. full fleet lineup — service trucks, equipment, and portable restrooms in Newkirk, Oklahoma"
           fill
           className="object-cover"
           priority
@@ -88,10 +88,10 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              <span className="text-primary">Porta Potty Rental</span> Near You — Across Oklahoma &amp; Southern Kansas
+              <span className="text-primary">Porta Potty Rental</span>{" "}Near You — Across Oklahoma &amp; Southern Kansas
             </h1>
             <p className="mt-6 text-lg text-gray-300 sm:text-xl">
-              Searching for a porta potty rental near me? Brower Inc. delivers clean
+              Searching for a porta potty rental near you? Brower Inc. delivers clean
               Maxim 300 porta potties, VIP restroom trailers, hand washing stations,
               and septic services across 14 north-central Oklahoma counties and 6
               southern Kansas counties — including the rural addresses national chains skip.

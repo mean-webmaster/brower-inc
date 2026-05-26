@@ -8,7 +8,7 @@ export const IMAGES = {
   ogImage: `${GHL}/6727f81d38b82f89893ab29a.jpeg`,
 
   // Hero
-  hero: `${IMG}/brower-inc-portable-restrooms-luxury-trailers-garden-event-newkirk-ok.webp`,
+  hero: `${IMG}/brower-inc-full-fleet-trucks-equipment-lineup-newkirk-ok.webp`,
 
   // Brand logos (local) — WebP with alpha preserves transparency on colored backgrounds
   logoFullTagline: `${IMG}/brower-inc-logo-full-tagline-phone.webp`,
