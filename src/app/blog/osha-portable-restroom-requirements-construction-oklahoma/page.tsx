@@ -999,7 +999,7 @@ export default function OshaPortableRestroomRequirementsPage() {
             <p className="mt-4 text-gray-600 leading-relaxed">
               That&apos;s the job Brower Inc. does for Oklahoma and southern
               Kansas general contractors every week. Locally owned in Newkirk,
-              640+ unit fleet stored on-site, 24/7 dispatch, and a servicing
+              1,375+ unit fleet stored on-site, 24/7 dispatch, and a servicing
               log every inspector accepts. Call {PHONE} or{" "}
               <Link href="/contact" className="text-primary hover:underline">
                 request a free compliance plan

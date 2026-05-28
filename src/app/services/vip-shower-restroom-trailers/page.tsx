@@ -85,6 +85,17 @@ export default function VIPTrailersPage() {
                 className="h-80 w-full rounded-xl object-cover"
               />
 
+              <div className="mt-6">
+                <h2 className="text-xl font-bold text-gray-900">18-Station Trailer Floor Plan</h2>
+                <Image
+                  src={IMAGES.vipFloorPlan}
+                  alt="Floor plan layout of Brower Inc. 18-station VIP restroom and shower trailer showing private stalls, sinks, and showers"
+                  width={849}
+                  height={584}
+                  className="mt-3 w-full rounded-xl border border-gray-200 bg-white p-2"
+                />
+              </div>
+
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Common Use Cases</h2>
               <ul className="mt-4 grid gap-2 sm:grid-cols-2">
                 {service.useCases.map((useCase) => (
@@ -97,11 +108,87 @@ export default function VIPTrailersPage() {
             </div>
           </div>
 
+          {/* Alternate Trailer Layout */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">Shower &amp; Restroom Combo Trailer</h2>
+            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
+              Our second VIP trailer features an alternate layout with dedicated shower stalls — perfect for oil field crews, disaster relief, athletic events, and multi-day festivals where guests need a full shower experience alongside restroom facilities.
+            </p>
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <div>
+                <Image
+                  src={IMAGES.vipExteriorWarehouse}
+                  alt="Brower Inc. VIP shower and restroom combo trailer in warehouse, Newkirk, Oklahoma"
+                  width={1920}
+                  height={1080}
+                  className="w-full rounded-xl object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">Combo Trailer Floor Plan</h3>
+                <Image
+                  src={IMAGES.vipFloorPlanAlt}
+                  alt="Floor plan of Brower Inc. VIP shower and restroom combo trailer showing shower stalls, restroom stalls, and sinks"
+                  width={1317}
+                  height={658}
+                  className="mt-3 w-full rounded-xl border border-gray-200 bg-white p-2"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* 3-Station Compact Trailer */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">3-Station Compact Restroom Trailer</h2>
+            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
+              Our compact 3-station restroom trailer is the perfect fit for smaller events, intimate weddings, and jobsites where space is tight. At just 18&prime; long and 6&prime;5&Prime; wide, it delivers the same flushing toilets, running water, and climate control as our full-size trailers — in a footprint that fits almost anywhere.
+            </p>
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <div>
+                <Image
+                  src={IMAGES.vip3Station}
+                  alt="Brower Inc. 3-station compact restroom trailer in Newkirk, Oklahoma"
+                  width={4032}
+                  height={3024}
+                  className="w-full rounded-xl object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">Compact Trailer Floor Plan</h3>
+                <Image
+                  src={IMAGES.vip3StationFloorPlan}
+                  alt="Floor plan of Brower Inc. 3-station compact restroom trailer showing three private stalls with flushing toilets and sinks"
+                  width={1206}
+                  height={644}
+                  className="mt-3 w-full rounded-xl border border-gray-200 bg-white p-2"
+                />
+                <div className="mt-6 grid grid-cols-2 gap-4">
+                  <div className="rounded-lg bg-gray-50 p-4 text-center">
+                    <p className="text-2xl font-bold text-primary">3</p>
+                    <p className="text-sm text-gray-600">Stations</p>
+                  </div>
+                  <div className="rounded-lg bg-gray-50 p-4 text-center">
+                    <p className="text-2xl font-bold text-primary">18&prime;</p>
+                    <p className="text-sm text-gray-600">Length</p>
+                  </div>
+                  <div className="rounded-lg bg-gray-50 p-4 text-center">
+                    <p className="text-2xl font-bold text-primary">3</p>
+                    <p className="text-sm text-gray-600">Doors</p>
+                  </div>
+                  <div className="rounded-lg bg-gray-50 p-4 text-center">
+                    <p className="text-2xl font-bold text-primary">6&prime;5&Prime;</p>
+                    <p className="text-sm text-gray-600">Width</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* VIP Gallery */}
           <div className="mt-16 border-t pt-12">
             <h2 className="text-3xl font-bold text-gray-900">See Our VIP Trailers</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Take a closer look at the premium interiors and exteriors of our 18-station VIP restroom and shower trailers. These units are designed for comfort and style at any event.
+              Take a closer look at the premium interiors and exteriors of our VIP restroom and shower trailers. These units are designed for comfort and style at any event.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               <Image src={IMAGES.vipInteriorVanity} alt="VIP restroom trailer interior with vanity and private stalls" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />

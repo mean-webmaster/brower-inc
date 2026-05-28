@@ -50,12 +50,12 @@ export const INDUSTRIES: IndustryData[] = [
     metaTitle:
       "Construction Site Portable Restroom Rental | OSHA Compliant | Oklahoma",
     metaDescription:
-      "OSHA-compliant porta potty rental for Oklahoma construction sites. Standard, ADA & hand wash stations. Weekly servicing included. 640+ unit fleet. Call (580) 747-6206.",
+      "OSHA-compliant porta potty rental for Oklahoma construction sites. Standard, ADA & hand wash stations. Weekly servicing included. 1,375+ unit fleet. Call (580) 747-6206.",
     heroTitle: "Portable Restrooms for Oklahoma Construction Sites",
     heroDescription:
       "Keep your crew compliant, productive, and satisfied with clean, reliable portable restrooms delivered and serviced weekly. Brower Inc. provides OSHA-compliant porta potties, ADA-accessible units, and hand washing stations for residential builds, commercial projects, road work, and industrial facilities across north-central Oklahoma and southern Kansas.",
     whyBrower:
-      "Brower Inc. understands construction timelines. Our 640+ unit fleet means we always have inventory ready when your project starts — no delays, no excuses. Every long-term rental includes weekly servicing (waste removal, restocking, sanitizing, and damage inspection) so your site stays compliant without you lifting a finger. Troy Brower personally manages scheduling to make sure units arrive on day one and leave when the job is done — no continued billing after project completion.",
+      "Brower Inc. understands construction timelines. Our 1,375+ unit fleet means we always have inventory ready when your project starts — no delays, no excuses. Every long-term rental includes weekly servicing (waste removal, restocking, sanitizing, and damage inspection) so your site stays compliant without you lifting a finger. Troy Brower personally manages scheduling to make sure units arrive on day one and leave when the job is done — no continued billing after project completion.",
     complianceTitle: "OSHA Compliance Made Simple",
     complianceContent:
       "OSHA standard 29 CFR 1926.51 requires at least 1 toilet for every 20 workers on a construction site, with restrooms reachable within a 10-minute walk. Non-compliance can result in fines up to $16,131 per violation in 2025. If men and women work on the same site, you must provide separate or lockable facilities. Hand sanitizer alone does not satisfy OSHA requirements when workers handle chemicals — dedicated hand washing stations with running water, soap, and paper towels are mandatory. Brower Inc. helps you determine the right number of units, deliver ADA-compliant restrooms when required, and provides the documentation you need for inspections.",
@@ -121,7 +121,7 @@ export const INDUSTRIES: IndustryData[] = [
       },
     ],
     stats: [
-      { value: "640+", label: "Unit Fleet" },
+      { value: "1,375+", label: "Unit Fleet" },
       { value: "20", label: "Counties Served" },
       { value: "24/7", label: "Support Available" },
       { value: "Weekly", label: "Servicing Included" },
@@ -184,7 +184,7 @@ export const INDUSTRIES: IndustryData[] = [
         description:
           "Restrooms are often the last thing booked and the first thing guests notice. Peak season (May through October) causes inventory shortages, especially for luxury trailers.",
         solution:
-          "Book early for guaranteed availability. Our 640+ unit fleet means we rarely run out of standard units, but VIP trailers are limited — we recommend booking 3-6 months ahead for peak wedding season.",
+          "Book early for guaranteed availability. Our 1,375+ unit fleet means we rarely run out of standard units, but VIP trailers are limited — we recommend booking 3-6 months ahead for peak wedding season.",
       },
     ],
     faqs: [
@@ -204,7 +204,7 @@ export const INDUSTRIES: IndustryData[] = [
         question:
           "How far in advance should I book portable restrooms for my event?",
         answer:
-          "We recommend booking at least 2-4 weeks ahead for standard units and 3-6 months ahead for VIP luxury trailers during peak season (May through October). Last-minute requests can often be accommodated for standard units due to our 640+ fleet, but VIP trailers are limited inventory.",
+          "We recommend booking at least 2-4 weeks ahead for standard units and 3-6 months ahead for VIP luxury trailers during peak season (May through October). Last-minute requests can often be accommodated for standard units due to our 1,375+ fleet, but VIP trailers are limited inventory.",
       },
       {
         question:
@@ -220,7 +220,7 @@ export const INDUSTRIES: IndustryData[] = [
     ],
     stats: [
       { value: "18", label: "Station VIP Trailers" },
-      { value: "640+", label: "Unit Fleet" },
+      { value: "1,375+", label: "Unit Fleet" },
       { value: "24/7", label: "Event Support" },
       { value: "3", label: "Unit Colors Available" },
     ],
@@ -319,7 +319,7 @@ export const INDUSTRIES: IndustryData[] = [
       { value: "20", label: "Counties Reached" },
       { value: "24/7", label: "Delivery & Support" },
       { value: "2-3x", label: "Weekly Servicing Available" },
-      { value: "640+", label: "Unit Fleet" },
+      { value: "1,375+", label: "Unit Fleet" },
     ],
     relatedServices: [
       "portable-restrooms",
@@ -435,13 +435,13 @@ export const INDUSTRIES: IndustryData[] = [
     metaTitle:
       "Municipal Portable Restroom Services | Government Contracts | Oklahoma",
     metaDescription:
-      "Portable restroom rental for Oklahoma municipalities. Emergency deployment, park facilities, public events & road crews. 640+ unit fleet. Call (580) 747-6206.",
+      "Portable restroom rental for Oklahoma municipalities. Emergency deployment, park facilities, public events & road crews. 1,375+ unit fleet. Call (580) 747-6206.",
     heroTitle:
       "Portable Sanitation for Oklahoma Municipalities & Government",
     heroDescription:
-      "Oklahoma's city, county, and state agencies rely on Brower Inc. for everything from park trailhead restrooms to rapid emergency deployment after tornadoes. With a 640+ unit fleet and 24/7 availability, we handle the scale and urgency that government operations demand — while providing the transparency and documentation public procurement requires.",
+      "Oklahoma's city, county, and state agencies rely on Brower Inc. for everything from park trailhead restrooms to rapid emergency deployment after tornadoes. With a 1,375+ unit fleet and 24/7 availability, we handle the scale and urgency that government operations demand — while providing the transparency and documentation public procurement requires.",
     whyBrower:
-      "Brower Inc. understands government procurement. We provide W-9 forms, certificates of insurance, formal quotes on request, and transparent invoicing suitable for public accountability. Our 640+ unit fleet enables large-scale emergency deployment on short notice — essential during Oklahoma's tornado season. We offer both per-event pricing and annual contract options to fit your municipality's budget cycle.",
+      "Brower Inc. understands government procurement. We provide W-9 forms, certificates of insurance, formal quotes on request, and transparent invoicing suitable for public accountability. Our 1,375+ unit fleet enables large-scale emergency deployment on short notice — essential during Oklahoma's tornado season. We offer both per-event pricing and annual contract options to fit your municipality's budget cycle.",
     complianceTitle: "Procurement-Ready Documentation",
     complianceContent:
       "Municipal portable restroom procurement requires transparency, documentation, and compliance with public bidding processes. Brower Inc. provides formal written quotes, W-9 forms, certificates of insurance (general liability and auto), and detailed invoicing with line-item breakdowns. We can set up annual service contracts or per-event agreements depending on your municipality's needs and budget cycle. All pricing is transparent with no hidden fees.",
@@ -451,7 +451,7 @@ export const INDUSTRIES: IndustryData[] = [
         description:
           "A tornado strikes and you need 50 units deployed by tomorrow. Most providers can't handle large emergency orders on short notice. You need someone who answers the phone 24/7, especially during storm season.",
         solution:
-          "Our 640+ unit fleet enables rapid large-scale deployment. We answer the phone 24/7 — including during tornado season when you need us most. We can mobilize dozens of units within hours, not days.",
+          "Our 1,375+ unit fleet enables rapid large-scale deployment. We answer the phone 24/7 — including during tornado season when you need us most. We can mobilize dozens of units within hours, not days.",
       },
       {
         title: "Budget & Procurement Process",
@@ -473,7 +473,7 @@ export const INDUSTRIES: IndustryData[] = [
         question:
           "Can Brower Inc. deploy portable restrooms for emergency disaster response in Oklahoma?",
         answer:
-          "Yes. Our 640+ unit fleet enables rapid large-scale deployment for tornado recovery, flooding, wildfire staging, and ice storm response. We operate 24/7 and can mobilize dozens of units within hours. Oklahoma averages 56 tornadoes per year — emergency readiness is built into our operations.",
+          "Yes. Our 1,375+ unit fleet enables rapid large-scale deployment for tornado recovery, flooding, wildfire staging, and ice storm response. We operate 24/7 and can mobilize dozens of units within hours. Oklahoma averages 56 tornadoes per year — emergency readiness is built into our operations.",
       },
       {
         question:
@@ -495,7 +495,7 @@ export const INDUSTRIES: IndustryData[] = [
       },
     ],
     stats: [
-      { value: "640+", label: "Unit Fleet" },
+      { value: "1,375+", label: "Unit Fleet" },
       { value: "24/7", label: "Emergency Response" },
       { value: "56", label: "Avg OK Tornadoes/Year" },
       { value: "20", label: "Counties Covered" },
@@ -612,14 +612,14 @@ export const INDUSTRIES: IndustryData[] = [
     heroDescription:
       "When power lines go down in an ice storm, fiber crews push into rural corridors, or substation work stretches across weeks, your field crews need restroom facilities at locations with zero infrastructure. Brower Inc. provides portable restrooms for utility line crews, telecom installers, and storm restoration teams across 20 counties in Oklahoma and southern Kansas.",
     whyBrower:
-      "Storm restoration is urgent — when an ice storm or tornado takes down power lines across rural Oklahoma, utility companies deploy crews from multiple states who need immediate sanitation at staging areas and work sites. Brower Inc.'s 640+ unit fleet and 24/7 availability means we can deploy units to restoration staging areas on short notice. For planned utility work — power line maintenance, fiber optic installation, substation projects — we provide long-term rentals with weekly servicing at remote crew locations.",
+      "Storm restoration is urgent — when an ice storm or tornado takes down power lines across rural Oklahoma, utility companies deploy crews from multiple states who need immediate sanitation at staging areas and work sites. Brower Inc.'s 1,375+ unit fleet and 24/7 availability means we can deploy units to restoration staging areas on short notice. For planned utility work — power line maintenance, fiber optic installation, substation projects — we provide long-term rentals with weekly servicing at remote crew locations.",
     painPoints: [
       {
         title: "Storm Restoration Urgency",
         description:
           "When ice storms or tornadoes take down power lines, out-of-state crews are deployed for weeks. They need restrooms at staging areas and remote work sites — immediately.",
         solution:
-          "Our 640+ fleet and 24/7 operations enable rapid deployment to storm restoration staging areas. We've supported emergency utility operations across our 20-county service area and can scale from a few units to dozens on short notice.",
+          "Our 1,375+ fleet and 24/7 operations enable rapid deployment to storm restoration staging areas. We've supported emergency utility operations across our 20-county service area and can scale from a few units to dozens on short notice.",
       },
       {
         title: "Remote Substations & Line Work",
@@ -641,7 +641,7 @@ export const INDUSTRIES: IndustryData[] = [
         question:
           "Can Brower Inc. deploy portable restrooms for storm restoration crews?",
         answer:
-          "Yes. We provide rapid deployment for storm restoration staging areas and work sites. Our 640+ unit fleet and 24/7 availability mean we can respond quickly when ice storms, tornadoes, or severe weather create urgent utility restoration needs.",
+          "Yes. We provide rapid deployment for storm restoration staging areas and work sites. Our 1,375+ unit fleet and 24/7 availability mean we can respond quickly when ice storms, tornadoes, or severe weather create urgent utility restoration needs.",
       },
       {
         question:
@@ -657,7 +657,7 @@ export const INDUSTRIES: IndustryData[] = [
       },
     ],
     stats: [
-      { value: "640+", label: "Unit Fleet" },
+      { value: "1,375+", label: "Unit Fleet" },
       { value: "24/7", label: "Emergency Deploy" },
       { value: "20", label: "Counties Covered" },
       { value: "Weekly", label: "Servicing Included" },
@@ -687,20 +687,20 @@ export const INDUSTRIES: IndustryData[] = [
     metaTitle:
       "Emergency Portable Restroom Deployment | Disaster Relief | Oklahoma",
     metaDescription:
-      "Emergency portable restroom & shower trailer deployment for Oklahoma tornado recovery, floods & disaster relief. 640+ fleet, 24/7 response. Call (580) 747-6206.",
+      "Emergency portable restroom & shower trailer deployment for Oklahoma tornado recovery, floods & disaster relief. 1,375+ fleet, 24/7 response. Call (580) 747-6206.",
     heroTitle:
       "Emergency Portable Restroom Deployment for Oklahoma Disasters",
     heroDescription:
       "Oklahoma averages 56 tornadoes per year. Add flooding, ice storms, and wildfires, and the demand for emergency sanitation is year-round. Brower Inc. provides rapid large-scale portable restroom and shower trailer deployment for disaster recovery operations, emergency shelters, fire camps, and community relief staging areas across north-central Oklahoma and southern Kansas.",
     whyBrower:
-      "When disaster strikes, response time is everything. Our 640+ unit fleet — one of the largest in north-central Oklahoma — enables us to deploy dozens of portable restrooms and shower trailers within hours, not days. We operate 24/7, including during active storm events. Troy Brower coordinates emergency logistics personally, working with emergency managers, relief organizations, and government agencies to place units exactly where they're needed. Living and operating in tornado-prone Oklahoma means emergency readiness isn't a special service — it's how we operate.",
+      "When disaster strikes, response time is everything. Our 1,375+ unit fleet — one of the largest in north-central Oklahoma — enables us to deploy dozens of portable restrooms and shower trailers within hours, not days. We operate 24/7, including during active storm events. Troy Brower coordinates emergency logistics personally, working with emergency managers, relief organizations, and government agencies to place units exactly where they're needed. Living and operating in tornado-prone Oklahoma means emergency readiness isn't a special service — it's how we operate.",
     painPoints: [
       {
         title: "Speed of Deployment",
         description:
           "After a tornado, you need 50 units at a shelter site by morning. Most providers don't have the fleet, the staff, or the 24/7 availability to mobilize at that scale and speed.",
         solution:
-          "Our 640+ fleet enables rapid mass deployment. We operate 24/7 and can begin delivering within hours of your call. Troy personally coordinates emergency logistics to get units placed fast.",
+          "Our 1,375+ fleet enables rapid mass deployment. We operate 24/7 and can begin delivering within hours of your call. Troy personally coordinates emergency logistics to get units placed fast.",
       },
       {
         title: "Extended Displacement Needs",
@@ -722,7 +722,7 @@ export const INDUSTRIES: IndustryData[] = [
         question:
           "How fast can Brower Inc. deploy portable restrooms after a tornado?",
         answer:
-          "We can begin deploying portable restrooms within hours of an emergency call. Our 640+ unit fleet and 24/7 availability mean we're ready when Oklahoma's severe weather strikes. Troy Brower coordinates emergency logistics personally to ensure rapid placement.",
+          "We can begin deploying portable restrooms within hours of an emergency call. Our 1,375+ unit fleet and 24/7 availability mean we're ready when Oklahoma's severe weather strikes. Troy Brower coordinates emergency logistics personally to ensure rapid placement.",
       },
       {
         question:
@@ -740,11 +740,11 @@ export const INDUSTRIES: IndustryData[] = [
         question:
           "How many portable restrooms can Brower Inc. deploy at once?",
         answer:
-          "Our fleet of 640+ units is one of the largest in north-central Oklahoma. For emergency scenarios, we can deploy large quantities rapidly and continue scaling as additional units are freed from other assignments. Call (580) 747-6206 to discuss your emergency needs.",
+          "Our fleet of 1,375+ units is one of the largest in north-central Oklahoma. For emergency scenarios, we can deploy large quantities rapidly and continue scaling as additional units are freed from other assignments. Call (580) 747-6206 to discuss your emergency needs.",
       },
     ],
     stats: [
-      { value: "640+", label: "Unit Fleet" },
+      { value: "1,375+", label: "Unit Fleet" },
       { value: "Hours", label: "Not Days to Deploy" },
       { value: "56", label: "Avg OK Tornadoes/Year" },
       { value: "24/7", label: "Always Available" },

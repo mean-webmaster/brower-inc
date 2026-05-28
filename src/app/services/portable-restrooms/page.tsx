@@ -141,7 +141,7 @@ export default function PortableRestroomsPage() {
                   picking up portable toilets for events, construction sites, oil-field operations,
                   and rural properties. Brower Inc. is a locally owned provider based in Newkirk,
                   Oklahoma, serving 14 counties in north-central Oklahoma and 6 counties in
-                  southern Kansas with a 640+ unit fleet — including standard, ADA-compliant,
+                  southern Kansas with a 1,375+ unit fleet — including standard, ADA-compliant,
                   deluxe flushable, and luxury restroom trailers.
                 </p>
               </div>
@@ -620,7 +620,7 @@ export default function PortableRestroomsPage() {
             </p>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { title: "640+ Unit Fleet", body: "One of the largest fleets in north-central Oklahoma — inventory ready when you need it." },
+                { title: "1,375+ Unit Fleet", body: "One of the largest fleets in north-central Oklahoma — inventory ready when you need it." },
                 { title: "Owner-Operated", body: "Troy personally manages every project. No call centers, no excuses, no handoffs." },
                 { title: "24/7 Support", body: "We answer the phone day or night, including weekends and tornado season." },
                 { title: "Weekly Servicing", body: "All long-term rentals include weekly cleaning, restocking, and inspection." },

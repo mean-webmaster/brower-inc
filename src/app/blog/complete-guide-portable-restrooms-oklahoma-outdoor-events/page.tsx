@@ -1099,7 +1099,7 @@ export default function CompleteGuidePortableRestroomsOklahomaEventsPage() {
             </p>
             <p className="mt-4 text-gray-600 leading-relaxed">
               Brower Inc. has done this for Oklahoma planners and hosts for
-              nearly two decades. Locally owned in Newkirk, 640+ unit fleet
+              nearly two decades. Locally owned in Newkirk, 1,375+ unit fleet
               dispatched from a single hub, two luxury VIP trailers, and 24/7
               event-week emergency support. Call {PHONE} or{" "}
               <Link href="/contact" className="text-primary hover:underline">
