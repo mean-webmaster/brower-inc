@@ -40,6 +40,7 @@ export const IMAGES = {
   vipExteriorWarehouse: `${IMG}/brower-inc-vip-shower-restroom-trailer-exterior-warehouse-newkirk-ok.webp`,
   vipFloorPlanAlt: `${IMG}/brower-inc-vip-shower-restroom-trailer-floor-plan-alt-newkirk-ok.webp`,
   vip3Station: `${IMG}/brower-inc-3-station-restroom-trailer-newkirk-ok.webp`,
+  vipTrailersLot: `${IMG}/brower-inc-vip-trailers-portable-restrooms-lot-newkirk-ok.webp`,
   vip3StationFloorPlan: `${IMG}/brower-inc-3-station-restroom-trailer-floor-plan-newkirk-ok.webp`,
 
   // Hand Washing Stations

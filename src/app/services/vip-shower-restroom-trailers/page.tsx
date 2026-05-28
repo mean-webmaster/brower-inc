@@ -195,6 +195,7 @@ export default function VIPTrailersPage() {
               <Image src={IMAGES.vipExteriorAngle} alt="VIP restroom trailer exterior angle view" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
               <Image src={IMAGES.vipExteriorCloseup} alt="VIP restroom trailer exterior closeup with branding" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
               <Image src={IMAGES.vipWithHandwash} alt="VIP restroom trailer paired with hand washing station" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
+              <Image src={IMAGES.vipTrailersLot} alt="Brower Inc. VIP restroom trailers and portable restrooms staged in the Newkirk, Oklahoma lot" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
             </div>
           </div>
 
