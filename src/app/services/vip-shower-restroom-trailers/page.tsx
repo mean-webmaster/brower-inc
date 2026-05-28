@@ -48,10 +48,8 @@ export default function VIPTrailersPage() {
               <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
                 Luxury Porta Potty Rental in Oklahoma — VIP Restroom Trailers
               </h1>
-              <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
-
-              <p className="mt-4 text-base text-gray-600 leading-relaxed">
-                Each trailer includes spacious fully enclosed private stalls with running water, soap and paper towel dispensers, large countertops, full-size mirrors, and superior LED lighting. For safety, the trailers feature stairs with sturdy handrails on both sides and porch lights.
+              <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+                Elevate your event with our VIP restroom and shower trailers — climate-controlled 18-station units with private flushing stalls, running water, and LED lighting. Perfect for weddings, corporate functions, and upscale gatherings across Oklahoma and southern Kansas.
               </p>
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Features & Benefits</h2>
