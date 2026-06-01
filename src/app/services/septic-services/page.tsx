@@ -3,11 +3,50 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
+import FAQAccordion from "@/components/FAQAccordion";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
-import { getServiceSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
+import {
+  getServiceSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+  jsonLdString,
+} from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[3];
+
+const FAQS = [
+  {
+    question: "How much does septic tank pumping cost in Oklahoma?",
+    answer:
+      "Most residential septic tank pumping in Oklahoma runs roughly $250–$600, depending on tank size (1,000 vs. 1,500 gallons), how accessible the lid is, how full the tank is, and your distance from our Newkirk base. Commercial tanks and grease traps are quoted by volume. Because pricing varies with access and condition, call (580) 747-6206 for a firm quote tailored to your property.",
+  },
+  {
+    question: "How often should I pump my septic tank?",
+    answer:
+      "As a rule of thumb, most septic tanks need pumping every 3–5 years. The exact interval depends on tank size, household size, and water usage — a large family on a small tank may need service every 2–3 years, while a couple on a 1,500-gallon tank may go closer to 5. Regular pumping prevents solids from reaching the drain field, which is the single most expensive part of a septic system to repair.",
+  },
+  {
+    question: "What are the signs I need septic service?",
+    answer:
+      "Call for service if you notice slow drains throughout the house, sewage odor near the tank or drain field, unusually green or spongy grass over the drain field, standing water or wet spots in the yard, or gurgling sounds in your plumbing. These are early warnings of a tank that's overdue for pumping or a developing backup. Addressing them early is far cheaper than an emergency cleanup.",
+  },
+  {
+    question: "Do you offer emergency septic service near me?",
+    answer:
+      "Yes. Brower Inc. provides 24/7 emergency response for septic backups across north-central Oklahoma and southern Kansas, alongside same-week scheduling for routine pumping. We're based in Newkirk, OK and serve homeowners and businesses in Ponca City, Enid, Blackwell, Tonkawa, Stillwater, Perry, and the surrounding rural counties. Call (580) 747-6206 any hour and a Brower team member — not a call center — answers.",
+  },
+  {
+    question: "Do you install aerobic and conventional septic systems?",
+    answer:
+      "Yes. We perform a site survey, recommend the right system for your soil and lot, and install both conventional and aerobic septic systems. We have the equipment to excavate safely and install the system correctly the first time, so you avoid the repeat costs that come from a rushed or undersized install.",
+  },
+  {
+    question: "Do you provide residential and commercial septic pumping?",
+    answer:
+      "Both. Brower Inc. pumps and services residential septic tanks, commercial systems, restaurant grease traps, and aerobic systems throughout our Oklahoma and southern Kansas service area. Property managers and businesses can set up a recurring pumping schedule so a tank is never the reason a property goes offline.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Septic Pumping Near Me — Oklahoma & Kansas",
@@ -33,6 +72,10 @@ export default function SepticServicesPage() {
             ]),
           ),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getFAQSchema(FAQS)) }}
       />
       <Breadcrumbs
         items={[
@@ -117,6 +160,14 @@ export default function SepticServicesPage() {
             <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
               Not sure when your tank was last pumped? Signs you need service include slow drains, sewage odor near the tank or drain field, standing water in your yard, and gurgling sounds in your plumbing. Brower Inc. offers same-week scheduling for routine pumping and 24/7 emergency response for septic backups. <Link href="/contact" className="text-primary font-medium hover:underline">Schedule your septic service</Link> or call (580) 747-6206.
             </p>
+          </div>
+
+          {/* FAQ */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">Septic services — frequently asked questions</h2>
+            <div className="mt-6">
+              <FAQAccordion faqs={FAQS} />
+            </div>
           </div>
 
           {/* Areas We Serve */}

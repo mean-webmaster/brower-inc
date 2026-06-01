@@ -48,7 +48,7 @@ export const INDUSTRIES: IndustryData[] = [
     shortDescription:
       "OSHA-compliant portable restrooms for residential, commercial, and industrial construction sites across Oklahoma and Kansas.",
     metaTitle:
-      "Construction Site Portable Restroom Rental | OSHA Compliant | Oklahoma",
+      "Construction Porta Potty Rental Oklahoma | OSHA Compliant",
     metaDescription:
       "OSHA-compliant porta potty rental for Oklahoma construction sites. Standard, ADA & hand wash stations. Weekly servicing included. 640+ unit fleet. Call (580) 747-6206.",
     heroTitle: "Portable Restrooms for Oklahoma Construction Sites",
@@ -149,7 +149,7 @@ export const INDUSTRIES: IndustryData[] = [
     shortDescription:
       "Portable restrooms and luxury VIP trailers for weddings, festivals, corporate events, and gatherings across Oklahoma.",
     metaTitle:
-      "Event & Wedding Portable Restroom Rental | VIP Trailers | Oklahoma",
+      "Event & Wedding Porta Potty Rental Oklahoma | VIP Trailers",
     metaDescription:
       "Portable restroom & luxury VIP trailer rental for Oklahoma weddings, festivals & events. 18-station climate-controlled trailers. Call (580) 747-6206.",
     heroTitle: "Portable Restrooms & Luxury Trailers for Oklahoma Events",
@@ -247,7 +247,7 @@ export const INDUSTRIES: IndustryData[] = [
     shortDescription:
       "Portable sanitation for drilling sites, pipeline construction, pump stations, wind farms, and refinery operations in Oklahoma.",
     metaTitle:
-      "Oil Field Portable Restrooms & Sanitation | Oklahoma Energy Sector",
+      "Oil Field Porta Potty Rental & Sanitation | Oklahoma",
     metaDescription:
       "Portable restroom rental for Oklahoma oil fields, drilling sites & pipeline construction. Remote delivery, flexible servicing, OSHA compliant. Call (580) 747-6206.",
     heroTitle:
@@ -344,7 +344,7 @@ export const INDUSTRIES: IndustryData[] = [
     shortDescription:
       "Portable restroom solutions for farms, ranches, harvest crews, livestock operations, and agricultural events in Oklahoma.",
     metaTitle:
-      "Farm & Ranch Portable Restroom Rental | Agricultural Sanitation | Oklahoma",
+      "Farm & Ranch Porta Potty Rental Oklahoma | Ag Sanitation",
     metaDescription:
       "Portable restroom rental for Oklahoma farms & ranches. OSHA field sanitation compliant. Rural delivery to remote properties. Call (580) 747-6206.",
     heroTitle: "Portable Restrooms for Oklahoma Farms & Ranches",
@@ -433,7 +433,7 @@ export const INDUSTRIES: IndustryData[] = [
     shortDescription:
       "Portable restroom services for Oklahoma municipalities — parks, public events, road crews, and emergency disaster response.",
     metaTitle:
-      "Municipal Portable Restroom Services | Government Contracts | Oklahoma",
+      "Municipal Portable Restroom Rental | Government | Oklahoma",
     metaDescription:
       "Portable restroom rental for Oklahoma municipalities. Emergency deployment, park facilities, public events & road crews. 640+ unit fleet. Call (580) 747-6206.",
     heroTitle:
@@ -523,7 +523,7 @@ export const INDUSTRIES: IndustryData[] = [
     shortDescription:
       "Portable restrooms and VIP luxury trailers for film crews, talent, and production sets across Oklahoma.",
     metaTitle:
-      "Film & TV Production Portable Restrooms | VIP Trailers | Oklahoma",
+      "Film & TV Production Restroom Trailer Rental | Oklahoma",
     metaDescription:
       "Portable restroom & VIP trailer rental for Oklahoma film & TV productions. Climate-controlled trailers for talent. Remote location delivery. Call (580) 747-6206.",
     heroTitle:
@@ -604,7 +604,7 @@ export const INDUSTRIES: IndustryData[] = [
     shortDescription:
       "Portable restrooms for utility line crews, substations, fiber installation, and storm restoration teams in Oklahoma.",
     metaTitle:
-      "Utility Crew Portable Restroom Rental | Storm Restoration | Oklahoma",
+      "Utility Crew Porta Potty Rental Oklahoma | Storm Crews",
     metaDescription:
       "Portable restroom rental for Oklahoma utility crews, line workers & storm restoration teams. Remote delivery, rapid deployment. Call (580) 747-6206.",
     heroTitle:
@@ -685,7 +685,7 @@ export const INDUSTRIES: IndustryData[] = [
     shortDescription:
       "Rapid portable restroom and shower trailer deployment for tornado recovery, flood relief, wildfire staging, and ice storm response in Oklahoma.",
     metaTitle:
-      "Emergency Portable Restroom Deployment | Disaster Relief | Oklahoma",
+      "Disaster Relief Portable Restrooms Oklahoma | Emergency",
     metaDescription:
       "Emergency portable restroom & shower trailer deployment for Oklahoma tornado recovery, floods & disaster relief. 640+ fleet, 24/7 response. Call (580) 747-6206.",
     heroTitle:
@@ -772,7 +772,7 @@ export const INDUSTRIES: IndustryData[] = [
     shortDescription:
       "Portable restrooms for new home construction and septic maintenance for rental properties throughout Oklahoma.",
     metaTitle:
-      "Real Estate & Property Management Sanitation Services | Oklahoma",
+      "Real Estate Septic & Porta Potty Rental Oklahoma",
     metaDescription:
       "Portable restroom rental for home construction & septic maintenance for rental properties in Oklahoma. One provider for both. Call (580) 747-6206.",
     heroTitle:

@@ -3,11 +3,50 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
+import FAQAccordion from "@/components/FAQAccordion";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
-import { getServiceSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
+import {
+  getServiceSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+  jsonLdString,
+} from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[4];
+
+const FAQS = [
+  {
+    question: "How much does construction porta potty rental cost per month in Oklahoma?",
+    answer:
+      "A standard construction porta potty in Oklahoma typically rents for about $200–$300 per month with weekly servicing included. ADA-compliant units and high-traffic sites that need twice-weekly service cost more. Volume rates apply when you rent multiple units for a single jobsite. Because long-term pricing depends on unit count, service frequency, and distance from our Newkirk yard, call (580) 747-6206 for a project quote.",
+  },
+  {
+    question: "Is weekly servicing included with a long-term rental?",
+    answer:
+      "Yes. Every Brower Inc. long-term rental includes weekly servicing: we empty the waste tank, restock toilet paper, hand sanitizer, and paper towels, sanitize and scrub the interior, and inspect the unit for damage. High-usage jobsites can be scheduled for additional service visits. You get a documented service schedule you can show for OSHA compliance.",
+  },
+  {
+    question: "How many porta potties does my construction site need?",
+    answer:
+      "Under OSHA 29 CFR 1926.51, you need one toilet for crews up to 20 workers, two toilets for 20–199 workers, and one additional toilet per 40 workers beyond that. Sites with workers who have mobility disabilities also need at least one ADA-accessible unit, plus handwashing facilities. Brower Inc. calculates the exact mix for your crew size and adds handwashing stations where required.",
+  },
+  {
+    question: "What's the difference between long-term and monthly porta potty rental?",
+    answer:
+      "They're the same thing in practice — a long-term or monthly porta potty rental is any rental billed on an ongoing (usually monthly) cycle with weekly servicing included, as opposed to a one-time event rental. Long-term rentals are built for multi-month construction, oil and gas field operations, and commercial projects, and they qualify for volume pricing the longer and larger the job.",
+  },
+  {
+    question: "Do you offer ADA and his/her units for jobsites?",
+    answer:
+      "Yes. We carry ADA-compliant (handicap-accessible) units and his-and-her configurations alongside our standard Maxim 300 units. ADA units are required on OSHA jobsites where a worker has a mobility disability, and they're a smart default for any larger crew. We'll help you determine the right number and mix of units based on crew size and usage.",
+  },
+  {
+    question: "Can you deliver to remote and rural jobsites?",
+    answer:
+      "Yes — rural and remote delivery is our specialty. From our Newkirk, OK base, our fleet reaches construction sites, oil-field service tracks, and remote work sites across 14 Oklahoma counties and 6 southern Kansas counties. National providers often won't service addresses outside city limits; we will. Call (580) 747-6206 with your jobsite location and we'll confirm delivery.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Construction Porta Potty Rental Oklahoma | Long-Term Jobsite",
@@ -33,6 +72,10 @@ export default function LongTermRentalsPage() {
             ]),
           ),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getFAQSchema(FAQS)) }}
       />
       <Breadcrumbs
         items={[
@@ -115,6 +158,14 @@ export default function LongTermRentalsPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          {/* FAQ */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">Construction &amp; long-term rental FAQs</h2>
+            <div className="mt-6">
+              <FAQAccordion faqs={FAQS} />
             </div>
           </div>
 

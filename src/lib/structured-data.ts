@@ -300,6 +300,7 @@ export function getServiceSchema(service: {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `${SITE_URL}/services/${service.slug}#service`,
     name: service.title,
     ...(alternateName && { alternateName }),
     description: service.description,

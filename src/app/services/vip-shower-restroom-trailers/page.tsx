@@ -3,11 +3,50 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
+import FAQAccordion from "@/components/FAQAccordion";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
-import { getServiceSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
+import {
+  getServiceSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+  jsonLdString,
+} from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[1];
+
+const FAQS = [
+  {
+    question: "How much does a luxury restroom trailer rental cost in Oklahoma?",
+    answer:
+      "VIP restroom trailer rental in Oklahoma generally ranges from $800 to $2,500 per event, depending on trailer size, event duration, and delivery distance from our Newkirk base. Each rental includes delivery, setup, post-event cleaning, and pickup. For an exact quote tailored to your venue and date, call (580) 747-6206.",
+  },
+  {
+    question: "How many guests can a VIP restroom trailer handle?",
+    answer:
+      "Our 18-station luxury restroom trailers comfortably serve large events and replace 4–6 standard portable restrooms. As a planning rule, one well-appointed trailer handles a few hundred guests for a typical wedding or corporate event; we'll recommend the right configuration based on your guest count, event length, and whether alcohol is served.",
+  },
+  {
+    question: "Do your restroom trailers have showers?",
+    answer:
+      "Yes. We offer combined VIP shower and restroom trailers with private shower stalls and running hot water — popular for film and TV productions, disaster-relief staging, multi-day festivals, and ranch events where crews or guests need to clean up on site. Ask about shower-equipped configurations when you book.",
+  },
+  {
+    question: "Do VIP trailers need power and water hookups?",
+    answer:
+      "Our luxury trailers carry onboard fresh-water tanks and can run on standard power, with generator options available for remote venues that have no electrical hookup. We confirm power and water needs and the best placement when we schedule your delivery, so the trailer is fully functional from the moment guests arrive.",
+  },
+  {
+    question: "Are luxury restroom trailers worth it for a wedding?",
+    answer:
+      "For most outdoor weddings, yes — a VIP trailer with climate control, flushing toilets, running water, and full-size mirrors is the single most-requested guest-comfort upgrade and protects formalwear and the overall experience. Our porta potty vs. luxury restroom trailer comparison guide breaks down exactly when the upgrade is worth it for your guest count and budget.",
+  },
+  {
+    question: "How far in advance should I book a VIP restroom trailer?",
+    answer:
+      "Because we run a limited number of luxury trailers, book 2–3 months ahead for peak wedding and event season (spring and fall) to guarantee availability for your date. We can sometimes accommodate shorter notice — call (580) 747-6206 to check availability for your event.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Luxury Porta Potty Rental Oklahoma | VIP Trailers | Brower",
@@ -33,6 +72,10 @@ export default function VIPTrailersPage() {
             ]),
           ),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getFAQSchema(FAQS)) }}
       />
       <Breadcrumbs
         items={[
@@ -122,6 +165,14 @@ export default function VIPTrailersPage() {
             <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
               VIP trailer rental pricing ranges from $800–$2,500 per event depending on trailer size, event duration, and delivery distance. Each rental includes delivery, setup, post-event cleaning, and pickup. Pair with our <Link href="/services/hand-washing-stations" className="text-primary font-medium hover:underline">hand washing stations</Link> for complete guest comfort. <Link href="/contact" className="text-primary font-medium hover:underline">Request a free VIP trailer quote</Link> or call (580) 747-6206.
             </p>
+          </div>
+
+          {/* FAQ */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">Luxury restroom trailer FAQs</h2>
+            <div className="mt-6">
+              <FAQAccordion faqs={FAQS} />
+            </div>
           </div>
 
           {/* Areas We Serve */}

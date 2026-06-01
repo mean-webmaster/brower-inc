@@ -18,7 +18,7 @@ const service = SERVICES[0];
 export const metadata: Metadata = {
   title: "Porta Potty Rental Oklahoma — The Complete Guide",
   description:
-    "Porta potty rental in Oklahoma — Maxim 300 units delivered to events, jobsites, and rural addresses across 14 OK counties + 6 KS counties. Weekly servicing. Call (580) 747-6206.",
+    "Porta potty rental in Oklahoma — clean units delivered to events, jobsites & rural addresses across 20 counties. Weekly servicing. Call (580) 747-6206.",
   alternates: { canonical: "/services/portable-restrooms" },
 };
 
@@ -203,9 +203,10 @@ export default function PortableRestroomsPage() {
             </p>
             <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
               Most people in Oklahoma know them as porta potties, portable toilets, port-a-johns,
-              porta loos, or "the blue box on the construction site." Regardless of the name, the
-              service is the same — and so are the rules around how many you need, how often
-              they're serviced, and what counts as compliant. We'll cover all of that below.
+              or porta loos, and the service itself as portable restroom rental or porta potties
+              for rent. Regardless of the name, the service is the same — and so are the rules
+              around how many you need, how often they're serviced, and what counts as compliant.
+              We'll cover all of that below.
             </p>
           </div>
 

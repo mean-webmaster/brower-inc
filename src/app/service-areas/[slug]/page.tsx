@@ -116,7 +116,7 @@ export default async function ServiceAreaPage({
             </div>
 
             <h1 className="mt-4 text-4xl font-bold text-gray-900 sm:text-5xl">
-              Portable Restroom Rental &amp; Septic Services in {locationLabel}
+              Porta Potty Rental &amp; Septic Services in {locationLabel}
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
@@ -254,8 +254,9 @@ export default async function ServiceAreaPage({
         </section>
       )}
 
-      {/* Local FAQ */}
-      {area.content.localFAQ && area.content.localFAQ.length > 0 && (
+      {/* Local FAQ — only emit FAQPage schema when there are 2+ questions
+          (Google requires a minimum of 2 to render FAQ rich results) */}
+      {area.content.localFAQ && area.content.localFAQ.length >= 2 && (
         <>
           <script
             type="application/ld+json"

@@ -3,11 +3,45 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
+import FAQAccordion from "@/components/FAQAccordion";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
-import { getServiceSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
+import {
+  getServiceSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+  jsonLdString,
+} from "@/lib/structured-data";
 import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[2];
+
+const FAQS = [
+  {
+    question: "How much does a portable hand washing station rental cost in Oklahoma?",
+    answer:
+      "A portable hand washing station in Oklahoma typically rents for about $100–$175 per weekend event or $125–$200 per month for long-term jobsites with regular servicing. Pricing depends on the number of stations, how often they're serviced, and delivery distance from our Newkirk base. Call (580) 747-6206 for a free quote.",
+  },
+  {
+    question: "Do portable hand washing stations need a water hookup?",
+    answer:
+      "No. Our portable hand washing stations are fully self-contained — they arrive stocked with potable water, soap, and paper towels, and include a waste containment tank. No plumbing, hose, or electrical hookup is required, which is what makes them ideal for remote jobsites, fields, and outdoor events with no infrastructure.",
+  },
+  {
+    question: "Are hand washing stations required on OSHA construction sites?",
+    answer:
+      "Yes. OSHA 29 CFR 1926.51 requires employers to provide adequate hand washing facilities for construction crews, especially where workers handle hazardous materials or eat on site. Our stations meet that standard. For food-service events, Oklahoma county health departments also require hand washing facilities near food vendors.",
+  },
+  {
+    question: "How many hand washing stations do I need?",
+    answer:
+      "A common guideline is one hand washing station per 1–2 portable restrooms, and at least one per food-vendor area at events. For construction sites, scale with crew size and OSHA requirements. Brower Inc. helps you calculate the right number based on your guest count or crew size when you book.",
+  },
+  {
+    question: "Can I pair hand washing stations with porta potty rentals?",
+    answer:
+      "Absolutely — that's the most common setup. We deliver hand washing stations alongside our portable restroom and ADA unit rentals so your event or jobsite has complete sanitation in one drop-off. Bundling delivery also keeps costs down versus separate trips.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Portable Hand Washing Station Rental Oklahoma | Brower",
@@ -33,6 +67,10 @@ export default function HandWashingStationsPage() {
             ]),
           ),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString(getFAQSchema(FAQS)) }}
       />
       <Breadcrumbs
         items={[
@@ -106,6 +144,14 @@ export default function HandWashingStationsPage() {
             <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
               Every hand washing station rental includes potable water, soap, paper towels, and a waste containment tank. Pair them with our <Link href="/services/portable-restrooms" className="text-primary font-medium hover:underline">portable restroom rentals</Link> for complete jobsite or event sanitation. <Link href="/contact" className="text-primary font-medium hover:underline">Request a free quote</Link> or call us at (580) 747-6206.
             </p>
+          </div>
+
+          {/* FAQ */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">Hand washing station FAQs</h2>
+            <div className="mt-6">
+              <FAQAccordion faqs={FAQS} />
+            </div>
           </div>
 
           {/* Areas We Serve */}
