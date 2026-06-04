@@ -58,6 +58,19 @@ const nextConfig: NextConfig = {
         destination: "https://browerinc.net/:path*",
         permanent: true,
       },
+      // Legacy domain — consolidate all signals onto browerinc.net (local SEO / NAP consistency)
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "troysportables.com" }],
+        destination: "https://browerinc.net/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.troysportables.com" }],
+        destination: "https://browerinc.net/:path*",
+        permanent: true,
+      },
       {
         source: "/blog/construction-site-sanitation-tips",
         destination:
