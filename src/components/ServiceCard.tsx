@@ -24,16 +24,16 @@ const serviceImages: Record<string, { src: string; alt: string }> = {
     alt: "Brower Inc. full fleet of trucks and equipment lined up for long-term rental deployment in Newkirk, Oklahoma",
   },
   "deluxe-flushable-portable-toilets": {
-    src: IMAGES.portableRestroomEvent,
-    alt: "Brower Inc. deluxe flushable portable toilet at an outdoor event venue in Oklahoma",
+    src: IMAGES.technician,
+    alt: "Brower Inc. technician at an industrial jobsite in Newkirk, Oklahoma",
   },
   "ada-compliant-portable-restrooms": {
     src: IMAGES.portableRestroomTrio,
     alt: "Brower Inc. ADA-compliant portable restroom trio mounted on trailer in Newkirk, Oklahoma",
   },
   "emergency-porta-potty-rental": {
-    src: IMAGES.deliveryNight,
-    alt: "Brower Inc. service truck delivering an emergency porta potty at night in Oklahoma",
+    src: IMAGES.deliveryLot,
+    alt: "Brower Inc. service truck delivering portable restrooms during the day in Newkirk, Oklahoma",
   },
   "septic-tank-pumping": {
     src: IMAGES.septicPumpingClose,

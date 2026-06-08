@@ -26,7 +26,7 @@ const FAQS = [
   {
     question: "How far in advance should I book portable restrooms?",
     answer:
-      "For standard construction rentals, 1–2 weeks is usually sufficient. For events, book 2–4 weeks ahead for standard units and 4–8 weeks ahead for VIP restroom trailers during peak season (May–September). Last-minute requests can often be accommodated from our 640+ unit fleet, but availability during rodeo season and holiday weekends is never guaranteed.",
+      "For standard construction rentals, 1–2 weeks is usually sufficient. For events, book 2–4 weeks ahead for standard units and 4–8 weeks ahead for VIP restroom trailers during peak season (May–September). Last-minute requests can often be accommodated from our 1,375+ unit fleet, but availability during rodeo season and holiday weekends is never guaranteed.",
   },
   {
     question: "How does delivery and pickup work?",
@@ -582,7 +582,7 @@ export default function PortableRestroomRentalGuidePage() {
                 Founder &amp; Owner, Brower Inc.
               </p>
               <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                Troy operates a 640+ unit fleet serving{" "}
+                Troy operates a 1,375+ unit fleet serving{" "}
                 <Link
                   href="/service-areas"
                   className="text-primary hover:underline"

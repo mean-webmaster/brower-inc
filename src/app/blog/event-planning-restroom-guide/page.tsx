@@ -33,7 +33,7 @@ const FAQS = [
   {
     question: "When should I book portable restrooms for my event?",
     answer:
-      "Book at least 2–4 weeks in advance for most events. For peak season (May–September) weddings and festivals in Oklahoma, book 4–8 weeks ahead — inventory gets tight fast. Last-minute requests (under 1 week) can often still be fulfilled by Brower Inc. since we operate a 640+ unit fleet, but availability is never guaranteed during rodeo season and holiday weekends.",
+      "Book at least 2–4 weeks in advance for most events. For peak season (May–September) weddings and festivals in Oklahoma, book 4–8 weeks ahead — inventory gets tight fast. Last-minute requests (under 1 week) can often still be fulfilled by Brower Inc. since we operate a 1,375+ unit fleet, but availability is never guaranteed during rodeo season and holiday weekends.",
   },
   {
     question: "How does alcohol affect the number of restrooms I need?",
@@ -544,7 +544,7 @@ export default function EventPlanningRestroomGuidePage() {
               },
               {
                 timeframe: "Same week / emergency",
-                events: "Call us — Brower Inc. operates a 640+ unit fleet and can often accommodate last-minute requests",
+                events: "Call us — Brower Inc. operates a 1,375+ unit fleet and can often accommodate last-minute requests",
               },
             ].map((item) => (
               <div

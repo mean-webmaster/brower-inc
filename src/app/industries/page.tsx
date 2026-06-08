@@ -46,7 +46,7 @@ export default function IndustriesPage() {
               disaster response, Brower Inc. delivers clean, reliable portable
               sanitation solutions tailored to your industry&apos;s specific needs.
               Serving 20 counties across Oklahoma and southern Kansas with a
-              640+ unit fleet.
+              1,375+ unit fleet.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -153,7 +153,7 @@ export default function IndustriesPage() {
               </p>
             </div>
             <div className="rounded-xl bg-white border border-gray-200 p-6">
-              <h3 className="text-lg font-bold text-gray-900">640+ Units, One Standard</h3>
+              <h3 className="text-lg font-bold text-gray-900">1,375+ Units, One Standard</h3>
               <p className="mt-2 text-sm text-gray-600">
                 Our fleet is one of the largest in north-central Oklahoma. Every unit receives the same weekly servicing protocol — clean, stocked, and inspected.
               </p>

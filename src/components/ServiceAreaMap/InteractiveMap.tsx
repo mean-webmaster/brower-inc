@@ -17,15 +17,10 @@ export default function InteractiveMap({ onCountyClick }: MapProps) {
   useEffect(() => {
     const loadMap = async () => {
       try {
-        const geoResponse = await fetch(
-          "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json"
-        );
+        const geoResponse = await fetch("/data/service-counties.json");
         const geoData = await geoResponse.json();
 
-        const serviceFips = SERVICE_COUNTIES.map((c) => c.fips);
-        const filteredFeatures = geoData.features.filter((f: any) =>
-          serviceFips.includes(f.id)
-        );
+        const filteredFeatures = geoData.features;
 
         if (!svgRef.current) return;
 
@@ -91,7 +86,50 @@ export default function InteractiveMap({ onCountyClick }: MapProps) {
             if (county) onCountyClick(county);
           });
 
-        // Labels
+        // State border line (KS/OK border ~37°N latitude)
+        const borderGroup = g.append("g").attr("class", "border-group");
+        const borderLon1 = projection([-99.5, 37]);
+        const borderLon2 = projection([-95.5, 37]);
+        if (borderLon1 && borderLon2) {
+          borderGroup
+            .append("line")
+            .attr("x1", borderLon1[0])
+            .attr("y1", borderLon1[1])
+            .attr("x2", borderLon2[0])
+            .attr("y2", borderLon2[1])
+            .attr("stroke", "#374151")
+            .attr("stroke-width", 3)
+            .attr("stroke-dasharray", "8,4")
+            .style("pointer-events", "none");
+
+          // "KANSAS" label above the border
+          borderGroup
+            .append("text")
+            .attr("x", (borderLon1[0] + borderLon2[0]) / 2)
+            .attr("y", borderLon1[1] - 14)
+            .attr("text-anchor", "middle")
+            .attr("fill", "#374151")
+            .attr("font-size", "14px")
+            .attr("font-weight", "800")
+            .attr("letter-spacing", "4px")
+            .style("pointer-events", "none")
+            .text("KANSAS");
+
+          // "OKLAHOMA" label below the border
+          borderGroup
+            .append("text")
+            .attr("x", (borderLon1[0] + borderLon2[0]) / 2)
+            .attr("y", borderLon1[1] + 24)
+            .attr("text-anchor", "middle")
+            .attr("fill", "#374151")
+            .attr("font-size", "14px")
+            .attr("font-weight", "800")
+            .attr("letter-spacing", "4px")
+            .style("pointer-events", "none")
+            .text("OKLAHOMA");
+        }
+
+        // County labels
         labelsGroup
           .selectAll("text")
           .data(filteredFeatures)

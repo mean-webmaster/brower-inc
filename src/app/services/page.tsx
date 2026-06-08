@@ -190,13 +190,13 @@ export default function ServicesPage() {
               Why Oklahoma Chooses Brower Inc.
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              640+ unit fleet. 20 counties served. Owner-operated. Always on call.
+              1,375+ unit fleet. 20 counties served. Owner-operated. Always on call.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { title: "640+ Unit Fleet", body: "One of the largest fleets in north-central Oklahoma — inventory ready when you need it." },
+              { title: "1,375+ Unit Fleet", body: "One of the largest fleets in north-central Oklahoma — inventory ready when you need it." },
               { title: "Owner-Operated", body: "Troy Brower personally manages every project. No call centers, no excuses." },
               { title: "24/7 Support", body: "We answer the phone day or night, including weekends and tornado season." },
               { title: "Weekly Servicing", body: "All long-term rentals include weekly cleaning, restocking, and inspection." },

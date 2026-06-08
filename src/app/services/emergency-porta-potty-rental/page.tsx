@@ -46,7 +46,7 @@ const FAQS = [
   {
     question: "Can you scale up for major emergencies?",
     answer:
-      "Yes. Our 640+ unit fleet is one of the largest in north-central Oklahoma, so we can deploy multiple units within hours and keep scaling as additional inventory frees up from other routes. Call early in any developing situation so we can stage units in advance.",
+      "Yes. Our 1,375+ unit fleet is one of the largest in north-central Oklahoma, so we can deploy multiple units within hours and keep scaling as additional inventory frees up from other routes. Call early in any developing situation so we can stage units in advance.",
   },
 ];
 
