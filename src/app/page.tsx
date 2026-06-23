@@ -81,7 +81,8 @@ export default function HomePage() {
           alt="Brower Inc. full fleet lineup — service trucks, equipment, and portable restrooms in Newkirk, Oklahoma"
           fill
           className="object-cover"
-          priority
+          preload
+          fetchPriority="high"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/85 via-gray-900/60 to-gray-900/20" />
