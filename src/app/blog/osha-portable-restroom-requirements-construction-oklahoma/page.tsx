@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { BlogRelatedContent } from "@/components/RelatedContent";
 import BlogTableOfContents from "@/components/BlogTableOfContents";
 import CTABanner from "@/components/CTABanner";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -209,7 +210,14 @@ export default function OshaPortableRestroomRequirementsPage() {
             <p className="text-lg text-gray-700 leading-relaxed">
               An OSHA compliance officer can shut down a $4 million Oklahoma
               construction project before lunch over a problem that costs $200 a
-              month to fix. The problem is portable restrooms — wrong count,
+              month to fix. The problem is{" "}
+              <Link
+                href="/services/portable-restrooms"
+                className="text-primary hover:underline"
+              >
+                portable restrooms
+              </Link>{" "}
+              — wrong count,
               wrong cleanliness, no hand wash, no ADA unit. Inspectors look at
               sanitation first because it&apos;s easy to count and impossible to
               hide.
@@ -217,8 +225,14 @@ export default function OshaPortableRestroomRequirementsPage() {
             <p className="mt-4 text-gray-600 leading-relaxed">
               This is the print-ready compliance checklist Brower Inc. uses with
               every Oklahoma general contractor we deliver to — from a
-              5-worker remodel in Newkirk to a 240-worker pipeline project in
-              Kay County. Every line item maps back to the federal standard{" "}
+              5-worker remodel in Newkirk to a 240-worker pipeline project in{" "}
+              <Link
+                href="/service-areas/kay-county"
+                className="text-primary hover:underline"
+              >
+                Kay County
+              </Link>
+              . Every line item maps back to the federal standard{" "}
               <a
                 href="https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.51"
                 target="_blank"
@@ -285,8 +299,14 @@ export default function OshaPortableRestroomRequirementsPage() {
             <ul className="mt-4 list-disc space-y-2 pl-6 text-gray-600">
               <li>
                 <strong>Oklahoma City Area Office</strong> — covers most of
-                north-central, central, and western Oklahoma (Kay, Garfield,
-                Noble, Payne, Logan, Kingfisher, Woods counties and others)
+                north-central, central, and western Oklahoma (Kay,{" "}
+                <Link
+                  href="/service-areas/garfield-county"
+                  className="text-primary hover:underline"
+                >
+                  Garfield
+                </Link>
+                , Noble, Payne, Logan, Kingfisher, Woods counties and others)
               </li>
               <li>
                 <strong>Tulsa Area Office</strong> — covers eastern Oklahoma
@@ -796,7 +816,14 @@ export default function OshaPortableRestroomRequirementsPage() {
               A unit can be compliant on Monday and a citation on Tuesday. A
               tipped trailer, a vandalized door, a tornado-damaged stall — any
               of these turn your site non-compliant within hours. The defensible
-              answer is a provider who will dispatch same-day:
+              answer is{" "}
+              <Link
+                href="/blog/how-to-choose-portable-restroom-company-oklahoma"
+                className="text-primary hover:underline"
+              >
+                a provider
+              </Link>{" "}
+              who will dispatch same-day:
             </p>
             <ul className="mt-4 list-disc space-y-2 pl-6 text-gray-600">
               <li>
@@ -1008,6 +1035,7 @@ export default function OshaPortableRestroomRequirementsPage() {
               within the hour.
             </p>
           </div>
+          <BlogRelatedContent slug="osha-portable-restroom-requirements-construction-oklahoma" className="mt-12" />
         </div>
       </article>
     </>

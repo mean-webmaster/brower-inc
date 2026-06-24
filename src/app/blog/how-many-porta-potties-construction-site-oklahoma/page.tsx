@@ -194,8 +194,21 @@ export default function HowManyPortaPottiesConstructionSitePage() {
               considerations, and shift-pattern adjustments — plus a pocket
               calculator you can use before you pick up the phone to book.
               Every number comes from the OSHA standard itself and from what
-              Brower Inc. actually delivers to construction sites across Kay,
-              Garfield, Kingfisher, and Sedgwick counties every week.
+              Brower Inc. actually delivers to construction sites across{" "}
+              <Link
+                href="/service-areas/kay-county"
+                className="text-primary hover:underline"
+              >
+                Kay
+              </Link>
+              ,{" "}
+              <Link
+                href="/service-areas/garfield-county"
+                className="text-primary hover:underline"
+              >
+                Garfield
+              </Link>
+              , Kingfisher, and Sedgwick counties every week.
             </p>
 
             {/* QUICK ANSWER — AI-capture optimized */}
@@ -522,7 +535,13 @@ export default function HowManyPortaPottiesConstructionSitePage() {
               </li>
             </ul>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              ADA-compliant units typically cost 25-40% more than a standard
+              <Link
+                href="/services/ada-compliant-portable-restrooms"
+                className="text-primary hover:underline"
+              >
+                ADA-compliant units
+              </Link>{" "}
+              typically cost 25-40% more than a standard
               blue Maxim 300 — about $175-$325/month in Oklahoma. We cover
               the cost comparison in detail in our{" "}
               <Link
@@ -675,7 +694,14 @@ export default function HowManyPortaPottiesConstructionSitePage() {
             <p className="mt-3 text-gray-600 leading-relaxed">
               A 9-month custom home build with a core crew of 14 framers,
               electricians, and plumbers. OSHA minimum: 1 unit. Brower plan:
-              1 standard porta potty + 1 hand washing station, serviced
+              1{" "}
+              <Link
+                href="/services/portable-restrooms"
+                className="text-primary hover:underline"
+              >
+                standard porta potty
+              </Link>{" "}
+              + 1 hand washing station, serviced
               weekly. Total monthly cost: about $250 all-in.
             </p>
 
@@ -876,7 +902,7 @@ export default function HowManyPortaPottiesConstructionSitePage() {
               <li>
                 →{" "}
                 <Link
-                  href="/blog/construction-site-sanitation-tips"
+                  href="/blog/osha-portable-restroom-requirements-construction-oklahoma"
                   className="text-primary hover:underline"
                 >
                   OSHA portable restroom requirements for construction sites

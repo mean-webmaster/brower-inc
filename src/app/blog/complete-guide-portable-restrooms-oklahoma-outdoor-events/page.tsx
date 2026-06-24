@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { BlogRelatedContent } from "@/components/RelatedContent";
 import BlogTableOfContents from "@/components/BlogTableOfContents";
 import CTABanner from "@/components/CTABanner";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -221,7 +222,14 @@ export default function CompleteGuidePortableRestroomsOklahomaEventsPage() {
             <p className="mt-4 text-gray-600 leading-relaxed">
               We&apos;ve delivered portable restrooms to thousands of Oklahoma
               outdoor events — weddings at Marland Mansion, rodeos at the Kay
-              County Fairgrounds, music festivals in Stillwater, vineyard
+              County Fairgrounds, music festivals in{" "}
+              <Link
+                href="/service-areas/stillwater"
+                className="text-primary hover:underline"
+              >
+                Stillwater
+              </Link>
+              , vineyard
               receptions in Cowley County, ranch reunions in Osage County. Every
               formula, multiplier, and venue tip below is what we&apos;ve learned
               actually works in the Oklahoma climate and on Oklahoma rural
@@ -1109,6 +1117,7 @@ export default function CompleteGuidePortableRestroomsOklahomaEventsPage() {
               within the hour.
             </p>
           </div>
+          <BlogRelatedContent slug="complete-guide-portable-restrooms-oklahoma-outdoor-events" className="mt-12" />
         </div>
       </article>
     </>

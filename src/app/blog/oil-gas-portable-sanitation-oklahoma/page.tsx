@@ -257,7 +257,7 @@ export default function OilGasPortableSanitationOklahomaPage() {
             But drilling sites introduce additional safety and compliance
             layers that standard{" "}
             <Link
-              href="/blog/construction-site-sanitation-tips"
+              href="/blog/osha-portable-restroom-requirements-construction-oklahoma"
               className="text-primary hover:underline"
             >
               construction site sanitation
@@ -295,7 +295,13 @@ export default function OilGasPortableSanitationOklahomaPage() {
               shifts overlap during crew change, restroom demand spikes
               dramatically. Sites that seem adequately equipped during normal
               operations can have workers waiting in line during the 30-minute
-              changeover window. OSHA calculates the required number of units
+              changeover window. OSHA calculates{" "}
+              <Link
+                href="/blog/how-many-porta-potties-construction-site-oklahoma"
+                className="text-primary hover:underline"
+              >
+                the required number of units
+              </Link>{" "}
               based on the maximum number of workers on site at any one time —
               including shift overlap periods.
             </li>
@@ -620,7 +626,14 @@ export default function OilGasPortableSanitationOklahomaPage() {
             <li className="flex items-start gap-2">
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
               <strong>Heavy-duty service trucks:</strong> Our pump trucks are
-              built for rural Oklahoma roads — four-wheel-drive capable,
+              built for{" "}
+              <Link
+                href="/blog/porta-potty-rental-near-me-rural-oklahoma"
+                className="text-primary hover:underline"
+              >
+                rural Oklahoma roads
+              </Link>{" "}
+              — four-wheel-drive capable,
               high-clearance, and equipped with all the hose length needed to
               reach units placed deep inside a drill pad without driving
               heavy equipment across the location.
@@ -899,7 +912,7 @@ export default function OilGasPortableSanitationOklahomaPage() {
             <ul className="mt-3 space-y-2">
               <li>
                 <Link
-                  href="/blog/construction-site-sanitation-tips"
+                  href="/blog/osha-portable-restroom-requirements-construction-oklahoma"
                   className="text-sm text-primary hover:underline"
                 >
                   OSHA Portable Restroom Requirements for Construction Sites

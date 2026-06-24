@@ -185,7 +185,14 @@ export default function PortableRestroomRentalGuidePage() {
                 >
                   construction sites
                 </Link>
-                , casual outdoor events, and any situation where function matters
+                , casual{" "}
+                <Link
+                  href="/blog/complete-guide-portable-restrooms-oklahoma-outdoor-events"
+                  className="text-primary hover:underline"
+                >
+                  outdoor events
+                </Link>
+                , and any situation where function matters
                 more than aesthetics.
               </p>
             </div>
@@ -402,7 +409,13 @@ export default function PortableRestroomRentalGuidePage() {
             How to Choose a Portable Restroom Provider
           </h2>
           <p className="mt-4 text-gray-600 leading-relaxed">
-            Not all rental companies are equal. Here are the five things to ask
+            <Link
+              href="/blog/how-to-choose-portable-restroom-company-oklahoma"
+              className="text-primary hover:underline"
+            >
+              Not all rental companies are equal
+            </Link>
+            . Here are the five things to ask
             before signing a rental agreement:
           </p>
           <ol className="mt-4 space-y-3 text-gray-600">
@@ -653,7 +666,7 @@ export default function PortableRestroomRentalGuidePage() {
               </li>
               <li>
                 <Link
-                  href="/blog/construction-site-sanitation-tips"
+                  href="/blog/osha-portable-restroom-requirements-construction-oklahoma"
                   className="text-sm text-primary hover:underline"
                 >
                   OSHA Portable Restroom Requirements for Construction Sites

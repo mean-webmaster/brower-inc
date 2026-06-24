@@ -240,7 +240,14 @@ export default function HowCleanArePortableRestroomsPage() {
               >
                 event venue across our Oklahoma and Kansas service area
               </Link>
-              , or a remote oil pad in Kay County, that unit leaves our Newkirk
+              , or a remote oil pad in{" "}
+              <Link
+                href="/service-areas/kay-county"
+                className="text-primary hover:underline"
+              >
+                Kay County
+              </Link>
+              , that unit leaves our Newkirk
               warehouse in the same condition: freshly sanitized, fully stocked,
               and inspected by hand. The question is not &quot;is it clean when
               it arrives?&quot; — it always is. The question is &quot;will it
@@ -781,7 +788,14 @@ export default function HowCleanArePortableRestroomsPage() {
             <p className="mt-6 text-gray-600 leading-relaxed">
               If you recognize more than two of those red flags on your current
               rental units, it is time to have a conversation with your provider
-              — or switch to one that takes the work seriously. For{" "}
+              — or{" "}
+              <Link
+                href="/blog/how-to-choose-portable-restroom-company-oklahoma"
+                className="text-primary hover:underline"
+              >
+                switch to one that takes the work seriously
+              </Link>
+              . For{" "}
               <Link
                 href="/services/long-term-rentals"
                 className="text-primary hover:underline"
@@ -879,7 +893,7 @@ export default function HowCleanArePortableRestroomsPage() {
               same day whenever possible. When you need to add units mid-project,
               adjust your service schedule, or ask a question about{" "}
               <Link
-                href="/blog/construction-site-sanitation-tips"
+                href="/blog/osha-portable-restroom-requirements-construction-oklahoma"
                 className="text-primary hover:underline"
               >
                 OSHA compliance for your construction site
@@ -989,7 +1003,7 @@ export default function HowCleanArePortableRestroomsPage() {
               <li>
                 &rarr;{" "}
                 <Link
-                  href="/blog/construction-site-sanitation-tips"
+                  href="/blog/osha-portable-restroom-requirements-construction-oklahoma"
                   className="text-primary hover:underline"
                 >
                   OSHA Portable Restroom Requirements for Construction Sites

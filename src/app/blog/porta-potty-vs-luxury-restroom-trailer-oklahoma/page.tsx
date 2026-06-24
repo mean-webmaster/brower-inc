@@ -462,7 +462,14 @@ export default function PortaPottyVsLuxuryRestroomTrailerPage() {
             <p className="mt-4 text-gray-600 leading-relaxed">
               The sticker-price gap between a porta potty and a luxury
               trailer looks enormous — $150 vs. $1,500 — until you convert
-              it to a per-guest cost. Then the math gets interesting.
+              it to a{" "}
+              <Link
+                href="/blog/how-much-does-a-porta-potty-rental-really-cost"
+                className="text-primary hover:underline"
+              >
+                per-guest cost
+              </Link>
+              . Then the math gets interesting.
             </p>
 
             <div className="mt-6 overflow-x-auto">
@@ -660,8 +667,14 @@ export default function PortaPottyVsLuxuryRestroomTrailerPage() {
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
               Porta potties are not a compromise — they are the correct
-              product for most outdoor Oklahoma events. Reach for them
-              when:
+              product for most{" "}
+              <Link
+                href="/blog/complete-guide-portable-restrooms-oklahoma-outdoor-events"
+                className="text-primary hover:underline"
+              >
+                outdoor Oklahoma events
+              </Link>
+              . Reach for them when:
             </p>
             <ul className="mt-4 list-disc pl-6 text-gray-600 leading-relaxed space-y-2">
               <li>
@@ -787,8 +800,16 @@ export default function PortaPottyVsLuxuryRestroomTrailerPage() {
                 — used by staff, vendors, and overflow
               </li>
               <li>
-                <strong>1 hand washing station</strong> shared between both
-                zones
+                <strong>
+                  1{" "}
+                  <Link
+                    href="/services/hand-washing-stations"
+                    className="text-primary hover:underline"
+                  >
+                    hand washing station
+                  </Link>
+                </strong>{" "}
+                shared between both zones
               </li>
             </ul>
             <p className="mt-4 text-gray-600 leading-relaxed">

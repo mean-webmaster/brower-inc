@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
+import { GuidesForService, ServiceCrossLinks } from "@/components/RelatedContent";
 import FAQAccordion from "@/components/FAQAccordion";
 import { SERVICES, SERVICE_AREAS_DATA } from "@/lib/constants";
 import {
@@ -216,6 +217,24 @@ export default function LongTermRentalsPage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related services / industries / areas */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <ServiceCrossLinks slug="long-term-rentals" />
+          </div>
+        </div>
+      </section>
+
+      {/* Related blog guides */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <GuidesForService slug="long-term-rentals" />
           </div>
         </div>
       </section>

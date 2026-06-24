@@ -13,6 +13,110 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "aerobic-septic-system-oklahoma",
+    title:
+      "Aerobic Septic Systems in Oklahoma: How They Work, Cost & Maintenance",
+    excerpt:
+      "A complete Oklahoma homeowner's guide to aerobic septic systems — how they work, aerobic vs. conventional, real 2026 install and maintenance costs, DEQ-required service contracts, pumping frequency, and the 7 warning signs of a failing system.",
+    date: "2026-06-22",
+    readTime: "12 min read",
+    category: "Septic & Property Maintenance",
+    image: IMAGES.blogCoverAerobicSepticSystem,
+    imageAlt:
+      "Branded white-and-red Brower Inc. vacuum septic pump truck parked beside a rural Oklahoma ranch home with a green spray-irrigated lawn, a navy-uniformed technician servicing an aerobic septic system control panel in bright daylight",
+  },
+  {
+    slug: "restroom-trailer-rental-oklahoma",
+    title:
+      "Restroom Trailer Rental in Oklahoma: Costs, Sizes & What's Included",
+    excerpt:
+      "What restroom trailer rental costs in Oklahoma in 2026 — pricing by station count and event length, what's included, trailer vs. porta potty, delivery and hookup, ADA options, and how far ahead to book for weddings and events.",
+    date: "2026-06-22",
+    readTime: "13 min read",
+    category: "Events, Weddings & Gatherings",
+    image: IMAGES.blogCoverRestroomTrailerRental,
+    imageAlt:
+      "White Brower Inc. luxury restroom trailer parked at an elegant outdoor Oklahoma wedding venue at golden hour, with a white reception tent, string lights, and guests in the soft-focus background",
+  },
+  {
+    slug: "emergency-portable-restroom-deployment-oklahoma",
+    title:
+      "Emergency Portable Restroom Deployment in Oklahoma: Disaster Response Sanitation",
+    excerpt:
+      "How emergency portable restrooms are deployed in Oklahoma after tornadoes, ice storms, and floods — how fast, how many units a shelter needs, the 5-step deployment process, and how to set up a standing agreement before disaster strikes.",
+    date: "2026-06-08",
+    readTime: "13 min read",
+    category: "Emergency Response & Seasonal",
+    image: IMAGES.blogCoverEmergencyDeployment,
+    imageAlt:
+      "A row of bright blue Brower Inc. portable restrooms being deployed beside a white Brower Inc. flatbed service truck at an Oklahoma storm-disaster staging area under a dramatic clearing post-storm sky with emergency vehicles and storm debris in the background",
+  },
+  {
+    slug: "local-vs-national-portable-restroom-providers-oklahoma",
+    title:
+      "Local vs. National Portable Restroom Providers: Why Oklahoma Businesses Choose Local",
+    excerpt:
+      "Local vs. national porta potty rental in Oklahoma compared fairly — response time, who answers the phone, rural delivery, pricing transparency, and servicing. See when each wins and why Oklahoma businesses go local.",
+    date: "2026-06-08",
+    readTime: "10 min read",
+    category: "Pricing & Buyer Guides",
+    image: IMAGES.blogCoverLocalVsNational,
+    imageAlt:
+      "Two clean bright blue Brower Inc. portable restrooms standing beside a white Brower Inc. flatbed service truck on a rural north-central Oklahoma road at golden hour, with a red barn and grain elevator in the distance",
+  },
+  {
+    slug: "ada-portable-restroom-construction-oklahoma",
+    title:
+      "Does Your Oklahoma Jobsite Need an ADA Portable Restroom?",
+    excerpt:
+      "When an ADA porta potty is required on Oklahoma construction sites — OSHA + ADA rules, who has to provide it, what counts as 'accessible,' how many you need, and the 2026 cost vs. the citation.",
+    date: "2026-06-01",
+    readTime: "10 min read",
+    category: "Construction & Jobsite Compliance",
+    image: IMAGES.blogCoverAdaPortableRestroom,
+    imageAlt:
+      "A taller cream-and-blue Brower Inc. ADA-accessible portable restroom on a level gravel pad beside a standard blue porta potty and a hand washing station on an Oklahoma commercial construction site under cool overcast morning light, with a construction worker in a wheelchair and hi-vis vest approaching from the side",
+  },
+  {
+    slug: "septic-tank-pumping-cost-oklahoma",
+    title:
+      "Septic Tank Pumping Cost in Oklahoma: What to Expect in 2026",
+    excerpt:
+      "Transparent 2026 septic pumping prices for Oklahoma homeowners — cost by tank size, the 7 factors that change your final price, hidden fees to kill before you book, and emergency vs. scheduled premiums.",
+    date: "2026-06-01",
+    readTime: "10 min read",
+    category: "Septic & Property Maintenance",
+    image: IMAGES.blogCoverSepticTankPumpingCost,
+    imageAlt:
+      "Branded white-and-red Brower Inc. vacuum septic pump truck parked on a gravel driveway beside a rural Oklahoma ranch home in bright midday sunlight, with a navy-uniformed technician operating a green vacuum hose into an open green residential septic cleanout in the front lawn",
+  },
+  {
+    slug: "how-to-choose-portable-restroom-company-oklahoma",
+    title:
+      "What to Look for in a Portable Restroom Provider: A Contractor's 10-Point Checklist",
+    excerpt:
+      "How to choose the best porta potty rental company in Oklahoma — a 10-point checklist covering reliability, hidden fees, weekly servicing, ADA units, 24/7 support, and the 5 red flags that signal a bad provider.",
+    date: "2026-05-26",
+    readTime: "11 min read",
+    category: "Construction & Jobsite Compliance",
+    image: IMAGES.blogCoverHowToChooseProvider,
+    imageAlt:
+      "A general contractor in a hi-vis vest and hard hat shaking hands with a Brower Inc. technician beside a clean blue porta potty and a red Brower Inc. service truck on an organized Oklahoma construction site at golden hour",
+  },
+  {
+    slug: "how-much-does-a-porta-potty-rental-really-cost",
+    title:
+      "I Was Quoted $150 for a Porta Potty Rental But Got Charged $287 — Here's Exactly What Happened",
+    excerpt:
+      "Quoted $150 for a porta potty rental but charged $287? Here's the line-by-line breakdown of what a porta potty rental really costs in Oklahoma — and the 6 hidden fees to kill before you book.",
+    date: "2026-05-26",
+    readTime: "8 min read",
+    category: "Pricing & Buyer Guides",
+    image: IMAGES.blogCoverHowMuchPortaPottyRentalCost,
+    imageAlt:
+      "A single clean blue Brower Inc. porta potty on a residential gravel driveway in front of an Oklahoma home in bright morning light",
+  },
+  {
     slug: "how-many-porta-potties-construction-site-oklahoma",
     title:
       "How Many Porta Potties Does Your Oklahoma Construction Site Need? (OSHA Calculator)",

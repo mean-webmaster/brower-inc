@@ -144,7 +144,14 @@ export default function EventPlanningRestroomGuidePage() {
           <p className="mt-4 text-lg text-gray-600 leading-relaxed">
             The difference between &ldquo;great event&rdquo; and &ldquo;never
             going back&rdquo; often comes down to restrooms. Here is exactly how
-            many portable restrooms your Oklahoma wedding, festival, rodeo, or
+            many{" "}
+            <Link
+              href="/services/portable-restrooms"
+              className="text-primary hover:underline"
+            >
+              portable restrooms
+            </Link>{" "}
+            your Oklahoma wedding, festival, rodeo, or
             corporate event needs — plus the factors most planners forget.
           </p>
 

@@ -589,7 +589,14 @@ export default function SepticSystemMaintenanceOklahomaPage() {
               </p>
               <p className="mt-1 text-sm text-gray-600">
                 Do not wait for the problem to get worse. Brower Inc. provides
-                same-week septic pumping service across our{" "}
+                same-week{" "}
+                <Link
+                  href="/services/septic-tank-pumping"
+                  className="text-primary hover:underline"
+                >
+                  septic pumping
+                </Link>{" "}
+                service across our{" "}
                 <Link
                   href="/service-areas"
                   className="text-primary hover:underline"
@@ -686,7 +693,14 @@ export default function SepticSystemMaintenanceOklahomaPage() {
               Selling a Home With a Septic System
             </h3>
             <p className="mt-3 text-gray-600 leading-relaxed">
-              Oklahoma does not currently require a septic inspection before
+              Oklahoma does not currently require a{" "}
+              <Link
+                href="/services/septic-inspections"
+                className="text-primary hover:underline"
+              >
+                septic inspection
+              </Link>{" "}
+              before
               selling a home, but many mortgage lenders (especially FHA and VA)
               require one as a condition of financing. Even when not legally
               required, a pre-sale septic inspection and pump-out protects both
@@ -827,7 +841,14 @@ export default function SepticSystemMaintenanceOklahomaPage() {
           {/* MID CTA */}
           <div className="mt-12 rounded-xl bg-gray-900 p-8 text-white">
             <p className="text-lg font-semibold">
-              Time to schedule your septic service?
+              Time to schedule your{" "}
+              <Link
+                href="/services/septic-services"
+                className="text-primary hover:underline"
+              >
+                septic service
+              </Link>
+              ?
             </p>
             <p className="mt-2 text-gray-300">
               Troy answers the phone personally. No voicemail maze, no
@@ -1181,7 +1202,14 @@ export default function SepticSystemMaintenanceOklahomaPage() {
             {/* COMPARISON CTA */}
             <div className="mt-8 rounded-xl border-l-4 border-primary bg-primary/5 p-6">
               <p className="font-semibold text-gray-900">
-                Already comparing septic costs with porta potty rental?
+                Already{" "}
+                <Link
+                  href="/blog/septic-tank-pumping-cost-oklahoma"
+                  className="text-primary hover:underline"
+                >
+                  comparing septic costs
+                </Link>{" "}
+                with porta potty rental?
               </p>
               <p className="mt-2 text-gray-700 leading-relaxed">
                 If you are building a new home or have a temporary need during a

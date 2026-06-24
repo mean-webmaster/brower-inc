@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
+import { GuidesForIndustry } from "@/components/RelatedContent";
 import { SERVICES, SERVICE_AREAS_DATA, PHONE, PHONE_HREF } from "@/lib/constants";
 import { INDUSTRIES } from "@/lib/industries";
 import { getIndustrySchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
@@ -432,6 +433,15 @@ export default async function IndustryPage({
             >
               View All Industries →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Related blog guides */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <GuidesForIndustry slug={industry.slug} />
           </div>
         </div>
       </section>

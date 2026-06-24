@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
+import { GuidesForArea } from "@/components/RelatedContent";
 import { SERVICE_AREAS_DATA, SERVICES, PHONE, PHONE_HREF } from "@/lib/constants";
 import { getBreadcrumbSchema, getServiceAreaSchema, getLocalBusinessForArea, getFAQSchema, jsonLdString } from "@/lib/structured-data";
 
@@ -321,6 +322,15 @@ export default async function ServiceAreaPage({
           </div>
         </section>
       )}
+
+      {/* Related blog guides */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <GuidesForArea />
+          </div>
+        </div>
+      </section>
 
       <CTABanner />
     </>

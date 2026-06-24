@@ -156,7 +156,7 @@ export default function PortaPottyRentalNearMeRuralOklahomaPage() {
           <div className="prose mt-8 max-w-none">
             {/* HOOK */}
             <p className="text-lg text-gray-700 leading-relaxed">
-              It is 9:47 PM on a Thursday. You just realized your daughter&apos;s Saturday backyard wedding needs porta potties. You grab your phone, type <strong>&quot;porta potty rental near me&quot;</strong> into Google, and the first three results are companies headquartered in <em>Wichita</em> — 80 miles north. You live in Newkirk. You call the first number. You get a call center in Dallas.
+              It is 9:47 PM on a Thursday. You just realized your daughter&apos;s Saturday backyard wedding needs porta potties. You grab your phone, type <strong>&quot;porta potty rental near me&quot;</strong> into Google, and the first three results are companies headquartered in <em>Wichita</em> — 80 miles north. You live in <Link href="/service-areas/newkirk" className="text-primary hover:underline">Newkirk</Link>. You call the first number. You get a call center in Dallas.
             </p>
             <p className="mt-4 text-gray-600 leading-relaxed">
               If that scene sounds familiar, you are not losing your mind and Google is not malfunctioning. The &quot;near me&quot; algorithm genuinely does not work the way rural Oklahomans need it to — and most of the companies that rank for that search phrase will not actually deliver to your address. This guide explains why, and more importantly, it shows you how to get a clean porta potty to your rural Kay, Garfield, Woods, Cowley, or Sumner County address by tomorrow morning.
@@ -366,7 +366,7 @@ export default function PortaPottyRentalNearMeRuralOklahomaPage() {
             </div>
 
             <p className="mt-4 text-sm text-gray-500">
-              If your address is outside this map, call anyway — we regularly make out-of-area deliveries for weddings, large events, and emergency deployments at a disclosed flat mileage rate.
+              If your address is outside this map, call anyway — we regularly make out-of-area deliveries for weddings, large events, and <Link href="/services/emergency-porta-potty-rental" className="text-primary hover:underline">emergency deployments</Link> at a disclosed flat mileage rate.
             </p>
 
             {/* H2: HOW TO SEARCH BETTER */}
@@ -384,7 +384,7 @@ export default function PortaPottyRentalNearMeRuralOklahomaPage() {
                 <strong>&quot;porta potty rental [your county] Oklahoma&quot;</strong> — e.g., &quot;porta potty rental Kay County Oklahoma.&quot; County searches filter out metro results.
               </li>
               <li>
-                <strong>&quot;porta potty rental [specific town]&quot;</strong> — e.g., &quot;porta potty rental Newkirk OK&quot; or &quot;porta potty rental Ponca City.&quot; Town names force the algorithm to find providers that mention that town.
+                <strong>&quot;porta potty rental [specific town]&quot;</strong> — e.g., &quot;porta potty rental Newkirk OK&quot; or &quot;porta potty rental <Link href="/service-areas/ponca-city" className="text-primary hover:underline">Ponca City</Link>.&quot; Town names force the algorithm to find providers that mention that town.
               </li>
               <li>
                 <strong>&quot;rural porta potty delivery Oklahoma&quot;</strong> — specifically targets providers who advertise rural delivery as a service.
@@ -455,7 +455,7 @@ export default function PortaPottyRentalNearMeRuralOklahomaPage() {
               5 Red Flags in a &quot;Near Me&quot; Porta Potty Rental Result
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Before you book from a &quot;near me&quot; search result, check for these warning signs. Any one of them should prompt a second phone call to a verified local provider.
+              Before you book from a &quot;near me&quot; search result, check for these warning signs. Any one of them should prompt a second phone call to a <Link href="/blog/how-to-choose-portable-restroom-company-oklahoma" className="text-primary hover:underline">verified local provider</Link>.
             </p>
             <ol className="mt-4 list-decimal pl-6 text-gray-600 leading-relaxed space-y-3">
               <li>

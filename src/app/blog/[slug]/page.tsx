@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
+import { BlogRelatedContent } from "@/components/RelatedContent";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { sanitizeHtml } from "@/lib/sanitize";
 import { getArticleSchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
@@ -108,6 +109,8 @@ export default async function BlogPostPage({ params }: Props) {
             className="prose mt-8 max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl"
             dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.content) }}
           />
+
+          <BlogRelatedContent slug={post.slug} className="mt-12" />
 
           <div className="mt-12 border-t border-gray-200 pt-8">
             <Link

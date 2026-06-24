@@ -251,7 +251,7 @@ export default function PortaPottyRentalCostOklahomaPage() {
               A standard Maxim 300 unit (the spacious, well-built porta potty most Oklahoma jobsites use) is the price baseline. From there, costs scale with features:
             </p>
             <ul className="mt-3 list-disc pl-6 text-gray-600 leading-relaxed space-y-2">
-              <li><strong>ADA-compliant units:</strong> 25-40% more than standard. The wheelchair-accessible design requires a larger footprint and more material.</li>
+              <li><strong><Link href="/services/ada-compliant-portable-restrooms" className="text-primary hover:underline">ADA-compliant units</Link>:</strong> 25-40% more than standard. The wheelchair-accessible design requires a larger footprint and more material.</li>
               <li><strong>Deluxe flushing units:</strong> 50-80% more. Adds an interior flush mechanism and freshwater hand sink.</li>
               <li><strong>VIP restroom trailers:</strong> 5-15x more. A different category entirely — climate control, running water, private stalls, lighting.</li>
               <li><strong>Specialty colors (like our pink units):</strong> Same price as standard. They are a brand signature, not a markup.</li>
@@ -262,7 +262,7 @@ export default function PortaPottyRentalCostOklahomaPage() {
               Most Oklahoma providers include standard delivery within their primary service area. National chains, by contrast, often add fuel surcharges that scale with mileage from regional depots — sometimes 100+ miles away.
             </p>
             <p className="mt-3 text-gray-600 leading-relaxed">
-              Site access also matters. A flat parking lot in Ponca City and a remote oil pad outside Fairview are not the same job. Rough access roads, locked gates, cattle guards, and soft ground all factor into the delivery cost — and many providers will simply refuse rural sites altogether. Brower Inc. makes those deliveries every week, which is one of the reasons we exist.
+              Site access also matters. A flat parking lot in <Link href="/service-areas/ponca-city" className="text-primary hover:underline">Ponca City</Link> and a remote oil pad outside Fairview are not the same job. Rough access roads, locked gates, cattle guards, and soft ground all factor into the delivery cost — and many providers will simply refuse rural sites altogether. Brower Inc. makes those deliveries every week, which is one of the reasons we exist.
             </p>
 
             <h3 className="mt-8 text-xl font-bold text-gray-900">4. Servicing Frequency</h3>
@@ -325,7 +325,7 @@ export default function PortaPottyRentalCostOklahomaPage() {
 
             <h3 className="mt-8 text-xl font-bold text-gray-900">Wedding &amp; Outdoor Event Cost</h3>
             <p className="mt-3 text-gray-600 leading-relaxed">
-              A 100-guest outdoor wedding running 4-5 hours typically needs 2-3 standard units plus a hand washing station — total budget <strong>$250-$450 for the weekend</strong>. Upgrade one of those to a luxury restroom trailer and you are looking at <strong>$1,000-$1,800 for the same event</strong>. Most coordinators tell us the trailer is worth every dollar at events with bridal parties, formalwear, or guests over 65.
+              A 100-guest outdoor wedding running 4-5 hours typically needs 2-3 standard units plus a hand washing station — total budget <strong>$250-$450 for the weekend</strong>. Upgrade one of those to a <Link href="/blog/porta-potty-vs-luxury-restroom-trailer-oklahoma" className="text-primary hover:underline">luxury restroom trailer</Link> and you are looking at <strong>$1,000-$1,800 for the same event</strong>. Most coordinators tell us the trailer is worth every dollar at events with bridal parties, formalwear, or guests over 65.
             </p>
 
             <h3 className="mt-8 text-xl font-bold text-gray-900">Oil &amp; Gas / Remote Jobsite Cost</h3>
@@ -356,7 +356,7 @@ export default function PortaPottyRentalCostOklahomaPage() {
               Hidden Fees to Watch For (And How to Avoid Them)
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              The honest answer to &quot;how much does a porta potty cost?&quot; depends on whether the quote you are looking at is actually all-in. Here are the line items that most often turn a $150 quote into a $237 invoice:
+              The honest answer to &quot;how much does a porta potty cost?&quot; depends on whether the quote you are looking at is actually all-in. Here are the <Link href="/blog/how-much-does-a-porta-potty-rental-really-cost" className="text-primary hover:underline">line items that most often turn a $150 quote into a $237 invoice</Link>:
             </p>
             <ul className="mt-4 list-disc pl-6 text-gray-600 leading-relaxed space-y-2">
               <li><strong>Fuel surcharges</strong> — added per delivery, often based on national fuel index changes</li>
@@ -420,7 +420,7 @@ export default function PortaPottyRentalCostOklahomaPage() {
               <li>Surprise add-on fees that erase any base-rate savings</li>
             </ul>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              The provider that quoted $40 less per month often costs $400 more in headaches. Working with a local, owner-operated company means accountability is a phone call away — and the call gets answered.
+              The provider that quoted $40 less per month often costs $400 more in headaches. <Link href="/blog/how-to-choose-portable-restroom-company-oklahoma" className="text-primary hover:underline">Working with a local, owner-operated company</Link> means accountability is a phone call away — and the call gets answered.
             </p>
 
             {/* OWNER E-E-A-T */}
