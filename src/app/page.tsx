@@ -240,7 +240,7 @@ export default function HomePage() {
                 href={post.href}
                 className="group flex flex-col rounded-xl bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
               >
-                <span className="inline-flex w-fit rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                <span className="inline-flex w-fit rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary-dark">
                   {post.eyebrow}
                 </span>
                 <h3 className="mt-3 text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors">

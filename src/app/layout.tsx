@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -102,8 +102,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} h-full`}>
       <head>
-        <link rel="preconnect" href="https://assets.cdn.filesafe.space" />
-        <link rel="dns-prefetch" href="https://assets.cdn.filesafe.space" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -132,7 +130,17 @@ export default function RootLayout({
         <Footer />
         <FloatingCTA />
       </body>
-      <GoogleAnalytics gaId="G-RD41VKS37T" />
+      {/* Google Analytics — lazyOnload defers gtag.js to browser idle time to cut Total Blocking Time */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-RD41VKS37T"
+        strategy="lazyOnload"
+      />
+      <Script id="ga-init" strategy="lazyOnload">
+        {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-RD41VKS37T');`}
+      </Script>
     </html>
   );
 }

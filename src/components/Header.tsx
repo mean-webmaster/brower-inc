@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS, PHONE, PHONE_HREF, SITE_NAME } from "@/lib/constants";
+import { IMAGES } from "@/lib/images";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -28,12 +29,12 @@ export default function Header() {
           aria-label={`${SITE_NAME} Home`}
         >
           <Image
-            src="https://assets.cdn.filesafe.space/Vil2untX5HPYLFH0yUEi/media/6727accb3c7a806cd8d83df0.png"
+            src={IMAGES.logoWordmarkFull}
             alt="Brower Inc. Logo"
             width={180}
             height={60}
             className="h-10 w-auto sm:h-12"
-            priority
+            loading="eager"
           />
         </Link>
 
