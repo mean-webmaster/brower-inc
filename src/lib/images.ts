@@ -92,4 +92,8 @@ export const IMAGES = {
   blogHeroAerobicSepticSystem: `${IMG}/brower-inc-aerobic-septic-system-oklahoma-blog-hero-newkirk-ok.webp`,
   blogCoverRestroomTrailerRental: `${IMG}/brower-inc-restroom-trailer-rental-oklahoma-blog-cover-newkirk-ok.webp`,
   blogHeroRestroomTrailerRental: `${IMG}/brower-inc-restroom-trailer-rental-oklahoma-blog-hero-newkirk-ok.webp`,
+  blogCoverSepticWarningSigns: `${IMG}/brower-inc-signs-septic-tank-needs-pumping-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogHeroSepticWarningSigns: `${IMG}/brower-inc-signs-septic-tank-needs-pumping-oklahoma-blog-hero-newkirk-ok.webp`,
+  blogCoverBarnWeddingBathrooms: `${IMG}/brower-inc-barn-wedding-not-enough-bathrooms-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogHeroBarnWeddingBathrooms: `${IMG}/brower-inc-barn-wedding-not-enough-bathrooms-oklahoma-blog-hero-newkirk-ok.webp`,
 };

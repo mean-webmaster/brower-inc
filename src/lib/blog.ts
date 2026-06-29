@@ -13,6 +13,32 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "signs-septic-tank-needs-pumping-oklahoma",
+    title:
+      "5 Warning Signs Your Septic Tank Needs Pumping (Don't Ignore #3)",
+    excerpt:
+      "The 5 warning signs your septic tank needs pumping — slow drains, gurgling, soggy or greener grass over the drain field, sewage odor, and backups. What each one means, how urgent it is, and the $400-vs-$15,000 math behind ignoring them.",
+    date: "2026-06-29",
+    readTime: "10 min read",
+    category: "Septic & Property Maintenance",
+    image: IMAGES.blogCoverSepticWarningSigns,
+    imageAlt:
+      "Branded white Brower Inc. vacuum septic pump truck on a gravel residential driveway in rural Oklahoma with a navy-uniformed technician operating a green pumping hose into a backyard septic cleanout",
+  },
+  {
+    slug: "barn-wedding-not-enough-bathrooms-oklahoma",
+    title:
+      "My Barn Wedding Venue Only Has 2 Bathrooms for 200 Guests — What Do I Do?",
+    excerpt:
+      "Your Oklahoma barn or ranch wedding venue has 2 bathrooms for 200 guests — here's the real fix. How many restrooms you actually need, luxury porta potty vs. restroom trailer, real 2026 costs, protecting the farmhouse septic, and how early to book.",
+    date: "2026-06-29",
+    readTime: "9 min read",
+    category: "Events, Weddings & Gatherings",
+    image: IMAGES.blogCoverBarnWeddingBathrooms,
+    imageAlt:
+      "White Brower Inc. luxury restroom trailer parked at an elegant outdoor Oklahoma wedding venue at golden hour, with a white reception tent, string lights, and guests in the soft-focus background",
+  },
+  {
     slug: "aerobic-septic-system-oklahoma",
     title:
       "Aerobic Septic Systems in Oklahoma: How They Work, Cost & Maintenance",

@@ -90,6 +90,10 @@ export function areaLink(slug: string): LinkRef {
 
 /** Short, keyword-bearing anchor text for each blog (better than the long H1). */
 export const BLOG_LABELS: Record<string, string> = {
+  "signs-septic-tank-needs-pumping-oklahoma":
+    "5 warning signs your septic tank needs pumping",
+  "barn-wedding-not-enough-bathrooms-oklahoma":
+    "Barn wedding bathroom shortage — how many restrooms you need",
   "aerobic-septic-system-oklahoma":
     "Aerobic septic systems in Oklahoma (how they work & cost)",
   "restroom-trailer-rental-oklahoma":
@@ -150,6 +154,29 @@ interface RelatedSpec {
  * relationships are genuinely useful (not just same-category noise).
  */
 export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
+  "signs-septic-tank-needs-pumping-oklahoma": {
+    blogs: [
+      "septic-tank-pumping-cost-oklahoma",
+      "septic-system-maintenance-oklahoma",
+      "aerobic-septic-system-oklahoma",
+    ],
+    services: ["septic-tank-pumping", "septic-services", "septic-inspections"],
+    areas: ["kay-county", "garfield-county"],
+  },
+  "barn-wedding-not-enough-bathrooms-oklahoma": {
+    blogs: [
+      "restroom-trailer-rental-oklahoma",
+      "porta-potty-vs-luxury-restroom-trailer-oklahoma",
+      "complete-guide-portable-restrooms-oklahoma-outdoor-events",
+      "event-planning-restroom-guide",
+    ],
+    services: [
+      "vip-shower-restroom-trailers",
+      "portable-restrooms",
+      "deluxe-flushable-portable-toilets",
+    ],
+    areas: ["ponca-city", "stillwater"],
+  },
   "aerobic-septic-system-oklahoma": {
     blogs: [
       "septic-system-maintenance-oklahoma",
@@ -378,6 +405,7 @@ export const SERVICE_TO_BLOGS: Record<string, string[]> = {
     "how-many-porta-potties-construction-site-oklahoma",
   ],
   "deluxe-flushable-portable-toilets": [
+    "barn-wedding-not-enough-bathrooms-oklahoma",
     "porta-potty-vs-luxury-restroom-trailer-oklahoma",
     "complete-guide-portable-restrooms-oklahoma-outdoor-events",
     "porta-potty-rental-cost-oklahoma",
@@ -400,17 +428,20 @@ export const SERVICE_TO_BLOGS: Record<string, string[]> = {
   ],
   "vip-shower-restroom-trailers": [
     "restroom-trailer-rental-oklahoma",
+    "barn-wedding-not-enough-bathrooms-oklahoma",
     "porta-potty-vs-luxury-restroom-trailer-oklahoma",
     "complete-guide-portable-restrooms-oklahoma-outdoor-events",
     "event-planning-restroom-guide",
   ],
   "septic-services": [
+    "signs-septic-tank-needs-pumping-oklahoma",
     "aerobic-septic-system-oklahoma",
     "septic-system-maintenance-oklahoma",
     "septic-tank-pumping-cost-oklahoma",
     "porta-potty-rental-near-me-rural-oklahoma",
   ],
   "septic-tank-pumping": [
+    "signs-septic-tank-needs-pumping-oklahoma",
     "septic-tank-pumping-cost-oklahoma",
     "aerobic-septic-system-oklahoma",
     "septic-system-maintenance-oklahoma",
@@ -435,6 +466,7 @@ export const INDUSTRY_TO_BLOGS: Record<string, string[]> = {
     "ada-portable-restroom-construction-oklahoma",
   ],
   "events-weddings": [
+    "barn-wedding-not-enough-bathrooms-oklahoma",
     "complete-guide-portable-restrooms-oklahoma-outdoor-events",
     "restroom-trailer-rental-oklahoma",
     "event-planning-restroom-guide",
@@ -473,6 +505,7 @@ export const INDUSTRY_TO_BLOGS: Record<string, string[]> = {
     "porta-potty-rental-cost-oklahoma",
   ],
   "real-estate": [
+    "signs-septic-tank-needs-pumping-oklahoma",
     "aerobic-septic-system-oklahoma",
     "septic-system-maintenance-oklahoma",
     "septic-tank-pumping-cost-oklahoma",
