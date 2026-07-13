@@ -13,6 +13,32 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "septic-tank-never-pumped-oklahoma",
+    title:
+      "My Septic Tank Hasn't Been Pumped in 12 Years — Am I Already in Trouble?",
+    excerpt:
+      "Haven't pumped your septic tank in 10, 12, or 20 years? The honest answer on whether the damage is already done, how to tell today, the $400-vs-$20,000 math, and why Oklahoma clay raises the stakes — from a DEQ-licensed local pumper.",
+    date: "2026-07-13",
+    readTime: "8 min read",
+    category: "Septic & Property Maintenance",
+    image: IMAGES.blogCoverSepticNeverPumped,
+    imageAlt:
+      "Branded white-and-red Brower Inc. vacuum septic pump truck parked beside a weathered rural north-central Oklahoma farmhouse at midday, a navy-uniformed technician lifting the lid on a long-neglected backyard septic tank cleanout",
+  },
+  {
+    slug: "porta-potty-smells-like-ammonia-summer-oklahoma",
+    title:
+      "My Porta Potty Reeks of Ammonia in the July Heat — Is That Normal, or Is My Rental Company Skipping Service?",
+    excerpt:
+      "Why your jobsite porta potty smells like straight ammonia in the Oklahoma summer, how to tell in 30 seconds whether it's the heat or your rental company skipping service, and the real fix — more frequent servicing, not a new unit.",
+    date: "2026-07-13",
+    readTime: "8 min read",
+    category: "Construction & Jobsite Compliance",
+    image: IMAGES.blogCoverPortaPottyAmmoniaSummer,
+    imageAlt:
+      "A lone blue Brower Inc. porta potty baking in harsh midday sun on a dusty north-central Oklahoma construction site with visible heat shimmer, a white Brower Inc. flatbed service truck arriving in the background under a bright summer sky",
+  },
+  {
     slug: "signs-septic-tank-needs-pumping-oklahoma",
     title:
       "5 Warning Signs Your Septic Tank Needs Pumping (Don't Ignore #3)",

@@ -96,4 +96,8 @@ export const IMAGES = {
   blogHeroSepticWarningSigns: `${IMG}/brower-inc-signs-septic-tank-needs-pumping-oklahoma-blog-hero-newkirk-ok.webp`,
   blogCoverBarnWeddingBathrooms: `${IMG}/brower-inc-barn-wedding-not-enough-bathrooms-oklahoma-blog-cover-newkirk-ok.webp`,
   blogHeroBarnWeddingBathrooms: `${IMG}/brower-inc-barn-wedding-not-enough-bathrooms-oklahoma-blog-hero-newkirk-ok.webp`,
+  blogCoverSepticNeverPumped: `${IMG}/brower-inc-septic-tank-never-pumped-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogHeroSepticNeverPumped: `${IMG}/brower-inc-septic-tank-never-pumped-oklahoma-blog-hero-newkirk-ok.webp`,
+  blogCoverPortaPottyAmmoniaSummer: `${IMG}/brower-inc-porta-potty-smells-like-ammonia-summer-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogHeroPortaPottyAmmoniaSummer: `${IMG}/brower-inc-porta-potty-smells-like-ammonia-summer-oklahoma-blog-hero-newkirk-ok.webp`,
 };

@@ -90,6 +90,10 @@ export function areaLink(slug: string): LinkRef {
 
 /** Short, keyword-bearing anchor text for each blog (better than the long H1). */
 export const BLOG_LABELS: Record<string, string> = {
+  "septic-tank-never-pumped-oklahoma":
+    "Septic tank never pumped in years — am I in trouble?",
+  "porta-potty-smells-like-ammonia-summer-oklahoma":
+    "Why your porta potty smells like ammonia in summer",
   "signs-septic-tank-needs-pumping-oklahoma":
     "5 warning signs your septic tank needs pumping",
   "barn-wedding-not-enough-bathrooms-oklahoma":
@@ -154,6 +158,26 @@ interface RelatedSpec {
  * relationships are genuinely useful (not just same-category noise).
  */
 export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
+  "septic-tank-never-pumped-oklahoma": {
+    blogs: [
+      "signs-septic-tank-needs-pumping-oklahoma",
+      "septic-tank-pumping-cost-oklahoma",
+      "septic-system-maintenance-oklahoma",
+      "aerobic-septic-system-oklahoma",
+    ],
+    services: ["septic-tank-pumping", "septic-services", "septic-inspections"],
+    areas: ["kay-county", "garfield-county"],
+  },
+  "porta-potty-smells-like-ammonia-summer-oklahoma": {
+    blogs: [
+      "how-clean-are-portable-restrooms",
+      "how-to-choose-portable-restroom-company-oklahoma",
+      "oil-gas-portable-sanitation-oklahoma",
+      "local-vs-national-portable-restroom-providers-oklahoma",
+    ],
+    services: ["long-term-rentals", "portable-restrooms", "hand-washing-stations"],
+    areas: ["kay-county", "garfield-county"],
+  },
   "signs-septic-tank-needs-pumping-oklahoma": {
     blogs: [
       "septic-tank-pumping-cost-oklahoma",
@@ -398,6 +422,7 @@ export const SERVICE_TO_BLOGS: Record<string, string[]> = {
     "how-to-choose-portable-restroom-company-oklahoma",
     "portable-restroom-rental-guide",
     "how-clean-are-portable-restrooms",
+    "porta-potty-smells-like-ammonia-summer-oklahoma",
   ],
   "ada-compliant-portable-restrooms": [
     "ada-portable-restroom-construction-oklahoma",
@@ -423,6 +448,7 @@ export const SERVICE_TO_BLOGS: Record<string, string[]> = {
   ],
   "long-term-rentals": [
     "oil-gas-portable-sanitation-oklahoma",
+    "porta-potty-smells-like-ammonia-summer-oklahoma",
     "how-many-porta-potties-construction-site-oklahoma",
     "porta-potty-rental-cost-oklahoma",
   ],
@@ -435,17 +461,17 @@ export const SERVICE_TO_BLOGS: Record<string, string[]> = {
   ],
   "septic-services": [
     "signs-septic-tank-needs-pumping-oklahoma",
+    "septic-tank-never-pumped-oklahoma",
     "aerobic-septic-system-oklahoma",
     "septic-system-maintenance-oklahoma",
     "septic-tank-pumping-cost-oklahoma",
-    "porta-potty-rental-near-me-rural-oklahoma",
   ],
   "septic-tank-pumping": [
     "signs-septic-tank-needs-pumping-oklahoma",
+    "septic-tank-never-pumped-oklahoma",
     "septic-tank-pumping-cost-oklahoma",
     "aerobic-septic-system-oklahoma",
     "septic-system-maintenance-oklahoma",
-    "porta-potty-rental-cost-oklahoma",
   ],
   "septic-inspections": [
     "aerobic-septic-system-oklahoma",
@@ -464,6 +490,7 @@ export const INDUSTRY_TO_BLOGS: Record<string, string[]> = {
     "osha-portable-restroom-requirements-construction-oklahoma",
     "how-many-porta-potties-construction-site-oklahoma",
     "ada-portable-restroom-construction-oklahoma",
+    "porta-potty-smells-like-ammonia-summer-oklahoma",
   ],
   "events-weddings": [
     "barn-wedding-not-enough-bathrooms-oklahoma",
