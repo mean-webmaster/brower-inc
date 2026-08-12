@@ -100,4 +100,11 @@ export const IMAGES = {
   blogHeroSepticNeverPumped: `${IMG}/brower-inc-septic-tank-never-pumped-oklahoma-blog-hero-newkirk-ok.webp`,
   blogCoverPortaPottyAmmoniaSummer: `${IMG}/brower-inc-porta-potty-smells-like-ammonia-summer-oklahoma-blog-cover-newkirk-ok.webp`,
   blogHeroPortaPottyAmmoniaSummer: `${IMG}/brower-inc-porta-potty-smells-like-ammonia-summer-oklahoma-blog-hero-newkirk-ok.webp`,
+  blogCoverCrewHeatSafety: `${IMG}/brower-inc-crew-wont-use-porta-potty-heat-safety-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogHeroCrewHeatSafety: `${IMG}/brower-inc-crew-wont-use-porta-potty-heat-safety-oklahoma-blog-hero-newkirk-ok.webp`,
+  blogCoverSepticParty: `${IMG}/brower-inc-can-my-septic-handle-a-party-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogHeroSepticParty: `${IMG}/brower-inc-can-my-septic-handle-a-party-oklahoma-blog-hero-newkirk-ok.webp`,
+  blogCoverFallEventBooking: `${IMG}/brower-inc-fall-event-porta-potty-booking-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogCoverFallSepticPumping: `${IMG}/brower-inc-when-to-pump-septic-tank-fall-oklahoma-blog-cover-newkirk-ok.webp`,
+  blogHeroFallSepticPumping: `${IMG}/brower-inc-when-to-pump-septic-tank-fall-oklahoma-blog-hero-newkirk-ok.webp`,
 };

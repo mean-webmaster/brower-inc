@@ -13,6 +13,58 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "fall-event-porta-potty-booking-oklahoma",
+    title:
+      "It's Mid-August in Kay County. Every Fall Event You're Planning Already Needs Its Restrooms Booked.",
+    excerpt:
+      "Fair week in Blackwell, the Cherokee Strip Cook-Off at Lake Ponca, homecoming, hunting camp, and peak October wedding season all land within six weeks — and one local fleet covers all of it. The honest booking lead times by event type, how many units you really need, and the placement mistakes that only happen once the weather turns.",
+    date: "2026-08-12",
+    readTime: "9 min read",
+    category: "Events, Weddings & Gatherings",
+    image: IMAGES.blogCoverFallEventBooking,
+    imageAlt:
+      "A small-town north-central Oklahoma county fair on a grassy fairground in early autumn golden light, with a neat row of clean bright blue Brower Inc. portable restroom units placed along the edge of the grounds beyond the vendor tents",
+  },
+  {
+    slug: "when-to-pump-septic-tank-fall-oklahoma",
+    title:
+      "Pump It in September, Not in January: The Fall Septic Window in North-Central Oklahoma",
+    excerpt:
+      "How often you actually need to pump a septic tank in Oklahoma, why the weeks between now and the first freeze are the practical window, what a winter emergency really costs when a loaded truck can't get up the drive — and why a top-five wettest June left Kay County drain fields with less margin than usual.",
+    date: "2026-08-12",
+    readTime: "9 min read",
+    category: "Septic & Property Maintenance",
+    image: IMAGES.blogCoverFallSepticPumping,
+    imageAlt:
+      "A white Brower Inc. vacuum septic pump truck parked on the lawn of a rural north-central Oklahoma farmhouse in golden autumn light, with a navy-uniformed technician pumping a residential septic tank through an open access lid, fallen leaves on the grass and trees turning gold",
+  },
+  {
+    slug: "crew-wont-use-porta-potty-heat-safety-oklahoma",
+    title:
+      "Your Crew Stopped Drinking Water to Avoid the Porta Potty. In 105° Heat, That's a Safety Problem.",
+    excerpt:
+      "When workers avoid a foul jobsite restroom, they quietly stop drinking water — and in a 105°F Oklahoma heat index that becomes a heat-illness risk. What the evidence actually shows, what OSHA enforces in 2026 (the federal heat standard is not final), and the fix.",
+    date: "2026-07-20",
+    readTime: "9 min read",
+    category: "Construction & Jobsite Compliance",
+    image: IMAGES.blogCoverCrewHeatSafety,
+    imageAlt:
+      "Construction workers taking a water break in the shade of a site trailer on a sun-baked north-central Oklahoma jobsite in intense summer heat, with a clean blue Brower Inc. portable restroom standing across the bare dirt lot nearby",
+  },
+  {
+    slug: "can-my-septic-handle-a-party-oklahoma",
+    title:
+      "We're Hosting 80 People at the Farm — Can the Septic Actually Take It?",
+    excerpt:
+      "Oklahoma requires just a 1,000-gallon tank for a 4-bedroom home — sized for five people, not eighty in an afternoon. Why surge flow, not volume, is what wrecks drain fields, the $5,000-to-$20,000 stakes, and what to do in the two weeks before your reunion or graduation party.",
+    date: "2026-07-20",
+    readTime: "9 min read",
+    category: "Septic & Property Maintenance",
+    image: IMAGES.blogCoverSepticParty,
+    imageAlt:
+      "A large family gathering under a shade tent on a rural north-central Oklahoma farm property on a bright summer day, with clean blue Brower Inc. portable restroom units placed discreetly at the edge of the lawn",
+  },
+  {
     slug: "septic-tank-never-pumped-oklahoma",
     title:
       "My Septic Tank Hasn't Been Pumped in 12 Years — Am I Already in Trouble?",

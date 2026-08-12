@@ -90,6 +90,14 @@ export function areaLink(slug: string): LinkRef {
 
 /** Short, keyword-bearing anchor text for each blog (better than the long H1). */
 export const BLOG_LABELS: Record<string, string> = {
+  "fall-event-porta-potty-booking-oklahoma":
+    "How far ahead to book porta potties for fall events in Kay County",
+  "when-to-pump-septic-tank-fall-oklahoma":
+    "When to pump your septic tank in Oklahoma (the fall window)",
+  "crew-wont-use-porta-potty-heat-safety-oklahoma":
+    "Crew won't use the porta potty in the heat (jobsite heat safety)",
+  "can-my-septic-handle-a-party-oklahoma":
+    "Can my septic handle a party? (guest load & drain field)",
   "septic-tank-never-pumped-oklahoma":
     "Septic tank never pumped in years — am I in trouble?",
   "porta-potty-smells-like-ammonia-summer-oklahoma":
@@ -158,8 +166,67 @@ interface RelatedSpec {
  * relationships are genuinely useful (not just same-category noise).
  */
 export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
+  "fall-event-porta-potty-booking-oklahoma": {
+    blogs: [
+      "complete-guide-portable-restrooms-oklahoma-outdoor-events",
+      "barn-wedding-not-enough-bathrooms-oklahoma",
+      "porta-potty-vs-luxury-restroom-trailer-oklahoma",
+      "emergency-portable-restroom-deployment-oklahoma",
+    ],
+    services: [
+      "portable-restrooms",
+      "vip-shower-restroom-trailers",
+      "ada-compliant-portable-restrooms",
+      "hand-washing-stations",
+    ],
+    areas: ["kay-county", "ponca-city", "blackwell"],
+  },
+  "when-to-pump-septic-tank-fall-oklahoma": {
+    blogs: [
+      "signs-septic-tank-needs-pumping-oklahoma",
+      "septic-tank-pumping-cost-oklahoma",
+      "septic-tank-never-pumped-oklahoma",
+      "septic-system-maintenance-oklahoma",
+    ],
+    services: [
+      "septic-tank-pumping",
+      "septic-inspections",
+      "septic-services",
+    ],
+    areas: ["kay-county", "newkirk"],
+  },
+  "crew-wont-use-porta-potty-heat-safety-oklahoma": {
+    blogs: [
+      "porta-potty-smells-like-ammonia-summer-oklahoma",
+      "osha-portable-restroom-requirements-construction-oklahoma",
+      "how-many-porta-potties-construction-site-oklahoma",
+      "how-clean-are-portable-restrooms",
+    ],
+    services: [
+      "long-term-rentals",
+      "hand-washing-stations",
+      "portable-restrooms",
+    ],
+    areas: ["kay-county", "garfield-county"],
+  },
+  "can-my-septic-handle-a-party-oklahoma": {
+    blogs: [
+      "when-to-pump-septic-tank-fall-oklahoma",
+      "signs-septic-tank-needs-pumping-oklahoma",
+      "septic-tank-never-pumped-oklahoma",
+      "barn-wedding-not-enough-bathrooms-oklahoma",
+      "septic-tank-pumping-cost-oklahoma",
+    ],
+    services: [
+      "septic-tank-pumping",
+      "septic-services",
+      "portable-restrooms",
+    ],
+    areas: ["kay-county", "ponca-city"],
+  },
   "septic-tank-never-pumped-oklahoma": {
     blogs: [
+      "when-to-pump-septic-tank-fall-oklahoma",
       "signs-septic-tank-needs-pumping-oklahoma",
       "septic-tank-pumping-cost-oklahoma",
       "septic-system-maintenance-oklahoma",
@@ -170,9 +237,9 @@ export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
   },
   "porta-potty-smells-like-ammonia-summer-oklahoma": {
     blogs: [
+      "crew-wont-use-porta-potty-heat-safety-oklahoma",
       "how-clean-are-portable-restrooms",
       "how-to-choose-portable-restroom-company-oklahoma",
-      "oil-gas-portable-sanitation-oklahoma",
       "local-vs-national-portable-restroom-providers-oklahoma",
     ],
     services: ["long-term-rentals", "portable-restrooms", "hand-washing-stations"],
@@ -180,18 +247,21 @@ export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
   },
   "signs-septic-tank-needs-pumping-oklahoma": {
     blogs: [
+      "when-to-pump-septic-tank-fall-oklahoma",
       "septic-tank-pumping-cost-oklahoma",
       "septic-system-maintenance-oklahoma",
       "aerobic-septic-system-oklahoma",
+      "can-my-septic-handle-a-party-oklahoma",
     ],
     services: ["septic-tank-pumping", "septic-services", "septic-inspections"],
     areas: ["kay-county", "garfield-county"],
   },
   "barn-wedding-not-enough-bathrooms-oklahoma": {
     blogs: [
+      "fall-event-porta-potty-booking-oklahoma",
       "restroom-trailer-rental-oklahoma",
       "porta-potty-vs-luxury-restroom-trailer-oklahoma",
-      "complete-guide-portable-restrooms-oklahoma-outdoor-events",
+      "can-my-septic-handle-a-party-oklahoma",
       "event-planning-restroom-guide",
     ],
     services: [
@@ -238,6 +308,7 @@ export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
   },
   "septic-tank-pumping-cost-oklahoma": {
     blogs: [
+      "when-to-pump-septic-tank-fall-oklahoma",
       "septic-system-maintenance-oklahoma",
       "porta-potty-rental-cost-oklahoma",
       "porta-potty-rental-near-me-rural-oklahoma",
@@ -301,6 +372,7 @@ export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
   },
   "septic-system-maintenance-oklahoma": {
     blogs: [
+      "when-to-pump-septic-tank-fall-oklahoma",
       "septic-tank-pumping-cost-oklahoma",
       "porta-potty-rental-near-me-rural-oklahoma",
       "porta-potty-rental-cost-oklahoma",
@@ -338,6 +410,7 @@ export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
   },
   "complete-guide-portable-restrooms-oklahoma-outdoor-events": {
     blogs: [
+      "fall-event-porta-potty-booking-oklahoma",
       "event-planning-restroom-guide",
       "porta-potty-vs-luxury-restroom-trailer-oklahoma",
       "porta-potty-rental-cost-oklahoma",
@@ -356,6 +429,7 @@ export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
   },
   "event-planning-restroom-guide": {
     blogs: [
+      "fall-event-porta-potty-booking-oklahoma",
       "complete-guide-portable-restrooms-oklahoma-outdoor-events",
       "porta-potty-vs-luxury-restroom-trailer-oklahoma",
       "porta-potty-rental-cost-oklahoma",
@@ -365,6 +439,7 @@ export const BLOG_RELATIONS: Record<string, RelatedSpec> = {
   },
   "emergency-portable-restroom-deployment-oklahoma": {
     blogs: [
+      "fall-event-porta-potty-booking-oklahoma",
       "porta-potty-rental-near-me-rural-oklahoma",
       "oil-gas-portable-sanitation-oklahoma",
       "how-many-porta-potties-construction-site-oklahoma",
@@ -423,6 +498,8 @@ export const SERVICE_TO_BLOGS: Record<string, string[]> = {
     "portable-restroom-rental-guide",
     "how-clean-are-portable-restrooms",
     "porta-potty-smells-like-ammonia-summer-oklahoma",
+    "crew-wont-use-porta-potty-heat-safety-oklahoma",
+    "can-my-septic-handle-a-party-oklahoma",
   ],
   "ada-compliant-portable-restrooms": [
     "ada-portable-restroom-construction-oklahoma",
@@ -445,12 +522,14 @@ export const SERVICE_TO_BLOGS: Record<string, string[]> = {
     "osha-portable-restroom-requirements-construction-oklahoma",
     "how-many-porta-potties-construction-site-oklahoma",
     "complete-guide-portable-restrooms-oklahoma-outdoor-events",
+    "crew-wont-use-porta-potty-heat-safety-oklahoma",
   ],
   "long-term-rentals": [
     "oil-gas-portable-sanitation-oklahoma",
     "porta-potty-smells-like-ammonia-summer-oklahoma",
     "how-many-porta-potties-construction-site-oklahoma",
     "porta-potty-rental-cost-oklahoma",
+    "crew-wont-use-porta-potty-heat-safety-oklahoma",
   ],
   "vip-shower-restroom-trailers": [
     "restroom-trailer-rental-oklahoma",
@@ -465,6 +544,7 @@ export const SERVICE_TO_BLOGS: Record<string, string[]> = {
     "aerobic-septic-system-oklahoma",
     "septic-system-maintenance-oklahoma",
     "septic-tank-pumping-cost-oklahoma",
+    "can-my-septic-handle-a-party-oklahoma",
   ],
   "septic-tank-pumping": [
     "signs-septic-tank-needs-pumping-oklahoma",
@@ -472,6 +552,7 @@ export const SERVICE_TO_BLOGS: Record<string, string[]> = {
     "septic-tank-pumping-cost-oklahoma",
     "aerobic-septic-system-oklahoma",
     "septic-system-maintenance-oklahoma",
+    "can-my-septic-handle-a-party-oklahoma",
   ],
   "septic-inspections": [
     "aerobic-septic-system-oklahoma",
@@ -491,6 +572,7 @@ export const INDUSTRY_TO_BLOGS: Record<string, string[]> = {
     "how-many-porta-potties-construction-site-oklahoma",
     "ada-portable-restroom-construction-oklahoma",
     "porta-potty-smells-like-ammonia-summer-oklahoma",
+    "crew-wont-use-porta-potty-heat-safety-oklahoma",
   ],
   "events-weddings": [
     "barn-wedding-not-enough-bathrooms-oklahoma",
@@ -498,17 +580,21 @@ export const INDUSTRY_TO_BLOGS: Record<string, string[]> = {
     "restroom-trailer-rental-oklahoma",
     "event-planning-restroom-guide",
     "porta-potty-vs-luxury-restroom-trailer-oklahoma",
+    "can-my-septic-handle-a-party-oklahoma",
   ],
   "oil-gas": [
     "oil-gas-portable-sanitation-oklahoma",
     "porta-potty-rental-near-me-rural-oklahoma",
     "osha-portable-restroom-requirements-construction-oklahoma",
+    "crew-wont-use-porta-potty-heat-safety-oklahoma",
   ],
   agriculture: [
     "porta-potty-rental-near-me-rural-oklahoma",
     "aerobic-septic-system-oklahoma",
     "septic-system-maintenance-oklahoma",
     "porta-potty-rental-cost-oklahoma",
+    "can-my-septic-handle-a-party-oklahoma",
+    "crew-wont-use-porta-potty-heat-safety-oklahoma",
   ],
   "government-municipal": [
     "osha-portable-restroom-requirements-construction-oklahoma",
