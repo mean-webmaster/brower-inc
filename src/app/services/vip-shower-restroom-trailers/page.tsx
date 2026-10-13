@@ -44,6 +44,60 @@ const VIP_FAQS = [
   },
 ];
 
+const NEW_TRAILERS = [
+  {
+    id: "trailer-8-station-flex",
+    title: "New: 8-Station Flex Restroom Trailer",
+    blurb:
+      "Eight private stations behind two entrances, with a flexible men's and women's layout. Built for long-running jobsites, crew camps, and large events.",
+    image: IMAGES.trailer8StationFlex,
+    imageAlt: "Brower Inc. 8-station flex restroom trailer with Brower logo",
+    imageSize: { width: 2360, height: 1232 },
+    floorPlan: IMAGES.trailer8StationFlexFloorPlan,
+    floorPlanAlt:
+      "Floor plan of the Brower Inc. 8-station flex restroom trailer showing eight toilet stalls, sinks, heaters, and a center fresh water tank",
+    floorPlanSize: { width: 2327, height: 1136 },
+    specs: [
+      ["Stations", "8"],
+      ["Approx. Uses", "3,700"],
+      ["Length | w/ Tongue", "28′ | 33′"],
+      ["Width | w/ Steps Down", "8′6″ | 12′6″"],
+      ["Height | w/ AC", "10′7″ | 11′8″"],
+      ["Fresh Water", "200 gal"],
+      ["Wastewater", "1,100 gal"],
+      ["Weight", "11,980 lbs"],
+      ["Axle", "(2) 7,000 lb Torsion"],
+      ["Wheels", "16″ Aluminum"],
+    ],
+  },
+  {
+    id: "trailer-4-station",
+    title: "New: 4-Door, 4-Station Restroom Trailer",
+    blurb:
+      "Four private stations, each with its own outside door. A compact trailer for jobsites and events with tight access.",
+    image: IMAGES.trailer4Station,
+    imageAlt: "Brower Inc. 4-door, 4-station restroom trailer with Brower logo",
+    imageSize: { width: 2001, height: 1331 },
+    floorPlan: IMAGES.trailer4StationFloorPlan,
+    floorPlanAlt:
+      "Floor plan of the Brower Inc. 4-door, 4-station restroom trailer showing four private restrooms with sinks and a center fresh water tank",
+    floorPlanSize: { width: 1956, height: 1249 },
+    specs: [
+      ["Stations", "4"],
+      ["Doors", "4"],
+      ["Approx. Uses", "1,400"],
+      ["Length | w/ Tongue", "14′4″ | 19′"],
+      ["Width | w/ Steps Down", "6′5″ | 9′2″"],
+      ["Height | w/ AC", "10′2″ | 11′3″"],
+      ["Fresh Water", "200 gal"],
+      ["Wastewater", "400 gal"],
+      ["Weight", "5,280 lbs"],
+      ["Axle", "7,000 lb Torsion"],
+      ["Wheels", "16″ Aluminum"],
+    ],
+  },
+];
+
 export const metadata: Metadata = {
   title: "Luxury Porta Potty Rental Oklahoma | VIP Trailers | Brower",
   description:
@@ -173,6 +227,52 @@ export default function VIPTrailersPage() {
               </div>
             </div>
           </div>
+
+          {/* New Trailers */}
+          {NEW_TRAILERS.map((trailer) => (
+            <div key={trailer.id} id={trailer.id} className="mt-16 scroll-mt-24 border-t pt-12">
+              <h2 className="text-3xl font-bold text-gray-900">{trailer.title}</h2>
+              <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">{trailer.blurb}</p>
+              <div className="mt-8 grid gap-6 lg:grid-cols-2">
+                <div>
+                  <Image
+                    src={trailer.image}
+                    alt={trailer.imageAlt}
+                    width={trailer.imageSize.width}
+                    height={trailer.imageSize.height}
+                    className="w-full rounded-xl border border-gray-200 bg-white object-contain"
+                  />
+                  <h3 className="mt-6 text-xl font-bold text-gray-900">Floor Plan</h3>
+                  <Image
+                    src={trailer.floorPlan}
+                    alt={trailer.floorPlanAlt}
+                    width={trailer.floorPlanSize.width}
+                    height={trailer.floorPlanSize.height}
+                    className="mt-3 w-full rounded-xl border border-gray-200 bg-white p-2"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">Specifications</h3>
+                  <dl className="mt-3 divide-y divide-gray-200 rounded-xl border border-gray-200">
+                    {trailer.specs.map(([label, value]) => (
+                      <div key={label} className="flex justify-between gap-4 px-4 py-3 text-sm">
+                        <dt className="text-gray-600">{label}</dt>
+                        <dd className="font-semibold text-gray-900 text-right">{value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                  <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+                    <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-primary-dark transition-colors">
+                      Get a Free Quote
+                    </Link>
+                    <a href="tel:+15807476206" className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
+                      Call (580) 747-6206
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
 
           {/* 3-Station Compact Trailer */}
           <div className="mt-16 border-t pt-12">

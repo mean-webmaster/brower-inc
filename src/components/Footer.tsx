@@ -116,6 +116,7 @@ export default function Footer() {
                     { name: "Cowley County", slug: "cowley-county-ks" },
                     { name: "Butler County", slug: "butler-county-ks" },
                     { name: "Harper County", slug: "harper-county-ks" },
+                    { name: "Barber County", slug: "barber-county-ks" },
                   ].map((area) => (
                     <li key={area.slug}>
                       <Link href={`/service-areas/${area.slug}`} className="text-sm hover:text-primary transition-colors">

@@ -47,6 +47,20 @@ export const SERVICE_COUNTIES: CountyInfo[] = [
     slug: "harper-county-ks",
   },
   {
+    id: "barber",
+    name: "Barber",
+    fips: "20007",
+    color: "fill-orange-200",
+    colorHex: "#fed7aa",
+    hoverHex: "#fdba74",
+    state: "KS",
+    description:
+      "Our newest Kansas service area. Brower Inc. delivers portable restrooms and restroom trailers for construction crews, industrial sites, and events across Barber County.",
+    cities: ["Medicine Lodge", "Kiowa", "Sharon"],
+    stats: {},
+    slug: "barber-county-ks",
+  },
+  {
     id: "sedgwick",
     name: "Sedgwick",
     fips: "20173",
