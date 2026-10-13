@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import PhoneClickTracking from "@/components/PhoneClickTracking";
 import { getBaseGraph, jsonLdString } from "@/lib/structured-data";
 import { SITE_NAME, SITE_URL, SITE_TAGLINE } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
@@ -129,8 +130,9 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <FloatingCTA />
+        <PhoneClickTracking />
       </body>
-      {/* Google Analytics — lazyOnload defers gtag.js to browser idle time to cut Total Blocking Time */}
+      {/* Google Analytics + Google Ads — lazyOnload defers gtag.js to browser idle time to cut Total Blocking Time */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-RD41VKS37T"
         strategy="lazyOnload"
@@ -139,7 +141,8 @@ export default function RootLayout({
         {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-RD41VKS37T');`}
+gtag('config', 'G-RD41VKS37T');
+gtag('config', 'AW-17010629676');`}
       </Script>
     </html>
   );

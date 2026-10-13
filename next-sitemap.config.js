@@ -3,7 +3,7 @@ module.exports = {
   siteUrl: "https://browerinc.net",
   generateRobotsTxt: true,
   sitemapSize: 7000,
-  exclude: ["/admin/*", "/login", "/apple-icon.png"],
+  exclude: ["/admin/*", "/login", "/apple-icon.png", "/thank-you"],
   robotsTxtOptions: {
     policies: [
       {
