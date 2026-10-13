@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AreasWeServe from "@/components/AreasWeServe";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { GuidesForIndustry } from "@/components/RelatedContent";
-import { SERVICES, SERVICE_AREAS_DATA, PHONE, PHONE_HREF } from "@/lib/constants";
+import { SERVICES, PHONE, PHONE_HREF } from "@/lib/constants";
 import { INDUSTRIES } from "@/lib/industries";
 import { getIndustrySchema, getBreadcrumbSchema, jsonLdString } from "@/lib/structured-data";
 
@@ -355,54 +356,7 @@ export default async function IndustryPage({
       {/* Service Areas */}
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center">
-            Areas We Serve
-          </h2>
-          <p className="mt-2 text-center text-gray-600">
-            Brower Inc. provides {industry.name.toLowerCase()} portable restroom services throughout Oklahoma and southern Kansas.
-          </p>
-          <div className="mt-8 space-y-6">
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3">
-                Oklahoma
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {SERVICE_AREAS_DATA.filter((a) => a.state === "OK").map((area) => (
-                  <Link
-                    key={area.slug}
-                    href={`/service-areas/${area.slug}`}
-                    className="rounded-full bg-white border border-gray-200 px-3 py-1 text-sm text-gray-700 hover:border-primary hover:text-primary transition-colors"
-                  >
-                    {area.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3">
-                Kansas
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {SERVICE_AREAS_DATA.filter((a) => a.state === "KS").map((area) => (
-                  <Link
-                    key={area.slug}
-                    href={`/service-areas/${area.slug}`}
-                    className="rounded-full bg-white border border-gray-200 px-3 py-1 text-sm text-gray-700 hover:border-primary hover:text-primary transition-colors"
-                  >
-                    {area.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="mt-6 text-center">
-            <Link
-              href="/service-areas"
-              className="text-sm font-medium text-primary hover:text-primary-dark"
-            >
-              View All Service Areas →
-            </Link>
-          </div>
+          <AreasWeServe className="" />
         </div>
       </section>
 

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AreasWeServe from "@/components/AreasWeServe";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { GuidesForService, ServiceCrossLinks } from "@/components/RelatedContent";
 import FAQAccordion from "@/components/FAQAccordion";
-import { SERVICES, SERVICE_AREAS_DATA, PHONE, PHONE_HREF } from "@/lib/constants";
+import { SERVICES, PHONE, PHONE_HREF } from "@/lib/constants";
 import {
   getServiceSchema,
   getBreadcrumbSchema,
@@ -198,46 +199,7 @@ export default function DeluxeFlushablePage() {
             </div>
           </div>
 
-          <div className="mt-16 border-t pt-12">
-            <h2 className="text-2xl font-bold text-gray-900 text-center">Areas We Serve</h2>
-            <p className="mt-2 text-center text-gray-600">
-              Deluxe flushable porta potty rental throughout Oklahoma and southern Kansas.
-            </p>
-            <div className="mt-8 space-y-6">
-              <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3">
-                  Oklahoma
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {SERVICE_AREAS_DATA.filter((a) => a.state === "OK").map((area) => (
-                    <Link
-                      key={area.slug}
-                      href={`/service-areas/${area.slug}`}
-                      className="rounded-full bg-white border border-gray-200 px-3 py-1 text-sm text-gray-700 hover:border-primary hover:text-primary transition-colors"
-                    >
-                      {area.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3">
-                  Kansas
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {SERVICE_AREAS_DATA.filter((a) => a.state === "KS").map((area) => (
-                    <Link
-                      key={area.slug}
-                      href={`/service-areas/${area.slug}`}
-                      className="rounded-full bg-white border border-gray-200 px-3 py-1 text-sm text-gray-700 hover:border-primary hover:text-primary transition-colors"
-                    >
-                      {area.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+          <AreasWeServe />
 
           <div className="mt-16 border-t pt-12">
             <h2 className="text-2xl font-bold text-gray-900">Related Services</h2>
