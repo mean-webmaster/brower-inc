@@ -199,35 +199,6 @@ export default function VIPTrailersPage() {
             </div>
           </div>
 
-          {/* Alternate Trailer Layout */}
-          <div className="mt-16 border-t pt-12">
-            <h2 className="text-3xl font-bold text-gray-900">Shower &amp; Restroom Combo Trailer</h2>
-            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Our second VIP trailer features an alternate layout with dedicated shower stalls — perfect for oil field crews, disaster relief, athletic events, and multi-day festivals where guests need a full shower experience alongside restroom facilities.
-            </p>
-            <div className="mt-8 grid gap-6 lg:grid-cols-2">
-              <div>
-                <Image
-                  src={IMAGES.vipExteriorWarehouse}
-                  alt="Brower Inc. VIP shower and restroom combo trailer in warehouse, Newkirk, Oklahoma"
-                  width={1920}
-                  height={1080}
-                  className="w-full rounded-xl object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900">Combo Trailer Floor Plan</h3>
-                <Image
-                  src={IMAGES.vipFloorPlanAlt}
-                  alt="Floor plan of Brower Inc. VIP shower and restroom combo trailer showing shower stalls, restroom stalls, and sinks"
-                  width={1317}
-                  height={658}
-                  className="mt-3 w-full rounded-xl border border-gray-200 bg-white p-2"
-                />
-              </div>
-            </div>
-          </div>
-
           {/* New Trailers */}
           {NEW_TRAILERS.map((trailer) => (
             <div key={trailer.id} id={trailer.id} className="mt-16 scroll-mt-24 border-t pt-12">
@@ -273,6 +244,35 @@ export default function VIPTrailersPage() {
               </div>
             </div>
           ))}
+
+          {/* Alternate Trailer Layout */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">Shower &amp; Restroom Combo Trailer</h2>
+            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
+              Our second VIP trailer features an alternate layout with dedicated shower stalls — perfect for oil field crews, disaster relief, athletic events, and multi-day festivals where guests need a full shower experience alongside restroom facilities.
+            </p>
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <div>
+                <Image
+                  src={IMAGES.vipExteriorWarehouse}
+                  alt="Brower Inc. VIP shower and restroom combo trailer in warehouse, Newkirk, Oklahoma"
+                  width={1920}
+                  height={1080}
+                  className="w-full rounded-xl object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">Combo Trailer Floor Plan</h3>
+                <Image
+                  src={IMAGES.vipFloorPlanAlt}
+                  alt="Floor plan of Brower Inc. VIP shower and restroom combo trailer showing shower stalls, restroom stalls, and sinks"
+                  width={1317}
+                  height={658}
+                  className="mt-3 w-full rounded-xl border border-gray-200 bg-white p-2"
+                />
+              </div>
+            </div>
+          </div>
 
           {/* 3-Station Compact Trailer */}
           <div className="mt-16 border-t pt-12">

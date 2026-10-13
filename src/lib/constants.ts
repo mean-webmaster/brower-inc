@@ -1781,7 +1781,7 @@ export const NAV_LINKS: NavLink[] = [
     children: [
       { label: "All Services", href: "/services", description: "Browse our full service lineup" },
       { label: "Portable Restrooms", href: "/services/portable-restrooms", description: "Standard porta potties for events & jobsites" },
-      { label: "VIP Restroom Trailers", href: "/services/vip-shower-restroom-trailers", description: "18-station luxury trailers for upscale events" },
+      { label: "Restroom Trailers", href: "/services/vip-shower-restroom-trailers#trailer-8-station-flex", description: "New 4- & 8-station trailers, plus 18-station VIP" },
       { label: "Hand Washing Stations", href: "/services/hand-washing-stations", description: "Standalone units, no hookups needed" },
       { label: "Septic Services", href: "/services/septic-services", description: "Pumping, repair & installation" },
       { label: "Long-Term Rentals", href: "/services/long-term-rentals", description: "Weekly servicing included" },

@@ -142,13 +142,22 @@ export default function DeluxeFlushablePage() {
             </div>
 
             <div>
-              <Image
-                src={IMAGES.portableRestroomEvent}
-                alt="Brower Inc. deluxe flushable portable toilet delivered to an outdoor wedding venue in Oklahoma"
-                width={600}
-                height={400}
-                className="h-80 w-full rounded-xl object-cover"
-              />
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src={IMAGES.deluxeFlushable}
+                  alt="Brower Inc. deluxe flushable portable toilet with Brower logo"
+                  width={422}
+                  height={736}
+                  className="h-80 w-full rounded-xl border border-gray-200 bg-white object-contain p-2"
+                />
+                <Image
+                  src={IMAGES.deluxeFlushableFootPump}
+                  alt="Flush tank inside a deluxe flushable portable toilet with the hands-free foot pump on the floor"
+                  width={1096}
+                  height={1231}
+                  className="h-80 w-full rounded-xl border border-gray-200 bg-white object-contain p-2"
+                />
+              </div>
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Common Use Cases</h2>
               <ul className="mt-4 grid gap-2 sm:grid-cols-2">

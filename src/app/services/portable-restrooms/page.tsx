@@ -16,6 +16,63 @@ import { IMAGES } from "@/lib/images";
 
 const service = SERVICES[0];
 
+const UNIT_TYPES = [
+  {
+    title: "Standard Maxim 300",
+    blurb: "Our everyday unit in blue, tan, or pink. Built for jobsites and events.",
+    image: IMAGES.portableRestroomLineup,
+    alt: "Brower Inc. standard portable restrooms lined up and ready for an outdoor event",
+    href: null,
+    cta: "",
+    contain: false,
+  },
+  {
+    title: "Deluxe Flushable",
+    blurb: "Foot-pump flush and a built-in sink. A step up without a full trailer.",
+    image: IMAGES.deluxeFlushable,
+    alt: "Brower Inc. deluxe flushable portable toilet",
+    href: "/services/deluxe-flushable-portable-toilets",
+    cta: "See deluxe flushable",
+    contain: true,
+  },
+  {
+    title: "ADA-Compliant",
+    blurb: "Zero-step entry, grab bars, and room to turn a wheelchair.",
+    image: IMAGES.adaRestroom,
+    alt: "Brower Inc. ADA-compliant wheelchair-accessible portable restroom",
+    href: "/services/ada-compliant-portable-restrooms",
+    cta: "See ADA units",
+    contain: true,
+  },
+  {
+    title: "VIP Shower & Restroom Trailers",
+    blurb: "Climate-controlled trailers with running water and private stalls.",
+    image: IMAGES.vipExteriorSide,
+    alt: "Brower Inc. VIP shower and restroom trailer",
+    href: "/services/vip-shower-restroom-trailers",
+    cta: "See VIP trailers",
+    contain: false,
+  },
+  {
+    title: "Hand Washing Stations",
+    blurb: "Standalone, no hookups needed. Pairs with any restroom.",
+    image: IMAGES.handWashingStation,
+    alt: "Brower Inc. portable hand washing station",
+    href: "/services/hand-washing-stations",
+    cta: "See hand washing",
+    contain: false,
+  },
+  {
+    title: "Long-Term Rentals",
+    blurb: "Weekly servicing for multi-month jobsites and commercial projects.",
+    image: IMAGES.portableRestroomField,
+    alt: "Brower Inc. portable restroom placed at a wind farm jobsite",
+    href: "/services/long-term-rentals",
+    cta: "See long-term rentals",
+    contain: false,
+  },
+];
+
 export const metadata: Metadata = {
   title: "Porta Potty Rental Oklahoma — The Complete Guide",
   description:
@@ -138,12 +195,9 @@ export default function PortableRestroomsPage() {
                   Quick Answer
                 </p>
                 <p className="mt-2 text-base text-gray-800 leading-relaxed">
-                  Porta potty rental in Oklahoma is the service of delivering, servicing, and
-                  picking up portable toilets for events, construction sites, oil-field operations,
-                  and rural properties. Brower Inc. is a locally owned provider based in Newkirk,
-                  Oklahoma, serving 14 counties in north-central Oklahoma and 6 counties in
-                  southern Kansas with a 1,375+ unit fleet — including standard, ADA-compliant,
-                  deluxe flushable, and luxury restroom trailers.
+                  Brower Inc. delivers, services, and picks up portable restrooms for events,
+                  jobsites, and rural properties across north-central Oklahoma and southern Kansas.
+                  Choose from standard, deluxe flushable, ADA, and luxury trailer units.
                 </p>
               </div>
 
@@ -195,19 +249,9 @@ export default function PortableRestroomsPage() {
           <div id="what-is-porta-potty-rental" className="mt-20 border-t pt-12 scroll-mt-24">
             <h2 className="text-3xl font-bold text-gray-900">What is porta potty rental?</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Porta potty rental is the end-to-end service of providing portable, self-contained
-              restrooms wherever permanent plumbing isn't available. A provider — like Brower
-              Inc. — delivers a sanitized unit to your address, places it in the right spot,
-              services it on a regular schedule, and picks it up when you're done. The unit
-              itself contains a holding tank for waste, a fresh-water reservoir for hand sanitizer
-              or sink use (on deluxe models), and ventilation to keep odors in check.
-            </p>
-            <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
-              Most people in Oklahoma know them as porta potties, portable toilets, port-a-johns,
-              or porta loos, and the service itself as portable restroom rental or porta potties
-              for rent. Regardless of the name, the service is the same — and so are the rules
-              around how many you need, how often they're serviced, and what counts as compliant.
-              We'll cover all of that below.
+              We drop off a clean portable restroom wherever there's no plumbing, service it on
+              schedule, and pick it up when you're done. Porta potty, port-a-john, portable
+              toilet: same service.
             </p>
           </div>
 
@@ -217,22 +261,19 @@ export default function PortableRestroomsPage() {
               Who needs porta potty rental in Oklahoma?
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              We serve nine industries across north-central Oklahoma and southern Kansas. Each
-              one has different needs — different unit mixes, servicing cadences, delivery
-              requirements, and compliance rules. Click into your industry to see how Brower Inc.
-              handles it.
+              Pick your industry to see how we handle it.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                { slug: "construction", title: "Construction", blurb: "OSHA-compliant porta potty rental for jobsites — Maxim 300, ADA, handwash bundles, weekly service." },
-                { slug: "events-weddings", title: "Events & Weddings", blurb: "Discreet placement, deluxe units, luxury trailers, and unit-count guidance for any guest count." },
-                { slug: "oil-gas", title: "Oil & Gas", blurb: "Remote field delivery, 24/7 operations, extreme weather, multi-regulation compliance." },
-                { slug: "agriculture", title: "Agriculture", blurb: "Farm and ranch sanitation — OSHA field-sanitation compliant, rural and unpaved delivery." },
-                { slug: "government-municipal", title: "Government & Municipal", blurb: "Emergency mobilization, public events, parks, and government-procurement-friendly billing." },
-                { slug: "film-tv", title: "Film & TV", blurb: "Climate-controlled trailers for talent, remote-location delivery, flexible production schedules." },
-                { slug: "utilities-telecom", title: "Utilities & Telecom", blurb: "Storm restoration urgency, remote substations, out-of-state crew staging." },
-                { slug: "disaster-relief", title: "Disaster Relief", blurb: "Emergency deployment for tornadoes, floods, and large-scale displacement events." },
-                { slug: "real-estate", title: "Real Estate", blurb: "New construction sanitation + septic maintenance for managed properties." },
+                { slug: "construction", title: "Construction", blurb: "OSHA-ready units, ADA, and hand wash stations with weekly service." },
+                { slug: "events-weddings", title: "Events & Weddings", blurb: "Deluxe units and luxury trailers sized to your guest count." },
+                { slug: "oil-gas", title: "Oil & Gas", blurb: "Remote field delivery and service in any weather." },
+                { slug: "agriculture", title: "Agriculture", blurb: "Farm, ranch, and harvest crews on rural and unpaved sites." },
+                { slug: "government-municipal", title: "Government & Municipal", blurb: "Parks, public events, and emergency mobilization." },
+                { slug: "film-tv", title: "Film & TV", blurb: "Climate-controlled trailers for cast and crew." },
+                { slug: "utilities-telecom", title: "Utilities & Telecom", blurb: "Storm restoration and remote substation crews." },
+                { slug: "disaster-relief", title: "Disaster Relief", blurb: "Fast deployment after tornadoes and floods." },
+                { slug: "real-estate", title: "Real Estate", blurb: "New construction sanitation and septic for managed properties." },
               ].map((i) => (
                 <Link
                   key={i.slug}
@@ -253,86 +294,38 @@ export default function PortableRestroomsPage() {
           <div id="types-of-units" className="mt-16 border-t pt-12 scroll-mt-24">
             <h2 className="text-3xl font-bold text-gray-900">Types of portable restrooms we offer</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Not every project needs the same unit. We carry the full range — from the
-              workhorse standard porta potty to a fully plumbed luxury restroom trailer — so we
-              can pair the right mix for your guests, crew, or compliance requirements.
+              The right unit for your guests, crew, or compliance needs.
             </p>
-            <div className="mt-8 grid gap-6 sm:grid-cols-2">
-              <div className="rounded-xl border border-gray-200 p-6">
-                <h3 className="text-xl font-bold text-gray-900">Standard Maxim 300</h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Our featured unit — spacious, well-built, and available in blue, tan, or pink.
-                  The workhorse for construction sites, festivals, and budget-conscious events.
-                </p>
-                <p className="mt-3 text-xs font-medium text-gray-500">
-                  Same page — you're here.
-                </p>
-              </div>
-              <Link
-                href="/services/deluxe-flushable-portable-toilets"
-                className="rounded-xl border border-gray-200 p-6 hover:border-primary/30 transition-colors"
-              >
-                <h3 className="text-xl font-bold text-gray-900">Deluxe Flushable</h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Foot-pump flush and a built-in sink — the comfort upgrade for weddings,
-                  corporate events, and family reunions without paying for a full trailer.
-                </p>
-                <span className="mt-3 inline-block text-xs font-medium text-primary">
-                  See deluxe flushable →
-                </span>
-              </Link>
-              <Link
-                href="/services/ada-compliant-portable-restrooms"
-                className="rounded-xl border border-gray-200 p-6 hover:border-primary/30 transition-colors"
-              >
-                <h3 className="text-xl font-bold text-gray-900">ADA-Compliant</h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Ground-level entry, interior handrails, wheelchair turning radius. Required on
-                  most OSHA jobsites and at ADA-Title-III public events.
-                </p>
-                <span className="mt-3 inline-block text-xs font-medium text-primary">
-                  See ADA units →
-                </span>
-              </Link>
-              <Link
-                href="/services/vip-shower-restroom-trailers"
-                className="rounded-xl border border-gray-200 p-6 hover:border-primary/30 transition-colors"
-              >
-                <h3 className="text-xl font-bold text-gray-900">VIP Shower & Restroom Trailers</h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  18-station luxury trailers with A/C, heat, running water, and full-size mirrors.
-                  Used for upscale weddings, corporate events, film productions, and galas.
-                </p>
-                <span className="mt-3 inline-block text-xs font-medium text-primary">
-                  See VIP trailers →
-                </span>
-              </Link>
-              <Link
-                href="/services/hand-washing-stations"
-                className="rounded-xl border border-gray-200 p-6 hover:border-primary/30 transition-colors"
-              >
-                <h3 className="text-xl font-bold text-gray-900">Hand Washing Stations</h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Standalone units — no hookups needed. The ideal pairing with any porta potty,
-                  especially for food-service events and OSHA construction sites.
-                </p>
-                <span className="mt-3 inline-block text-xs font-medium text-primary">
-                  See handwashing →
-                </span>
-              </Link>
-              <Link
-                href="/services/long-term-rentals"
-                className="rounded-xl border border-gray-200 p-6 hover:border-primary/30 transition-colors"
-              >
-                <h3 className="text-xl font-bold text-gray-900">Long-Term Rentals</h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Weekly servicing included. Built for multi-month construction, oil and gas, and
-                  commercial projects. Volume rates available.
-                </p>
-                <span className="mt-3 inline-block text-xs font-medium text-primary">
-                  See long-term →
-                </span>
-              </Link>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {UNIT_TYPES.map((u) => {
+                const card = (
+                  <>
+                    <Image
+                      src={u.image}
+                      alt={u.alt}
+                      width={600}
+                      height={400}
+                      className={`h-56 w-full rounded-t-xl bg-white ${u.contain ? "object-contain p-3" : "object-cover"}`}
+                    />
+                    <div className="p-5">
+                      <h3 className="text-xl font-bold text-gray-900">{u.title}</h3>
+                      <p className="mt-2 text-sm text-gray-600">{u.blurb}</p>
+                      <span className="mt-3 inline-block text-xs font-medium text-primary">
+                        {u.href ? `${u.cta} →` : "You're on this page"}
+                      </span>
+                    </div>
+                  </>
+                );
+                return u.href ? (
+                  <Link key={u.title} href={u.href} className="overflow-hidden rounded-xl border border-gray-200 hover:border-primary/30 hover:shadow-sm transition-all">
+                    {card}
+                  </Link>
+                ) : (
+                  <div key={u.title} className="overflow-hidden rounded-xl border border-gray-200">
+                    {card}
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -342,8 +335,8 @@ export default function PortableRestroomsPage() {
               How much does porta potty rental cost in Oklahoma?
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Pricing in Oklahoma depends on five things: unit type, rental duration, servicing
-              schedule, delivery distance, and quantity. Here's the working ballpark for 2026:
+              Price depends on unit type, rental length, servicing, distance, and quantity.
+              Here's the 2026 ballpark:
             </p>
             <div className="mt-6 overflow-hidden rounded-lg border border-gray-200">
               <table className="w-full text-left text-sm">
@@ -384,9 +377,8 @@ export default function PortableRestroomsPage() {
               </table>
             </div>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              For an exact quote tailored to your address, dates, and unit mix, call us at{" "}
-              <a href={PHONE_HREF} className="text-primary hover:underline">{PHONE}</a> or read
-              the deep-dive in our{" "}
+              For an exact quote, call{" "}
+              <a href={PHONE_HREF} className="text-primary hover:underline">{PHONE}</a> or see our{" "}
               <Link href="/blog/porta-potty-rental-cost-oklahoma" className="text-primary hover:underline">
                 2026 Oklahoma porta potty rental cost guide
               </Link>
@@ -400,36 +392,29 @@ export default function PortableRestroomsPage() {
               How many porta potties do you need?
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Two completely different rules apply depending on whether it's an event or a
-              jobsite.
+              Events and jobsites follow different rules.
             </p>
 
             <h3 className="mt-6 text-xl font-semibold text-gray-900">For events</h3>
             <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
-              A working baseline is one unit per 50 guests for a 4-hour event. Scale up if the
-              event runs longer than 4 hours, if alcohol is served (people use the restroom
-              more), or if food is served (same). Add at least one ADA unit for any public event.
-              For weddings over 200 guests, plan to mix in a deluxe flushable or VIP trailer for
-              guest comfort.
+              Plan one unit per 50 guests for a 4-hour event, plus more if food or alcohol is
+              served. Add at least one ADA unit for any public event.
             </p>
 
             <h3 className="mt-6 text-xl font-semibold text-gray-900">For OSHA construction sites</h3>
             <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
-              OSHA 29 CFR 1926.51 sets the minimums: 1 toilet for crews up to 20, 2 toilets for
-              20–199, and 1 additional toilet per 40 workers beyond that. You also need at least
-              one ADA-accessible unit if any worker has a mobility disability, plus separate
-              handwashing facilities (which can be standalone hand wash stations or built into
-              deluxe units).
+              OSHA 29 CFR 1926.51: 1 toilet for up to 20 workers, 2 for 20–199, then 1 more per 40
+              workers. Jobsites also need hand washing.
             </p>
             <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
-              For a worked example with diagrams,{" "}
+              See every crew size in{" "}
               <Link
                 href="/blog/how-many-porta-potties-construction-site-oklahoma"
                 className="text-primary hover:underline"
               >
                 our OSHA construction calculator guide
-              </Link>{" "}
-              walks through every crew size from 5 to 200+.
+              </Link>
+              .
             </p>
           </div>
 
@@ -437,8 +422,7 @@ export default function PortableRestroomsPage() {
           <div id="whats-included" className="mt-16 border-t pt-12 scroll-mt-24">
             <h2 className="text-3xl font-bold text-gray-900">What's included with your rental</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Every Brower Inc. porta potty rental is a turnkey service. Here's the full list of
-              what you get:
+              Every rental includes:
             </p>
             <ul className="mt-6 space-y-3 max-w-3xl">
               {service.features.map((feature) => (
@@ -480,11 +464,11 @@ export default function PortableRestroomsPage() {
               </li>
             </ul>
             <p className="mt-6 text-gray-600 leading-relaxed max-w-3xl">
-              Want to see exactly what "weekly servicing" means?{" "}
+              See{" "}
               <Link href="/blog/how-clean-are-portable-restrooms" className="text-primary hover:underline">
-                Our 7-step cleaning protocol is documented in full
-              </Link>{" "}
-              — including the chemicals we use and the inspection checklist we run.
+                our 7-step cleaning protocol
+              </Link>
+              .
             </p>
           </div>
 
@@ -492,21 +476,12 @@ export default function PortableRestroomsPage() {
           <div id="ada-compliance" className="mt-16 border-t pt-12 scroll-mt-24">
             <h2 className="text-3xl font-bold text-gray-900">ADA compliance &amp; accessibility</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              To ensure maximum accessibility for your guests and crew, Brower Inc. offers
-              dedicated{" "}
+              Our{" "}
               <Link href="/services/ada-compliant-portable-restrooms" className="text-primary hover:underline">
                 ADA-compliant portable restrooms
               </Link>{" "}
-              that meet the 2010 ADA Standards for Accessible Design — ground-level zero-step
-              entry, interior handrails and grab bars, ample wheelchair turning radius, and
-              wider doors. These larger units are also family friendly, perfect when parents need
-              to accompany their children or caregivers assist elderly guests.
-            </p>
-            <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
-              On OSHA-regulated construction sites with workers who have mobility disabilities,
-              an ADA-compliant unit is required as a reasonable accommodation. On public events
-              under ADA Title III, the rule of thumb is at least 5% of single-user facilities
-              (minimum 1) must be accessible. We help you calculate the right mix when you book.
+              have zero-step entry, grab bars, and room to turn a wheelchair. Plan at least one
+              for public events and for crews with a worker who needs one.
             </p>
           </div>
 
@@ -522,9 +497,8 @@ export default function PortableRestroomsPage() {
               <div className="rounded-xl border border-gray-200 p-6">
                 <h3 className="text-xl font-bold text-gray-900">Short-term & events</h3>
                 <p className="mt-2 text-sm text-gray-600">
-                  One day to one week. Weekend weddings, festivals, family gatherings, sporting
-                  events, photo and film shoots. Delivered fresh, picked up at the end. No
-                  servicing during a short rental unless the event runs multiple days.
+                  One day to one week, for weddings, festivals, and gatherings. Delivered clean,
+                  picked up after.
                 </p>
               </div>
               <Link
@@ -533,9 +507,8 @@ export default function PortableRestroomsPage() {
               >
                 <h3 className="text-xl font-bold text-gray-900">Long-term & ongoing</h3>
                 <p className="mt-2 text-sm text-gray-600">
-                  Weeks, months, or years. Multi-month construction projects, oil and gas field
-                  operations, commercial developments, remote work sites. Includes weekly waste
-                  pump-out, restocking, sanitization, and damage inspection.
+                  Weeks to years, for construction, oil and gas, and remote sites. Weekly pump-out,
+                  restocking, and cleaning included.
                 </p>
                 <span className="mt-3 inline-block text-xs font-medium text-primary">
                   Learn about long-term rentals →
@@ -548,16 +521,12 @@ export default function PortableRestroomsPage() {
           <div id="emergency-rentals" className="mt-16 border-t pt-12 scroll-mt-24">
             <h2 className="text-3xl font-bold text-gray-900">Emergency &amp; same-day rentals</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Plumbing failure, storm cleanup, last-minute event scale-up, urgent jobsite start?{" "}
+              Storm cleanup, plumbing failure, or a last-minute event?{" "}
               <Link href="/services/emergency-porta-potty-rental" className="text-primary hover:underline">
-                Brower Inc.'s emergency dispatch
+                Emergency dispatch
               </Link>{" "}
               runs 24/7. Call{" "}
-              <a href={PHONE_HREF} className="text-primary hover:underline">{PHONE}</a> at any
-              hour — a real Brower team member answers, not a national call center — and we'll
-              be moving toward your address within the hour. Same-day delivery is standard across
-              our 20-county area; oil-field and remote-Kansas addresses typically see 1–3 hour
-              delivery from the call.
+              <a href={PHONE_HREF} className="text-primary hover:underline">{PHONE}</a> any hour.
             </p>
           </div>
 
@@ -565,9 +534,7 @@ export default function PortableRestroomsPage() {
           <div id="areas-we-serve" className="mt-16 border-t pt-12 scroll-mt-24">
             <h2 className="text-3xl font-bold text-gray-900 text-center">Areas We Serve</h2>
             <p className="mt-2 text-center text-gray-600 max-w-2xl mx-auto">
-              We deliver portable restrooms and porta potties throughout 14 counties in
-              north-central Oklahoma and 6 counties in southern Kansas. Click into your area for
-              local context, common venues, and same-day availability.
+              We deliver across north-central Oklahoma and southern Kansas. Pick your area.
             </p>
             <div className="mt-8 space-y-6">
               <div>
@@ -614,11 +581,8 @@ export default function PortableRestroomsPage() {
           <div id="why-brower" className="mt-16 border-t pt-12 scroll-mt-24">
             <h2 className="text-3xl font-bold text-gray-900">Why choose Brower Inc.</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              National providers route Oklahoma "porta potty near me" searches into out-of-state
-              call centers, who sub-contract to whoever's free. By the time the handoff is done,
-              you've lost hours — and you have no idea who's actually showing up. Brower Inc. is
-              the local provider. Based in Newkirk, Oklahoma. Owner-operated by Troy Brower.
-              Our own trucks, our own dispatcher, our own inventory in our own yard.
+              Based in Newkirk and owner-operated by Troy Brower. Our own trucks, crew, and
+              inventory.
             </p>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {[
