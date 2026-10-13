@@ -142,13 +142,22 @@ export default function ADACompliantPage() {
             </div>
 
             <div>
-              <Image
-                src={IMAGES.portableRestroomTrio}
-                alt="Brower Inc. ADA-compliant portable restroom trio mounted on trailer ready for delivery in Newkirk, Oklahoma"
-                width={600}
-                height={400}
-                className="h-80 w-full rounded-xl object-cover"
-              />
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src={IMAGES.adaRestroom}
+                  alt="Brower Inc. ADA-compliant wheelchair-accessible portable restroom with Brower logo"
+                  width={864}
+                  height={1000}
+                  className="h-80 w-full rounded-xl border border-gray-200 bg-white object-contain p-2"
+                />
+                <Image
+                  src={IMAGES.adaRestroomInterior}
+                  alt="Inside an ADA-compliant portable restroom showing the wide door opening, handrails, and flat floor"
+                  width={925}
+                  height={990}
+                  className="h-80 w-full rounded-xl border border-gray-200 bg-white object-contain p-2"
+                />
+              </div>
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Common Use Cases</h2>
               <ul className="mt-4 grid gap-2 sm:grid-cols-2">

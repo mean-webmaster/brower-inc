@@ -24,6 +24,8 @@ export const IMAGES = {
   portableRestroomWarehouse: `${IMG}/brower-inc-portable-restroom-fleet-warehouse-inventory-newkirk-ok.webp`,
   portableRestroomLineup: `${IMG}/brower-inc-portable-restroom-lineup-outdoor-event-ready-newkirk-ok.webp`,
   portableRestroomTrio: `${IMG}/brower-inc-portable-restroom-trailer-mounted-trio-newkirk-ok.webp`,
+  adaRestroom: `${IMG}/brower-inc-ada-wheelchair-accessible-portable-restroom-newkirk-ok.webp`,
+  adaRestroomInterior: `${IMG}/brower-inc-ada-portable-restroom-interior-handrails-newkirk-ok.webp`,
   portableRestroomConstruction: `${IMG}/brower-inc-portable-restroom-construction-site-rental-newkirk-ok.webp`,
   portableRestroomEvent: `${IMG}/brower-inc-portable-restroom-event-venue-delivery-newkirk-ok.webp`,
   portableRestroomNight: `${IMG}/brower-inc-portable-restroom-night-service-call-newkirk-ok.webp`,
