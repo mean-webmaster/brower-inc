@@ -28,27 +28,27 @@ const FAQS = [
   {
     question: "Is a septic inspection required to buy a home in Oklahoma?",
     answer:
-      "Not by state law, but most lenders, title companies, and FHA/VA loans require it for properties on septic systems. Even on cash purchases, buyers nearly always request one because septic system failures can cost $5,000–$20,000+ to remediate. Brower Inc. delivers the written report your closing needs.",
+      "Not by state law, but most lenders, title companies, and FHA/VA loans require one for homes on septic. We deliver the written report your closing needs.",
   },
   {
     question: "How long does a septic inspection take?",
     answer:
-      "On-site inspection takes 1–2 hours depending on tank accessibility and drain-field condition. Brower Inc. typically returns the written report within 48 hours of the inspection — fast enough for tight closing timelines across Oklahoma and southern Kansas.",
+      "About 1–2 hours on site. The written report typically follows within 48 hours.",
   },
   {
     question: "What does a septic inspection check?",
     answer:
-      "Tank condition (cracks, sludge level, baffles, lid integrity), drain field health (signs of saturation, ponding, odor), inlet and outlet pipes, distribution box, and overall code compliance with state and county regulations. We also note maintenance recommendations to help the buyer plan ahead.",
+      "Tank condition, sludge level, baffles, lid, inlet and outlet pipes, distribution box, drain field, and code compliance. We also note maintenance recommendations.",
   },
   {
     question: "How much does a septic inspection cost in Oklahoma?",
     answer:
-      "Inspection-only pricing typically runs $200–$400 in Oklahoma, depending on tank size and access. Many buyers bundle the inspection with a pump-out (which makes the inspection more accurate anyway) for a combined flat rate. Call (580) 747-6206 for an exact quote for your property.",
+      "Inspection-only typically runs $200–$400, depending on tank size and access. Call (580) 747-6206 for an exact quote, or ask about bundling it with a pump-out.",
   },
   {
     question: "Do you provide inspection reports for lenders?",
     answer:
-      "Yes. Our written reports are accepted by lenders, title companies, FHA/VA loan officers, and county code-compliance offices across Oklahoma and southern Kansas. We can email the report directly to the closing agent if you provide an address.",
+      "Yes. We can email the written report directly to your closing agent.",
   },
 ];
 
@@ -95,14 +95,12 @@ export default function SepticInspectionsPage() {
                   Quick Answer
                 </p>
                 <p className="mt-2 text-base text-gray-800 leading-relaxed">
-                  A septic system inspection is a written assessment of tank, drain field, baffles,
-                  and code compliance — required by most lenders for rural-property transactions in
-                  Oklahoma. Brower Inc. inspects across north-central Oklahoma and southern Kansas
-                  and delivers written reports within 48 hours so closings stay on schedule.
+                  A written assessment of the tank, drain field, baffles, and code compliance, required
+                  by most lenders. Reports within 48 hours so closings stay on schedule.
                 </p>
               </div>
 
-              <h2 className="mt-10 text-2xl font-bold text-gray-900">What's Included</h2>
+              <h2 className="mt-10 text-2xl font-bold text-gray-900">What&apos;s Included</h2>
               <ul className="mt-4 space-y-3">
                 {service.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
@@ -144,7 +142,7 @@ export default function SepticInspectionsPage() {
             <div>
               <Image
                 src={IMAGES.septicMobileHome}
-                alt="Brower Inc. septic system inspection at a rural Oklahoma property for a real-estate transaction"
+                alt="Brower Inc. crew and trucks on site at a rural Oklahoma home with a septic system"
                 width={600}
                 height={400}
                 className="h-80 w-full rounded-xl object-cover"
@@ -162,19 +160,24 @@ export default function SepticInspectionsPage() {
             </div>
           </div>
 
-          <div className="mt-16 border-t pt-12">
-            <h2 className="text-3xl font-bold text-gray-900">For Realtors &amp; Lenders</h2>
-            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Buying or selling a rural Oklahoma property with a septic system means you almost
-              always need a written inspection report for the closing file. Brower Inc. has been
-              the trusted local provider for realtors and lenders across Kay, Garfield, Kingfisher,
-              Logan, and Woods counties for years — fast scheduling, clear written reports, and
-              direct delivery to the closing agent. Need an inspection booked this week?{" "}
-              <Link href="/contact" className="text-primary hover:underline">
-                Tell us the property address
-              </Link>{" "}
-              and we'll get you on the calendar.
-            </p>
+          <div className="mt-16 border-t pt-12 grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900">For Realtors &amp; Lenders</h2>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                Clear written reports, sent straight to the closing agent.{" "}
+                <Link href="/contact" className="text-primary hover:underline">
+                  Send us the property address
+                </Link>{" "}
+                to get on the calendar.
+              </p>
+            </div>
+            <Image
+              src={IMAGES.septicTruckRear}
+              alt="Brower Inc. branded septic service truck on a gravel drive in rural Oklahoma"
+              width={600}
+              height={400}
+              className="h-72 w-full rounded-xl object-cover"
+            />
           </div>
 
           <div className="mt-16 border-t pt-12">

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { PHONE, PHONE_HREF } from "@/lib/constants";
 import { INDUSTRIES } from "@/lib/industries";
+import { IMAGES } from "@/lib/images";
 import { getCollectionPageSchema, jsonLdString } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -25,6 +27,15 @@ const industriesPageSchema = getCollectionPageSchema({
   })),
 });
 
+const WHY = [
+  { title: "We Go Where You Work", text: "Remote oil fields, rural farms, and small-town events." },
+  { title: "Owner Answers the Phone", text: "Call (580) 747-6206 and you reach Troy Brower." },
+  { title: "1,375+ Units, One Standard", text: "Every unit gets the same service: clean, stocked, inspected." },
+  { title: "Oklahoma Weather-Hardened", text: "Protocols for summer heat, tornado season, ice storms, and wind." },
+  { title: "Restrooms + Septic", text: "Portable sanitation and septic service from one company." },
+  { title: "24/7 — Truly", text: "Tornado at 2 AM or a Saturday night event, we answer." },
+];
+
 export default function IndustriesPage() {
   return (
     <>
@@ -35,20 +46,17 @@ export default function IndustriesPage() {
       <Breadcrumbs items={[{ name: "Industries", href: "/industries" }]} />
 
       {/* Hero */}
-      <section className="bg-gray-50 py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
+      <section className="bg-gray-50 py-12 sm:py-20">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <div>
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
               Industries We Serve
             </h1>
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-              From construction sites and oil fields to weddings and emergency
-              disaster response, Brower Inc. delivers clean, reliable portable
-              sanitation solutions tailored to your industry&apos;s specific needs.
-              Serving 20 counties across Oklahoma and southern Kansas with a
-              1,375+ unit fleet.
+              Jobsites, oil fields, weddings, and storm response across
+              north-central Oklahoma and southern Kansas, from a 1,375+ unit fleet.
             </p>
-            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3 text-sm font-semibold text-white hover:bg-primary-dark transition-colors"
@@ -66,61 +74,62 @@ export default function IndustriesPage() {
               </a>
             </div>
           </div>
+          <Image
+            src={IMAGES.portableRestroomHero}
+            alt="Row of Brower Inc. portable restrooms in the warehouse, ready for delivery"
+            width={900}
+            height={600}
+            priority
+            className="h-72 w-full rounded-xl object-cover sm:h-96"
+          />
         </div>
       </section>
 
       {/* Industry Grid */}
-      <section className="py-16 sm:py-24">
+      <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {INDUSTRIES.map((industry) => (
               <Link
                 key={industry.slug}
                 href={`/industries/${industry.slug}`}
-                className="group rounded-xl border border-gray-200 bg-white p-8 shadow-sm transition-all hover:shadow-lg hover:border-primary/30"
+                className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-lg hover:border-primary/30"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
-                  <svg
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d={industry.icon}
-                    />
-                  </svg>
+                <Image
+                  src={industry.image}
+                  alt={industry.imageAlt}
+                  width={600}
+                  height={400}
+                  className="h-52 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+
+                <div className="p-6">
+                  <h2 className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+                    {industry.name}
+                  </h2>
+
+                  <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                    {industry.shortDescription}
+                  </p>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {industry.stats.slice(0, 3).map((stat) => (
+                      <span
+                        key={stat.label}
+                        className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700"
+                      >
+                        {stat.value} {stat.label}
+                      </span>
+                    ))}
+                  </div>
+
+                  <span className="mt-5 inline-flex items-center text-sm font-semibold text-primary">
+                    Learn More
+                    <svg className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
                 </div>
-
-                <h2 className="mt-4 text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
-                  {industry.name}
-                </h2>
-
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                  {industry.shortDescription}
-                </p>
-
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {industry.stats.slice(0, 3).map((stat) => (
-                    <span
-                      key={stat.label}
-                      className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700"
-                    >
-                      {stat.value} {stat.label}
-                    </span>
-                  ))}
-                </div>
-
-                <span className="mt-6 inline-flex items-center text-sm font-semibold text-primary">
-                  Learn More
-                  <svg className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
               </Link>
             ))}
           </div>
@@ -128,7 +137,7 @@ export default function IndustriesPage() {
       </section>
 
       {/* Why Brower — E-E-A-T Summary */}
-      <section className="bg-gray-50 py-16 sm:py-24">
+      <section className="bg-gray-50 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -139,43 +148,13 @@ export default function IndustriesPage() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-xl bg-white border border-gray-200 p-6">
-              <h3 className="text-lg font-bold text-gray-900">We Go Where Others Won&apos;t</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Competitors cluster in OKC and Tulsa. We own north-central Oklahoma — delivering to remote oil fields, rural farms, and small-town events across 20 counties.
-              </p>
-            </div>
-            <div className="rounded-xl bg-white border border-gray-200 p-6">
-              <h3 className="text-lg font-bold text-gray-900">Owner Answers the Phone</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                When you call (580) 747-6206, you reach Troy Brower — not a call center. Direct accountability means your project gets personal attention from the owner.
-              </p>
-            </div>
-            <div className="rounded-xl bg-white border border-gray-200 p-6">
-              <h3 className="text-lg font-bold text-gray-900">1,375+ Units, One Standard</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Our fleet is one of the largest in north-central Oklahoma. Every unit receives the same weekly servicing protocol — clean, stocked, and inspected.
-              </p>
-            </div>
-            <div className="rounded-xl bg-white border border-gray-200 p-6">
-              <h3 className="text-lg font-bold text-gray-900">Oklahoma Weather-Hardened</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                100°F summers, tornado season, ice storms, and 40+ mph winds. We have protocols for every Oklahoma weather scenario because we live and work in it.
-              </p>
-            </div>
-            <div className="rounded-xl bg-white border border-gray-200 p-6">
-              <h3 className="text-lg font-bold text-gray-900">Restrooms + Septic</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                We&apos;re one of the only north-central Oklahoma providers offering both portable sanitation and septic services — deeper expertise from understanding both sides.
-              </p>
-            </div>
-            <div className="rounded-xl bg-white border border-gray-200 p-6">
-              <h3 className="text-lg font-bold text-gray-900">24/7 — Truly</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Emergencies don&apos;t wait for Monday. Tornado strikes at 2 AM? Saturday night event crisis? We answer every time because Oklahoma doesn&apos;t have business hours for disasters.
-              </p>
-            </div>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {WHY.map((item) => (
+              <div key={item.title} className="rounded-xl bg-white border border-gray-200 p-6">
+                <h3 className="text-lg font-bold text-gray-900">{item.title}</h3>
+                <p className="mt-2 text-sm text-gray-600">{item.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -28,27 +28,40 @@ const FAQS = [
   {
     question: "How fast can Brower Inc. deliver an emergency porta potty?",
     answer:
-      "For most emergencies in our 20-county service area, we move toward your site within the hour and deliver the same day. Newkirk-area deliveries can be on site in 30–60 minutes. For remote oil-field, ranch, or rural Kansas addresses, expect 1–3 hours from the call.",
+      "For most emergencies we move toward your site within the hour and deliver the same day. Remote oil-field, ranch, or rural Kansas addresses can take 1–3 hours from the call.",
   },
   {
     question: "Do you really answer the phone 24/7?",
     answer:
-      "Yes. Call (580) 747-6206 at any hour — including weekends, holidays, and the middle of the night. A real Brower Inc. team member answers, not a call center. This is one of the reasons rural property owners and storm crews keep our number on speed dial.",
+      "Yes. Call (580) 747-6206 any hour, including weekends and holidays, and a Brower Inc. team member answers.",
   },
   {
     question: "What counts as an emergency porta potty rental?",
     answer:
-      "Anything where waiting isn't an option: residential plumbing or septic failures, storm and tornado cleanup, sudden event capacity overflow, fast-tracked construction starts, utility crew staging during outages, and first-responder operations. If you need a unit on site today, it's an emergency to us.",
+      "Anything that can't wait: plumbing or septic failures, storm cleanup, event overflow, rushed jobsite starts, utility crews, and first responders.",
   },
   {
     question: "Are emergency units more expensive?",
     answer:
-      "There's a modest after-hours and same-day surcharge to cover overtime and route reshuffling, but our emergency pricing is transparent — you'll know the number before we dispatch. For ongoing storm or disaster contracts, we work out volume rates upfront.",
+      "There's a modest after-hours and same-day surcharge, and you'll know the price before we dispatch. Ongoing storm or disaster contracts get volume rates.",
   },
   {
     question: "Can you scale up for major emergencies?",
     answer:
-      "Yes. Our 1,375+ unit fleet is one of the largest in north-central Oklahoma, so we can deploy multiple units within hours and keep scaling as additional inventory frees up from other routes. Call early in any developing situation so we can stage units in advance.",
+      "Yes. With a 1,375+ unit fleet we can deploy multiple units within hours, so call early in any developing situation.",
+  },
+];
+
+const PHOTOS = [
+  {
+    image: IMAGES.vipWithHandwash,
+    alt: "Brower Inc. pickup and trailer hauling portable restrooms through a parking lot at night",
+    caption: "Rolling out after dark.",
+  },
+  {
+    image: IMAGES.deliveryDaytime,
+    alt: "Brower Inc. service truck carrying two portable restrooms across a grass field",
+    caption: "Our own trucks and inventory.",
   },
 ];
 
@@ -110,10 +123,8 @@ export default function EmergencyPage() {
                   Quick Answer
                 </p>
                 <p className="mt-2 text-base text-gray-800 leading-relaxed">
-                  Brower Inc. offers emergency and same-day porta potty rental 24/7 across Oklahoma
-                  and southern Kansas. For most addresses in our 20-county service area, we
-                  dispatch within the hour and deliver a clean, fully stocked unit the same day —
-                  storm response, plumbing failures, last-minute events, and urgent jobsite needs.
+                  24/7 emergency and same-day porta potty rental across north-central Oklahoma and
+                  southern Kansas. For most addresses, we dispatch within the hour and deliver the same day.
                 </p>
               </div>
 
@@ -158,8 +169,8 @@ export default function EmergencyPage() {
 
             <div>
               <Image
-                src={IMAGES.deliveryNight}
-                alt="Brower Inc. service truck delivering an emergency porta potty after-hours in Oklahoma"
+                src={IMAGES.deliveryLot}
+                alt="Brower Inc. service truck with lights on after placing a portable restroom at night"
                 width={600}
                 height={400}
                 className="h-80 w-full rounded-xl object-cover"
@@ -178,20 +189,29 @@ export default function EmergencyPage() {
           </div>
 
           <div className="mt-16 border-t pt-12">
-            <h2 className="text-3xl font-bold text-gray-900">Why Local Beats a National Hotline</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Local Dispatch From Newkirk</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Most "national" porta potty companies route emergency calls to an out-of-state call
-              center, who then sub-contract the actual delivery to a local provider. By the time
-              that handoff completes, you've lost hours. Brower Inc. is the local provider — based
-              in Newkirk, Oklahoma, with our own trucks, our own dispatcher, and our own inventory
-              sitting in the yard. When you call (580) 747-6206 in an emergency, the person who
-              answers is the person who can have a unit moving toward your address within the hour.
-              Need a steady provider for ongoing storm-season readiness?{" "}
+              Our own trucks, dispatcher, and inventory, based in Newkirk. Want storm-season
+              readiness?{" "}
               <Link href="/contact" className="text-primary hover:underline">
                 Get us on retainer
               </Link>
               .
             </p>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {PHOTOS.map((p) => (
+                <figure key={p.caption} className="overflow-hidden rounded-xl border border-gray-200">
+                  <Image
+                    src={p.image}
+                    alt={p.alt}
+                    width={600}
+                    height={400}
+                    className="h-64 w-full object-cover"
+                  />
+                  <figcaption className="p-4 text-sm text-gray-600">{p.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
 
           <div className="mt-16 border-t pt-12">

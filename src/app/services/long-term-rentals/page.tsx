@@ -21,32 +21,50 @@ const FAQS = [
   {
     question: "How much does construction porta potty rental cost per month in Oklahoma?",
     answer:
-      "A standard construction porta potty in Oklahoma typically rents for about $200–$300 per month with weekly servicing included. ADA-compliant units and high-traffic sites that need twice-weekly service cost more. Volume rates apply when you rent multiple units for a single jobsite. Because long-term pricing depends on unit count, service frequency, and distance from our Newkirk yard, call (580) 747-6206 for a project quote.",
+      "A standard construction unit typically runs about $200–$300 per month with weekly servicing included. ADA units and extra service visits cost more, so call (580) 747-6206 for a project quote.",
   },
   {
     question: "Is weekly servicing included with a long-term rental?",
     answer:
-      "Yes. Every Brower Inc. long-term rental includes weekly servicing: we empty the waste tank, restock toilet paper, hand sanitizer, and paper towels, sanitize and scrub the interior, and inspect the unit for damage. High-usage jobsites can be scheduled for additional service visits. You get a documented service schedule you can show for OSHA compliance.",
+      "Yes. Every week we pump the tank, restock supplies, sanitize the interior, and inspect the unit.",
   },
   {
     question: "How many porta potties does my construction site need?",
     answer:
-      "Under OSHA 29 CFR 1926.51, you need one toilet for crews up to 20 workers, two toilets for 20–199 workers, and one additional toilet per 40 workers beyond that. Sites with workers who have mobility disabilities also need at least one ADA-accessible unit, plus handwashing facilities. Brower Inc. calculates the exact mix for your crew size and adds handwashing stations where required.",
+      "OSHA 29 CFR 1926.51: one toilet for up to 20 workers, two for 20–199, then one more per 40 workers. We calculate the mix for your crew, including ADA units and hand washing.",
   },
   {
     question: "What's the difference between long-term and monthly porta potty rental?",
     answer:
-      "They're the same thing in practice — a long-term or monthly porta potty rental is any rental billed on an ongoing (usually monthly) cycle with weekly servicing included, as opposed to a one-time event rental. Long-term rentals are built for multi-month construction, oil and gas field operations, and commercial projects, and they qualify for volume pricing the longer and larger the job.",
+      "In practice they're the same: an ongoing rental, usually billed monthly, with weekly servicing included.",
   },
   {
     question: "Do you offer ADA and his/her units for jobsites?",
     answer:
-      "Yes. We carry ADA-compliant (handicap-accessible) units and his-and-her configurations alongside our standard Maxim 300 units. ADA units are required on OSHA jobsites where a worker has a mobility disability, and they're a smart default for any larger crew. We'll help you determine the right number and mix of units based on crew size and usage.",
+      "Yes. We carry ADA-accessible and his-and-her units alongside our standard Maxim 300.",
   },
   {
     question: "Can you deliver to remote and rural jobsites?",
     answer:
-      "Yes — rural and remote delivery is our specialty. From our Newkirk, OK base, our fleet reaches construction sites, oil-field service tracks, and remote work sites across 14 Oklahoma counties and 6 southern Kansas counties. National providers often won't service addresses outside city limits; we will. Call (580) 747-6206 with your jobsite location and we'll confirm delivery.",
+      "Yes. We deliver from Newkirk to jobsites, oil-field tracks, and remote sites across north-central Oklahoma and southern Kansas.",
+  },
+];
+
+const PHOTOS = [
+  {
+    image: IMAGES.portableRestroomNight,
+    alt: "Brower Inc. portable restrooms and service truck at a home construction site in Oklahoma",
+    caption: "Units and service truck at a home build.",
+  },
+  {
+    image: IMAGES.portableRestroomField,
+    alt: "Brower Inc. portable restroom placed in a field with wind turbines in the distance",
+    caption: "A single unit placed out in the field.",
+  },
+  {
+    image: IMAGES.loadedTrailer,
+    alt: "Brower Inc. truck and trailer loaded with portable restrooms in the yard",
+    caption: "Loaded up and heading out from the yard.",
   },
 ];
 
@@ -112,11 +130,11 @@ export default function LongTermRentalsPage() {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                    Inspect for damage to ensure the unit is functioning properly
+                    Inspect for damage
                   </li>
                 </ul>
                 <p className="mt-3 text-sm text-gray-600">
-                  We also carry his-and-her options and handicap-accessible units depending on your needs. We will help you determine the required number of units based on usage frequency and the number of guests or employees.
+                  His-and-her and ADA units available. We help you size the order.
                 </p>
               </div>
 
@@ -145,7 +163,7 @@ export default function LongTermRentalsPage() {
             <div>
               <Image
                 src={IMAGES.fleetLineup}
-                alt="Brower Inc. full fleet of trucks and equipment lined up for long-term rental deployment in Newkirk, Oklahoma"
+                alt="Brower Inc. septic and service trucks with portable restrooms lined up on a field near Newkirk, Oklahoma"
                 width={600}
                 height={400}
                 className="h-80 w-full rounded-xl object-cover"
@@ -160,6 +178,25 @@ export default function LongTermRentalsPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          {/* Jobsite photos */}
+          <div className="mt-16 border-t pt-12">
+            <h2 className="text-3xl font-bold text-gray-900">On the Jobsite</h2>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {PHOTOS.map((p) => (
+                <figure key={p.caption} className="overflow-hidden rounded-xl border border-gray-200">
+                  <Image
+                    src={p.image}
+                    alt={p.alt}
+                    width={600}
+                    height={400}
+                    className="h-64 w-full object-cover"
+                  />
+                  <figcaption className="p-4 text-sm text-gray-600">{p.caption}</figcaption>
+                </figure>
+              ))}
             </div>
           </div>
 

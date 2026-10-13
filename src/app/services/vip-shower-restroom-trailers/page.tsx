@@ -16,32 +16,32 @@ const VIP_FAQS = [
   {
     question: "How much does a luxury restroom trailer rental cost in Oklahoma?",
     answer:
-      "VIP restroom trailer rental in Oklahoma generally ranges from $800 to $2,500 per event, depending on trailer size, event duration, and delivery distance from our Newkirk base. Each rental includes delivery, setup, post-event cleaning, and pickup. For an exact quote tailored to your venue and date, call (580) 747-6206.",
+      "Generally $800 to $2,500 per event, depending on trailer size, event length, and delivery distance. Delivery, setup, post-event cleaning, and pickup are included.",
   },
   {
     question: "How many guests can a VIP restroom trailer handle?",
     answer:
-      "Our 18-station luxury restroom trailers comfortably serve large events and replace 4–6 standard portable restrooms. As a planning rule, one well-appointed trailer handles a few hundred guests for a typical wedding or corporate event; we'll recommend the right configuration based on your guest count, event length, and whether alcohol is served.",
+      "One 18-station trailer replaces 4–6 standard portable restrooms. We'll size it to your guest count, event length, and whether alcohol is served.",
   },
   {
     question: "Do your restroom trailers have showers?",
     answer:
-      "Yes. We offer combined VIP shower and restroom trailers with private shower stalls and running hot water — popular for film and TV productions, disaster-relief staging, multi-day festivals, and ranch events where crews or guests need to clean up on site. Ask about shower-equipped configurations when you book.",
+      "Yes. Our combo trailer has private shower stalls with running hot water for crews and multi-day events.",
   },
   {
     question: "Do VIP trailers need power and water hookups?",
     answer:
-      "Our luxury trailers carry onboard fresh-water tanks and can run on standard power, with generator options available for remote venues that have no electrical hookup. We confirm power and water needs and the best placement when we schedule your delivery, so the trailer is fully functional from the moment guests arrive.",
+      "They carry onboard fresh-water tanks and run on standard power, with generator options for remote venues. We confirm power, water, and placement when we schedule delivery.",
   },
   {
     question: "Are luxury restroom trailers worth it for a wedding?",
     answer:
-      "For most outdoor weddings, yes — a VIP trailer with climate control, flushing toilets, running water, and full-size mirrors is the single most-requested guest-comfort upgrade and protects formalwear and the overall experience. Our porta potty vs. luxury restroom trailer comparison guide breaks down exactly when the upgrade is worth it for your guest count and budget.",
+      "For most outdoor weddings, yes. Climate control, flushing toilets, and running water make it our most-requested guest-comfort upgrade.",
   },
   {
     question: "How far in advance should I book a VIP restroom trailer?",
     answer:
-      "Because we run a limited number of luxury trailers, book 2–3 months ahead for peak wedding and event season (spring and fall) to guarantee availability for your date. We can sometimes accommodate shorter notice — call (580) 747-6206 to check availability for your event.",
+      "Book 2–3 months ahead for spring and fall event season. For shorter notice, call (580) 747-6206 to check availability.",
   },
 ];
 
@@ -143,7 +143,7 @@ export default function VIPTrailersPage() {
                 Luxury Porta Potty Rental in Oklahoma — VIP Restroom Trailers
               </h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-                Elevate your event with our VIP restroom and shower trailers — climate-controlled 18-station units with private flushing stalls, running water, and LED lighting. Perfect for weddings, corporate functions, and upscale gatherings across Oklahoma and southern Kansas.
+                Climate-controlled restroom and shower trailers with private flushing stalls and running water. For weddings, corporate events, and jobsites across north-central Oklahoma and southern Kansas.
               </p>
 
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Features & Benefits</h2>
@@ -250,7 +250,7 @@ export default function VIPTrailersPage() {
           <div className="mt-16 border-t pt-12">
             <h2 className="text-3xl font-bold text-gray-900">Shower &amp; Restroom Combo Trailer</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Our second VIP trailer features an alternate layout with dedicated shower stalls — perfect for oil field crews, disaster relief, athletic events, and multi-day festivals where guests need a full shower experience alongside restroom facilities.
+              Restrooms plus dedicated shower stalls. Built for oil field crews, disaster relief, and multi-day festivals.
             </p>
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
               <div>
@@ -279,7 +279,7 @@ export default function VIPTrailersPage() {
           <div className="mt-16 border-t pt-12">
             <h2 className="text-3xl font-bold text-gray-900">3-Station Compact Restroom Trailer</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Our compact 3-station restroom trailer is the perfect fit for smaller events, intimate weddings, and jobsites where space is tight. At just 18&prime; long and 6&prime;5&Prime; wide, it delivers the same flushing toilets, running water, and climate control as our full-size trailers — in a footprint that fits almost anywhere.
+              Flushing toilets, running water, and climate control in a smaller footprint. Sized for intimate weddings and tight jobsites.
             </p>
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
               <div>
@@ -326,15 +326,14 @@ export default function VIPTrailersPage() {
           <div className="mt-16 border-t pt-12">
             <h2 className="text-3xl font-bold text-gray-900">See Our VIP Trailers</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Take a closer look at the premium interiors and exteriors of our VIP restroom and shower trailers. These units are designed for comfort and style at any event.
+              Inside and out.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               <Image src={IMAGES.vipInteriorVanity} alt="VIP restroom trailer interior with vanity and private stalls" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
               <Image src={IMAGES.vipInteriorShower} alt="VIP shower trailer interior with shower stalls" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
               <Image src={IMAGES.vipInteriorBathroom} alt="VIP restroom trailer private bathroom interior" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
               <Image src={IMAGES.vipExteriorAngle} alt="VIP restroom trailer exterior angle view" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
-              <Image src={IMAGES.vipExteriorCloseup} alt="VIP restroom trailer exterior closeup with branding" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
-              <Image src={IMAGES.vipWithHandwash} alt="VIP restroom trailer paired with hand washing station" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
+              <Image src={IMAGES.technician} alt="Brower Inc. multi-door restroom trailer set up with a hand washing station and a Brower portable restroom" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
               <Image src={IMAGES.vipTrailersLot} alt="Brower Inc. VIP restroom trailers and portable restrooms staged in the Newkirk, Oklahoma lot" width={400} height={300} className="h-56 w-full rounded-lg object-cover" />
             </div>
           </div>
@@ -342,20 +341,28 @@ export default function VIPTrailersPage() {
           {/* VIP Trailer SEO Section */}
           <div className="mt-16 border-t pt-12">
             <h2 className="text-3xl font-bold text-gray-900">Why Luxury Porta Potty Rental Is the Wedding-Day Upgrade</h2>
-            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Looking for a luxury porta potty rental for your Oklahoma wedding, corporate event, or film production? Brower Inc.&apos;s VIP shower and restroom trailers deliver a premium guest experience with climate control, flushing toilets, running water, LED lighting, and private stalls. We serve events across north-central Oklahoma — including Ponca City, Enid, Stillwater, Guthrie, and communities throughout Kay County, Garfield County, Logan County, and southern Kansas. Our 18-station luxury restroom trailers replace 4–6 standard portable restrooms and are the most-requested upgrade for outdoor weddings in Oklahoma.
-            </p>
-            <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
-              VIP trailer rental pricing ranges from $800–$2,500 per event depending on trailer size, event duration, and delivery distance. Each rental includes delivery, setup, post-event cleaning, and pickup. Pair with our <Link href="/services/hand-washing-stations" className="text-primary font-medium hover:underline">hand washing stations</Link> for complete guest comfort. <Link href="/contact" className="text-primary font-medium hover:underline">Request a free VIP trailer quote</Link> or call (580) 747-6206.
-            </p>
+            <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-center">
+              <Image
+                src={IMAGES.rodeoEvent}
+                alt="Brower Inc. VIP shower and restroom trailer set up beside a rodeo arena at night"
+                width={2048}
+                height={1536}
+                className="h-80 w-full rounded-xl object-cover"
+              />
+              <div>
+                <p className="text-gray-600 leading-relaxed">
+                  Climate control, flushing toilets, and private stalls make it the most-requested upgrade for outdoor weddings in Oklahoma. Delivery, setup, cleaning, and pickup are included.
+                </p>
+                <p className="mt-3 text-gray-600 leading-relaxed">
+                  Pair it with our <Link href="/services/hand-washing-stations" className="text-primary font-medium hover:underline">hand washing stations</Link>, or <Link href="/contact" className="text-primary font-medium hover:underline">request a free VIP trailer quote</Link>.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* VIP Trailer FAQ — visible Q&A backed by FAQPage structured data */}
           <div className="mt-16 border-t pt-12">
             <h2 className="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
-            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              The questions Oklahoma and Kansas customers ask most before booking a VIP restroom or shower trailer.
-            </p>
             <div className="mt-8 max-w-4xl">
               <FAQAccordion faqs={VIP_FAQS} />
             </div>

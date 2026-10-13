@@ -21,27 +21,40 @@ const FAQS = [
   {
     question: "How much does a portable hand washing station rental cost in Oklahoma?",
     answer:
-      "A portable hand washing station in Oklahoma typically rents for about $100–$175 per weekend event or $125–$200 per month for long-term jobsites with regular servicing. Pricing depends on the number of stations, how often they're serviced, and delivery distance from our Newkirk base. Call (580) 747-6206 for a free quote.",
+      "Typically about $100–$175 per weekend event or $125–$200 per month for jobsites with regular servicing. Call (580) 747-6206 for a free quote.",
   },
   {
     question: "Do portable hand washing stations need a water hookup?",
     answer:
-      "No. Our portable hand washing stations are fully self-contained — they arrive stocked with potable water, soap, and paper towels, and include a waste containment tank. No plumbing, hose, or electrical hookup is required, which is what makes them ideal for remote jobsites, fields, and outdoor events with no infrastructure.",
+      "No. They arrive stocked with potable water, soap, and paper towels, with a built-in waste tank, so no plumbing or power is needed.",
   },
   {
     question: "Are hand washing stations required on OSHA construction sites?",
     answer:
-      "Yes. OSHA 29 CFR 1926.51 requires employers to provide adequate hand washing facilities for construction crews, especially where workers handle hazardous materials or eat on site. Our stations meet that standard. For food-service events, Oklahoma county health departments also require hand washing facilities near food vendors.",
+      "Yes. OSHA 29 CFR 1926.51 requires hand washing facilities for construction crews, and county health departments require them near food vendors at events.",
   },
   {
     question: "How many hand washing stations do I need?",
     answer:
-      "A common guideline is one hand washing station per 1–2 portable restrooms, and at least one per food-vendor area at events. For construction sites, scale with crew size and OSHA requirements. Brower Inc. helps you calculate the right number based on your guest count or crew size when you book.",
+      "A common guideline is one station per 1–2 portable restrooms, plus one per food-vendor area. We help you size it when you book.",
   },
   {
     question: "Can I pair hand washing stations with porta potty rentals?",
     answer:
-      "Absolutely — that's the most common setup. We deliver hand washing stations alongside our portable restroom and ADA unit rentals so your event or jobsite has complete sanitation in one drop-off. Bundling delivery also keeps costs down versus separate trips.",
+      "Yes, that's the most common setup. We deliver them with your restrooms in one drop-off.",
+  },
+];
+
+const PHOTOS = [
+  {
+    image: IMAGES.technician,
+    alt: "Brower Inc. hand washing station set beside a restroom trailer and a standard portable restroom",
+    caption: "Next to a restroom trailer and a standard unit.",
+  },
+  {
+    image: IMAGES.portableRestroomEvent,
+    alt: "Brower Inc. service truck with portable restrooms and a hand washing station set up at an event venue",
+    caption: "Set up with a row of restrooms at an event venue.",
   },
 ];
 
@@ -90,10 +103,6 @@ export default function HandWashingStationsPage() {
               </h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
 
-              <p className="mt-4 text-base text-gray-600 leading-relaxed">
-                Your guests deserve to be germ-free as they eat and socialize. These stations pair perfectly with portable toilet rentals — place them near your bathroom area or around the venue. They minimize water waste and keep the nearby area as clean as possible.
-              </p>
-
               <h2 className="mt-10 text-2xl font-bold text-gray-900">Features & Benefits</h2>
               <ul className="mt-4 space-y-3">
                 {service.features.map((feature) => (
@@ -119,7 +128,7 @@ export default function HandWashingStationsPage() {
             <div>
               <Image
                 src={IMAGES.handWashingStation}
-                alt="Brower Inc. portable hand washing station rental in Newkirk, Oklahoma"
+                alt="Row of Brower Inc. portable hand washing stations in the Newkirk, Oklahoma shop"
                 width={600}
                 height={400}
                 className="h-80 w-full rounded-xl object-cover"
@@ -137,15 +146,30 @@ export default function HandWashingStationsPage() {
             </div>
           </div>
 
-          {/* Hand Washing Station SEO Section */}
+          {/* Pairs with restrooms */}
           <div className="mt-16 border-t pt-12">
-            <h2 className="text-3xl font-bold text-gray-900">Portable Hand Washing Station Rental in Oklahoma</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Hand Washing Station Rental in Oklahoma</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Need a portable hand washing station for your construction site, outdoor event, or food service operation? Brower Inc. delivers clean, fully stocked hand washing stations across north-central Oklahoma — including Ponca City, Enid, Blackwell, Tonkawa, Hennessey, Stillwater, and communities throughout Kay County, Garfield County, Kingfisher County, and Logan County. Our stations meet OSHA construction site requirements (29 CFR 1926.51) and Oklahoma county health department standards for events with food vendors.
+              Pair them with our{" "}
+              <Link href="/services/portable-restrooms" className="text-primary font-medium hover:underline">
+                portable restroom rentals
+              </Link>{" "}
+              for complete jobsite or event sanitation.
             </p>
-            <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
-              Every hand washing station rental includes potable water, soap, paper towels, and a waste containment tank. Pair them with our <Link href="/services/portable-restrooms" className="text-primary font-medium hover:underline">portable restroom rentals</Link> for complete jobsite or event sanitation. <Link href="/contact" className="text-primary font-medium hover:underline">Request a free quote</Link> or call us at (580) 747-6206.
-            </p>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {PHOTOS.map((p) => (
+                <figure key={p.caption} className="overflow-hidden rounded-xl border border-gray-200">
+                  <Image
+                    src={p.image}
+                    alt={p.alt}
+                    width={600}
+                    height={400}
+                    className="h-64 w-full object-cover"
+                  />
+                  <figcaption className="p-4 text-sm text-gray-600">{p.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
 
           {/* FAQ */}

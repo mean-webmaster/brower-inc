@@ -34,10 +34,8 @@ export default function AboutPage() {
               className="mt-8 w-full rounded-xl object-cover"
             />
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-              Brower Inc. is a locally owned and operated portable sanitation company based in
-              Newkirk, Oklahoma. We specialize in providing reliable, clean portable restrooms,
-              luxury VIP restroom trailers, hand washing stations, and professional septic services
-              to communities and businesses throughout Oklahoma.
+              Locally owned and operated in Newkirk, Oklahoma. Portable restrooms, VIP restroom
+              trailers, hand washing stations, and septic services.
             </p>
 
             {/* Meet Troy */}
@@ -115,19 +113,37 @@ export default function AboutPage() {
 
             <h2 className="mt-12 text-2xl font-bold text-gray-900">Our Story</h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Founded with a commitment to quality and customer service, Brower Inc. has grown
-              from a small local operation into one of Oklahoma&apos;s trusted portable sanitation
-              providers. We understand that sanitation is essential — whether it&apos;s for a
-              wedding, a construction project, or a community festival — and we take pride in
-              delivering clean, well-maintained units on time, every time.
+              Brower Inc. grew from a small local operation into a trusted Oklahoma sanitation
+              provider. Weddings, jobsites, or festivals, we deliver clean, well-maintained units on
+              time.
             </p>
+            <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+              <Image
+                src={IMAGES.deliveryDaytime}
+                alt="Brower Inc. flatbed service truck hauling two portable restrooms"
+                width={600}
+                height={450}
+                className="col-span-2 h-56 w-full rounded-xl object-cover sm:col-span-1"
+              />
+              <Image
+                src={IMAGES.septicTruckRear}
+                alt="Brower Inc. branded septic pump truck"
+                width={600}
+                height={450}
+                className="h-56 w-full rounded-xl object-cover"
+              />
+              <Image
+                src={IMAGES.dogMascot}
+                alt="The Brower Inc. company dog riding in a service truck"
+                width={450}
+                height={600}
+                className="h-56 w-full rounded-xl object-cover"
+              />
+            </div>
 
             <h2 className="mt-12 text-2xl font-bold text-gray-900">Our Mission</h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              To provide Oklahoma with the highest quality portable sanitation solutions through
-              exceptional service, reliable equipment, and a genuine commitment to our customers
-              and communities. We believe everyone deserves access to clean, comfortable restroom
-              facilities, no matter the location.
+              Everyone deserves clean, comfortable restroom facilities, no matter the location.
             </p>
 
             <h2 className="mt-12 text-2xl font-bold text-gray-900">Why Choose Brower Inc.?</h2>
@@ -135,27 +151,27 @@ export default function AboutPage() {
               {[
                 {
                   title: "Locally Owned & Operated",
-                  text: "We are your neighbors. As a local business, we understand Oklahoma communities and are invested in our region.",
+                  text: "We are your neighbors, invested in our region.",
                 },
                 {
                   title: "Reliable Service",
-                  text: "On-time delivery, regular maintenance, and prompt pickup. You can count on us to be there when you need us.",
+                  text: "On-time delivery, regular maintenance, and prompt pickup.",
                 },
                 {
                   title: "Clean & Well-Maintained",
-                  text: "Every unit is thoroughly cleaned and sanitized before delivery. Regular servicing keeps them in top condition.",
+                  text: "Every unit is cleaned and sanitized before delivery.",
                 },
                 {
                   title: "Flexible Solutions",
-                  text: "From single-day events to multi-month construction projects, we tailor our services to your specific needs.",
+                  text: "Single-day events to multi-month construction projects.",
                 },
                 {
-                  title: "Competitive Pricing",
-                  text: "Fair, transparent pricing with no hidden fees. We offer free quotes and volume discounts for larger projects.",
+                  title: "Fair Pricing",
+                  text: "Free quotes, no hidden fees, and volume discounts on larger projects.",
                 },
                 {
                   title: "24/7 Support",
-                  text: `Need emergency service? Call us at ${PHONE}. We are here for you around the clock.`,
+                  text: `Emergency service around the clock at ${PHONE}.`,
                 },
               ].map((item) => (
                 <div key={item.title} className="rounded-lg border border-gray-200 p-5">

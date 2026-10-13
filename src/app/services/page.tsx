@@ -28,22 +28,32 @@ const servicesPageSchema = getCollectionPageSchema({
 
 const SERVICE_IMAGES: Record<string, string> = {
   "portable-restrooms": IMAGES.portableRestroomLineup,
-  "vip-shower-restroom-trailers": IMAGES.vipExteriorSide,
+  "vip-shower-restroom-trailers": IMAGES.trailer8StationFlex,
   "hand-washing-stations": IMAGES.handWashingStation,
   "septic-services": IMAGES.septicTruckRear,
   "long-term-rentals": IMAGES.fleetLineup,
-  "deluxe-flushable-portable-toilets": IMAGES.portableRestroomEvent,
-  "ada-compliant-portable-restrooms": IMAGES.portableRestroomTrio,
-  "emergency-porta-potty-rental": IMAGES.deliveryNight,
+  "deluxe-flushable-portable-toilets": IMAGES.deluxeFlushable,
+  "ada-compliant-portable-restrooms": IMAGES.adaRestroom,
+  "emergency-porta-potty-rental": IMAGES.deliveryLot,
   "septic-tank-pumping": IMAGES.septicPumpingClose,
   "septic-inspections": IMAGES.septicMobileHome,
 };
+
+// Product shots on white backgrounds: show the whole unit instead of cropping.
+const CONTAIN_IMAGES = new Set([
+  "vip-shower-restroom-trailers",
+  "deluxe-flushable-portable-toilets",
+  "ada-compliant-portable-restrooms",
+]);
+
+// Skip bullets that state county counts or reference other providers.
+const showFeature = (feature: string) => !/county|call center/i.test(feature);
 
 const SERVICE_ALT: Record<string, string> = {
   "portable-restrooms":
     "Brower Inc. porta potty lineup ready for event or construction site delivery in Newkirk, Oklahoma",
   "vip-shower-restroom-trailers":
-    "Brower Inc. VIP shower and restroom trailer exterior with branding in Newkirk, Oklahoma",
+    "Brower Inc. 8-station flex restroom trailer with Brower logo",
   "hand-washing-stations":
     "Brower Inc. portable hand washing station in warehouse staging area in Newkirk, Oklahoma",
   "septic-services":
@@ -51,15 +61,15 @@ const SERVICE_ALT: Record<string, string> = {
   "long-term-rentals":
     "Brower Inc. full fleet of trucks and equipment lined up for long-term rental deployment across Oklahoma",
   "deluxe-flushable-portable-toilets":
-    "Brower Inc. deluxe flushable portable toilet delivered to an outdoor event venue in Oklahoma",
+    "Brower Inc. deluxe flushable portable toilet with Brower logo",
   "ada-compliant-portable-restrooms":
-    "Brower Inc. ADA-compliant portable restroom trio mounted on trailer ready for delivery in Newkirk, Oklahoma",
+    "Brower Inc. ADA-compliant wheelchair-accessible portable restroom with Brower logo",
   "emergency-porta-potty-rental":
-    "Brower Inc. service truck delivering an emergency porta potty after-hours in Oklahoma",
+    "Brower Inc. service truck placing a portable restroom at night",
   "septic-tank-pumping":
     "Brower Inc. technician performing septic tank pumping at a residential property in Newkirk, Oklahoma",
   "septic-inspections":
-    "Brower Inc. septic inspection at a rural Oklahoma property for a real estate transaction",
+    "Brower Inc. septic crew and trucks on site at a rural mobile home",
 };
 
 export default function ServicesPage() {
@@ -79,10 +89,8 @@ export default function ServicesPage() {
               Portable Restroom Rental &amp; Septic Services in Oklahoma
             </h1>
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-              From construction site porta potties to luxury wedding trailers
-              to residential septic pumping, Brower Inc. delivers complete
-              portable sanitation solutions across north-central Oklahoma and
-              southern Kansas. One trusted local provider for every need.
+              Jobsite porta potties, luxury wedding trailers, and septic
+              pumping across north-central Oklahoma and southern Kansas.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
@@ -124,7 +132,11 @@ export default function ServicesPage() {
                       `Brower Inc. ${service.title} service in Oklahoma`
                     }
                     fill
-                    className="object-cover"
+                    className={
+                      CONTAIN_IMAGES.has(service.slug)
+                        ? "bg-white object-contain p-4"
+                        : "object-cover"
+                    }
                   />
                 </div>
 
@@ -133,11 +145,24 @@ export default function ServicesPage() {
                     {service.title}
                   </h2>
                   <p className="mt-4 text-gray-600 leading-relaxed">
-                    {service.description}
+                    {service.shortDescription}
                   </p>
 
+                  {service.slug === "vip-shower-restroom-trailers" && (
+                    <p className="mt-3 text-gray-600 leading-relaxed">
+                      New:{" "}
+                      <Link
+                        href="/services/vip-shower-restroom-trailers#trailer-8-station-flex"
+                        className="font-semibold text-primary hover:underline"
+                      >
+                        4- and 8-station restroom trailers
+                      </Link>
+                      .
+                    </p>
+                  )}
+
                   <ul className="mt-6 space-y-2">
-                    {service.features.slice(0, 4).map((feature) => (
+                    {service.features.filter(showFeature).slice(0, 3).map((feature) => (
                       <li
                         key={feature}
                         className="flex items-start gap-2 text-sm text-gray-700"
@@ -190,14 +215,22 @@ export default function ServicesPage() {
               Why Oklahoma Chooses Brower Inc.
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              1,375+ unit fleet. 20 counties served. Owner-operated. Always on call.
+              1,375+ unit fleet. Owner-operated. Always on call.
             </p>
           </div>
 
+          <Image
+            src={IMAGES.portableRestroomWarehouse}
+            alt="Rows of Brower Inc. portable restrooms staged in a warehouse"
+            width={2048}
+            height={1536}
+            className="mt-10 h-72 w-full rounded-2xl object-cover shadow-md sm:h-96"
+          />
+
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { title: "1,375+ Unit Fleet", body: "One of the largest fleets in north-central Oklahoma — inventory ready when you need it." },
-              { title: "Owner-Operated", body: "Troy Brower personally manages every project. No call centers, no excuses." },
+              { title: "1,375+ Unit Fleet", body: "Inventory ready when you need it." },
+              { title: "Owner-Operated", body: "Troy Brower personally manages every project." },
               { title: "24/7 Support", body: "We answer the phone day or night, including weekends and tornado season." },
               { title: "Weekly Servicing", body: "All long-term rentals include weekly cleaning, restocking, and inspection." },
             ].map((item) => (

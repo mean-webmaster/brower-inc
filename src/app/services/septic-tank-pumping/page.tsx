@@ -28,27 +28,54 @@ const FAQS = [
   {
     question: "How often should I pump my septic tank in Oklahoma?",
     answer:
-      "Most rural Oklahoma homes need a septic pump every 3–5 years. The exact interval depends on tank size, household size, water usage, and whether you have a garbage disposal. Brower Inc. provides a written follow-up recommendation after every pump so you know exactly when to schedule the next one.",
+      "Most homes need a pump every 3–5 years, depending on tank size, household size, and water use. We leave a written recommendation for your next pump.",
   },
   {
     question: "How much does septic tank pumping cost in Oklahoma?",
     answer:
-      "Most residential septic pumps in Oklahoma range from $250 to $500 depending on tank size, accessibility, and whether the lid needs to be uncovered. Brower Inc. quotes flat rates up front — no on-site upsells, no surprise charges. Call (580) 747-6206 for a quote based on your address.",
+      "Most residential pumps run $250–$500, depending on tank size and access. We quote flat rates up front; call (580) 747-6206.",
   },
   {
     question: "What happens during a septic pump-out?",
     answer:
-      "Our technician locates and uncovers the access lid, lowers the vacuum hose, and removes solids, scum, and liquid from the tank. We then rinse the tank, inspect baffles and inlet/outlet pipes, look for obvious signs of damage or drain-field issues, and seal the lid. The whole job typically takes 45–90 minutes.",
+      "We uncover the lid, pump out solids and liquid, rinse the tank, and check the baffles and pipes. Most jobs take 45–90 minutes.",
   },
   {
     question: "What are the warning signs my septic tank needs pumping?",
     answer:
-      "Slow drains throughout the house, gurgling pipes, sewage odors near the tank or drain field, lush or soggy grass over the drain field, and backups at the lowest drain (often the basement) are all classic signs. If you see any of these, call (580) 747-6206 — waiting risks expensive drain-field damage.",
+      "Slow drains, gurgling pipes, sewage odor, soggy grass over the drain field, or backups at the lowest drain. Call (580) 747-6206 before it damages the drain field.",
   },
   {
     question: "Do you pump commercial and grease tanks?",
     answer:
-      "Yes. In addition to residential septic, Brower Inc. services commercial waste tanks, restaurant grease traps, and multi-tenant property systems across Oklahoma and southern Kansas. We schedule recurring service for property managers and food-service operators on flexible cadences.",
+      "Yes: commercial waste tanks, restaurant grease traps, and multi-tenant systems, on a recurring schedule if you need one.",
+  },
+];
+
+const SEPTIC_SERVICES = [
+  {
+    title: "Pumping",
+    blurb: "Removes the solids from the tank.",
+    image: IMAGES.septicTruckRear,
+    alt: "Brower Inc. branded septic pump truck in rural Oklahoma",
+    href: null,
+    cta: "",
+  },
+  {
+    title: "Maintenance",
+    blurb: "Catches small issues before they get expensive.",
+    image: IMAGES.septicMobileHome,
+    alt: "Brower Inc. crew servicing a septic system at a rural Oklahoma home",
+    href: "/services/septic-services",
+    cta: "See septic services",
+  },
+  {
+    title: "Inspection",
+    blurb: "A written report, usually for buying or selling a home.",
+    image: IMAGES.septicTruckDirect,
+    alt: "Rear of a Brower Inc. septic service truck",
+    href: "/services/septic-inspections",
+    cta: "See septic inspections",
   },
 ];
 
@@ -95,14 +122,12 @@ export default function SepticPumpingPage() {
                   Quick Answer
                 </p>
                 <p className="mt-2 text-base text-gray-800 leading-relaxed">
-                  Most rural Oklahoma homes need a septic tank pump every 3 to 5 years. Brower Inc.
-                  performs full pump-outs, tank rinsing, and inspection in a single visit — serving
-                  residential homeowners, commercial properties, and rural homesteads across
-                  north-central Oklahoma and southern Kansas with transparent flat-rate pricing.
+                  Most rural Oklahoma homes need a pump every 3 to 5 years. We pump, rinse, and
+                  inspect in one visit across north-central Oklahoma and southern Kansas.
                 </p>
               </div>
 
-              <h2 className="mt-10 text-2xl font-bold text-gray-900">What's Included</h2>
+              <h2 className="mt-10 text-2xl font-bold text-gray-900">What&apos;s Included</h2>
               <ul className="mt-4 space-y-3">
                 {service.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
@@ -144,7 +169,7 @@ export default function SepticPumpingPage() {
             <div>
               <Image
                 src={IMAGES.septicPumpingClose}
-                alt="Brower Inc. technician performing residential septic tank pumping in Newkirk, Oklahoma"
+                alt="Brower Inc. technician pumping a residential septic tank with the pump truck behind him"
                 width={600}
                 height={400}
                 className="h-80 w-full rounded-xl object-cover"
@@ -167,29 +192,48 @@ export default function SepticPumpingPage() {
               Pumping vs. Maintenance vs. Inspection
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Pumping is just one part of keeping a septic system healthy. Pumping removes the
-              solids; ongoing{" "}
-              <Link href="/services/septic-services" className="text-primary hover:underline">
-                septic maintenance
-              </Link>{" "}
-              keeps the bacteria balance right and catches small issues before they become
-              expensive; a{" "}
-              <Link href="/services/septic-inspections" className="text-primary hover:underline">
-                septic inspection
-              </Link>{" "}
-              is a written assessment usually required for real-estate transactions. Most rural
-              Oklahoma homeowners need the first two on a recurring schedule and the third only
-              when buying or selling. Brower Inc. handles all three.
+              Brower Inc. handles all three.
             </p>
-            <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
-              Want the deeper guide?{" "}
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {SEPTIC_SERVICES.map((u) => {
+                const card = (
+                  <>
+                    <Image
+                      src={u.image}
+                      alt={u.alt}
+                      width={600}
+                      height={400}
+                      className="h-56 w-full rounded-t-xl object-cover"
+                    />
+                    <div className="p-5">
+                      <h3 className="text-xl font-bold text-gray-900">{u.title}</h3>
+                      <p className="mt-2 text-sm text-gray-600">{u.blurb}</p>
+                      <span className="mt-3 inline-block text-xs font-medium text-primary">
+                        {u.href ? `${u.cta} →` : "You're on this page"}
+                      </span>
+                    </div>
+                  </>
+                );
+                return u.href ? (
+                  <Link key={u.title} href={u.href} className="overflow-hidden rounded-xl border border-gray-200 hover:border-primary/30 hover:shadow-sm transition-all">
+                    {card}
+                  </Link>
+                ) : (
+                  <div key={u.title} className="overflow-hidden rounded-xl border border-gray-200">
+                    {card}
+                  </div>
+                );
+              })}
+            </div>
+            <p className="mt-6 text-gray-600 leading-relaxed max-w-3xl">
+              Want the deeper guide? Read{" "}
               <Link
                 href="/blog/septic-system-maintenance-oklahoma"
                 className="text-primary hover:underline"
               >
-                The Oklahoma Homeowner's Complete Guide to Septic System Maintenance
-              </Link>{" "}
-              walks through everything from pump intervals to drain-field health.
+                the Oklahoma homeowner&apos;s guide to septic maintenance
+              </Link>
+              .
             </p>
           </div>
 

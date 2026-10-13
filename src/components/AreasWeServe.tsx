@@ -5,6 +5,7 @@ type Props = {
   heading?: string;
   subheading?: string;
   className?: string;
+  showViewAll?: boolean;
 };
 
 const byName = (a: { name: string }, b: { name: string }) => a.name.localeCompare(b.name);
@@ -74,6 +75,7 @@ export default function AreasWeServe({
   heading = "Areas We Serve",
   subheading = "North-central Oklahoma and southern Kansas.",
   className = "mt-16 border-t pt-12",
+  showViewAll = true,
 }: Props) {
   return (
     <div className={className}>
@@ -83,11 +85,13 @@ export default function AreasWeServe({
         <StateColumn label="Oklahoma" state="OK" />
         <StateColumn label="Kansas" state="KS" />
       </div>
+      {showViewAll && (
       <div className="mt-8 text-center">
         <Link href="/service-areas" className="text-sm font-medium text-primary hover:text-primary-dark">
           View All Service Areas →
         </Link>
       </div>
+      )}
     </div>
   );
 }

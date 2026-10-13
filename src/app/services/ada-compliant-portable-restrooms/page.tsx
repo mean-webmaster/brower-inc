@@ -28,27 +28,27 @@ const FAQS = [
   {
     question: "What makes a portable restroom ADA-compliant?",
     answer:
-      "An ADA-compliant portable restroom has ground-level zero-step entry, interior handrails, sufficient interior space for a wheelchair turning radius (typically 60 inches), and a wider door — all per the Americans with Disabilities Act 2010 Standards for Accessible Design. Brower Inc.'s units meet every requirement out of the gate.",
+      "Zero-step entry, interior handrails, a wider door, and room for a wheelchair turning radius (typically 60 inches), per the 2010 ADA Standards for Accessible Design.",
   },
   {
     question: "Does OSHA require ADA porta potties on construction sites?",
     answer:
-      "Yes — when employees with mobility disabilities are present, OSHA requires reasonable accommodation, which generally means at least one ADA-accessible unit on site. ADA Title III also applies to events and public projects. We recommend at least 1 ADA unit per project site as a baseline.",
+      "When employees with mobility disabilities are present, OSHA requires reasonable accommodation, which generally means at least one ADA unit on site. We recommend at least one per project site as a baseline.",
   },
   {
     question: "How many ADA units do I need at a public event?",
     answer:
-      "ADA guidelines call for at least 5% of single-user toilet facilities (minimum 1) to be accessible. For most Oklahoma events under 500 guests, one ADA unit is enough. Larger festivals should plan one per 200–250 attendees. Brower Inc. helps you calculate the right mix when you book.",
+      "ADA guidelines call for at least 5% of single-user toilets (minimum 1) to be accessible. One is usually enough under 500 guests; larger festivals should plan one per 200–250 attendees.",
   },
   {
     question: "Are ADA portable restrooms family-friendly?",
     answer:
-      "Yes. The extra interior space and grab bars make ADA units ideal when parents need to assist children, or when caregivers accompany elderly guests. Many event clients book an ADA unit purely for the family-friendly versatility, even when ADA compliance isn't strictly required.",
+      "Yes. The extra room and grab bars help parents assisting children and caregivers helping elderly guests.",
   },
   {
     question: "Can I add a hand washing station to an ADA porta potty?",
     answer:
-      "Absolutely — and we recommend it for inclusive accessibility. We pair our ADA-compliant porta potties with ADA-friendly hand washing stations that have lower basins reachable from a seated position. Bundle pricing is available when you book both.",
+      "Yes. We pair ADA units with hand washing stations that have lower basins reachable from a seated position.",
   },
 ];
 
@@ -88,18 +88,18 @@ export default function ADACompliantPage() {
               <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
                 ADA-Compliant Portable Restroom Rental in Oklahoma
               </h1>
-              <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
+              <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+                Wheelchair-accessible portable restrooms for jobsites and public events.
+              </p>
 
               <div className="mt-8 rounded-lg border-l-4 border-primary bg-primary/5 p-6">
                 <p className="text-sm font-semibold uppercase tracking-wider text-primary">
                   Quick Answer
                 </p>
                 <p className="mt-2 text-base text-gray-800 leading-relaxed">
-                  An ADA-compliant portable restroom meets the Americans with Disabilities Act
-                  Standards for Accessible Design — featuring ground-level entry, interior
-                  handrails, and a wheelchair turning radius. Brower Inc. provides ADA porta potties
-                  across Oklahoma and southern Kansas for construction sites, public events, and
-                  inclusive gatherings.
+                  An ADA-compliant portable restroom has ground-level entry, interior handrails, and a
+                  wheelchair turning radius. We deliver them across north-central Oklahoma and southern
+                  Kansas.
                 </p>
               </div>
 
@@ -176,23 +176,34 @@ export default function ADACompliantPage() {
             <h2 className="text-3xl font-bold text-gray-900">
               OSHA, ADA &amp; the Oklahoma Construction Site
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              OSHA's sanitation standard{" "}
-              <Link
-                href="/blog/how-many-porta-potties-construction-site-oklahoma"
-                className="text-primary hover:underline"
-              >
-                29 CFR 1926.51
-              </Link>{" "}
-              dictates how many portable restrooms you need on a construction site. When ADA Title I
-              and Title III come into play — disabled employees on the crew, or public-facing
-              project frontage — you also need at least one ADA-accessible unit. Brower Inc. pairs
-              our standard fleet with ADA-compliant units so your jobsite stays compliant under both
-              OSHA and ADA without the headache. Need a count? Our{" "}
-              <Link href="/contact" className="text-primary hover:underline">
-                team will calculate the right mix for your project.
-              </Link>
-            </p>
+            <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-center">
+              <Image
+                src={IMAGES.portableRestroomNight}
+                alt="Brower Inc. service truck and portable restrooms at a construction site"
+                width={2048}
+                height={1536}
+                className="h-80 w-full rounded-xl object-cover"
+              />
+              <div>
+                <p className="text-gray-600 leading-relaxed">
+                  OSHA{" "}
+                  <Link
+                    href="/blog/how-many-porta-potties-construction-site-oklahoma"
+                    className="text-primary hover:underline"
+                  >
+                    29 CFR 1926.51
+                  </Link>{" "}
+                  sets how many restrooms a jobsite needs. If a crew member or public frontage brings in
+                  the ADA, add at least one accessible unit.
+                </p>
+                <p className="mt-3 text-gray-600 leading-relaxed">
+                  Need a count?{" "}
+                  <Link href="/contact" className="text-primary hover:underline">
+                    We&apos;ll calculate the right mix for your project.
+                  </Link>
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="mt-16 border-t pt-12">

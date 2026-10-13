@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTABanner from "@/components/CTABanner";
 import { GuidesForArea } from "@/components/RelatedContent";
 import { SERVICE_AREAS_DATA, SERVICES, PHONE, PHONE_HREF } from "@/lib/constants";
+import { IMAGES } from "@/lib/images";
 import { getBreadcrumbSchema, getServiceAreaSchema, getLocalBusinessForArea, getFAQSchema, jsonLdString } from "@/lib/structured-data";
 
+
+const RESTROOM_ONLY_AREAS = ["barber-county-ks", "medicine-lodge-ks", "kiowa-ks", "sharon-ks"];
 export function generateStaticParams() {
   return SERVICE_AREAS_DATA.map((area) => ({ slug: area.slug }));
 }
@@ -41,13 +45,19 @@ export default async function ServiceAreaPage({
 
   const nearbyAreas = area.nearbyAreas
     .map((s) => SERVICE_AREAS_DATA.find((a) => a.slug === s))
-    .filter(Boolean);
+    .filter((a): a is (typeof SERVICE_AREAS_DATA)[number] => Boolean(a))
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   const breadcrumbItems = [
     { name: "Service Areas", href: "/service-areas" },
     { name: area.name, href: `/service-areas/${area.slug}` },
   ];
 
+  // New Barber County service area: restroom rentals only until septic service there is confirmed
+  const restroomOnly = RESTROOM_ONLY_AREAS.includes(area.slug);
+  const areaServices = restroomOnly
+    ? SERVICES.filter((s) => !s.slug.startsWith("septic"))
+    : SERVICES;
   const locationLabel =
     area.type === "county"
       ? `${area.name}, ${area.state}`
@@ -117,14 +127,11 @@ export default async function ServiceAreaPage({
             </div>
 
             <h1 className="mt-4 text-4xl font-bold text-gray-900 sm:text-5xl">
-              Porta Potty Rental &amp; Septic Services in {locationLabel}
+              {restroomOnly ? "Porta Potty & Restroom Trailer Rental" : "Porta Potty Rental & Septic Services"} in {locationLabel}
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
               {area.content.intro}
-            </p>
-            <p className="mt-3 text-base text-gray-500 leading-relaxed">
-              Whether you call it a porta potty, portable toilet, or portable restroom, Brower Inc. delivers clean, serviced units to {area.name} and the surrounding area. Contact us for a free porta potty rental quote.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -170,13 +177,23 @@ export default async function ServiceAreaPage({
       {/* Why Choose Us */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Why Choose Brower Inc. in {area.name}?
-            </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              {area.content.whyChooseUs}
-            </p>
+          <div className="mx-auto grid max-w-5xl items-center gap-10 md:grid-cols-2">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900">
+                Why Choose Brower Inc. in {area.name}?
+              </h2>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                {area.content.whyChooseUs}
+              </p>
+            </div>
+            <Image
+              src={IMAGES.deliveryDaytime}
+              alt="Brower Inc. service truck carrying two portable restrooms for delivery"
+              width={800}
+              height={600}
+              sizes="(min-width: 768px) 480px, 100vw"
+              className="w-full rounded-xl object-cover shadow-sm"
+            />
           </div>
         </div>
       </section>
@@ -194,7 +211,7 @@ export default async function ServiceAreaPage({
           </div>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map((service) => (
+            {areaServices.map((service) => (
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
@@ -237,11 +254,8 @@ export default async function ServiceAreaPage({
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl">
               <h2 className="text-3xl font-bold text-gray-900">
-                Events &amp; Venues We Serve in {area.name}
+                Local Events &amp; Venues in {area.name}
               </h2>
-              <p className="mt-3 text-gray-600">
-                We provide portable restrooms, VIP trailers, and hand washing stations for events throughout {area.name}. Here are some of the local events and venues we commonly serve:
-              </p>
             </div>
             <div className="mx-auto mt-8 max-w-3xl space-y-6">
               {area.content.localEvents.map((event) => (
@@ -292,32 +306,27 @@ export default async function ServiceAreaPage({
             <h2 className="text-2xl font-bold text-gray-900">
               Nearby Service Areas
             </h2>
-            <p className="mt-2 text-gray-600">
-              We also serve these nearby communities:
-            </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {nearbyAreas.map((nearby) =>
-                nearby ? (
-                  <Link
-                    key={nearby.slug}
-                    href={`/service-areas/${nearby.slug}`}
-                    className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-4 transition-colors hover:border-primary/30 hover:bg-primary/5"
-                  >
-                    <svg className="h-5 w-5 shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <div>
-                      <span className="text-sm font-medium text-gray-900">
-                        {nearby.name}
-                      </span>
-                      {nearby.type === "city" && nearby.county && (
-                        <p className="text-xs text-gray-500">{nearby.county}</p>
-                      )}
-                    </div>
-                  </Link>
-                ) : null
-              )}
+              {nearbyAreas.map((nearby) => (
+                <Link
+                  key={nearby.slug}
+                  href={`/service-areas/${nearby.slug}`}
+                  className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-4 transition-colors hover:border-primary/30 hover:bg-primary/5"
+                >
+                  <svg className="h-5 w-5 shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <div>
+                    <span className="text-sm font-medium text-gray-900">
+                      {nearby.name}
+                    </span>
+                    {nearby.type === "city" && nearby.county && (
+                      <p className="text-xs text-gray-500">{nearby.county}</p>
+                    )}
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>

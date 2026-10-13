@@ -28,27 +28,27 @@ const FAQS = [
   {
     question: "What is a flushable portable toilet?",
     answer:
-      "A flushable portable toilet is a porta potty upgraded with a foot-pump flush system and a built-in handwashing sink. Instead of a static tank, waste is rinsed into a sealed reservoir with each flush — the experience is much closer to an indoor bathroom than a standard porta potty.",
+      "A porta potty upgraded with a foot-pump flush and a built-in sink. Each flush rinses waste into a sealed reservoir, so it feels closer to an indoor bathroom.",
   },
   {
     question: "How much does a deluxe flushable portable toilet cost in Oklahoma?",
     answer:
-      "Pricing depends on duration, location, and servicing schedule. Deluxe flushable units typically run higher than a standard porta potty but well below a full VIP restroom trailer — call Brower Inc. at (580) 747-6206 for a quote tailored to your event date and venue address.",
+      "More than a standard porta potty, well below a VIP restroom trailer. Call (580) 747-6206 for a quote for your date and venue.",
   },
   {
     question: "Are deluxe flushable porta potties good for weddings?",
     answer:
-      "Yes — they're our most-requested unit for weddings at rural and farm venues. The flushable design and built-in sink mean guests get a clean, comfortable experience without the cost of a full luxury trailer. For high-end receptions, many couples mix one VIP trailer for bridal-party use with several flushable units for general guests.",
+      "Yes. They're our most-requested unit for weddings at rural and farm venues, without the cost of a full luxury trailer.",
   },
   {
     question: "Do flushable units need a water hookup?",
     answer:
-      "No. Each unit comes with its own onboard fresh-water reservoir for flushing and sink use, so they can be placed in any rural or off-grid location across Oklahoma and southern Kansas. We refill the fresh-water tank and empty the waste tank during regular servicing.",
+      "No. Each unit has its own fresh-water reservoir, so it works off-grid. We refill it and empty the waste tank during servicing.",
   },
   {
     question: "How quickly can Brower Inc. deliver a deluxe flushable unit?",
     answer:
-      "We typically deliver within 24–48 hours of booking and offer same-day delivery for emergencies. For wedding-season Saturdays, book at least one week ahead — flushable inventory moves fastest from May through October.",
+      "Typically within 24–48 hours of booking, with same-day delivery for emergencies. For May–October Saturdays, book at least a week ahead.",
   },
 ];
 
@@ -88,7 +88,9 @@ export default function DeluxeFlushablePage() {
               <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
                 Deluxe Flushable Portable Toilet Rental in Oklahoma
               </h1>
-              <p className="mt-6 text-lg text-gray-600 leading-relaxed">{service.description}</p>
+              <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+                A hands-free foot-pump flush, a built-in sink, and more room than a standard porta potty.
+              </p>
 
               {/* Quick Answer — AI / GEO citation block */}
               <div className="mt-8 rounded-lg border-l-4 border-primary bg-primary/5 p-6">
@@ -96,10 +98,9 @@ export default function DeluxeFlushablePage() {
                   Quick Answer
                 </p>
                 <p className="mt-2 text-base text-gray-800 leading-relaxed">
-                  A deluxe flushable portable toilet is a porta potty with a foot-pump flush and a
-                  built-in sink — the comfortable middle option between a standard porta potty and a
-                  luxury restroom trailer. Brower Inc. delivers them across Oklahoma and southern
-                  Kansas for weddings, corporate events, and upscale gatherings.
+                  A porta potty with a foot-pump flush and a built-in sink: the middle option between a
+                  standard unit and a luxury restroom trailer. Delivered across north-central Oklahoma
+                  and southern Kansas.
                 </p>
               </div>
 
@@ -177,19 +178,50 @@ export default function DeluxeFlushablePage() {
               Standard Porta Potty vs. Deluxe Flushable vs. VIP Trailer
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Most outdoor events in Oklahoma fall into one of three brackets. A{" "}
-              <Link href="/services/portable-restrooms" className="text-primary hover:underline">
-                standard porta potty
-              </Link>{" "}
-              is the budget choice — clean, functional, but no frills. A{" "}
-              <Link href="/services/vip-shower-restroom-trailers" className="text-primary hover:underline">
-                VIP restroom trailer
-              </Link>{" "}
-              is the premium option with full plumbing, A/C, and multiple stalls. The deluxe
-              flushable unit sits comfortably between the two: real flushing, real handwashing, and
-              real comfort — at a fraction of the trailer cost. For most rural weddings and upscale
-              gatherings, a mix of flushable units is the sweet spot.
+              Deluxe flushable sits between the two: real flushing and handwashing for a fraction of
+              the trailer cost.
             </p>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {[
+                {
+                  title: "Standard porta potty",
+                  blurb: "The budget choice. Clean and functional, no frills.",
+                  image: IMAGES.portableRestroomLineup,
+                  alt: "Brower Inc. standard portable restrooms lined up in a row on grass",
+                  href: "/services/portable-restrooms",
+                  cta: "See standard units",
+                },
+                {
+                  title: "VIP restroom trailer",
+                  blurb: "The premium option with full plumbing, A/C, and multiple stalls.",
+                  image: IMAGES.vipExteriorSide,
+                  alt: "Brower Inc. VIP shower and restroom trailer",
+                  href: "/services/vip-shower-restroom-trailers",
+                  cta: "See VIP trailers",
+                },
+              ].map((u) => (
+                <Link
+                  key={u.title}
+                  href={u.href}
+                  className="overflow-hidden rounded-xl border border-gray-200 hover:border-primary/30 hover:shadow-sm transition-all"
+                >
+                  <Image
+                    src={u.image}
+                    alt={u.alt}
+                    width={600}
+                    height={400}
+                    className="h-56 w-full object-cover"
+                  />
+                  <div className="p-5">
+                    <h3 className="text-xl font-bold text-gray-900">{u.title}</h3>
+                    <p className="mt-2 text-sm text-gray-600">{u.blurb}</p>
+                    <span className="mt-3 inline-block text-xs font-medium text-primary">
+                      {u.cta} →
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
 
           <div className="mt-16 border-t pt-12">

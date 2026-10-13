@@ -21,32 +21,45 @@ const FAQS = [
   {
     question: "How much does septic tank pumping cost in Oklahoma?",
     answer:
-      "Most residential septic tank pumping in Oklahoma runs roughly $250–$600, depending on tank size (1,000 vs. 1,500 gallons), how accessible the lid is, how full the tank is, and your distance from our Newkirk base. Commercial tanks and grease traps are quoted by volume. Because pricing varies with access and condition, call (580) 747-6206 for a firm quote tailored to your property.",
+      "Most residential pumping runs roughly $250–$600, depending on tank size, lid access, and distance. Call (580) 747-6206 for a firm quote.",
   },
   {
     question: "How often should I pump my septic tank?",
     answer:
-      "As a rule of thumb, most septic tanks need pumping every 3–5 years. The exact interval depends on tank size, household size, and water usage — a large family on a small tank may need service every 2–3 years, while a couple on a 1,500-gallon tank may go closer to 5. Regular pumping prevents solids from reaching the drain field, which is the single most expensive part of a septic system to repair.",
+      "Most tanks need pumping every 3–5 years, depending on tank size and household water use. Regular pumping keeps solids out of the drain field.",
   },
   {
     question: "What are the signs I need septic service?",
     answer:
-      "Call for service if you notice slow drains throughout the house, sewage odor near the tank or drain field, unusually green or spongy grass over the drain field, standing water or wet spots in the yard, or gurgling sounds in your plumbing. These are early warnings of a tank that's overdue for pumping or a developing backup. Addressing them early is far cheaper than an emergency cleanup.",
+      "Slow drains, sewage odor, soggy or extra-green grass over the drain field, standing water, or gurgling pipes. Call early, before it becomes a backup.",
   },
   {
     question: "Do you offer emergency septic service near me?",
     answer:
-      "Yes. Brower Inc. provides 24/7 emergency response for septic backups across north-central Oklahoma and southern Kansas, alongside same-week scheduling for routine pumping. We're based in Newkirk, OK and serve homeowners and businesses in Ponca City, Enid, Blackwell, Tonkawa, Stillwater, Perry, and the surrounding rural counties. Call (580) 747-6206 any hour and a Brower team member — not a call center — answers.",
+      "Yes. We offer 24/7 emergency response for septic backups and same-week scheduling for routine pumping across north-central Oklahoma and southern Kansas.",
   },
   {
     question: "Do you install aerobic and conventional septic systems?",
     answer:
-      "Yes. We perform a site survey, recommend the right system for your soil and lot, and install both conventional and aerobic septic systems. We have the equipment to excavate safely and install the system correctly the first time, so you avoid the repeat costs that come from a rushed or undersized install.",
+      "Yes. We survey the site, recommend the right system for your soil and lot, and install conventional or aerobic systems.",
   },
   {
     question: "Do you provide residential and commercial septic pumping?",
     answer:
-      "Both. Brower Inc. pumps and services residential septic tanks, commercial systems, restaurant grease traps, and aerobic systems throughout our Oklahoma and southern Kansas service area. Property managers and businesses can set up a recurring pumping schedule so a tank is never the reason a property goes offline.",
+      "Both: residential tanks, commercial systems, grease traps, and aerobic systems. Businesses can set up a recurring pumping schedule.",
+  },
+];
+
+const PHOTOS = [
+  {
+    image: IMAGES.septicTruckRear,
+    alt: "Brower Inc. branded septic pump truck parked on a gravel drive in rural Oklahoma",
+    caption: "Our septic pump truck.",
+  },
+  {
+    image: IMAGES.septicMobileHome,
+    alt: "Brower Inc. crew and trucks servicing a septic system at a rural Oklahoma home",
+    caption: "On site at a rural home.",
   },
 ];
 
@@ -99,13 +112,13 @@ export default function SepticServicesPage() {
                 <div>
                   <h2 className="text-xl font-bold text-gray-900">Septic Repair</h2>
                   <p className="mt-2 text-base text-gray-600 leading-relaxed">
-                    A malfunctioning septic system will affect the plumbing throughout your location. When water cannot drain out properly, it will seek the path of least resistance — leading to smelly puddles on your lawn or unsanitary sewage backup in your home. Putting off a septic repair will not make the situation better. You need an expert to assess the problem and fix it.
+                    Smelly puddles or sewage backing up? We find the problem and fix it.
                   </p>
                 </div>
                 <div>
                   <h2 className="text-xl font-bold text-gray-900">Septic &amp; Aerobic Installation</h2>
                   <p className="mt-2 text-base text-gray-600 leading-relaxed">
-                    Make Brower Inc. your go-to company for septic installation services. We can perform a site survey on a convenient day and install your system correctly the first time. We have the necessary skills and equipment to excavate safely, and no matter which system you choose — including aerobic systems — you can rest assured that we can install it in a timely manner.
+                    Site survey, excavation, and install for conventional and aerobic systems.
                   </p>
                 </div>
               </div>
@@ -153,15 +166,28 @@ export default function SepticServicesPage() {
             </div>
           </div>
 
-          {/* Septic Services SEO Section */}
+          {/* Septic coverage */}
           <div className="mt-16 border-t pt-12">
-            <h2 className="text-3xl font-bold text-gray-900">Septic Pumping Near Me — Brower&apos;s Oklahoma &amp; Kansas Coverage</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Septic Pumping Near Me — Oklahoma &amp; Kansas</h2>
             <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl">
-              Searching for septic pumping near me? Brower Inc. provides residential and commercial septic services across north-central Oklahoma and southern Kansas — including septic tank pumping, repair, inspection, and aerobic system installation. We serve homeowners and businesses in Ponca City, Enid, Blackwell, Tonkawa, Newkirk, Stillwater, Perry, and rural properties throughout Kay County, Garfield County, Noble County, Logan County, Woods County, and southern Kansas. Most septic tanks need pumping every 3–5 years to prevent backups, drain field damage, and costly emergency repairs.
+              Residential and commercial septic service across north-central Oklahoma and southern
+              Kansas.{" "}
+              <Link href="/contact" className="text-primary font-medium hover:underline">Schedule your septic service</Link> or call (580) 747-6206.
             </p>
-            <p className="mt-3 text-gray-600 leading-relaxed max-w-3xl">
-              Not sure when your tank was last pumped? Signs you need service include slow drains, sewage odor near the tank or drain field, standing water in your yard, and gurgling sounds in your plumbing. Brower Inc. offers same-week scheduling for routine pumping and 24/7 emergency response for septic backups. <Link href="/contact" className="text-primary font-medium hover:underline">Schedule your septic service</Link> or call (580) 747-6206.
-            </p>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {PHOTOS.map((p) => (
+                <figure key={p.caption} className="overflow-hidden rounded-xl border border-gray-200">
+                  <Image
+                    src={p.image}
+                    alt={p.alt}
+                    width={600}
+                    height={400}
+                    className="h-64 w-full object-cover"
+                  />
+                  <figcaption className="p-4 text-sm text-gray-600">{p.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
 
           {/* FAQ */}
