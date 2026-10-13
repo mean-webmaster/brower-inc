@@ -48,8 +48,9 @@ export const IMAGES = {
   vip3StationFloorPlan: `${IMG}/brower-inc-3-station-restroom-trailer-floor-plan-newkirk-ok.webp`,
   trailer4Station: `${IMG}/brower-inc-4-station-restroom-trailer-newkirk-ok.webp`,
   trailer4StationFloorPlan: `${IMG}/brower-inc-4-station-restroom-trailer-floor-plan-newkirk-ok.webp`,
-  trailer8StationFlex: `${IMG}/brower-inc-8-station-flex-restroom-trailer-newkirk-ok.webp`,
-  trailer8StationFlexFloorPlan: `${IMG}/brower-inc-8-station-flex-restroom-trailer-floor-plan-newkirk-ok.webp`,
+  trailer8DoorShower: `${IMG}/brower-inc-8-door-shower-trailer-newkirk-ok.webp`,
+  trailer8DoorShowerFloorPlan: `${IMG}/brower-inc-8-door-shower-trailer-floor-plan-newkirk-ok.webp`,
+  trailer8DoorShowerInterior: `${IMG}/brower-inc-8-door-shower-trailer-interior-newkirk-ok.webp`,
 
   // Hand Washing Stations
   handWashingStation: `${IMG}/brower-inc-hand-washing-station-warehouse-newkirk-ok.webp`,

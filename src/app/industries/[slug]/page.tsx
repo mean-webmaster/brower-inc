@@ -14,7 +14,7 @@ import { getIndustrySchema, getBreadcrumbSchema, jsonLdString } from "@/lib/stru
 
 // Product shots on white backgrounds look best uncropped.
 const CONTAIN_IMAGES = new Set<string>([
-  IMAGES.trailer8StationFlex,
+  IMAGES.trailer8DoorShower,
   IMAGES.trailer4Station,
   IMAGES.adaRestroom,
   IMAGES.adaRestroomInterior,

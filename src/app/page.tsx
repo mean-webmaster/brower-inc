@@ -142,18 +142,18 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-xs font-semibold uppercase tracking-wide text-primary">New to the fleet</p>
-            <h2 className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">New Restroom Trailers</h2>
+            <h2 className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">New Shower &amp; Restroom Trailers</h2>
             <p className="mt-4 text-lg text-gray-600">Private stations, running water, and climate control for crews and events.</p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             {[
               {
-                href: "/services/vip-shower-restroom-trailers#trailer-8-station-flex",
-                image: IMAGES.trailer8StationFlex,
-                width: 2360,
-                height: 1232,
-                title: "8-Station Flex Trailer",
-                stats: ["8 stations", "About 3,700 uses", "28 ft"],
+                href: "/services/vip-shower-restroom-trailers#trailer-8-door-shower",
+                image: IMAGES.trailer8DoorShower,
+                width: 2400,
+                height: 982,
+                title: "8-Door Shower Trailer",
+                stats: ["8 private showers", "Own door and temp control", "28 ft"],
               },
               {
                 href: "/services/vip-shower-restroom-trailers#trailer-4-station",

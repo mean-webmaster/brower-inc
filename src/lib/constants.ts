@@ -855,7 +855,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     content: {
       intro: "Barber County is our newest Kansas service area. We deliver portable restrooms and restroom trailers to jobsites, crews, and events in Medicine Lodge, Kiowa, Sharon, and the surrounding area.",
       whyChooseUs: "Every rental includes delivery, setup, and pickup. Long-term jobsite rentals include weekly servicing, so crews never run out of supplies.",
-      servicesHighlight: "Standard portable restrooms for construction and industrial sites, our new 4-station and 8-station restroom trailers for larger crews and events, and hand washing stations.",
+      servicesHighlight: "Standard portable restrooms for construction and industrial sites, our new 4-station restroom trailer and 8-door shower trailer for crews and events, and hand washing stations.",
       localFAQ: [
         { question: "Do you serve Barber County, Kansas?", answer: "Yes. Barber County is one of our newest service areas. We deliver to Medicine Lodge, Kiowa, Sharon, and jobsites across the county." },
         { question: "Do you rent restrooms for long-term construction projects?", answer: "Yes. Long-term jobsite rentals include weekly servicing. Call (580) 747-6206 for a quote based on your crew size and schedule." },
@@ -1140,7 +1140,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     content: {
       intro: "Medicine Lodge is the Barber County seat. Brower Inc. delivers portable restrooms and restroom trailers for jobsites, crews, and events in and around town.",
       whyChooseUs: "Every rental includes delivery, setup, and pickup. Long-term jobsite rentals include weekly servicing.",
-      servicesHighlight: "Standard portable restrooms, our new 4-station and 8-station restroom trailers, and hand washing stations.",
+      servicesHighlight: "Standard portable restrooms, our new 4-station restroom trailer and 8-door shower trailer, and hand washing stations.",
       localFAQ: [
         { question: "Do you deliver to Medicine Lodge, KS?", answer: "Yes. Medicine Lodge is part of our Barber County service area. Call (580) 747-6206 to schedule delivery." },
       ],
@@ -1162,7 +1162,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     content: {
       intro: "Kiowa sits on the Kansas-Oklahoma line in southern Barber County. Brower Inc. delivers portable restrooms and restroom trailers for jobsites, crews, and events in the Kiowa area.",
       whyChooseUs: "Every rental includes delivery, setup, and pickup. Long-term jobsite rentals include weekly servicing.",
-      servicesHighlight: "Standard portable restrooms, our new 4-station and 8-station restroom trailers, and hand washing stations.",
+      servicesHighlight: "Standard portable restrooms, our new 4-station restroom trailer and 8-door shower trailer, and hand washing stations.",
       localFAQ: [
         { question: "Do you deliver to Kiowa, KS?", answer: "Yes. Kiowa is part of our Barber County service area. Call (580) 747-6206 to schedule delivery." },
       ],
@@ -1184,7 +1184,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     content: {
       intro: "Sharon is in eastern Barber County, between Attica and Medicine Lodge. Brower Inc. delivers portable restrooms and restroom trailers for jobsites, crews, and events in the Sharon area.",
       whyChooseUs: "Every rental includes delivery, setup, and pickup. Long-term jobsite rentals include weekly servicing.",
-      servicesHighlight: "Standard portable restrooms, our new 4-station and 8-station restroom trailers, and hand washing stations.",
+      servicesHighlight: "Standard portable restrooms, our new 4-station restroom trailer and 8-door shower trailer, and hand washing stations.",
       localFAQ: [
         { question: "Do you deliver to Sharon, KS?", answer: "Yes. Sharon is part of our Barber County service area. Call (580) 747-6206 to schedule delivery." },
       ],
@@ -1206,7 +1206,7 @@ export const SERVICE_AREAS_DATA: ServiceAreaData[] = [
     content: {
       intro: "Attica is in western Harper County, between Harper and the Barber County line. Brower Inc. delivers portable restrooms and restroom trailers for jobsites, crews, and events in the Attica area.",
       whyChooseUs: "Every rental includes delivery, setup, and pickup. Long-term jobsite rentals include weekly servicing.",
-      servicesHighlight: "Standard portable restrooms, our new 4-station and 8-station restroom trailers, and hand washing stations.",
+      servicesHighlight: "Standard portable restrooms, our new 4-station restroom trailer and 8-door shower trailer, and hand washing stations.",
       localFAQ: [
         { question: "Do you deliver to Attica, KS?", answer: "Yes. Attica is part of our Harper County service area. Call (580) 747-6206 to schedule delivery." },
       ],
@@ -1781,7 +1781,7 @@ export const NAV_LINKS: NavLink[] = [
     children: [
       { label: "All Services", href: "/services", description: "Browse our full service lineup" },
       { label: "Portable Restrooms", href: "/services/portable-restrooms", description: "Standard porta potties for events & jobsites" },
-      { label: "Restroom Trailers", href: "/services/vip-shower-restroom-trailers#trailer-8-station-flex", description: "New 4- & 8-station trailers, plus 18-station VIP" },
+      { label: "Restroom Trailers", href: "/services/vip-shower-restroom-trailers#trailer-8-door-shower", description: "New 8-door shower and 4-station trailers" },
       { label: "Hand Washing Stations", href: "/services/hand-washing-stations", description: "Standalone units, no hookups needed" },
       { label: "Septic Services", href: "/services/septic-services", description: "Pumping, repair & installation" },
       { label: "Long-Term Rentals", href: "/services/long-term-rentals", description: "Weekly servicing included" },

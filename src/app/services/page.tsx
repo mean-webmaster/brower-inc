@@ -28,7 +28,7 @@ const servicesPageSchema = getCollectionPageSchema({
 
 const SERVICE_IMAGES: Record<string, string> = {
   "portable-restrooms": IMAGES.portableRestroomLineup,
-  "vip-shower-restroom-trailers": IMAGES.trailer8StationFlex,
+  "vip-shower-restroom-trailers": IMAGES.trailer8DoorShower,
   "hand-washing-stations": IMAGES.handWashingStation,
   "septic-services": IMAGES.septicTruckRear,
   "long-term-rentals": IMAGES.fleetLineup,
@@ -53,7 +53,7 @@ const SERVICE_ALT: Record<string, string> = {
   "portable-restrooms":
     "Brower Inc. porta potty lineup ready for event or construction site delivery in Newkirk, Oklahoma",
   "vip-shower-restroom-trailers":
-    "Brower Inc. 8-station flex restroom trailer with Brower logo",
+    "Brower Inc. 8-door shower trailer with Brower logo",
   "hand-washing-stations":
     "Brower Inc. portable hand washing station in warehouse staging area in Newkirk, Oklahoma",
   "septic-services":
@@ -152,10 +152,10 @@ export default function ServicesPage() {
                     <p className="mt-3 text-gray-600 leading-relaxed">
                       New:{" "}
                       <Link
-                        href="/services/vip-shower-restroom-trailers#trailer-8-station-flex"
+                        href="/services/vip-shower-restroom-trailers#trailer-8-door-shower"
                         className="font-semibold text-primary hover:underline"
                       >
-                        4- and 8-station restroom trailers
+                        8-door shower trailer and 4-station restroom trailer
                       </Link>
                       .
                     </p>

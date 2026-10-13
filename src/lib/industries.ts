@@ -50,7 +50,7 @@ export interface IndustryData {
 const PHOTO = {
   handWash: { src: IMAGES.handWashingStation, alt: "Row of Brower Inc. portable hand washing stations" },
   ada: { src: IMAGES.adaRestroom, alt: "Brower Inc. ADA wheelchair-accessible portable restroom" },
-  trailer8: { src: IMAGES.trailer8StationFlex, alt: "Brower Inc. 8-station flex restroom trailer" },
+  trailer8: { src: IMAGES.trailer8DoorShower, alt: "Brower Inc. 8-door shower trailer" },
   trailer4: { src: IMAGES.trailer4Station, alt: "Brower Inc. 4-station restroom trailer" },
   vipVanity: { src: IMAGES.vipInteriorVanity, alt: "Vanity and private stalls inside a Brower Inc. VIP restroom trailer" },
   vipBathroom: { src: IMAGES.vipInteriorBathroom, alt: "Private bathroom with shower inside a Brower Inc. VIP trailer" },
