@@ -18,32 +18,32 @@ const HOMEPAGE_FAQS = [
   {
     question: "How fast can you deliver a porta potty to my Oklahoma or Kansas address?",
     answer:
-      "From our Newkirk, OK headquarters, Brower Inc. typically delivers porta potty rentals within 24–48 hours across 14 Oklahoma and 6 southern Kansas counties. Same-day delivery is often available for weekend events and emergencies — call Troy directly at (580) 747-6206 to confirm availability.",
+      "We typically deliver within 24–48 hours, and same-day is often available. Call Troy at (580) 747-6206 to confirm.",
   },
   {
     question: "What does porta potty rental cost in Oklahoma and Kansas?",
     answer:
-      "Standard porta potty rentals run $125–$250 per month for long-term jobsites and $100–$200 per event for weekend bookings. VIP luxury restroom trailers range $800–$2,500 depending on duration. Final pricing depends on delivery distance, servicing frequency, and unit type. See our 2026 cost guide for full breakdowns.",
+      "Standard units run $100–$200 per event or $125–$250 per month, and VIP trailers $800–$2,500. Price depends on distance, servicing, and unit type.",
   },
   {
     question: "Do you deliver porta potties to rural addresses?",
     answer:
-      "Yes. Brower Inc. specializes in rural delivery across Kay, Garfield, Kingfisher, Logan, Cowley, Sumner, and other rural counties where national chains often refuse to go. Our crews routinely navigate farm roads, oil field access, cattle guards, and locked gates. If Google Maps shows your address, we can reach it.",
+      "Yes. Farm roads, oil field access, cattle guards, and gates are routine for our crews.",
   },
   {
     question: "What areas of Oklahoma and Kansas does Brower Inc. serve?",
     answer:
-      "We serve 14 north-central Oklahoma counties (including Kay, Garfield, Kingfisher, Logan, Noble, Pawnee, Osage, and Grant) plus 6 southern Kansas counties (Cowley, Sumner, Sedgwick, Butler, Harper, and Kingman). Cities include Newkirk, Ponca City, Blackwell, Tonkawa, Enid, Stillwater, Wichita, and Winfield.",
+      "North-central Oklahoma and southern Kansas, from Newkirk, Ponca City, and Enid to Wichita, Winfield, and Barber County. See the full list on our service areas page.",
   },
   {
     question: "Can I rent a porta potty for just one day or one weekend?",
     answer:
-      "Absolutely. Short-term rentals for weekend events, weddings, BBQs, and one-day functions are a core part of our business. Single-day pricing typically starts around $100 per unit including delivery, setup, and pickup. Call (580) 747-6206 to lock in a date during peak event season.",
+      "Yes. One-day rentals start around $100 per unit, including delivery, setup, and pickup.",
   },
   {
     question: "What's included with a Brower porta potty rental?",
     answer:
-      "Every rental includes delivery, setup, and pickup. Long-term rentals also include weekly servicing — waste removal, restocked toilet paper, hand sanitizer, paper towels, full sanitization, and damage inspection. ADA-compliant units are available, and add-on hand washing stations pair with any porta potty rental.",
+      "Delivery, setup, and pickup. Long-term rentals add weekly cleaning and restocking.",
   },
 ];
 
@@ -92,8 +92,8 @@ export default function HomePage() {
               <span className="text-primary">Porta Potty Rental &amp; Septic Services</span>{" "}Across Oklahoma &amp; Southern Kansas
             </h1>
             <p className="mt-6 text-lg text-gray-300 sm:text-xl">
-              Clean porta potties, VIP restroom trailers, and septic services —
-              delivered to the rural addresses national chains skip.
+              Clean porta potties, restroom trailers, and septic service, delivered to
+              farms, jobsites, and events.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
@@ -137,6 +137,58 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* New Restroom Trailers */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-wide text-primary">New to the fleet</p>
+            <h2 className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">New Restroom Trailers</h2>
+            <p className="mt-4 text-lg text-gray-600">Private stations, running water, and climate control for crews and events.</p>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            {[
+              {
+                href: "/services/vip-shower-restroom-trailers#trailer-8-station-flex",
+                image: IMAGES.trailer8StationFlex,
+                width: 2360,
+                height: 1232,
+                title: "8-Station Flex Trailer",
+                stats: ["8 stations", "About 3,700 uses", "28 ft"],
+              },
+              {
+                href: "/services/vip-shower-restroom-trailers#trailer-4-station",
+                image: IMAGES.trailer4Station,
+                width: 2001,
+                height: 1331,
+                title: "4-Door, 4-Station Trailer",
+                stats: ["4 stations", "About 1,400 uses", "14 ft 4 in"],
+              },
+            ].map((t) => (
+              <Link
+                key={t.href}
+                href={t.href}
+                className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
+              >
+                <Image
+                  src={t.image}
+                  alt={`Brower Inc. ${t.title.toLowerCase()} with Brower logo`}
+                  width={t.width}
+                  height={t.height}
+                  className="h-64 w-full bg-white object-contain p-4"
+                />
+                <div className="border-t border-gray-100 p-6">
+                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">{t.title}</h3>
+                  <p className="mt-2 text-sm text-gray-600">{t.stats.join(" · ")}</p>
+                  <span className="mt-4 inline-flex items-center text-sm font-medium text-primary">
+                    See floor plan and specs →
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Brower — quick value prop for visitors + SEO-friendly for porta potty rental queries */}
       <section className="bg-white py-12 sm:py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -148,12 +200,8 @@ export default function HomePage() {
               Local Porta Potty Rental &amp; Septic Services You Can Count On
             </h2>
             <p className="mt-4 text-gray-700 leading-relaxed">
-              Brower Inc. is an owner-operated portable sanitation company based in
-              Newkirk, Oklahoma. We deliver clean Maxim 300 porta potties, VIP restroom
-              trailers, hand washing stations, and full septic services across 10
-              Oklahoma and 9 southern Kansas counties. Whether it&apos;s a weekend wedding,
-              a long-term construction site, or an emergency call at 2&nbsp;a.m. — Troy
-              and the crew show up with clean units, on time, every time.
+              Owner-operated from Newkirk, Oklahoma. Porta potties, restroom trailers, hand
+              washing stations, and septic service for weddings, jobsites, and emergencies.
             </p>
             <p className="mt-4 text-sm text-gray-500">
               Locally owned since day one · Newkirk, OK headquarters
@@ -168,7 +216,7 @@ export default function HomePage() {
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Our Services</h2>
             <p className="mt-4 text-lg text-gray-600">
-              Comprehensive portable sanitation solutions for every need
+              Restrooms, trailers, and septic, all from one local crew
             </p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -193,7 +241,7 @@ export default function HomePage() {
               Helpful Guides for Renting in Oklahoma
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Pricing, OSHA rules, comparison guides, and rural delivery — answers before you book.
+              Answers before you book.
             </p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -202,37 +250,37 @@ export default function HomePage() {
                 href: "/blog/osha-portable-restroom-requirements-construction-oklahoma",
                 eyebrow: "OSHA Checklist",
                 title: "OSHA Portable Restroom Requirements — Oklahoma Compliance Checklist",
-                blurb: "Print-ready 29 CFR 1926.51 checklist: ratios, hand wash, ADA, sex separation, placement, servicing, and the 2026 fine schedule.",
+                blurb: "A print-ready jobsite checklist.",
               },
               {
                 href: "/blog/complete-guide-portable-restrooms-oklahoma-outdoor-events",
                 eyebrow: "Events Pillar",
                 title: "Portable Restrooms for Oklahoma Outdoor Events — The Complete Guide",
-                blurb: "Unit count formula, alcohol & weather multipliers, ADA, luxury trailers, pricing, and a 12-week booking timeline.",
+                blurb: "How many units, which kind, and when to book.",
               },
               {
                 href: "/blog/porta-potty-rental-cost-oklahoma",
                 eyebrow: "Pricing",
                 title: "Porta Potty Rental Cost in Oklahoma (2026 Guide)",
-                blurb: "Transparent 2026 pricing for standard, ADA, hand wash, and VIP units — plus 6 factors that change your final price.",
+                blurb: "2026 prices for every unit type.",
               },
               {
                 href: "/blog/how-many-porta-potties-construction-site-oklahoma",
                 eyebrow: "OSHA Calculator",
                 title: "How Many Porta Potties for Your Construction Site?",
-                blurb: "OSHA 1926.51 ratio, hand wash rules, ADA guidance, shift-pattern adjustments, and real Oklahoma jobsite examples.",
+                blurb: "The OSHA count for any crew size.",
               },
               {
                 href: "/blog/porta-potty-vs-luxury-restroom-trailer-oklahoma",
                 eyebrow: "Comparison",
                 title: "Porta Potty vs. Luxury Restroom Trailer",
-                blurb: "Side-by-side comparison — features, pricing, guest experience, and when each one is the right call for your event.",
+                blurb: "Which one fits your event.",
               },
               {
                 href: "/blog/porta-potty-rental-near-me-rural-oklahoma",
                 eyebrow: "Rural Delivery",
                 title: "Why 'Porta Potty Near Me' Fails Rural Oklahomans",
-                blurb: "Why search results miss rural Kay, Garfield, and Cowley counties — and how to actually get a unit delivered to your address.",
+                blurb: "How to get a unit delivered to a rural address.",
               },
             ].map((post) => (
               <Link
@@ -352,7 +400,7 @@ export default function HomePage() {
               Frequently Asked Questions
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              The questions Oklahoma and Kansas customers ask most before booking a portable restroom.
+              What customers ask most.
             </p>
           </div>
           <div className="mt-10">
