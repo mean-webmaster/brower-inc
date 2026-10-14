@@ -4,12 +4,12 @@ const isDev = process.env.NODE_ENV === "development";
 
 const contentSecurityPolicy = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://dashboard.searchatlas.com https://*.searchatlas.com https://analytics.ahrefs.com`,
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://dashboard.searchatlas.com https://*.searchatlas.com https://analytics.ahrefs.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://app.browerinc.net`,
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob: https://assets.cdn.filesafe.space https://bodhjxamjdyzneuirxdy.supabase.co https://*.google-analytics.com https://www.googletagmanager.com https://*.searchatlas.com https://analytics.ahrefs.com",
+  "img-src 'self' data: blob: https://assets.cdn.filesafe.space https://bodhjxamjdyzneuirxdy.supabase.co https://*.google-analytics.com https://www.googletagmanager.com https://*.searchatlas.com https://analytics.ahrefs.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://ad.doubleclick.net",
   "font-src 'self' data:",
-  "connect-src 'self' https://bodhjxamjdyzneuirxdy.supabase.co https://*.google-analytics.com https://www.googletagmanager.com https://*.searchatlas.com https://analytics.ahrefs.com",
-  "frame-src 'self' https://www.google.com https://maps.google.com",
+  "connect-src 'self' https://bodhjxamjdyzneuirxdy.supabase.co https://*.google-analytics.com https://www.googletagmanager.com https://*.searchatlas.com https://analytics.ahrefs.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://ad.doubleclick.net https://pagead2.googlesyndication.com",
+  "frame-src 'self' https://www.google.com https://maps.google.com https://app.browerinc.net https://td.doubleclick.net https://www.googletagmanager.com",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",

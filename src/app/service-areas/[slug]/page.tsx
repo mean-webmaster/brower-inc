@@ -187,10 +187,14 @@ export default async function ServiceAreaPage({
               </p>
             </div>
             <Image
-              src={IMAGES.deliveryDaytime}
-              alt="Brower Inc. service truck carrying two portable restrooms for delivery"
-              width={800}
-              height={600}
+              src={restroomOnly ? IMAGES.truckTowingShowerTrailer : IMAGES.deliveryDaytime}
+              alt={
+                restroomOnly
+                  ? "Brower Inc. service truck hauling portable restrooms and towing a VIP shower trailer"
+                  : "Brower Inc. service truck carrying two portable restrooms for delivery"
+              }
+              width={restroomOnly ? 1280 : 800}
+              height={restroomOnly ? 720 : 600}
               sizes="(min-width: 768px) 480px, 100vw"
               className="w-full rounded-xl object-cover shadow-sm"
             />

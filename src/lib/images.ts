@@ -67,6 +67,7 @@ export const IMAGES = {
   deliveryDaytime: `${IMG}/brower-inc-service-truck-portable-restroom-delivery-daytime-newkirk-ok.webp`,
   deliveryNight: `${IMG}/brower-inc-service-truck-portable-restroom-delivery-night-newkirk-ok.webp`,
   deliveryLot: `${IMG}/brower-inc-service-truck-portable-restroom-delivery-daytime-lot-newkirk-ok.webp`,
+  truckTowingShowerTrailer: `${IMG}/brower-inc-service-truck-portable-restrooms-towing-vip-shower-trailer-newkirk-ok.webp`,
   loadedTrailer: `${IMG}/brower-inc-portable-restroom-loaded-trailer-yard-newkirk-ok.webp`,
 
   // Events
